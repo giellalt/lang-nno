@@ -53,6 +53,11 @@ LEXICON M0
  +N+Masc+Sg: 0-en ;
  +N+Masc+Pl: ar-ane ;
 
+LEXICON M0-us ! RADIUS
+ +N+Masc+Sg:%>us 0-en ;
+ +N+Masc+Sg+Def:%>en K ; ! short def
+ +N+Masc+Pl: er-ene ; ! Regular pl
+
 LEXICON TING
  +N+Masc+Sg: 0-en ;
  +N+Masc+Pl: 0-a ;
@@ -168,12 +173,13 @@ LEXICON M2N2
 LEXICON M2e
  K ;
 
-LEXICON M3
+LEXICON M3 ! KOLLEGA
  +N+Masc+Sg: 0-en ;
  +N+Masc+Pl: ar-ane ;
- +N+Masc+Pl: er-ene ;
+! +N+Masc+Pl: er-ene ;
+ +N+Masc+Pl:X2 er-ene ; ! delete a
 
-LEXICON FINGER
+LEXICON M1t ! FINGER
  +N+Masc+Sg: 0-en ;
  +N+Masc+Pl:X1 ar-ane ; ! X1 deletes the vowel -e-
 
@@ -181,31 +187,24 @@ LEXICON FINGER
 ! +N+Masc+Sg: 0-en ;
 ! +N+Masc+Pl: e-ne ;
 
-LEXICON METER
+LEXICON M1M1t ! METER
  +N+Masc+Sg: 0-en ;
  +N+Masc+Pl:X1 0-ane ;
 
-LEXICON BONDE
+LEXICON M3o ! BONDE
  +N+Masc+Sg: 0-en ;
  +N+Masc+Pl:Z1 er-ene ; ! Umlaut
 
-LEXICON FORSTAD
+LEXICON M4 ! FORSTAD
  +N+Masc+Sg: 0-en ;
  +N+Masc+Sg:Z1 er-ene ; ! Umlaut
 
-LEXICON KOLLEGA
- +N+Masc+Sg: 0-en ;
- +N+Masc+Pl:X2 er-ene ; ! delete a
 
-LEXICON KONTO
+LEXICON M0M1 ! KONTO
  +N+Masc+Sg: 0-en K ;
  +N+Masc+Pl:X2i 0-ene ; ! delete o
  +N+Masc+Pl: er-ene ; ! Regular pl
 
-LEXICON RADIUS
- +N+Masc+Sg:%>us 0-en ;
- +N+Masc+Sg+Def:%>en K ; ! short def
- +N+Masc+Pl: er-ene ; ! Regular pl
  
 
  
@@ -494,9 +493,9 @@ LEXICON ar-ane
  +Indef:%>ar K ;
  +Def:%>ane K ;
 
-LEXICON e-ne
- +Indef:%>e K ;
- +Def:%>ne K ;
+!LEXICON e-ne
+! +Indef:%>e K ;
+! +Def:%>ne K ;
 
 LEXICON er-ene
  +Indef:%>er K ;
@@ -683,8 +682,8 @@ LEXICON V04n
 LEXICON V04r
  # ;
 
-LEXICON V04rNN011k
- # ;
+!LEXICON V04rNN011k
+! # ;
 
 LEXICON V04V0
  # ;

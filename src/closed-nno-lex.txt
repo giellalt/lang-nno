@@ -80,7 +80,7 @@ det-decl-neu ;
 det-decl-dpl ;
 
 LEXICON ein-decl
-det-decl-mfdp ;
+det-decl-mf ;
 det-decl-ein-neu ;
 
 LEXICON det-decl-mf
@@ -94,11 +94,9 @@ LEXICON det-decl-dpl
 LEXICON det-decl-neu
 +Indef+Neu:tt K ;
 
-LEXICON det-decl-einneu
+LEXICON det-decl-ein-neu
 +Indef+Neu:t K ;
 
 LEXICON Numeral 
  # ;
 
-LEXICON Punctuation
- # ;
