@@ -37678,7 +37678,6 @@ framspring	N1 ;
 krumspring	N1 ;
 utspring	N1 ;
 ting	N1 ;
-ting	N1 ;
 folketing	N1 ;
 kråketing	N1 ;
 sameting	N1 ;
