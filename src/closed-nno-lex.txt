@@ -1,0 +1,46 @@
+LEXICON Particle
+ # ;
+
+LEXICON Subjunction
+fordi subj ;
+som subj ;
+at subj ;
+om subj ;
+ 
+LEXICON subj
+ +CS: # ;
+
+LEXICON Conjunction
+og conj ;
+eller conj ;
+men conj ;
+
+LEXICON conj
+ +CC: # ;
+
+LEXICON Interjection
+ uff ij ;
+
+LEXICON ij
+ +Interj: # ;
+
+LEXICON Pronoun
+ # ;
+
+LEXICON Determiner
+min+Det+Poss:mi det-decl ;
+din+Det+Poss:di det-decl ;
+sin+Det+Poss:si det-decl ;
+
+LEXICON det-decl
++Indef+Masc:n K ;
++Indef+Fem:   K ;
++Indef+Neu:tt K ;
++Def:e	      K ;
++Pl:e	      K ;
+
+LEXICON Numeral 
+ # ;
+
+LEXICON Punctuation
+ # ;

@@ -1,0 +1,8 @@
+LEXICON Adverb
+kanskje adv ;
+ut adv ;
+inn adv ;
+ofte  adv ;
+
+LEXICON adv
+ +Adv: # ;
