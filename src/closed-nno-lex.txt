@@ -14,6 +14,7 @@ LEXICON Conjunction
 og conj ;
 eller conj ;
 men conj ;
+for conj ;
 
 LEXICON conj
  +CC: # ;
@@ -25,19 +26,76 @@ LEXICON ij
  +Interj: # ;
 
 LEXICON Pronoun
+ Personal ;
+ Reflexive ;
+ Reciproc ;
+ Interrogative ;
+ Indefinite ;
+
+LEXICON Personal 
+eg+Pron+Nom:eg # ;
+du+Pron+Nom:du # ;
+han+Pron+Nom:han # ;
+ho+Pron+Nom:ho # ;
+det+Pron+Nom:det # ;
+vi+Pron+Nom:vi # ;
+de+Pron+Nom:de # ;
+dei+Pron+Nom:dei # ;
+
+eg+Pron+Acc:meg # ;
+du+Pron+Acc:deg # ;
+han+Pron+Acc:han # ;
+ho+Pron+Acc:ho # ;
+han+Pron+Acc:honom # ;
+ho+Pron+Acc:henne # ;
+det+Pron+Acc:det # ;
+vi+Pron+Acc:oss # ;
+de+Pron+Acc:dykk # ;
+dei+Pron+Acc:dei # ;
+
+
+LEXICON Reflexive
+seg+Pron+Refl:seg # ;
+
+LEXICON Reciproc 
+kvarandre+Pron+Recipr:kvarandre # ;
+
+LEXICON Interrogative 
+kva+Pron+Interr:kva # ;
+kven+Pron+Interr:kven # ;
+
+LEXICON Indefinite 
  # ;
+
 
 LEXICON Determiner
 min+Det+Poss:mi det-decl ;
 din+Det+Poss:di det-decl ;
 sin+Det+Poss:si det-decl ;
+ein+Det:ei	ein-decl ;
 
 LEXICON det-decl
+det-decl-mf ;
+det-decl-neu ;
+det-decl-dpl ;
+
+LEXICON ein-decl
+det-decl-mfdp ;
+det-decl-ein-neu ;
+
+LEXICON det-decl-mf
 +Indef+Masc:n K ;
 +Indef+Fem:   K ;
-+Indef+Neu:tt K ;
+
+LEXICON det-decl-dpl
 +Def:e	      K ;
 +Pl:e	      K ;
+
+LEXICON det-decl-neu
++Indef+Neu:tt K ;
+
+LEXICON det-decl-einneu
++Indef+Neu:t K ;
 
 LEXICON Numeral 
  # ;
