@@ -17,7 +17,7 @@ fire:4 THOUSAND ;
 fem:5 THOUSAND ;
 seks:6 THOUSAND ;
 sju:7 THOUSAND ;
-åtte:8 THOUSAND;
+Ã¥tte:8 THOUSAND;
 ni:9 THOUSAND ;
 
 LEXICON 10to99T
@@ -33,7 +33,7 @@ tretten:3 THOUSAND ;
 fjorten:4 THOUSAND ;
 femten:5 THOUSAND ;
 seksten:6 THOUSAND ;
-søtten:7 THOUSAND ;
+sÃ¸tten:7 THOUSAND ;
 atten:8 THOUSAND ;
 nitten:9 THOUSAND ;
 
@@ -42,12 +42,12 @@ LEXICON TENST
 tjue:2 TENCOUNTT ;
 tretti:3 TENCOUNTT ;
 tredve:30 THOUSAND ;
-førti:4 TENCOUNTT ;
+fÃ¸rti:4 TENCOUNTT ;
 femti:5 TENCOUNTT ;
 seksti:6 TENCOUNTT ;
 sytti:7 TENCOUNTT ;
-søtti:7 TENCOUNTT ;
-åtti:8 TENCOUNTT ;
+sÃ¸tti:7 TENCOUNTT ;
+Ã¥tti:8 TENCOUNTT ;
 nitti:9  TENCOUNTT ;
 
 LEXICON TENCOUNTT
@@ -63,19 +63,19 @@ fireog: OLDTEN-4T ;
 femog: OLDTEN-5T ;
 seksog: OLDTEN-6T ;
 sjuog: OLDTEN-7T ;
-åtteog: OLDTEN-8T ;
+Ã¥tteog: OLDTEN-8T ;
 niog: OLDTEN-9T ;
 
 LEXICON OLDTEN-1T
 tjue:2 END1T ;
 tretti:3 END1T ;
 tredve:3 END1T ;
-førti:4 END1T ;
+fÃ¸rti:4 END1T ;
 femti:5 END1T ;
 seksti:6 END1T ;
 sytti:7 END1T ;
-søtti:7 END1T ;
-åtti:8 END1T ;
+sÃ¸tti:7 END1T ;
+Ã¥tti:8 END1T ;
 nitti:9  END1T ;
 
 
@@ -83,12 +83,12 @@ LEXICON OLDTEN-2T
 tjue:2 END2T ;
 tretti:3 END2T ;
 tredve:3 END2T ;
-førti:4 END2T ;
+fÃ¸rti:4 END2T ;
 femti:5 END2T ;
 seksti:6 END2T ;
 sytti:7 END2T ;
-søtti:7 END2T ;
-åtti:8 END2T ;
+sÃ¸tti:7 END2T ;
+Ã¥tti:8 END2T ;
 nitti:9  END2T ;
 
 
@@ -96,12 +96,12 @@ LEXICON OLDTEN-3T
 tjue:2 END3T ;
 tretti:3 END3T ;
 tredve:3 END3T ;
-førti:4 END3T ;
+fÃ¸rti:4 END3T ;
 femti:5 END3T ;
 seksti:6 END3T ;
 sytti:7 END3T ;
-søtti:7 END3T ;
-åtti:8 END3T ;
+sÃ¸tti:7 END3T ;
+Ã¥tti:8 END3T ;
 nitti:9  END3T ;
 
 
@@ -109,12 +109,12 @@ LEXICON OLDTEN-4T
 tjue:2 END4T ;
 tretti:3 END4T ;
 tredve:3 END4T ;
-førti:4 END4T ;
+fÃ¸rti:4 END4T ;
 femti:5 END4T ;
 seksti:6 END4T ;
 sytti:7 END4T ;
-søtti:7 END4T ;
-åtti:8 END4T ;
+sÃ¸tti:7 END4T ;
+Ã¥tti:8 END4T ;
 nitti:9  END4T ;
 
 
@@ -122,12 +122,12 @@ LEXICON OLDTEN-5T
 tjue:2 END5T ;
 tretti:3 END5T ;
 tredve:3 END5T ;
-førti:4 END5T ;
+fÃ¸rti:4 END5T ;
 femti:5 END5T ;
 seksti:6 END5T ;
 sytti:7 END5T ;
-søtti:7 END5T ;
-åtti:8 END5T ;
+sÃ¸tti:7 END5T ;
+Ã¥tti:8 END5T ;
 nitti:9  END5T ;
 
 
@@ -135,24 +135,24 @@ LEXICON OLDTEN-6T
 tjue:2 END6T ;
 tretti:3 END6T ;
 tredve:3 END6T ;
-førti:4 END6T ;
+fÃ¸rti:4 END6T ;
 femti:5 END6T ;
 seksti:6 END6T ;
 sytti:7 END6T ;
-søtti:7 END6T ;
-åtti:8 END6T ;
+sÃ¸tti:7 END6T ;
+Ã¥tti:8 END6T ;
 nitti:9  END6T ;
 
 LEXICON OLDTEN-7T
 tjue:2 END7T ;
 tretti:3 END7T ;
 tredve:3 END7T ;
-førti:4 END7T ;
+fÃ¸rti:4 END7T ;
 femti:5 END7T ;
 seksti:6 END7T ;
 sytti:7 END7T ;
-søtti:7 END7T ;
-åtti:8 END7T ;
+sÃ¸tti:7 END7T ;
+Ã¥tti:8 END7T ;
 nitti:9  END7T ;
 
 
@@ -160,12 +160,12 @@ LEXICON OLDTEN-8T
 tjue:2 END8T ;
 tretti:3 END8T ;
 tredve:3 END8T ;
-førti:4 END8T ;
+fÃ¸rti:4 END8T ;
 femti:5 END8T ;
 seksti:6 END8T ;
 sytti:7 END8T ;
-søtti:7 END8T ;
-åtti:8 END8T ;
+sÃ¸tti:7 END8T ;
+Ã¥tti:8 END8T ;
 nitti:9  END8T ;
 
 
@@ -173,12 +173,12 @@ LEXICON OLDTEN-9T
 tjue:2 END9T ;
 tretti:3 END9T ;
 tredve:3 END9T ;
-førti:4 END9T ;
+fÃ¸rti:4 END9T ;
 femti:5 END9T ;
 seksti:6 END9T ;
 sytti:7 END9T ;
-søtti:7 END9T ;
-åtti:8 END9T ;
+sÃ¸tti:7 END9T ;
+Ã¥tti:8 END9T ;
 nitti:9  END9T ;
 
 LEXICON END1T
@@ -216,7 +216,7 @@ fire:4 HUNDREDT ;
 fem:5 HUNDREDT ;
 seks:6 HUNDREDT ;
 sju:7 HUNDREDT ;
-åtte:8 HUNDRED;
+Ã¥tte:8 HUNDRED;
 ni:9 HUNDREDT ;
 
 LEXICON HUNDREDT
@@ -239,7 +239,7 @@ fire:4 HUNDRED ;
 fem:5 HUNDRED ;
 seks:6 HUNDRED ;
 sju:7 HUNDRED ;
-åtte:8 HUNDRED;
+Ã¥tte:8 HUNDRED;
 ni:9 HUNDRED ;
 
 LEXICON HUNDRED
@@ -259,7 +259,7 @@ fire:4 # ;
 fem:5 # ;
 seks:6 # ;
 sju:7 # ;
-åtte:8 #;
+Ã¥tte:8 #;
 ni:9 # ;
 
 LEXICON 10to99
@@ -275,7 +275,7 @@ tretten:3 # ;
 fjorten:4 # ;
 femten:5 # ;
 seksten:6 # ;
-søtten:7 # ;
+sÃ¸tten:7 # ;
 atten:8 # ;
 nitten:9 # ;
 
@@ -284,12 +284,12 @@ LEXICON TENS
 tjue:2 TENCOUNT ;
 tretti:3 TENCOUNT ;
 tredve:3%0 # ;
-førti:4 TENCOUNT ;
+fÃ¸rti:4 TENCOUNT ;
 femti:5 TENCOUNT ;
 seksti:6 TENCOUNT ;
 sytti:7 TENCOUNT ;
-søtti:7 TENCOUNT ;
-åtti:8 TENCOUNT ;
+sÃ¸tti:7 TENCOUNT ;
+Ã¥tti:8 TENCOUNT ;
 nitti:9  TENCOUNT ;
 
 LEXICON TENCOUNT
@@ -304,113 +304,113 @@ fireog: OLDTEN-4 ;
 femog: OLDTEN-5 ;
 seksog: OLDTEN-6 ;
 sjuog: OLDTEN-7 ;
-åtteog: OLDTEN-8 ;
+Ã¥tteog: OLDTEN-8 ;
 niog: OLDTEN-9 ;
 
 LEXICON OLDTEN-1
 tjue:2 END1 ;
 tredve:3 END1 ;
-førti:4 END1 ;
+fÃ¸rti:4 END1 ;
 femti:5 END1 ;
 seksti:6 END1 ;
 sytti:7 END1 ;
-søtti:7 END1 ;
-åtti:8 END1 ;
+sÃ¸tti:7 END1 ;
+Ã¥tti:8 END1 ;
 nitti:9  END1 ;
 
 
 LEXICON OLDTEN-2
 tjue:2 END2 ;
 tredve:3 END2 ;
-førti:4 END2 ;
+fÃ¸rti:4 END2 ;
 femti:5 END2 ;
 seksti:6 END2 ;
 sytti:7 END2 ;
-søtti:7 END2 ;
-åtti:8 END2 ;
+sÃ¸tti:7 END2 ;
+Ã¥tti:8 END2 ;
 nitti:9  END2 ;
 
 
 LEXICON OLDTEN-3
 tjue:2 END3 ;
 tredve:3 END3 ;
-førti:4 END3 ;
+fÃ¸rti:4 END3 ;
 femti:5 END3 ;
 seksti:6 END3 ;
 sytti:7 END3 ;
-søtti:7 END3 ;
-åtti:8 END3 ;
+sÃ¸tti:7 END3 ;
+Ã¥tti:8 END3 ;
 nitti:9  END3 ;
 
 
 LEXICON OLDTEN-4
 tjue:2 END4 ;
 tredve:3 END4 ;
-førti:4 END4 ;
+fÃ¸rti:4 END4 ;
 femti:5 END4 ;
 seksti:6 END4 ;
 sytti:7 END4 ;
-søtti:7 END4 ;
-åtti:8 END4 ;
+sÃ¸tti:7 END4 ;
+Ã¥tti:8 END4 ;
 nitti:9  END4 ;
 
 
 LEXICON OLDTEN-5
 tjue:2 END5 ;
 tredve:3 END5 ;
-førti:4 END5 ;
+fÃ¸rti:4 END5 ;
 femti:5 END5 ;
 seksti:6 END5 ;
 sytti:7 END5 ;
-søtti:7 END5 ;
-åtti:8 END5 ;
+sÃ¸tti:7 END5 ;
+Ã¥tti:8 END5 ;
 nitti:9  END5 ;
 
 
 LEXICON OLDTEN-6
 tjue:2 END6 ;
 tredve:3 END6 ;
-førti:4 END6 ;
+fÃ¸rti:4 END6 ;
 femti:5 END6 ;
 seksti:6 END6 ;
 sytti:7 END6 ;
-søtti:7 END6 ;
-åtti:8 END6 ;
+sÃ¸tti:7 END6 ;
+Ã¥tti:8 END6 ;
 nitti:9  END6 ;
 
 LEXICON OLDTEN-7
 tjue:2 END7 ;
 tredve:3 END7 ;
-førti:4 END7 ;
+fÃ¸rti:4 END7 ;
 femti:5 END7 ;
 seksti:6 END7 ;
 sytti:7 END7 ;
-søtti:7 END7 ;
-åtti:8 END7 ;
+sÃ¸tti:7 END7 ;
+Ã¥tti:8 END7 ;
 nitti:9  END7 ;
 
 
 LEXICON OLDTEN-8
 tjue:2 END8 ;
 tredve:3 END8 ;
-førti:4 END8 ;
+fÃ¸rti:4 END8 ;
 femti:5 END8 ;
 seksti:6 END8 ;
 sytti:7 END8 ;
-søtti:7 END8 ;
-åtti:8 END8 ;
+sÃ¸tti:7 END8 ;
+Ã¥tti:8 END8 ;
 nitti:9  END8 ;
 
 
 LEXICON OLDTEN-9
 tjue:2 END9 ;
 tredve:3 END9 ;
-førti:4 END9 ;
+fÃ¸rti:4 END9 ;
 femti:5 END9 ;
 seksti:6 END9 ;
 sytti:7 END9 ;
-søtti:7 END9 ;
-åtti:8 END9 ;
+sÃ¸tti:7 END9 ;
+Ã¥tti:8 END9 ;
 nitti:9  END9 ;
 
 LEXICON END1

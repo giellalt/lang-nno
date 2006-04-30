@@ -3,6 +3,13 @@ kanskje adv ;
 ut adv ;
 inn adv ;
 ofte  adv ;
+ikkje adv ;
+også adv ;
+òg adv ;
+der  adv ;
+her  adv ;
+hit  adv ;
+dit  adv ;
 
 LEXICON adv
  +Adv: # ;

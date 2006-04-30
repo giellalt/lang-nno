@@ -66,8 +66,7 @@ LEXICON MANN
  +N+Masc+Sg: 0-en ;
  +N+Masc+Pl:Z1 0-a ;
  
-LEXICON M0M1
- M1 ;
+
 
 LEXICON M0N0
  M1 ;
@@ -92,8 +91,7 @@ LEXICON M1M1m
  +N+Masc+Pl:mX4 ar-ane ;
  +N+Masc+Pl:m ar-ane ;
  K ;
-LEXICON M1M1t
- K ;
+
 LEXICON M1M1tN1N1s
  K ;
 LEXICON M1M3o
@@ -150,8 +148,7 @@ LEXICON M1m
 
 LEXICON M1me
  K ;
-LEXICON M1t
- K ;
+
 LEXICON M1tN1
  M1t ; 
  N1 ;
@@ -219,15 +216,11 @@ LEXICON M3N1
 
 LEXICON M3e
  K ;
-LEXICON M3o
- K ;
+
 LEXICON M3oN1
  M3o ;
  N1 ;
 
-LEXICON M4
- M1 ;
- +N+Masc+Pl: er-ene ;
 
 LEXICON M4M4m
  K ;
@@ -325,8 +318,7 @@ LEXICON F1m
  K ;
 LEXICON F1mF1mo
  K ;
-LEXICON F1o
- K ;
+
 LEXICON F1s
  K ;
 LEXICON F1sM1t
@@ -399,8 +391,6 @@ LEXICON N1
  +N+Neu+Sg: 0-et ;
  +N+Neu+Pl: 0-a ;
 
-LEXICON N2
- N1 ;
 
 LEXICON N0
  +N+Neu+Sg: 0-et ;
@@ -513,6 +503,52 @@ LEXICON r-rne
 LEXICON K
  # ;
  +Clt:%>#s # ;
+
+
+! ==========================
+! LEXICA FOR ADJECTIVE ROOTS
+! ==========================
+
+! Basic paradigms
+! ===============
+
+LEXICON a1 ! 
+ +A: positive ;
+ +A: a-neuter ;
+ +A: a-grade ;
+
+LEXICON a2 ! 
+ +A: positive ;
+ +A: a-no-neuter ;
+ +A: a-grade ;
+
+LEXICON a3 ! 
+ +A: positive ;
+ +A: a-no-neuter ;
+
+! Sublexica
+! =========
+
+LEXICON positive
+ +Pos+Msc+Sg+Indef: # ;
+ +Pos+Fem+Sg+Indef: # ;
+ +Pos+Sg+Def:%>e # ;
+ +Pos+Sg+Def:%>e # ;
+ +Pos+Sg+Def:%>e # ;
+ +Pos+Pl+Def:%>e # ;
+
+LEXICON a-neuter ! fint
+ +Pos+Neu+Sg+Indef:%>Q3t # ;
+ 
+LEXICON a-no-neuter ! vennlig
+ +Pos+Neu+Sg+Indef: # ;
+
+LEXICON a-grade
+ +Comp:%>are # ;
+ +Superl+Indef:%>ast # ;
+ +Superl+Def:%>aste # ;
+
+
 
 
 ! =====================

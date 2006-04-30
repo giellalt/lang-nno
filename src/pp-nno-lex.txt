@@ -1,13 +1,13 @@
 LEXICON Preposition
 etter p ;
-på p ;
+pÃ¥ p ;
 i p ;
 med p ;
 for p ;
 bak p ;
 av p ;
 til p ;
-frå p ;
+frÃ¥ p ;
 utan p ;
 over p ;
 under p ;
@@ -16,6 +16,8 @@ framfor p ;
 attom p ;
 ved p ;
 or p ;
+fram p ;
+mellom p ;
  
 LEXICON p
  +Pr: # ;

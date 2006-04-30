@@ -12,8 +12,8 @@ LEXICON Punctuation
 
 ! Single punctuation marks
 
-%§+PUNCT:%§ # ;
-%%§+PUNCT:%§%§ # ;
+%Â§+PUNCT:%Â§ # ;
+%%Â§+PUNCT:%Â§%Â§ # ;
 %-+PUNCT:%-  # ;
 %-%-+PUNCT:%-%-  # ;
 %=+PUNCT:%=  # ;
@@ -28,8 +28,8 @@ LEXICON Punctuation
 
 ! Paired punctuation marks
 
-%«+PUNCT+LEFT:%«  # ;
-%»+PUNCT+RIGHT:%»  # ;
+%Â«+PUNCT+LEFT:%Â«  # ;
+%Â»+PUNCT+RIGHT:%Â»  # ;
 %(+PUNCT+LEFT:%(  # ;
 %)+PUNCT+RIGHT:%)  # ;
 %[+PUNCT+LEFT:%[  # ;

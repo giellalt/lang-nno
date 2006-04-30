@@ -14,7 +14,7 @@ inno.fst: ../bin/inno.fst
 	invert net \n\
 	save stack ../bin/inno.fst \n\
 	quit \n" > /tmp/inno-fst-script
-	@xfst < /tmp/inno-fst-script
+	@xfst -utf8 < /tmp/inno-fst-script
 	@rm -f /tmp/inno-fst-script
 
  
@@ -31,7 +31,7 @@ nno.fst: ../bin/nno.fst
 	@\"../bin/caseconv.fst\" ; \n\
 	save stack ../bin/nno.fst \n\
 	quit \n" > /tmp/nno-fst-script
-	@xfst < /tmp/nno-fst-script
+	@xfst -utf8 < /tmp/nno-fst-script
 	@rm -f /tmp/nno-fst-script
 
 # The second goal is to build the caseconv.fst file
@@ -45,7 +45,7 @@ caseconv.fst: ../bin/caseconv.fst
 	@printf "read regex < case.regex \n\
 	save stack ../bin/caseconv.fst \n\
 	quit \n" > /tmp/caseconv-script
-	@xfst < /tmp/caseconv-script
+	@xfst -utf8 < /tmp/caseconv-script
 	@rm -f /tmp/caseconv-script
 
 
@@ -59,7 +59,7 @@ allcaps.fst: ../bin/allcaps.fst
 	@printf "source allcaps.regex \n\
 	save stack ../bin/allcaps.fst \n\
 	quit \n" > /tmp/tok-script
-	@xfst < /tmp/tok-script
+	@xfst -utf8 < /tmp/tok-script
 	@rm -f /tmp/tok-script
 
 
@@ -81,7 +81,7 @@ nno.save: ../bin/nno.save
 	compose-result \n\
 	save-result ../bin/nno.save \n\
 	quit \n" > /tmp/nno-save-script
-	@lexc < /tmp/nno-save-script
+	@lexc -utf8 < /tmp/nno-save-script
 	rm -f /tmp/nno-save-script
 
 
@@ -97,7 +97,7 @@ twol-nno.bin: ../bin/twol.nno.bin
 	compile \n\
 	save-binary ../bin/twol-nno.bin \n\
 	quit \n" > /tmp/twol-nno-script
-	@twolc < /tmp/twol-nno-script
+	@twolc -utf8 < /tmp/twol-nno-script
 	@rm -f /tmp/twol-nno-script
 
 # Here we include a preprocessor.
@@ -111,7 +111,7 @@ tok.fst: ../bin/tok.fst
 	@printf "source tok.txt \n\
 	save stack ../bin/tok.fst \n\
 	quit \n" > /tmp/tok-script
-	@xfst < /tmp/tok-script
+	@xfst -utf8 < /tmp/tok-script
 	@rm -f /tmp/tok-script
 
 

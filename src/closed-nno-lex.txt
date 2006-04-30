@@ -6,6 +6,9 @@ fordi subj ;
 som subj ;
 at subj ;
 om subj ;
+dersom subj ;
+enn subj ;
+
  
 LEXICON subj
  +CS: # ;
@@ -69,34 +72,71 @@ LEXICON Indefinite
 
 
 LEXICON Determiner
-min+Det+Poss:mi det-decl ;
-din+Det+Poss:di det-decl ;
-sin+Det+Poss:si det-decl ;
-ein+Det:ei	ein-decl ;
+Demonstrative ;
+Possessive ;
 
-LEXICON det-decl
-det-decl-mf ;
-det-decl-neu ;
-det-decl-dpl ;
+LEXICON Demonstrative 
+det+Det+Dem+Sg+Neu:det # ;
+den+Det+Dem+Sg+Msc:den # ;
+den+Det+Dem+Sg+Fem:den # ;
+eit+Det+Dem+Sg+Neu:eit # ;
+eitt+Det+Dem+Sg+Neu:eitt # ;
+ein+Det+Dem+Sg+Msc:ein # ;
+ei+Det+Dem+Sg+Fem:ei # ;
+kvar+Det+Dem+Sg+Msc:kvar # ;
+kvar+Det+Dem+Sg+Fem:kvar # ;
+kvar+Det+Dem+Sg+Neu:kvart # ;
+denne+Det+Dem+Sg+Msc:denne K ;
+denne+Det+Dem+Sg+Fem:denne K ;
+dette+Det+Dem+Sg+Neu:dette K ;
+desse+Det+Dem+Pl:desse K ;
+all+Det+Dem+Sg+Msc:all # ;
+all+Det+Dem+Sg+Fem:all # ;
+all+Det+Dem+Sg+Neu:alt # ;
+all+Det+Dem+Pl:alle K ;
+slik+Det+Dem+Sg+Msc:slik # ;
+slik+Det+Dem+Sg+Fem:slik # ;
+slik+Det+Dem+Sg+Neu:slikt # ;
+slik+Det+Dem+Pl:slike # ;
 
-LEXICON ein-decl
-det-decl-mf ;
-det-decl-ein-neu ;
+LEXICON Possessive 
+di+Det+Poss+Sg+Fem:di # ;
+din+Det+Poss+Sg+Msc:din # ;
+dine+Det+Poss+Pl:dine # ;
+ditt+Det+Poss+Sg+Neu:ditt # ;
+mi+Det+Poss+Sg+Fem:mi # ;
+min+Det+Poss+Sg+Msc:min # ;
+mine+Det+Poss+Pl:mine # ;
+mitt+Det+Poss+Sg+Neu:mitt # ;
+si+Det+Poss+Sg+Fem:si # ;
+sin+Det+Poss+Sg+Msc:sin # ;
+sine+Det+Poss+Pl:sine # ;
+sitt+Det+Poss+Sg+Neu:sitt # ;
+vår+Det+Poss+Sg+Fem:vår # ;
+vår+Det+Poss+Sg+Msc:vår # ;
+våre+Det+Poss+Pl:våre # ;
+vårt+Det+Poss+Sg+Neu:vårt # ;
 
-LEXICON det-decl-mf
-+Indef+Masc:n K ;
-+Indef+Fem:   K ;
+hans+Det+Poss+Msc:hans # ;
+hennar+Det+Poss+Fem:hennar # ;
+deira+Det+Poss+Pl:deira # ;
 
-LEXICON det-decl-dpl
-+Def:e	      K ;
-+Pl:e	      K ;
 
-LEXICON det-decl-neu
-+Indef+Neu:tt K ;
 
-LEXICON det-decl-ein-neu
-+Indef+Neu:t K ;
 
 LEXICON Numeral 
- # ;
+éin numtag ;
+!en numtag ; ! Dem.
+to numtag ;
+tre numtag ;
+fire numtag ;
+fem numtag ;
+seks numtag ;
+sju numtag ;
+åtte numtag ;
+ni numtag ;
+
+LEXICON numtag
++Num: # ;
+
 

@@ -1,11 +1,11 @@
 Alphabet
  a b c d e f g h i j k l m n o p q   ! small
- r s t u v w x y z å ä ö ø æ %-
- á é ó ú í à è ò ù ì ë ü ï â ê ô û î ã ı ş ñ ğ ß ª ß ç
+ r s t u v w x y z ÂÃ¥ ÂÃ¤ ÂÃ¶ ÂÃ¸ ÂÃ¦ %-
+ ÂÃ¡ ÂÃ© ÂÃ³ ÂÃº ÂÃ­ ÂÃ  ÂÃ¨ ÂÃ² ÂÃ¹ ÂÃ¬ ÂÃ« ÂÃ¼ ÂÃ¯ ÂÃ¢ ÂÃª ÂÃ´ ÂÃ» ÂÃ® ÂÃ£ ÂÃ½ ÂÃ¾ ÂÃ± ÂÃ° ÂÃŸ ÂÂª ÂÃŸ ÂÃ§
 
  A B C D E F G H I J K L M N O P Q   ! capital
- R S T U V W X Y Z Å Ä Ö Ø Æ
- Á É Ó Ú Í À È Ò Ù Ì Ë Ü Ï Â Ê Ô Û Î Ã İ ş Ñ Ğ
+ R S T U V W X Y Z ÂÃ… ÂÃ„ ÂÃ– ÂÃ˜ ÂÃ†
+ ÂÃ ÂÃ‰ ÂÃ“ ÂÃš ÂÃ ÂÃ€ ÂÃˆ ÂÃ’ ÂÃ™ ÂÃŒ ÂÃ‹ ÂÃœ ÂÃ ÂÃ‚ ÂÃŠ ÂÃ” ÂÃ› ÂÃ ÂÃƒ ÂÃ ÂÃ¾ ÂÃ‘ ÂÃ
 
   %#:0 %>:0 %+:0 
 
@@ -17,7 +17,7 @@ Alphabet
  W1:0 W2:0 ;
 
 Sets
- Vow = a e i o u y æ ø å ;
+ Vow = a e i o u y ÂÃ¦ ÂÃ¸ ÂÃ¥ ;
  Cns = b c d f g h j k l m n p q r s t v w x z ;
  LNR = l n r ;
  Dummy = %+ X1 X2 X3 X4 X5 X6 X7 X8 X9
@@ -48,9 +48,9 @@ Rules
 "Umlaut"
  Vx:Vy <=> _ Cns:* Z1: ;
  where Vx in ( u o a )
-       Vy in ( y ø æ )
+       Vy in ( y ÂÃ¸ ÂÃ¦ )
        matched ;
-! bok : bøker
+! bok : bÂÃ¸ker
 
 !"m deletion"
 ! m:0 <=> Vow: _ m #: ;
@@ -61,3 +61,4 @@ Rules
 
 "um Deletion 2"
  m:0 <=> u: _ X5: %>: ;
+
