@@ -5,7 +5,7 @@ Multichar_Symbols
  +Sg +Pl +Nom +Acc +Masc +Fem +Neu +Def +Indef
  +Comp +Superl +Clt
  +Pass +Ind +Prs +Prt +Imp
- +Inf  +PrsPrc +PrfPrc
+ +Inf  +PrsPrc +PrfPrc +IM
  +Interj 
  +Clt
  +CLB +PUNCT +HYPH +PAR +LEFT +RIGHT
@@ -665,7 +665,11 @@ LEXICON V01V09
 LEXICON V01xV09k
  # ;
 
-LEXICON V02
+LEXICON V02 ! skilje
+ +V: INF-PRS-PTC ;
+ +V: a-PRES ;
+ +V: de-PRET-PTC ;
+
  # ;
 
 LEXICON V02o
@@ -777,18 +781,14 @@ LEXICON V08k
  r-PRES ;
  dd-PRET-PTC ;
  
-LEXICON r-PRES
- +Ind+Prs:%>r # ;
-
-LEXICON dd-PRET-PTC
- +Ind+Prt:%>dde # ;
- +PrfPtc:%>dd # ;
-
 LEXICON V09
  # ;
 
 LEXICON V09k
- # ;
+ INF-PRS-PTC ;
+ r-PRES ;
+ dd-PRET-PTC ;
+
 
 
 ! ------------------------
@@ -814,4 +814,15 @@ LEXICON e-PRES
 LEXICON t-PRET-PTC
  +Ind+Prt:%>t # ;
  +PrfPtc:%>te # ;
+
+LEXICON r-PRES
+ +Ind+Prs:%>r # ;
+
+LEXICON dd-PRET-PTC
+ +Ind+Prt:%>dde # ;
+ +PrfPtc:%>dd # ;
+
+LEXICON de-PRET-PTC
+ +Ind+Prt:%>de # ;
+ +PrfPtc:%>d # ;
 

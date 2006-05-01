@@ -8,10 +8,13 @@ at subj ;
 om subj ;
 dersom subj ;
 enn subj ;
-
+å IM ;
  
 LEXICON subj
  +CS: # ;
+
+LEXICON IM
+ +IM: # ;
 
 LEXICON Conjunction
 og conj ;

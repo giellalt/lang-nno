@@ -1,6 +1,6 @@
 # =================================================================== #
 # =================================================================== #
-#    N O R W E G I A N   B O K M Å L   D I S A M B I G U A T O R      #
+#    N R W E G I A N   B O K M Å L   D I S A M B I G U A T O R      #
 # =================================================================== #
 # =================================================================== #
 
@@ -78,6 +78,9 @@ LIST PAR = PAR ;
 LIST WORD = N A Adv V CS CC Interj Pcle Pr IM Pron ;
 
 SET NON-ADJ = WORD - A ;
+SET NON-FEM-ADJ = WORD - (A Fem) ;
+SET NON-MSC-ADJ = WORD - (A MSc) ;
+
 SET NON-ADV = WORD - Adv ;
 SET NON-V   = WORD - V ;
 SET PNH     = A | Det ;    # pre-NP-head
@@ -104,6 +107,12 @@ REMOVE Fem IF (0 Prop);
 REMOVE Neu IF (0 Prop);
 	## 
 
+
+# Cycle 1
+
+SELECT Prop IF (NOT -1 BOS OR ("<:>" CLB));
+	## Ingrid: Forfattarar!
+
 # for rules
 SELECT Pr IF (0 ("for"))(1 ("at") OR ("å")) ;
 	## Jeg er redd for å gå.
@@ -112,6 +121,9 @@ SELECT Pr IF (-1 N)(0 ("for"))(*1 N OR Pron BARRIER NPNH);
 	## Gud kalte det faste land for jord.
 
 REMOVE N IF (-1 V OR A)(0 ("for"))(1 ("at") OR ("å")) ;
+
+SELECT IM IF (1 Inf);
+	## å gå.
 
 
 
@@ -147,6 +159,10 @@ SELECT Msc IF (*-1 COP BARRIER NON-ADV LINK -1 EGUDVIDE);
 # ===== #
 # Verbs #
 # ===== #
+
+# Present or imperative
+
+REMOVE Imp IF (-1 N OR Pron)(0 Prs);
 
 # Past or participle #
 
@@ -195,6 +211,10 @@ SELECT Prt IF (-1 ("det"))(0 ("være" Prt));
 # Nouns #
 # ===== #
 
+# Noun or Imp
+
+REMOVE Imp IF (*-1 Pr BARRIER NPNH)(0 N);
+
 # Noun or PrfPtc
 
 REMOVE PrfPtc IF (*-1 (Det Dem Sg Neu) BARRIER NON-ADJ);
@@ -224,6 +244,25 @@ SELECT Pron IF (0 ("det"))(1 V);
 
 SELECT Det IF (0 ("dette"))(1 Ind OR A);
 	## Dette går bra.
+
+# ========== #
+# Adjectives #
+# ========== #
+
+# NP-internal concord
+
+SELECT Msc IF (0 A)(1 (N Msc));
+SELECT Fem IF (0 A)(1 (N Fem));
+SELECT Neu IF (0 A)(1 (N Neu));
+
+# Determiners
+
+SELECT Fem IF (0 (Dem))(1 (N Fem) BARRIER NON-FEM-ADJ);
+	## Den gode boka.
+
+SELECT Msc IF (0 (Dem))(1 (N Msc) BARRIER NON-MSC-ADJ);
+	## Den fine sykkelen.
+
 
 # Pronouns
 
@@ -256,6 +295,10 @@ REMOVE N IF (0 ("om"))(*1 N BARRIER NPNH);
 	## Om torsk.
 
 
+#  Verbs
+
+SELECT Inf IF (-1 IM);
+	## å gå .
 
 #=====#
   END #

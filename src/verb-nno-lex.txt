@@ -5,6 +5,7 @@ regular-verb ;
 
 LEXICON irregular-verb
 vere+V+Inf:vere # ;
+vere+V+Inf:vera # ;
 vere+V+Ind+Prs:er # ;
 vere+V+Ind+Prt:var # ;
 vere+V+PrfPtc:vore # ;
@@ -35,21 +36,25 @@ la+V+PrfPtc:lete # ;
 la+V+PrfPtc:leti # ;
 
 måtte+V+Inf:måtte # ;
+måtte+V+Inf:måtta # ;
 måtte+V+Ind+Prs:må # ;
 måtte+V+Ind+Prt:måtte # ;
 måtte+V+PrfPtc:mått # ;
 
 skulle+V+Inf:skulle # ;
+skulle+V+Inf:skulla # ;
 skulle+V+Ind+Prs:skal # ;
 skulle+V+Ind+Prt:skulle # ;
 skulle+V+PrfPtc:skulla # ;
 
 ville+V+Inf:ville # ;
+ville+V+Inf:villa # ;
 ville+V+Ind+Prs:vil # ;
 ville+V+Ind+Prt:ville # ;
 ville+V+PrfPtc:villa # ;
 
 kunne+V+Inf:kunne # ;
+kunne+V+Inf:kunna # ;
 kunne+V+Ind+Prs:kan # ;
 kunne+V+Ind+Prt:kunne # ;
 kunne+V+PrfPtc:kunna # ;
@@ -1692,7 +1697,7 @@ hardne	V01 ;
 hardsalte	V01 ;
 hardstappe	V01 ;
 hardtrampe	V01 ;
-hare	V01 ;
+!hare	V01 ;
 harke	V01 ;
 harke	V01 ;
 harkle	V01 ;
@@ -8757,7 +8762,7 @@ frøye	V09  ;
 fråtre	V09k  ;
 førebu	V09k  ;
 føye	V09  ;
-få	V09k  ;
+!få	V09k  ;
 glo	V09k  ;
 glå	V09k  ;
 gnu	V09k  ;
