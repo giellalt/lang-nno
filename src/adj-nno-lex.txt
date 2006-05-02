@@ -12,9 +12,9 @@ jevn GOD ;
 
 
 LEXICON GOD
-god+A+Sg+Indef+Masc:god # ;
-god+A+Sg+Indef+Fem:god # ;
-god+A+Sg+Indef+Neu:godt # ;
+god+A+Msc+Sg+Indef:god # ;
+god+A+Fem+Sg+Indef:god # ;
+god+A+Neu+Sg+Indef:godt # ;
 god+A+Sg+Def:gode # ;
 god+A+Pl+Indef:gode # ;
 god+A+Pl+Def:gode # ;
@@ -22,9 +22,9 @@ god+A+Comp:betre # ;
 god+A+Superl:best # ;
 
 LEXICON STOR
-stor+A+Sg+Msc+Indef:stor # ;
-stor+A+Sg+Fem+Indef:stor # ;
-stor+A+Sg+Neu+Indef:stort # ;
+stor+A+Msc+Sg+Indef:stor # ;
+stor+A+Fem+Sg+Indef:stor # ;
+stor+A+Neu+Sg+Indef:stort # ;
 stor+A+Sg+Def:store # ;
 stor+A+Pl+Indef:store # ;
 stor+A+Pl+Def:store # ;

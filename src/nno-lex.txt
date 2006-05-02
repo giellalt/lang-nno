@@ -2,7 +2,7 @@ Multichar_Symbols
  +N +A +Adv +V
  +Pron +CS +CC +Interj +Pcle
  +Pers +Dem +Interr +Refl +Recipr +Rel +Indef
- +Sg +Pl +Nom +Acc +Masc +Fem +Neu +Def +Indef
+ +Sg +Pl +Nom +Acc +Msc +Fem +Neu +Def +Indef
  +Comp +Superl +Clt
  +Pass +Ind +Prs +Prt +Imp
  +Inf  +PrsPrc +PrfPrc +IM
@@ -46,25 +46,25 @@ LEXICON Root
 ! Basic paradigms
 ! ===============
 
-! Masculines
+! Msculines
 ! ----------
 
 LEXICON M0
- +N+Masc+Sg: 0-en ;
- +N+Masc+Pl: ar-ane ;
+ +N+Msc+Sg: 0-en ;
+ +N+Msc+Pl: ar-ane ;
 
 LEXICON M0-us ! RADIUS
- +N+Masc+Sg:%>us 0-en ;
- +N+Masc+Sg+Def:%>en K ; ! short def
- +N+Masc+Pl: er-ene ; ! Regular pl
+ +N+Msc+Sg:%>us 0-en ;
+ +N+Msc+Sg+Def:%>en K ; ! short def
+ +N+Msc+Pl: er-ene ; ! Regular pl
 
 LEXICON TING
- +N+Masc+Sg: 0-en ;
- +N+Masc+Pl: 0-a ;
+ +N+Msc+Sg: 0-en ;
+ +N+Msc+Pl: 0-a ;
 
 LEXICON MANN
- +N+Masc+Sg: 0-en ;
- +N+Masc+Pl:Z1 0-a ;
+ +N+Msc+Sg: 0-en ;
+ +N+Msc+Pl:Z1 0-a ;
  
 
 
@@ -77,19 +77,19 @@ LEXICON M0N1
  N1 ;
 
 LEXICON M0f
- +M+Masc+Pl: 0-a ;
+ +M+Msc+Pl: 0-a ;
 
 LEXICON M1
- +N+Masc+Sg: 0-en ;
- +N+Masc+Pl: ar-ane ;
+ +N+Msc+Sg: 0-en ;
+ +N+Msc+Pl: ar-ane ;
 
 
 LEXICON M1M1dt
  K ;
 LEXICON M1M1m
- +N+Masc+Sg:mX4 0-en ;
- +N+Masc+Pl:mX4 ar-ane ;
- +N+Masc+Pl:m ar-ane ;
+ +N+Msc+Sg:mX4 0-en ;
+ +N+Msc+Pl:mX4 ar-ane ;
+ +N+Msc+Pl:m ar-ane ;
  K ;
 
 LEXICON M1M1tN1N1s
@@ -139,12 +139,12 @@ LEXICON M1emN1em
  N1em ;
 
 LEXICON M1f
- +N+Masc+Pl+Indef: K ;
- +N+Masc+Pl+Def:%>X3ne K ;
+ +N+Msc+Pl+Indef: K ;
+ +N+Msc+Pl+Def:%>X3ne K ;
 
 LEXICON M1m
- +N+Masc+Sg:mX4 0-en ;
- +N+Masc+Pl: ar-ane ;
+ +N+Msc+Sg:mX4 0-en ;
+ +N+Msc+Pl: ar-ane ;
 
 LEXICON M1me
  K ;
@@ -171,36 +171,36 @@ LEXICON M2e
  K ;
 
 LEXICON M3 ! KOLLEGA
- +N+Masc+Sg: 0-en ;
- +N+Masc+Pl: ar-ane ;
-! +N+Masc+Pl: er-ene ;
- +N+Masc+Pl:X2 er-ene ; ! delete a
+ +N+Msc+Sg: 0-en ;
+ +N+Msc+Pl: ar-ane ;
+! +N+Msc+Pl: er-ene ;
+ +N+Msc+Pl:X2 er-ene ; ! delete a
 
 LEXICON M1t ! FINGER
- +N+Masc+Sg: 0-en ;
- +N+Masc+Pl:X1 ar-ane ; ! X1 deletes the vowel -e-
+ +N+Msc+Sg: 0-en ;
+ +N+Msc+Pl:X1 ar-ane ; ! X1 deletes the vowel -e-
 
 !LEXICON BAKER
-! +N+Masc+Sg: 0-en ;
-! +N+Masc+Pl: e-ne ;
+! +N+Msc+Sg: 0-en ;
+! +N+Msc+Pl: e-ne ;
 
 LEXICON M1M1t ! METER
- +N+Masc+Sg: 0-en ;
- +N+Masc+Pl:X1 0-ane ;
+ +N+Msc+Sg: 0-en ;
+ +N+Msc+Pl:X1 0-ane ;
 
 LEXICON M3o ! BONDE
- +N+Masc+Sg: 0-en ;
- +N+Masc+Pl:Z1 er-ene ; ! Umlaut
+ +N+Msc+Sg: 0-en ;
+ +N+Msc+Pl:Z1 er-ene ; ! Umlaut
 
 LEXICON M4 ! FORSTAD
- +N+Masc+Sg: 0-en ;
- +N+Masc+Sg:Z1 er-ene ; ! Umlaut
+ +N+Msc+Sg: 0-en ;
+ +N+Msc+Sg:Z1 er-ene ; ! Umlaut
 
 
 LEXICON M0M1 ! KONTO
- +N+Masc+Sg: 0-en K ;
- +N+Masc+Pl:X2i 0-ene ; ! delete o
- +N+Masc+Pl: er-ene ; ! Regular pl
+ +N+Msc+Sg: 0-en K ;
+ +N+Msc+Pl:X2i 0-ene ; ! delete o
+ +N+Msc+Pl: er-ene ; ! Regular pl
 
  
 
@@ -530,18 +530,17 @@ LEXICON a3 !
 ! =========
 
 LEXICON positive
- +Pos+Msc+Sg+Indef: # ;
- +Pos+Fem+Sg+Indef: # ;
- +Pos+Sg+Def:%>e # ;
- +Pos+Sg+Def:%>e # ;
- +Pos+Sg+Def:%>e # ;
- +Pos+Pl+Def:%>e # ;
+ +Msc+Sg+Indef: # ;
+ +Fem+Sg+Indef: # ;
+ +Sg+Def:%>e # ;
+ +Pl+Indef:%>e # ;
+ +Pl+Def:%>e # ;
 
 LEXICON a-neuter ! fint
- +Pos+Neu+Sg+Indef:%>Q3t # ;
+ +Neu+Sg+Indef:%>Q3t # ;
  
 LEXICON a-no-neuter ! vennlig
- +Pos+Neu+Sg+Indef: # ;
+ +Neu+Sg+Indef: # ;
 
 LEXICON a-grade
  +Comp:%>are # ;
