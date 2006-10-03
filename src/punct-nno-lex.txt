@@ -16,6 +16,8 @@ LEXICON Punctuation
 %%§+PUNCT:%§%§ # ;
 %-+PUNCT:%-  # ;
 %-%-+PUNCT:%-%-  # ;
+–+PUNCT:– # ; !endash
+—+PUNCT:— # ; !emdash
 %=+PUNCT:%=  # ;
 %%+PUNCT:%%  # ;
 %&+PUNCT:%& # ;
