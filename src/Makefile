@@ -1,6 +1,13 @@
 # This is a makefile that builds the Northern Sami morphological parser
 # *****************************************************************
 
+LEX=nno-lex.txt adj-nno-lex.txt \
+    adv-nno-lex.txt noun-nno-lex.txt verb-nno-lex.txt \
+    closed-nno-lex.txt pp-nno-lex.txt propernoun-nno-lex.txt \
+    punct-nno-lex.txt \
+	abbr-nno-lex.txt
+
+
 # The ultimate goal is to build inno.fst, the generator
 # This goal depends on nno.save being up to date.
 
@@ -33,6 +40,7 @@ nno.fst: ../bin/nno.fst
 	quit \n" > /tmp/nno-fst-script
 	@xfst -utf8 < /tmp/nno-fst-script
 	@rm -f /tmp/nno-fst-script
+
 
 # The second goal is to build the caseconv.fst file
 # This goal depends on case.regex
@@ -99,6 +107,29 @@ twol-nno.bin: ../bin/twol.nno.bin
 	quit \n" > /tmp/twol-nno-script
 	@twolc -utf8 < /tmp/twol-nno-script
 	@rm -f /tmp/twol-nno-script
+
+
+# Here we make the abbrevation file for our current preprocessor, 
+# the perl-based preprocess (located in the script catalogue)
+# This target is not yet in use.
+
+empty:=
+comma:=,
+space:=$(empty) $(empty)
+ABBRSRCS=$(subst $(space),$(comma),$(LEX))
+
+scripts=$(HOME)/gt/script
+
+abbr: ../bin/abbr.txt
+../bin/abbr.txt: $(scripts)/abbr-extract $(scripts)/langTools/Util.pm $(LEX)
+	@echo
+	@echo "*** Extracting abbreviations from abbr-kal-lex.txt to abbr.txt ***" ;
+	@echo
+	@perl -I $(scripts) $(scripts)/abbr-extract \
+		--output=$@ \
+		--abbr_lex=abbr-nno-lex.txt \
+		--lex=$(ABBRSRCS)
+
 
 # Here we include a preprocessor.
 # This goal depends on tok.txt
