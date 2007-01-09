@@ -76,14 +76,14 @@ allcaps.fst: ../bin/allcaps.fst
 
 nno.save: ../bin/nno.save
 ../bin/nno.save: ../bin/twol-nno.bin nno-lex.txt adj-nno-lex.txt \
-	adv-nno-lex.txt noun-nno-lex.txt verb-nno-lex.txt \
+	adv-nno-lex.txt noun-nno-lex.txt verb-nno-lex.txt abbr-nno-lex.txt \
 	closed-nno-lex.txt pp-nno-lex.txt propernoun-nno-lex.txt \
 	punct-nno-lex.txt
 	@echo
 	@echo "*** Building nno.save ***" ;
 	@echo
 	printf "compile-source nno-lex.txt adj-nno-lex.txt adv-nno-lex.txt \
-	noun-nno-lex.txt verb-nno-lex.txt closed-nno-lex.txt \
+	noun-nno-lex.txt verb-nno-lex.txt closed-nno-lex.txt abbr-nno-lex.txt \
 	pp-nno-lex.txt propernoun-nno-lex.txt punct-nno-lex.txt \n\
 	read-rules ../bin/twol-nno.bin \n\
 	compose-result \n\
