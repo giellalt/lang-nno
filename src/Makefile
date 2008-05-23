@@ -8,6 +8,17 @@ LEX=nno-lex.txt adj-nno-lex.txt \
 	abbr-nno-lex.txt
 
 
+XFST = xfst -utf8
+LEXC = lexc -utf8
+TWOLC = twolc -utf8
+
+ifeq (victorio.uit.no, $(shell hostname))
+XFST = /opt/sami/xerox/c-fsm/ix86-linux2.6-gcc3.4/bin/fst -utf8
+LEXC = /opt/sami/xerox/bin/lexc -utf8
+TWOLC = /opt/sami/xerox/bin/twolc -utf8
+endif
+
+
 # The ultimate goal is to build inno.fst, the generator
 # This goal depends on nno.save being up to date.
 
@@ -21,7 +32,7 @@ inno.fst: ../bin/inno.fst
 	invert net \n\
 	save stack ../bin/inno.fst \n\
 	quit \n" > /tmp/inno-fst-script
-	@xfst -utf8 < /tmp/inno-fst-script
+	$(XFST) < /tmp/inno-fst-script
 	@rm -f /tmp/inno-fst-script
 
  
@@ -38,7 +49,7 @@ nno.fst: ../bin/nno.fst
 	@\"../bin/caseconv.fst\" ; \n\
 	save stack ../bin/nno.fst \n\
 	quit \n" > /tmp/nno-fst-script
-	@xfst -utf8 < /tmp/nno-fst-script
+	$(XFST) < /tmp/nno-fst-script
 	@rm -f /tmp/nno-fst-script
 
 
@@ -53,7 +64,7 @@ caseconv.fst: ../bin/caseconv.fst
 	@printf "read regex < case.regex \n\
 	save stack ../bin/caseconv.fst \n\
 	quit \n" > /tmp/caseconv-script
-	@xfst -utf8 < /tmp/caseconv-script
+	$(XFST) < /tmp/caseconv-script
 	@rm -f /tmp/caseconv-script
 
 
@@ -67,7 +78,7 @@ allcaps.fst: ../bin/allcaps.fst
 	@printf "source allcaps.regex \n\
 	save stack ../bin/allcaps.fst \n\
 	quit \n" > /tmp/tok-script
-	@xfst -utf8 < /tmp/tok-script
+	$(XFST) < /tmp/tok-script
 	@rm -f /tmp/tok-script
 
 
@@ -89,7 +100,7 @@ nno.save: ../bin/nno.save
 	compose-result \n\
 	save-result ../bin/nno.save \n\
 	quit \n" > /tmp/nno-save-script
-	@lexc -utf8 < /tmp/nno-save-script
+	$(LEXC) < /tmp/nno-save-script
 	rm -f /tmp/nno-save-script
 
 
@@ -105,7 +116,7 @@ twol-nno.bin: ../bin/twol.nno.bin
 	compile \n\
 	save-binary ../bin/twol-nno.bin \n\
 	quit \n" > /tmp/twol-nno-script
-	@twolc -utf8 < /tmp/twol-nno-script
+	$(TWOLC) < /tmp/twol-nno-script
 	@rm -f /tmp/twol-nno-script
 
 
@@ -142,7 +153,7 @@ tok.fst: ../bin/tok.fst
 	@printf "source tok.txt \n\
 	save stack ../bin/tok.fst \n\
 	quit \n" > /tmp/tok-script
-	@xfst -utf8 < /tmp/tok-script
+	$(XFST) < /tmp/tok-script
 	@rm -f /tmp/tok-script
 
 
