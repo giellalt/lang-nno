@@ -1,16 +1,21 @@
 # This is a makefile that builds the Northern Sami morphological parser
 # *****************************************************************
 
-LEX=nno-lex.txt adj-nno-lex.txt \
-    adv-nno-lex.txt noun-nno-lex.txt verb-nno-lex.txt \
-    closed-nno-lex.txt pp-nno-lex.txt propernoun-nno-lex.txt \
+LEX=nno-lex.txt \
+	adj-nno-lex.txt \
+    adv-nno-lex.txt \
+    noun-nno-lex.txt \
+    verb-nno-lex.txt \
+    closed-nno-lex.txt \
+    pp-nno-lex.txt \
+    propernoun-nno-lex.txt \
     punct-nno-lex.txt \
 	abbr-nno-lex.txt
 
 
-XFST = xfst #-utf8
-LEXC = lexc #-utf8
-TWOLC = twolc #-utf8
+XFST = xfst
+LEXC = lexc
+TWOLC = twolc
 
 ifeq (victorio.uit.no, $(shell hostname))
 XFST = /opt/sami/xerox/c-fsm/ix86-linux2.6-gcc3.4/bin/fst -utf8
@@ -18,13 +23,17 @@ LEXC = /opt/sami/xerox/bin/lexc -utf8
 TWOLC = /opt/sami/xerox/bin/twolc -utf8
 endif
 
+# Directories:
+scripts=$(GTHOME)/gt/script
 
 # The ultimate goal is to build inno.fst, the generator
 # This goal depends on nno.save being up to date.
 
 inno.fst: ../bin/inno.fst
-../bin/inno.fst: ../bin/nno.fst ../bin/nno.save ../bin/tok.fst \
-	../bin/allcaps.fst
+../bin/inno.fst: ../bin/nno.fst \
+				 ../bin/nno.save \
+				 ../bin/tok.fst \
+				 ../bin/allcaps.fst
 	@echo
 	@echo "*** Building the inverse inno.fst ***"
 	@echo
@@ -40,8 +49,10 @@ inno.fst: ../bin/inno.fst
 # This goal depends on nno.save and caseconv.fst being up to date
 
 nno.fst: ../bin/nno.fst
-../bin/nno.fst: ../bin/nno.save ../bin/caseconv.fst ../bin/allcaps.fst \
-	../bin/tok.fst
+../bin/nno.fst: ../bin/nno.save \
+				../bin/caseconv.fst \
+				../bin/allcaps.fst \
+				../bin/tok.fst
 	@echo
 	@echo "*** Building nno.fst ***" ;
 	@echo
@@ -86,16 +97,11 @@ allcaps.fst: ../bin/allcaps.fst
 # This goal depends on twol-nno.bin and a bunch of lexicon files
 
 nno.save: ../bin/nno.save
-../bin/nno.save: ../bin/twol-nno.bin nno-lex.txt adj-nno-lex.txt \
-	adv-nno-lex.txt noun-nno-lex.txt verb-nno-lex.txt abbr-nno-lex.txt \
-	closed-nno-lex.txt pp-nno-lex.txt propernoun-nno-lex.txt \
-	punct-nno-lex.txt
+../bin/nno.save: ../bin/twol-nno.bin $(LEX)
 	@echo
 	@echo "*** Building nno.save ***" ;
 	@echo
-	printf "compile-source nno-lex.txt adj-nno-lex.txt adv-nno-lex.txt \
-	noun-nno-lex.txt verb-nno-lex.txt closed-nno-lex.txt abbr-nno-lex.txt \
-	pp-nno-lex.txt propernoun-nno-lex.txt punct-nno-lex.txt \n\
+	printf "compile-source $(LEX) \n\
 	read-rules ../bin/twol-nno.bin \n\
 	compose-result \n\
 	save-result ../bin/nno.save \n\
@@ -129,12 +135,12 @@ comma:=,
 space:=$(empty) $(empty)
 ABBRSRCS=$(subst $(space),$(comma),$(LEX))
 
-scripts=$(HOME)/gtsvn/gt/script
-
 abbr: ../bin/abbr.txt
-../bin/abbr.txt: $(scripts)/abbr-extract $(scripts)/langTools/Util.pm $(LEX)
+../bin/abbr.txt: $(scripts)/abbr-extract \
+				 $(scripts)/langTools/Util.pm \
+				 $(LEX)
 	@echo
-	@echo "*** Extracting abbreviations from abbr-kal-lex.txt to abbr.txt ***" ;
+	@echo "*** Extracting abbreviations from abbr-nno-lex.txt to abbr.txt ***" ;
 	@echo
 	@perl -I $(scripts) $(scripts)/abbr-extract \
 		--output=$@ \
@@ -161,7 +167,3 @@ tok.fst: ../bin/tok.fst
 
 clean:
 	@rm -f ../bin/*.fst ../bin/*.save ../bin/*.bin
-
-
-
-
