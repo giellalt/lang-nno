@@ -32,9 +32,10 @@ scripts=$(GTHOME)/gt/script
 
 inno.fst: ../bin/inno.fst
 ../bin/inno.fst: ../bin/nno.fst \
-				 ../bin/nno.save \
-				 ../bin/tok.fst \
-				 ../bin/allcaps.fst
+				../bin/nno.save \
+				../bin/tok.fst \
+				../bin/nno-num.fst \
+				../bin/allcaps.fst
 	@echo
 	@echo "*** Building the inverse inno.fst ***"
 	@echo
@@ -162,6 +163,17 @@ tok.fst: ../bin/tok.fst
 	quit \n" > /tmp/tok-script
 	$(XFST) < /tmp/tok-script
 	@rm -f /tmp/tok-script
+
+
+nno-num.fst: ../bin/nno-num.fst
+../bin/nno-num.fst: nno-num.txt
+	@echo
+	@echo "*** Building $(notdir $@) ***" ;
+	@echo
+	$(XFST) -e "read lexc < $< " \
+		-e "save stack   $@ " \
+		-stop
+
 
 
 # "make clean" is there to remove the binary files at will.
