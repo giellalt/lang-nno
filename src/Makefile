@@ -13,15 +13,16 @@ LEX=nno-lex.txt \
 	abbr-nno-lex.txt
 
 
-XFST = xfst
-LEXC = lexc
-TWOLC = twolc
-
 ifeq (victorio.uit.no, $(shell hostname))
 XFST = /opt/sami/xerox/c-fsm/ix86-linux2.6-gcc3.4/bin/fst -utf8
 LEXC = /opt/sami/xerox/bin/lexc -utf8
 TWOLC = /opt/sami/xerox/bin/twolc -utf8
 endif
+
+XFST = xfst
+LEXC = lexc
+TWOLC = twolc
+
 
 # Directories:
 scripts=$(GTHOME)/gt/script
