@@ -1,0 +1,293 @@
+! Divvun & Giellatekno - open source grammars for Norwegian Nynorsk language
+! Copyright © 2015 The University of Tromsø & the Norwegian Sámi Parliament
+! http://giellatekno.uit.no & http://divvun.no
+!
+! This program is free software; you can redistribute and/or modify
+! this file under the terms of the GNU General Public License as published by
+! the Free Software Foundation, either version 3 of the License, or
+! (at your option) any later version. The GNU General Public License
+! is found at http://www.gnu.org/licenses/gpl.html. It is
+! also available in the file $GTHOME/LICENSE.txt.
+!
+! Other licensing options are available upon request, please contact
+! giellatekno@uit.no or feedback@divvun.no
+
+! ========================================================================== !
+! !!            !!!Norwegian Nynorsk morphological analyser                  !
+! ========================================================================== !
+
+! =====================
+! LEXICA FOR VERB ROOTS
+! =====================
+
+! ------------
+! Strong verbs
+! ------------
+
+LEXICON VsV01
+ # ;
+
+LEXICON VsV01V04
+ # ;
+
+LEXICON VsV04
+ # ;
+
+LEXICON VsV04d
+ # ;
+
+LEXICON VsV07d
+ # ;
+
+LEXICON VsV07x
+ # ;
+
+LEXICON VsV08
+ # ;
+
+LEXICON VsV08k
+ # ;
+
+LEXICON VsV09k
+ # ;
+
+
+! ----------
+! Weak verbs
+! ----------
+
+LEXICON V00V01
+ # ;
+
+LEXICON V00V01V04
+ # ;
+
+LEXICON V00V04
+ # ;
+
+LEXICON V01
+ +V: INF-PRS-PTC ;
+ +V: a-PRES ;
+ +V: a-PRET-PTC ;
+ 
+LEXICON V01V02o
+ # ;
+
+LEXICON V01V04
+ # ;
+
+LEXICON V01V04d
+ # ;
+
+LEXICON V01V04V05
+ # ;
+
+LEXICON V01V04x
+ # ;
+
+LEXICON V01V05
+ # ;
+
+LEXICON V01V05d
+ # ;
+
+LEXICON V01V05j
+ # ;
+
+LEXICON V01V06
+ # ;
+
+LEXICON V01V06d
+ # ;
+
+LEXICON V01V06x
+ # ;
+
+LEXICON V01V07
+ # ;
+
+LEXICON V01V07d
+ # ;
+
+LEXICON V01V07dj
+ # ;
+
+LEXICON V01V07x
+ # ;
+
+LEXICON V01V08
+ # ;
+
+LEXICON V01V08d
+ # ;
+
+LEXICON V01V08x
+ # ;
+
+LEXICON V01V09
+ # ;
+
+LEXICON V01xV09k
+ # ;
+
+LEXICON V02 ! skilje
+ +V: INF-PRS-PTC ;
+ +V: a-PRES ;
+ +V: de-PRET-PTC ;
+
+ # ;
+
+LEXICON V02o
+ # ;
+
+LEXICON V02s
+ # ;
+
+LEXICON V02u
+ # ;
+
+LEXICON V02x
+ # ;
+
+LEXICON V03
+ # ;
+
+LEXICON V03d
+ # ;
+
+LEXICON V04
+ +V: INF-PRS-PTC ;
+ +V: e-PRES ;
+ +V: t-PRET-PTC ;
+
+LEXICON V04d
+ # ;
+
+LEXICON V04dj
+ # ;
+
+LEXICON V04djo
+ # ;
+
+LEXICON V04djV04djo
+ # ;
+
+LEXICON V04dV04do
+ # ;
+
+LEXICON V04dV05d
+ # ;
+
+LEXICON V04j
+ # ;
+
+LEXICON V04n
+ # ;
+
+LEXICON V04r
+ # ;
+
+!LEXICON V04rNN011k
+! # ;
+
+LEXICON V04V0
+ # ;
+
+LEXICON V04V05
+ # ;
+
+LEXICON V05
+ # ;
+
+LEXICON V05d
+ # ;
+
+LEXICON V05j
+ # ;
+
+LEXICON V06
+ # ;
+
+LEXICON V06d
+ # ;
+
+LEXICON V06j
+ # ;
+
+LEXICON V06jx
+ # ;
+
+LEXICON V06o
+ # ;
+
+LEXICON V06x
+ # ;
+
+LEXICON V07
+ # ;
+
+LEXICON V07d
+ # ;
+
+LEXICON V07dj
+ # ;
+
+LEXICON V07j
+ # ;
+
+LEXICON V07x
+ # ;
+
+LEXICON V08
+ # ;
+
+LEXICON V08k
+ INF-PRS-PTC ;
+ r-PRES ;
+ dd-PRET-PTC ;
+ 
+LEXICON V09
+ # ;
+
+LEXICON V09k
+ INF-PRS-PTC ;
+ r-PRES ;
+ dd-PRET-PTC ;
+
+
+
+! ------------------------
+! Verbal inflection lexica
+! ------------------------
+
+LEXICON INF-PRS-PTC
+ +Inf: # ;
+ +PrsPtc:%>ande # ;
+ +Imp:%> # ;
+
+LEXICON a-PRES
+ +Ind+Prs:%>ar # ;
+
+LEXICON a-PRET-PTC
+ +Ind+Prt:%>a # ;
+ +PrfPtc:%>a # ;
+
+LEXICON e-PRES
+ +Ind+Prs:%>er # ;
+
+
+LEXICON t-PRET-PTC
+ +Ind+Prt:%>t # ;
+ +PrfPtc:%>te # ;
+
+LEXICON r-PRES
+ +Ind+Prs:%>r # ;
+
+LEXICON dd-PRET-PTC
+ +Ind+Prt:%>dde # ;
+ +PrfPtc:%>dd # ;
+
+LEXICON de-PRET-PTC
+ +Ind+Prt:%>de # ;
+ +PrfPtc:%>d # ;
+
