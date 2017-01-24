@@ -85,23 +85,3 @@ vårt+Det+Poss+Sg+Neu:vårt # ;
 hans+Det+Poss+Msc:hans # ;
 hennar+Det+Poss+Fem:hennar # ;
 deira+Det+Poss+Pl:deira # ;
-
-
-
-
-LEXICON Numeral 
-éin numtag ;
-!en numtag ; ! Dem.
-to numtag ;
-tre numtag ;
-fire numtag ;
-fem numtag ;
-seks numtag ;
-sju numtag ;
-åtte numtag ;
-ni numtag ;
-
-LEXICON numtag
-+Num: # ;
-
-
