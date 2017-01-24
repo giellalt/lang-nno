@@ -1,0 +1,16 @@
+LEXICON Numeral 
+éin numtag ;
+!en numtag ; ! Dem.
+to numtag ;
+tre numtag ;
+fire numtag ;
+fem numtag ;
+seks numtag ;
+sju numtag ;
+åtte numtag ;
+ni numtag ;
+
+LEXICON numtag
++Num: # ;
+
+
