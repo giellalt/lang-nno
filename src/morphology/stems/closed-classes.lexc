@@ -1,0 +1,145 @@
+LEXICON Particle
+ # ;
+
+LEXICON Subjunction
+fordi subj ;
+som subj ;
+at subj ;
+om subj ;
+dersom subj ;
+enn subj ;
+å IM ;
+ 
+LEXICON subj
+ +CS: # ;
+
+LEXICON IM
+ +IM: # ;
+
+LEXICON Conjunction
+og conj ;
+eller conj ;
+men conj ;
+for conj ;
+
+LEXICON conj
+ +CC: # ;
+
+LEXICON Interjection
+ uff ij ;
+
+LEXICON ij
+ +Interj: # ;
+
+LEXICON Pronoun
+ Personal ;
+ Reflexive ;
+ Reciproc ;
+ Interrogative ;
+ Indefinite ;
+
+LEXICON Personal 
+eg+Pron+Nom:eg # ;
+du+Pron+Nom:du # ;
+han+Pron+Nom:han # ;
+ho+Pron+Nom:ho # ;
+det+Pron+Nom:det # ;
+vi+Pron+Nom:vi # ;
+de+Pron+Nom:de # ;
+dei+Pron+Nom:dei # ;
+
+eg+Pron+Acc:meg # ;
+du+Pron+Acc:deg # ;
+han+Pron+Acc:han # ;
+ho+Pron+Acc:ho # ;
+han+Pron+Acc:honom # ;
+ho+Pron+Acc:henne # ;
+det+Pron+Acc:det # ;
+vi+Pron+Acc:oss # ;
+de+Pron+Acc:dykk # ;
+dei+Pron+Acc:dei # ;
+
+
+LEXICON Reflexive
+seg+Pron+Refl:seg # ;
+
+LEXICON Reciproc 
+kvarandre+Pron+Recipr:kvarandre # ;
+
+LEXICON Interrogative 
+kva+Pron+Interr:kva # ;
+kven+Pron+Interr:kven # ;
+
+LEXICON Indefinite 
+ # ;
+
+
+LEXICON Determiner
+Demonstrative ;
+Possessive ;
+
+LEXICON Demonstrative 
+det+Det+Dem+Sg+Neu:det # ;
+den+Det+Dem+Sg+Msc:den # ;
+den+Det+Dem+Sg+Fem:den # ;
+eit+Det+Dem+Sg+Neu:eit # ;
+eitt+Det+Dem+Sg+Neu:eitt # ;
+ein+Det+Dem+Sg+Msc:ein # ;
+ei+Det+Dem+Sg+Fem:ei # ;
+kvar+Det+Dem+Sg+Msc:kvar # ;
+kvar+Det+Dem+Sg+Fem:kvar # ;
+kvar+Det+Dem+Sg+Neu:kvart # ;
+denne+Det+Dem+Sg+Msc:denne K ;
+denne+Det+Dem+Sg+Fem:denne K ;
+dette+Det+Dem+Sg+Neu:dette K ;
+desse+Det+Dem+Pl:desse K ;
+all+Det+Dem+Sg+Msc:all # ;
+all+Det+Dem+Sg+Fem:all # ;
+all+Det+Dem+Sg+Neu:alt # ;
+all+Det+Dem+Pl:alle K ;
+slik+Det+Dem+Sg+Msc:slik # ;
+slik+Det+Dem+Sg+Fem:slik # ;
+slik+Det+Dem+Sg+Neu:slikt # ;
+slik+Det+Dem+Pl:slike # ;
+
+LEXICON Possessive 
+di+Det+Poss+Sg+Fem:di # ;
+din+Det+Poss+Sg+Msc:din # ;
+dine+Det+Poss+Pl:dine # ;
+ditt+Det+Poss+Sg+Neu:ditt # ;
+mi+Det+Poss+Sg+Fem:mi # ;
+min+Det+Poss+Sg+Msc:min # ;
+mine+Det+Poss+Pl:mine # ;
+mitt+Det+Poss+Sg+Neu:mitt # ;
+si+Det+Poss+Sg+Fem:si # ;
+sin+Det+Poss+Sg+Msc:sin # ;
+sine+Det+Poss+Pl:sine # ;
+sitt+Det+Poss+Sg+Neu:sitt # ;
+vår+Det+Poss+Sg+Fem:vår # ;
+vår+Det+Poss+Sg+Msc:vår # ;
+våre+Det+Poss+Pl:våre # ;
+vårt+Det+Poss+Sg+Neu:vårt # ;
+
+hans+Det+Poss+Msc:hans # ;
+hennar+Det+Poss+Fem:hennar # ;
+deira+Det+Poss+Pl:deira # ;
+
+
+
+
+LEXICON Numeral 
+éin numtag ;
+!en numtag ; ! Dem.
+to numtag ;
+tre numtag ;
+fire numtag ;
+fem numtag ;
+seks numtag ;
+sju numtag ;
+åtte numtag ;
+ni numtag ;
+
+LEXICON numtag
++Num: # ;
+
+
