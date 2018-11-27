@@ -5,7 +5,7 @@ all: ../root.lexc
 fullform.utf8.txt: ordbank_nn/fullform_nn.txt
 	iconv -f ISO-8859-1 -t UTF-8 $< | tail +27 > $@
 
-tags.txt: fullform.utf8.txt
+tags.txt: fullform.utf8.txt Makefile
 	cut -f4 < $<    \
 		| tr '+' '_' \
 		| sed -e 's/< /</'  \
@@ -19,6 +19,8 @@ tags.txt: fullform.utf8.txt
 		| sort | uniq   \
 		| grep -v '^\.'  \
 		| grep -v '\.$$'  \
+		| sed -e 's/</%</g' \
+		| sed -e 's/>/%>/g' \
 		| sed -e 's/^/+/g' \
 		> $@
 
@@ -28,11 +30,17 @@ entries.lexc: fullform.utf8.txt parse-nno.pl
 		| sed -e 's/\+unormert/\Err\/Orth/g' \
 		> $@
 
-../root.lexc: tags.txt entries.lexc Makefile
+../root.lexc: tags.txt entries.lexc
 	echo "Multichar_Symbols" > $@
+	echo                    >> $@
 	cat $<                  >> $@
+	echo                    >> $@
 	echo "LEXICON Root"     >> $@
 	echo " Punctuation ;"   >> $@
 	echo " Entries ;"       >> $@
+	echo                    >> $@
 	echo "LEXICON Entries"  >> $@
 	cat entries.lexc        >> $@
+
+clean:
+	-rm -f tags.txt entries.lexc fullform.utf8.txt
