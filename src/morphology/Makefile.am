@@ -23,19 +23,21 @@ GT_LEXC_ROOT=$(srcdir)/root.lexc
 
 # Set this to the names of all regular lexc source files:
 GT_LEXC_SRCS_L1_L2=\
-			 affixes/adjectives.lexc   \
-			 affixes/nouns.lexc        \
-			 affixes/verbs.lexc        \
-			 stems/abbreviations.lexc  \
-			 stems/adjectives.lexc     \
-			 stems/adverbs.lexc        \
-			 stems/closed-classes.lexc \
-			 stems/nouns.lexc          \
-			 stems/numerals.lexc       \
-			 stems/prepositions.lexc   \
-			 stems/pronouns.lexc       \
-			 stems/propernouns.lexc    \
-			 stems/verbs.lexc
+			 cliticx.lexc
+
+#			 affixes/adjectives.lexc   \
+#			 affixes/nouns.lexc        \
+#			 affixes/verbs.lexc        \
+#			 stems/abbreviations.lexc  \
+#			 stems/adjectives.lexc     \
+#			 stems/adverbs.lexc        \
+#			 stems/closed-classes.lexc \
+#			 stems/nouns.lexc          \
+#			 stems/numerals.lexc       \
+#			 stems/prepositions.lexc   \
+#			 stems/pronouns.lexc       \
+#			 stems/propernouns.lexc    \
+#			 stems/verbs.lexc
 
 # If you are building an error-detecting L2 analyser, specify the lexc files
 # that differ between the regular L1 and the L2 analysers below, in L1 and
@@ -76,6 +78,9 @@ GT_DISTRO_SRCS=
 ### gle/ for an example of how this is used.
 
 GIELLA_LOCAL_TARGETS=
+
+$(GT_LEXC_ROOT): $(srcdir)/incoming/tags.txt $(srcdir)/incoming/entries.lexc
+	$(AM_V_GEN)cd $(dir $< ) && $(MAKE)
 
 ### END: Local processing: ###
 
