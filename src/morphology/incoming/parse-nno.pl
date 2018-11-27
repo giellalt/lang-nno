@@ -12,6 +12,8 @@ sub reinsk_og_omform_taggar
 	$taggstreng =~ s/<>//;   # Remove empty tags
 	$taggstreng =~ s/ \. / /;# Remove single full stops
 	$taggstreng =~ s/\s+/ /g;# Slå i hop fleire mellomrom
+	$taggstreng =~ s/</%</g; # Skjerm <
+	$taggstreng =~ s/>/%>/g; # Skjerm >
 	@alle_taggar = split / /, $taggstreng ;
 	foreach ( @alle_taggar ) {  
 		$_ =~ s/^/+/;  
@@ -34,5 +36,9 @@ while (<>)
 	$lemma = skjerm_spesialteikn( $lemma ) ;
 	$ordform = skjerm_spesialteikn( $ordform ) ;
 	my $nytaggar = reinsk_og_omform_taggar ( $taggar ) ;
-	print "$lemma$nytaggar:$ordform K ;\n";
+	if ( $nytaggar =~ /\+subst/ ) {
+		print "$lemma$nytaggar:$ordform K ;\n";
+	} else {
+		print "$lemma$nytaggar:$ordform # ;\n";
+	}
 }
