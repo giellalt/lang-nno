@@ -35,8 +35,11 @@ entries.lexc: fullform.utf8.txt parse-nno.pl
 	echo                    >> $@
 	cat $<                  >> $@
 	echo                    >> $@
+	echo "+Symbol !!≈ * @CODE@ = symbols in the text, like £, €, ©" >> $@
+	echo                    >> $@
 	echo "LEXICON Root"     >> $@
 	echo " Punctuation ;"   >> $@
+	echo " Symbols ;"       >> $@
 	echo " Entries ;"       >> $@
 	echo                    >> $@
 	echo "LEXICON Entries"  >> $@
