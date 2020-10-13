@@ -84,7 +84,7 @@ GT_DISTRO_SRCS=
 
 GIELLA_LOCAL_TARGETS=
 
-$(GT_LEXC_ROOT): $(srcdir)/incoming/tags.txt $(srcdir)/incoming/entries.lexc
+$(GT_LEXC_ROOT): incoming/tags.txt incoming/entries.lexc
 	$(AM_V_GEN)cd $(dir $< ) && $(MAKE)
 
 ### END: Local processing: ###
