@@ -24,8 +24,8 @@ tags.txt: fullform.utf8.txt Makefile.am
 		| sed -e 's/^/+/g' \
 		> $@
 
-entries.lexc: fullform.utf8.txt parse-nno.pl
-	perl parse-nno.pl < $< \
+entries.lexc: fullform.utf8.txt $(srcdir)/parse-nno.pl
+	perl $(srcdir)/parse-nno.pl < $< \
 		| sed -e 's/\+normert//g' \
 		| sed -e 's/\+unormert/\+Err\/Orth/g' \
 		> $@
