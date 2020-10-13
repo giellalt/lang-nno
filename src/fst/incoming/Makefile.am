@@ -45,5 +45,5 @@ entries.lexc: fullform.utf8.txt parse-nno.pl
 	echo "LEXICON Entries"  >> $@
 	cat entries.lexc        >> $@
 
-clean:
+clean-local:
 	-rm -f tags.txt entries.lexc fullform.utf8.txt
