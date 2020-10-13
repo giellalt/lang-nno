@@ -27,7 +27,7 @@ tags.txt: fullform.utf8.txt Makefile
 entries.lexc: fullform.utf8.txt parse-nno.pl
 	perl parse-nno.pl < $< \
 		| sed -e 's/\+normert//g' \
-		| sed -e 's/\+unormert/\Err\/Orth/g' \
+		| sed -e 's/\+unormert/\+Err\/Orth/g' \
 		> $@
 
 ../root.lexc: tags.txt entries.lexc
