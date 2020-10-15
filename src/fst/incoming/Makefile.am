@@ -1,11 +1,11 @@
 # Makefil for å konvertera frå fullformsliste til lexc.
 
-all: ../root.lexc
+all: entries.lexc tags.txt
 
 fullform.utf8.txt: ordbank_nn/fullform_nn.txt
 	$(AM_V_GEN)iconv -f ISO-8859-1 -t UTF-8 $< | tail +27 > $@
 
-tags.txt: fullform.utf8.txt Makefile.am
+tags.txt: fullform.utf8.txt
 	$(AM_V_GEN)cut -f4 < $<    \
 		| tr '+' '_' \
 		| sed -e 's/< /</'  \
