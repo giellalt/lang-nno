@@ -22,7 +22,10 @@ tags.txt: fullform.utf8.txt
 		| sed -e 's/</%</g' \
 		| sed -e 's/>/%>/g' \
 		| sed -e 's/^/+/g' \
+		| sed -e 's/\+normert//g' \
+		| sed -e 's/\+unormert/\+Err\/Orth/g' \
 		> $@
+	$(AM_V_GEN)echo '+Err/Lex' >> $@
 
 entries.lexc: fullform.utf8.txt $(srcdir)/parse-nno.pl
 	$(AM_V_GEN)perl $(srcdir)/parse-nno.pl < $< \
