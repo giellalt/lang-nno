@@ -36,6 +36,9 @@ while (<>)
 	$lemma = skjerm_spesialteikn( $lemma ) ;
 	$ordform = skjerm_spesialteikn( $ordform ) ;
 	my $nytaggar = reinsk_og_omform_taggar ( $taggar ) ;
+	if ( $lemma =~ /^-|-$/ ) {
+		$lemma = "$lemma+Err/Lex" ;
+	}
 	if ( $nytaggar =~ /\+subst/ ) {
 		print "$lemma$nytaggar:$ordform K ;\n";
 	} else {
