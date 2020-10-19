@@ -10,7 +10,8 @@ GT_ORTHOGRAPHIC_REGEX_SRCS=\
 		inituppercase.regex \
 		spellrelax.regex    \
 		spellrelax-mobile-keyboard.regex \
-		spellrelax-tags.regex
+		spellrelax-tags.regex \
+		Latn-to-Runr.regex
 
 GT_ORTHOGRAPHIC_XFSCRIPT_SRCS=\
 		downcase-derived_proper-strings.xfscript \
