@@ -1,0 +1,13 @@
+
+INTRODUCTION TO MORPHOLOGICAL ANALYSER OF Norwegian Nynorsk LANGUAGE.
+
+
+
+
+
+
+
+
+
+
+
