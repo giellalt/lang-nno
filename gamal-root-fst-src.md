@@ -16,3 +16,5 @@ The parts-of-speech are:
 
 
 
+* * *
+<small>This (part of) documentation was generated from [../src/fst/gamal-root.lexc](http://github.com/giellalt/lang-nno/blob/main/../src/fst/gamal-root.lexc)</small>
