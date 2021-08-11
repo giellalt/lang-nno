@@ -3,7 +3,7 @@ The Norwegian Nynorsk morphology and tools
 
 [![GitHub issues](https://img.shields.io/github/issues-raw/giellalt/lang-nno)](https://github.com/giellalt/lang-nno/issues)
 [![Build Status](https://github.com/giellalt/lang-nno/workflows/Speller%20CI+CD/badge.svg)](https://github.com/giellalt/lang-nno/actions)
-[![License](https://img.shields.io/github/license/giellalt/lang-nno)](https://raw.githubusercontent.com/giellalt/lang-nno/main/LICENSE)
+[![License](https://img.shields.io/github/license/giellalt/lang-nno)](https://github.com/giellalt/lang-nno/blob/main/LICENSE)
 
 This repository contains finite state source files for the Norwegian Nynorsk language,
 for building morphological analysers, proofing tools
