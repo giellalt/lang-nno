@@ -607,168 +607,6 @@ These were the set types.
 
 * * *
 <small>This (part of) documentation was generated from [../src/cg3/functions.cg3](http://github.com/giellalt/lang-nno/blob/main/../src/cg3/functions.cg3)</small>
-
-
-
-
-
-
-
-
-
-
-
-
-+ABBR+A+Attr: # ;  ! no period, that is.
-+ABBR+A:%- R ; !^C^ TRY OUT THIS ONE
-
-+ABBR: # ;  ! no period, that is.
-+ABBR+Adv+Attr: # ; ! no period, that is.
-+ABBR+Adv: # ;  ! no period, that is.
-+ABBR+Adv:%- R ; !^C^ TRY OUT THIS ONE
-
-+ABBR+Num:%- R ; !^C^ TRY OUT THIS ONE
-
-
-
-
-
-
-+ABBR:%. # ;
-+ABBR+A+Attr:%. # ;
-
-
-+ABBR:%. # ;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-* * *
-<small>This (part of) documentation was generated from [../src/fst/stems/abbreviations.lexc](http://github.com/giellalt/lang-nno/blob/main/../src/fst/stems/abbreviations.lexc)</small>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-* * *
-<small>This (part of) documentation was generated from [../src/fst/affixes/verbs.lexc](http://github.com/giellalt/lang-nno/blob/main/../src/fst/affixes/verbs.lexc)</small>
-# Symbol affixes
-
-
-
-
-
-* * *
-<small>This (part of) documentation was generated from [../src/fst/affixes/symbols.lexc](http://github.com/giellalt/lang-nno/blob/main/../src/fst/affixes/symbols.lexc)</small>
-INTRODUCTION TO MORPHOLOGICAL ANALYSER OF Norwegian Nynorsk LANGUAGE.
-
-
-
-
-
-
-
-
-
-
-
-* * *
-<small>This (part of) documentation was generated from [../src/fst/affixes/adjectives.lexc](http://github.com/giellalt/lang-nno/blob/main/../src/fst/affixes/adjectives.lexc)</small>
 INTRODUCTION TO MORPHOLOGICAL ANALYSER OF Norwegian Nynorsk LANGUAGE.
 
 
@@ -878,6 +716,172 @@ INTRODUCTION TO MORPHOLOGICAL ANALYSER OF Norwegian Nynorsk LANGUAGE.
 
 * * *
 <small>This (part of) documentation was generated from [../src/fst/affixes/nouns.lexc](http://github.com/giellalt/lang-nno/blob/main/../src/fst/affixes/nouns.lexc)</small>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+* * *
+<small>This (part of) documentation was generated from [../src/fst/affixes/verbs.lexc](http://github.com/giellalt/lang-nno/blob/main/../src/fst/affixes/verbs.lexc)</small>
+INTRODUCTION TO MORPHOLOGICAL ANALYSER OF Norwegian Nynorsk LANGUAGE.
+
+
+
+
+
+
+
+
+
+
+
+* * *
+<small>This (part of) documentation was generated from [../src/fst/affixes/adjectives.lexc](http://github.com/giellalt/lang-nno/blob/main/../src/fst/affixes/adjectives.lexc)</small>
+# Symbol affixes
+
+
+
+
+
+* * *
+<small>This (part of) documentation was generated from [../src/fst/affixes/symbols.lexc](http://github.com/giellalt/lang-nno/blob/main/../src/fst/affixes/symbols.lexc)</small>
+
+
+
+
+
+
+
+
+
+
+
+
++ABBR+A+Attr: # ;  ! no period, that is.
++ABBR+A:%- R ; !^C^ TRY OUT THIS ONE
+
++ABBR: # ;  ! no period, that is.
++ABBR+Adv+Attr: # ; ! no period, that is.
++ABBR+Adv: # ;  ! no period, that is.
++ABBR+Adv:%- R ; !^C^ TRY OUT THIS ONE
+
++ABBR+Num:%- R ; !^C^ TRY OUT THIS ONE
+
+
+
+
+
+
++ABBR:%. # ;
++ABBR+A+Attr:%. # ;
+
+
++ABBR:%. # ;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+* * *
+<small>This (part of) documentation was generated from [../src/fst/stems/abbreviations.lexc](http://github.com/giellalt/lang-nno/blob/main/../src/fst/stems/abbreviations.lexc)</small>
+INTRODUCTION TO MORPHOLOGICAL ANALYSER OF Norwegian Nynorsk LANGUAGE.
+
+* * *
+<small>This (part of) documentation was generated from [../src/fst/clitics.lexc](http://github.com/giellalt/lang-nno/blob/main/../src/fst/clitics.lexc)</small>
 INTRODUCTION TO MORPHOLOGICAL ANALYSER OF Norwegian Nynorsk LANGUAGE.
 
 
@@ -897,10 +901,6 @@ The parts-of-speech are:
 
 * * *
 <small>This (part of) documentation was generated from [../src/fst/gamal-root.lexc](http://github.com/giellalt/lang-nno/blob/main/../src/fst/gamal-root.lexc)</small>
-INTRODUCTION TO MORPHOLOGICAL ANALYSER OF Norwegian Nynorsk LANGUAGE.
-
-* * *
-<small>This (part of) documentation was generated from [../src/fst/clitics.lexc](http://github.com/giellalt/lang-nno/blob/main/../src/fst/clitics.lexc)</small>
 
 
 We describe here how abbreviations are in Norwegian Nynorsk are read out, e.g.
