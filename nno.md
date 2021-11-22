@@ -619,26 +619,68 @@ These were the set types.
 
 
 
-+ABBR+A+Attr: # ;  ! no period, that is.
-+ABBR+A:%- R ; !^C^ TRY OUT THIS ONE
-
-+ABBR: # ;  ! no period, that is.
-+ABBR+Adv+Attr: # ; ! no period, that is.
-+ABBR+Adv: # ;  ! no period, that is.
-+ABBR+Adv:%- R ; !^C^ TRY OUT THIS ONE
-
-+ABBR+Num:%- R ; !^C^ TRY OUT THIS ONE
 
 
 
 
 
 
-+ABBR:%. # ;
-+ABBR+A+Attr:%. # ;
 
 
-+ABBR:%. # ;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -655,30 +697,7 @@ These were the set types.
 
 
 * * *
-<small>This (part of) documentation was generated from [../src/fst/stems/abbreviations.lexc](http://github.com/giellalt/lang-nno/blob/main/../src/fst/stems/abbreviations.lexc)</small>
-INTRODUCTION TO MORPHOLOGICAL ANALYSER OF Norwegian Nynorsk LANGUAGE.
-
-* * *
-<small>This (part of) documentation was generated from [../src/fst/clitics.lexc](http://github.com/giellalt/lang-nno/blob/main/../src/fst/clitics.lexc)</small>
-INTRODUCTION TO MORPHOLOGICAL ANALYSER OF Norwegian Nynorsk LANGUAGE.
-
-
- # Definitions for Multichar_Symbols
-
-## Analysis symbols
-The morphological analyses of wordforms for the Norwegian Nynorsk
-language are presented in this system in terms of the following symbols.
-(It is highly suggested to follow existing standards when adding new tags).
-
-The parts-of-speech are:
-
-
-
-
-
-
-* * *
-<small>This (part of) documentation was generated from [../src/fst/gamal-root.lexc](http://github.com/giellalt/lang-nno/blob/main/../src/fst/gamal-root.lexc)</small>
+<small>This (part of) documentation was generated from [../src/fst/affixes/verbs.lexc](http://github.com/giellalt/lang-nno/blob/main/../src/fst/affixes/verbs.lexc)</small>
 INTRODUCTION TO MORPHOLOGICAL ANALYSER OF Norwegian Nynorsk LANGUAGE.
 
 
@@ -822,68 +841,26 @@ INTRODUCTION TO MORPHOLOGICAL ANALYSER OF Norwegian Nynorsk LANGUAGE.
 
 
 
++ABBR+A+Attr: # ;  ! no period, that is.
++ABBR+A:%- R ; !^C^ TRY OUT THIS ONE
+
++ABBR: # ;  ! no period, that is.
++ABBR+Adv+Attr: # ; ! no period, that is.
++ABBR+Adv: # ;  ! no period, that is.
++ABBR+Adv:%- R ; !^C^ TRY OUT THIS ONE
+
++ABBR+Num:%- R ; !^C^ TRY OUT THIS ONE
 
 
 
 
 
 
++ABBR:%. # ;
++ABBR+A+Attr:%. # ;
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
++ABBR:%. # ;
 
 
 
@@ -900,7 +877,30 @@ INTRODUCTION TO MORPHOLOGICAL ANALYSER OF Norwegian Nynorsk LANGUAGE.
 
 
 * * *
-<small>This (part of) documentation was generated from [../src/fst/affixes/verbs.lexc](http://github.com/giellalt/lang-nno/blob/main/../src/fst/affixes/verbs.lexc)</small>
+<small>This (part of) documentation was generated from [../src/fst/stems/abbreviations.lexc](http://github.com/giellalt/lang-nno/blob/main/../src/fst/stems/abbreviations.lexc)</small>
+INTRODUCTION TO MORPHOLOGICAL ANALYSER OF Norwegian Nynorsk LANGUAGE.
+
+* * *
+<small>This (part of) documentation was generated from [../src/fst/clitics.lexc](http://github.com/giellalt/lang-nno/blob/main/../src/fst/clitics.lexc)</small>
+INTRODUCTION TO MORPHOLOGICAL ANALYSER OF Norwegian Nynorsk LANGUAGE.
+
+
+ # Definitions for Multichar_Symbols
+
+## Analysis symbols
+The morphological analyses of wordforms for the Norwegian Nynorsk
+language are presented in this system in terms of the following symbols.
+(It is highly suggested to follow existing standards when adding new tags).
+
+The parts-of-speech are:
+
+
+
+
+
+
+* * *
+<small>This (part of) documentation was generated from [../src/fst/gamal-root.lexc](http://github.com/giellalt/lang-nno/blob/main/../src/fst/gamal-root.lexc)</small>
 
 
 We describe here how abbreviations are in Norwegian Nynorsk are read out, e.g.
