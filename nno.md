@@ -607,6 +607,29 @@ These were the set types.
 
 * * *
 <small>This (part of) documentation was generated from [../src/cg3/functions.cg3](http://github.com/giellalt/lang-nno/blob/main/../src/cg3/functions.cg3)</small>
+INTRODUCTION TO MORPHOLOGICAL ANALYSER OF Norwegian Nynorsk LANGUAGE.
+
+* * *
+<small>This (part of) documentation was generated from [../src/fst/clitics.lexc](http://github.com/giellalt/lang-nno/blob/main/../src/fst/clitics.lexc)</small>
+INTRODUCTION TO MORPHOLOGICAL ANALYSER OF Norwegian Nynorsk LANGUAGE.
+
+
+# Definitions for Multichar_Symbols
+
+## Analysis symbols
+The morphological analyses of wordforms for the Norwegian Nynorsk
+language are presented in this system in terms of the following symbols.
+(It is highly suggested to follow existing standards when adding new tags).
+
+The parts-of-speech are:
+
+
+
+
+
+
+* * *
+<small>This (part of) documentation was generated from [../src/fst/gamal-root.lexc](http://github.com/giellalt/lang-nno/blob/main/../src/fst/gamal-root.lexc)</small>
 # Symbol affixes
 
 
@@ -615,6 +638,111 @@ These were the set types.
 
 * * *
 <small>This (part of) documentation was generated from [../src/fst/affixes/symbols.lexc](http://github.com/giellalt/lang-nno/blob/main/../src/fst/affixes/symbols.lexc)</small>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+* * *
+<small>This (part of) documentation was generated from [../src/fst/affixes/verbs.lexc](http://github.com/giellalt/lang-nno/blob/main/../src/fst/affixes/verbs.lexc)</small>
+INTRODUCTION TO MORPHOLOGICAL ANALYSER OF Norwegian Nynorsk LANGUAGE.
+
+
+
+
+
+
+
+
+
+
+
+* * *
+<small>This (part of) documentation was generated from [../src/fst/affixes/adjectives.lexc](http://github.com/giellalt/lang-nno/blob/main/../src/fst/affixes/adjectives.lexc)</small>
 INTRODUCTION TO MORPHOLOGICAL ANALYSER OF Norwegian Nynorsk LANGUAGE.
 
 
@@ -724,134 +852,6 @@ INTRODUCTION TO MORPHOLOGICAL ANALYSER OF Norwegian Nynorsk LANGUAGE.
 
 * * *
 <small>This (part of) documentation was generated from [../src/fst/affixes/nouns.lexc](http://github.com/giellalt/lang-nno/blob/main/../src/fst/affixes/nouns.lexc)</small>
-INTRODUCTION TO MORPHOLOGICAL ANALYSER OF Norwegian Nynorsk LANGUAGE.
-
-
-
-
-
-
-
-
-
-
-
-* * *
-<small>This (part of) documentation was generated from [../src/fst/affixes/adjectives.lexc](http://github.com/giellalt/lang-nno/blob/main/../src/fst/affixes/adjectives.lexc)</small>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-* * *
-<small>This (part of) documentation was generated from [../src/fst/affixes/verbs.lexc](http://github.com/giellalt/lang-nno/blob/main/../src/fst/affixes/verbs.lexc)</small>
-INTRODUCTION TO MORPHOLOGICAL ANALYSER OF Norwegian Nynorsk LANGUAGE.
-
-* * *
-<small>This (part of) documentation was generated from [../src/fst/clitics.lexc](http://github.com/giellalt/lang-nno/blob/main/../src/fst/clitics.lexc)</small>
-INTRODUCTION TO MORPHOLOGICAL ANALYSER OF Norwegian Nynorsk LANGUAGE.
-
-
-# Definitions for Multichar_Symbols
-
-## Analysis symbols
-The morphological analyses of wordforms for the Norwegian Nynorsk
-language are presented in this system in terms of the following symbols.
-(It is highly suggested to follow existing standards when adding new tags).
-
-The parts-of-speech are:
-
-
-
-
-
-
-* * *
-<small>This (part of) documentation was generated from [../src/fst/gamal-root.lexc](http://github.com/giellalt/lang-nno/blob/main/../src/fst/gamal-root.lexc)</small>
 
 
 
