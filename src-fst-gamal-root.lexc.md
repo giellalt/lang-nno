@@ -1,7 +1,6 @@
 
 INTRODUCTION TO MORPHOLOGICAL ANALYSER OF Norwegian Nynorsk LANGUAGE.
 
-
 # Definitions for Multichar_Symbols
 
 ## Analysis symbols
@@ -11,10 +10,9 @@ language are presented in this system in terms of the following symbols.
 
 The parts-of-speech are:
 
-
-
-
-
-
 * * *
-<small>This (part of) documentation was generated from [../src/fst/gamal-root.lexc](http://github.com/giellalt/lang-nno/blob/main/../src/fst/gamal-root.lexc)</small>
+
+<small>This (part of) documentation was generated from [src/fst/gamal-root.lexc](https://github.com/giellalt/lang-nno/blob/main/src/fst/gamal-root.lexc)</small>
+
+---
+
