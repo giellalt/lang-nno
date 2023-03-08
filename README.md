@@ -15,6 +15,13 @@ licence, also detailed in the
 authors named in the AUTHORS file are available to grant other licencing
 choices.
 
+> ⚠️ 
+>
+> - This repo is an experiment, it is not suited for general use - it may not even build
+> - it uses data from Språkbanken
+> - … which has no information about compounding
+> - a lot of names and other words outside the scope of Nynorskordboka are not included
+
 Install proofing tools and [keyboards](https://github.com/giellalt/keyboard-nno)
 for the Norwegian Nynorsk language by using the [Divvun Installer](http://divvun.no)
 (some languages are only available via the nightly channel).
