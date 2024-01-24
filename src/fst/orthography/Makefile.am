@@ -10,12 +10,15 @@ GT_ORTHOGRAPHIC_REGEX_SRCS=\
 		inituppercase.regex \
 		spellrelax.regex    \
 		spellrelax-mobile-keyboard.regex \
-		spellrelax-tags.regex
+		spellrelax-tags.regex \
+		Latn-to-Runr.regex    \
+		spellrelax.Runr.regex
 
 GT_ORTHOGRAPHIC_XFSCRIPT_SRCS=\
-		allcaps.xfscript      \
 		downcase-derived_proper-strings.xfscript \
 		spellrelax-with-tags.xfscript
+
+#		allcaps.xfscript
 
 # Add extra targets here:
 GIELLA_ORTH_EXTRA_TARGETS=
