@@ -2,6 +2,9 @@
 
 all: entries.lexc tags.txt
 
+ordbank_nn/fullform_nn.txt: ordbank_nn/fullformer_2012.txt.zip
+	$(AM_V_GEN)unzip -p $< > $@
+
 fullform.utf8.txt: ordbank_nn/fullform_nn.txt
 	$(AM_V_GEN)iconv -f ISO-8859-1 -t UTF-8 $< | tail +27 > $@
 
@@ -35,3 +38,4 @@ entries.lexc: fullform.utf8.txt $(srcdir)/parse-nno.pl
 
 clean-local:
 	-rm -f tags.txt entries.lexc fullform.utf8.txt
+	-rm -f ordbank_nn/fullform_nn.txt
