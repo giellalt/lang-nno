@@ -1,6 +1,18 @@
 name = "Norwegian Nynorsk"
 version = "0.1.1"
 
+# Name of the speller package in various languages.
+# The default is English + autonym:
+[speller.name]
+en = "Norwegian Nynorsk spellchecker"
+nn = "Nynorsk stavekontroll"
+
+# Description of the speller package in various languages.
+# The default is English + autonym:
+[speller.description]
+en = "A spellchecker for Norwegian Nynorsk, made by members of the language community, and by the Divvun and Giellatekno groups at UiT The Arctic University of Norway"
+nn = "Ein stavekontroll for norsk mål, tufta på data frå språkbanken, jobba vidare med av Divvun- og Giellatekno-gruppene ved UiT Noregs arktiske universitet"
+
 [macos]
 system_pkg_id = "no.divvun.MacDivvun.nn"
 
