@@ -1,28 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <hfstspeller dtdversion="1.0" hfstversion="3">
   <info>
-    <locale>nn-Runr</locale>
-    <title>Giellatekno/Divvun/UiT fst-based speller for Norwegian Nynorsk in Runes</title>
-    <description>This is an fst-based speller for Norwegian Nynorsk written with late
-	    middle age runes. It is based
-    on the normative subset of the morphological analyser for Norwegian Nynorsk.
-    The source code can be found at:
-    https://victorio.uit.no/langtech/trunk/langs/nno/
-    License: GPL3+.</description>
-    <version vcsrev="GT_REVISION">GT_VERSION</version>
+    <locale>@GLANG2@-Runr</locale>
+    <title>@SPELLER_NAME_ENG@ (Runes)</title>
+    <description>@SPELLER_DESC_ENG@. Nynorsk written with late
+	    middle age runes.</description>
+    <version>@SPELLERVERSION@</version>
     <date>DATE</date>
     <producer>Giellatekno/Divvun/UiT contributors</producer>
     <contact email="feedback@divvun.no" website="http://divvun.no"/>
   </info>
   <acceptor type="general" id="acceptor.default.hfst">
-    <title>Giellatekno/Divvun/UiT dictionary Norwegian Nynorsk</title>
-    <description>Giellatekno/Divvun/UiT dictionary for
-    Norwegian Nynorsk compiled for HFST.</description>
+    <title>@GLANGUAGE@ speller lexicon</title>
+    <description>@GLANGUAGE@ speller lexicon compiled with HFST.</description>
   </acceptor>
   <errmodel id="errmodel.default.hfst">
-    <title>Levenshtein edit distance transducer</title>
-    <description>Correction model for keyboard misstrokes, at most 2 per
-    word.</description>
+    <title>@GLANGUAGE@ error model</title>
+    <description>Error model for @GLANGUAGE@.</description>
         <type type="default"/>
         <model>errormodel.default.hfst</model>
     </errmodel>
