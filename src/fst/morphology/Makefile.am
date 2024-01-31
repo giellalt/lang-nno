@@ -31,22 +31,21 @@ GT_LEXC_ROOT=root.lexc
 
 # Set this to the names of all regular lexc source files:
 GT_LEXC_SRCS_L1_L2=\
-			affixes/symbols.lexc     \
-			clitics.lexc
+			 affixes/adjectives.lexc \
+			 affixes/nouns.lexc      \
+			 affixes/symbols.lexc    \
+			 affixes/verbs.lexc
 
-#			affixes/adjectives.lexc   \
-#			affixes/nouns.lexc        \
-#			affixes/verbs.lexc        \
-#			stems/abbreviations.lexc  \
-#			stems/adjectives.lexc     \
-#			stems/adverbs.lexc        \
-#			stems/closed-classes.lexc \
-#			stems/nouns.lexc          \
-#			stems/numerals.lexc       \
-#			stems/prepositions.lexc   \
-#			stems/pronouns.lexc       \
-#			stems/propernouns.lexc    \
-#			stems/verbs.lexc
+#			 stems/abbreviations.lexc  \
+#			 stems/adjectives.lexc     \
+#			 stems/adverbs.lexc        \
+#			 stems/closed-classes.lexc \
+#			 stems/nouns.lexc          \
+#			 stems/numerals.lexc       \
+#			 stems/prepositions.lexc   \
+#			 stems/pronouns.lexc       \
+#			 stems/propernouns.lexc    \
+#			 stems/verbs.lexc
 
 # If you are building an error-detecting L2 analyser, specify the lexc files
 # that differ between the regular L1 and the L2 analysers below, in L1 and
@@ -69,8 +68,7 @@ GENERATED_LEXC_SRCS=generated_files/mul-$(GLANG)-punctuation.lexc \
 
 # change handling of shared lexical data here:
 if HAVE_SHARED_COMMON
-.generated/url.tmp.lexc: $(gt_SHARED_common)/src/fst/url.lexc
-	$(MAKE) $(GENDIR)
+url.tmp.lexc: $(gt_SHARED_common)/src/fst/url.lexc
 	$(AM_V_CP)cp -f $< $@
 
 generated_files/mul-$(GLANG)-%.lexc: $(gt_SHARED_common)/src/fst/stems/%.lexc
@@ -78,12 +76,12 @@ generated_files/mul-$(GLANG)-%.lexc: $(gt_SHARED_common)/src/fst/stems/%.lexc
 	$(AM_V_CP)cp -f $< $@
 else
 # this is "safe" fallback (compiles but you miss everything)
-.generated/url.tmp.lexc:
+url.tmp.lexc:
 	echo "LEXICON Root" > $@
 	echo "< h t t p (s) %: %/ %/ ?*> # ;" >> $@
 
-.generated/mul-$(GLANG)-%.lexc:
-	$(MAKE) $(GENDIR)
+generated_files/mul-$(GLANG)-%.lexc:
+	$(AM_V_at)$(MKDIR_P) generated_files
 	echo "! Missing shared common data" > $@
 endif
 # add other lexical shared data handling here
@@ -130,8 +128,11 @@ $(GT_LEXC_ROOT): incoming/tags.txt incoming/entries.lexc
 ####### Other targets: ###########
 # Clean: add local clean targets on separate lines, so that the first line can
 # easily get updates from the template dir through svn merge.
+clean-local:
+	-rm -f *.all.* *fst *.foma *.script generated_files/*.lexc lexicon.*
+	-rm -f url.lexc *.tmp*
+	-rm -f *.relabel lexicon-tags.* lexicon-sigma.*
 
-include $(srcdir)/Makefile.modifications-local.am
 include $(srcdir)/Makefile.modifications-phon.am
 include $(top_srcdir)/../giella-core/am-shared/src-morphology-dir-include.am
 
