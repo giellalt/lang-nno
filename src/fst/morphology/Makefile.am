@@ -15,9 +15,6 @@
 ## You should have received a copy of the GNU General Public License
 ## along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-# build before test
-SUBDIRS=. test
-
 # Add language-specific flags for hfst-lexc compilation here:
 if HAVE_SHARED_COMMON
 HFST_LEXC_LOCAL_FLAGS=  # --Werror # uncomment if lexc is good enough
@@ -27,7 +24,8 @@ endif
 
 
 ####### Morphology source file defs: ########
-SUBDIRS=incoming .
+# build before test
+SUBDIRS=incoming . test
 
 # Set this to name of lexc file containing Multichar_Symbols and LEXICON Root
 GT_LEXC_ROOT=root.lexc
