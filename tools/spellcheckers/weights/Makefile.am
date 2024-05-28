@@ -17,3 +17,4 @@ spellercorpus.raw.txt: ngram6-1-topp1000.txt
 		> $@
 
 include $(top_srcdir)/../giella-core/am-shared/tools-spellcheckers-fstbased-desktop-weighting-dir-include.am
+include $(top_srcdir)/../giella-core/am-shared/devtest-include.am
