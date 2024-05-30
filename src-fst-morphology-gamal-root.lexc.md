@@ -12,7 +12,4 @@ The parts-of-speech are:
 
 * * *
 
-<small>This (part of) documentation was generated from [src/fst/gamal-root.lexc](https://github.com/giellalt/lang-nno/blob/main/src/fst/gamal-root.lexc)</small>
-
----
-
+<small>This (part of) documentation was generated from [src/fst/morphology/gamal-root.lexc](https://github.com/giellalt/lang-nno/blob/main/src/fst/morphology/gamal-root.lexc)</small>
