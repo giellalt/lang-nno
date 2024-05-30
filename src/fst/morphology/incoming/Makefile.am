@@ -2,11 +2,12 @@
 
 all: entries.lexc tags.txt
 
-ordbank_nn/fullform_nn.txt: ordbank_nn/fullformer_2012.txt.zip
-	$(AM_V_GEN)unzip -p $< > $@
-
-fullform.utf8.txt: ordbank_nn/fullform_nn.txt
-	$(AM_V_GEN)iconv -f ISO-8859-1 -t UTF-8 $< | tail +27 > $@
+fullform.utf8.txt: ordbank_nn/fullformer_2012.txt.zip
+	$(AM_V_GEN)unzip -p $< |\
+		 iconv -f ISO-8859-1 -t UTF-8 |\
+		 sed '/Mac OS X/,$$d' |\
+		 tail +1893 \
+		 > $@
 
 tags.txt: fullform.utf8.txt $(srcdir)/Makefile.am
 	$(AM_V_GEN)cut -f4 < $<    \
