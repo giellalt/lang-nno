@@ -69,7 +69,8 @@ GENERATED_LEXC_SRCS=generated_files/mul-$(GLANG)-punctuation.lexc \
 
 # change handling of shared lexical data here:
 if HAVE_SHARED_COMMON
-url.tmp.lexc: $(gt_SHARED_common)/src/fst/url.lexc
+.generated/url.tmp.lexc: $(gt_SHARED_common)/src/fst/url.lexc
+	$(MAKE) $(GENDIR)
 	$(AM_V_CP)cp -f $< $@
 
 generated_files/mul-$(GLANG)-%.lexc: $(gt_SHARED_common)/src/fst/stems/%.lexc
@@ -77,7 +78,7 @@ generated_files/mul-$(GLANG)-%.lexc: $(gt_SHARED_common)/src/fst/stems/%.lexc
 	$(AM_V_CP)cp -f $< $@
 else
 # this is "safe" fallback (compiles but you miss everything)
-url.tmp.lexc:
+.generated/url.tmp.lexc:
 	echo "LEXICON Root" > $@
 	echo "< h t t p (s) %: %/ %/ ?*> # ;" >> $@
 
