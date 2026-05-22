@@ -215,6 +215,8 @@ gt_CONFIG_FILES
 
 AC_CONFIG_FILES([src/fst/morphology/incoming/Makefile
                  tools/spellcheckers/index.Runr.xml])
+AC_CONFIG_FILES([src/fst/morphology/test/check-ordbank-fullforms-analysis.sh],
+      [chmod a+x src/fst/morphology/test/check-ordbank-fullforms-analysis.sh])
 
 ############ END: Language-specific scripts. #############
 

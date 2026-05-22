@@ -1,0 +1,134 @@
+#!/bin/bash
+
+# Regression test for Ordbank->FST conversion coverage.
+# 1) Build analyser from current sources.
+# 2) Extract all Ordbank wordforms and verify they get a non-unknown analysis.
+
+set -euo pipefail
+
+top_srcdir=@abs_top_srcdir@
+top_builddir=@abs_top_builddir@
+lookup_tool=@HFST_OPTIMIZED_LOOKUP@
+
+fullforms_zip=$top_srcdir/src/fst/morphology/incoming/ordbank_nn/fullformer_2012.txt.zip
+analyser=$top_builddir/src/fst/analyser-gt-desc.hfstol
+
+if ! command -v "$lookup_tool" >/dev/null 2>&1; then
+    echo "skip: lookup tool not found: $lookup_tool"
+    exit 77
+fi
+if ! test -f "$fullforms_zip"; then
+    echo "skip: missing fullforms zip: $fullforms_zip"
+    exit 77
+fi
+if ! test -d "$top_builddir/src/fst"; then
+    echo "skip: build tree not found: $top_builddir/src/fst"
+    exit 77
+fi
+
+# Always rebuild analyser to test current conversion result.
+make -C "$top_builddir/src/fst" analyser-gt-desc.hfstol >/dev/null
+
+if ! test -f "$analyser"; then
+    echo "skip: analyser missing after build: $analyser"
+    exit 77
+fi
+
+forms_file=$(mktemp)
+lookup_out=$(mktemp)
+failed_file=$(mktemp)
+trap 'rm -f "$forms_file" "$lookup_out" "$failed_file"' EXIT
+
+# Extract data rows, keep column 3 (wordform), and deduplicate.
+unzip -p "$fullforms_zip" \
+| iconv -f ISO-8859-1 -t UTF-8 \
+| awk -F '\t' '
+BEGIN { started=0 }
+/Mac OS X/ { exit }
+{
+    sub(/\r$/, "")
+    if (!started) {
+        if ($0 ~ /^[0-9]+\t[0-9]+\t/) {
+            started=1
+        } else {
+            next
+        }
+    }
+    if (NF >= 3 && $3 != "") {
+        print $3
+    }
+}
+' \
+| LC_ALL=C sort -u > "$forms_file"
+
+total_forms=$(wc -l < "$forms_file" | tr -d ' ')
+if test "$total_forms" -eq 0; then
+    echo "fail: no forms extracted from $fullforms_zip"
+    exit 1
+fi
+
+"$lookup_tool" "$analyser" < "$forms_file" > "$lookup_out"
+
+read looked_up ok bad < <(
+awk -v failf="$failed_file" '
+function flush_group() {
+    if (!seen) return
+    total++
+    if (valid) {
+        accepted++
+    } else {
+        failed++
+        if (failed <= 50) {
+            print current > failf
+        }
+    }
+    seen=0
+    valid=0
+    current=""
+}
+BEGIN {
+    total=0
+    accepted=0
+    failed=0
+    seen=0
+    valid=0
+    current=""
+}
+/^[[:space:]]*$/ {
+    flush_group()
+    next
+}
+{
+    seen=1
+    current=$1
+    # Accept only analyses that are not unknown (+?) and contain tags.
+    if ($0 !~ /[[:space:]]\+\?[[:space:]]*$/ && $0 ~ /\+/) {
+        valid=1
+    }
+}
+END {
+    flush_group()
+    printf "%d %d %d\n", total, accepted, failed
+}
+' "$lookup_out"
+)
+
+echo "Ordbank coverage test"
+echo "  source forms (unique): $total_forms"
+echo "  forms seen in lookup:   $looked_up"
+echo "  accepted:               $ok"
+echo "  failed:                 $bad"
+
+if test "$looked_up" -ne "$total_forms"; then
+    echo "fail: mismatch between extracted forms and lookup groups"
+    exit 1
+fi
+
+if test "$bad" -gt 0; then
+    echo "fail: some forms were not accepted or got only unknown analysis"
+    echo "first failing forms:"
+    sed -n '1,20p' "$failed_file"
+    exit 1
+fi
+
+echo "pass: all extracted Sprakbank forms were accepted with non-unknown analyses"
