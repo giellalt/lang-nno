@@ -1,42 +1,14 @@
-# Makefil for å konvertera frå fullformsliste til lexc.
+# Makefil for å konvertera frå Norsk ordbank-data til lexc.
 
-all: entries.lexc tags.txt
+all: generated_nn_lexc/stems/nouns.lexc generated_nn_lexc/stems/verbs.lexc generated_nn_lexc/stems/adjectives.lexc generated_nn_lexc/affixes/nouns.lexc generated_nn_lexc/affixes/verbs.lexc generated_nn_lexc/affixes/adjectives.lexc
 
-fullform.utf8.txt: ordbank_nn/fullformer_2012.txt.zip
-	$(AM_V_GEN)unzip -p $< |\
-		 iconv -f ISO-8859-1 -t UTF-8 |\
-		 sed '/Mac OS X/,$$d' |\
-		 tail +1893 \
-		 > $@
+generated_nn_lexc/.stamp: ordbank_nn/fullformer_2012.txt.zip ordbank_nn/paradigme_nn.txt $(srcdir)/convert_ordbank_nn.py
+	$(AM_V_GEN)python3 $(srcdir)/convert_ordbank_nn.py --out-dir generated_nn_lexc
+	$(AM_V_GEN)touch $@
 
-tags.txt: fullform.utf8.txt $(srcdir)/Makefile.am
-	$(AM_V_GEN)cut -f4 < $<    \
-		| tr '+' '_' \
-		| sed -e 's/< /</'  \
-		| sed -e 's/ >/>/'  \
-		| sed -e 's/<\./</' \
-		| sed -e 's/\.>/>/' \
-		| tr '(' '/' \
-		| tr ' ' '\n' \
-		| grep -v '^$$'\
-		| grep -v '^<>$$'\
-		| sort | uniq   \
-		| grep -v '^\.'  \
-		| grep -v '\.$$'  \
-		| sed -e 's/</%</g' \
-		| sed -e 's/>/%>/g' \
-		| sed -e 's/^/+/g' \
-		| sed -e 's/\+normert//g' \
-		| sed -e 's/\+unormert/\+Err\/Orth/g' \
-		> $@
-	$(AM_V_GEN)echo '+Err/Lex' >> $@
-
-entries.lexc: fullform.utf8.txt $(srcdir)/parse-nno.pl
-	$(AM_V_GEN)perl $(srcdir)/parse-nno.pl < $< \
-		| sed -e 's/\+normert//g' \
-		| sed -e 's/\+unormert/\+Err\/Orth/g' \
-		> $@
+generated_nn_lexc/stems/nouns.lexc generated_nn_lexc/stems/verbs.lexc generated_nn_lexc/stems/adjectives.lexc generated_nn_lexc/affixes/nouns.lexc generated_nn_lexc/affixes/verbs.lexc generated_nn_lexc/affixes/adjectives.lexc: generated_nn_lexc/.stamp
+	@true
 
 clean-local:
-	-rm -f tags.txt entries.lexc fullform.utf8.txt
+	-rm -rf generated_nn_lexc
 	-rm -f ordbank_nn/fullform_nn.txt

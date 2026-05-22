@@ -1,4 +1,5 @@
-entries.lexc
+__pycache__/
+*.pycentries.lexc
 fullform.utf8.txt
 ordbank_nn/fullform_nn.txt
 tags.txt
