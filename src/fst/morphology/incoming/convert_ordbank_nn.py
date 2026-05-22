@@ -23,6 +23,13 @@ from dataclasses import dataclass
 from typing import Dict, Iterable, List, Sequence, Tuple
 
 
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+DEFAULT_FULLFORMS_ZIP = os.path.join(SCRIPT_DIR, "ordbank_nn", "fullformer_2012.txt.zip")
+DEFAULT_PARADIGMS = os.path.join(SCRIPT_DIR, "ordbank_nn", "paradigme_nn.txt")
+DEFAULT_STEMS_DIR = os.path.normpath(os.path.join(SCRIPT_DIR, "..", "stems"))
+DEFAULT_AFFIXES_DIR = os.path.normpath(os.path.join(SCRIPT_DIR, "..", "affixes"))
+
+
 @dataclass(frozen=True)
 class FullformRow:
     source_row: int
@@ -48,23 +55,47 @@ class ParadigmRow:
 ROW_RE = re.compile(r"^\d+\t\d+\t")
 
 POS_TO_STEM_FILE = {
-    "subst": ("nouns.lexc", "NounOrdbankNN"),
-    "subst_prop": ("propernouns.lexc", "ProperNounOrdbankNN"),
-    "verb": ("verbs.lexc", "VerbOrdbankNN"),
-    "adj": ("adjectives.lexc", "AdjectiveOrdbankNN"),
-    "adv": ("adverbs.lexc", "AdverbOrdbankNN"),
-    "pron": ("pronouns.lexc", "PronounOrdbankNN"),
-    "det": ("determiners.lexc", "DeterminerOrdbankNN"),
-    "prep": ("prepositions.lexc", "PrepositionOrdbankNN"),
-    "pref": ("prefixes.lexc", "PrefixOrdbankNN"),
-    "fork": ("abbreviations.lexc", "AbbreviationOrdbankNN"),
-    "interj": ("interjections.lexc", "InterjectionOrdbankNN"),
-    "konj": ("conjunctions.lexc", "ConjunctionOrdbankNN"),
-    "sbu": ("subjunctions.lexc", "SubjunctionOrdbankNN"),
-    "symb": ("symbols.lexc", "SymbolOrdbankNN"),
-    "i": ("multiword.lexc", "MultiwordOrdbankNN"),
-    "other": ("other.lexc", "OtherOrdbankNN"),
+    "subst": "nouns.lexc",
+    "subst_prop": "propernouns.lexc",
+    "verb": "verbs.lexc",
+    "adj": "adjectives.lexc",
+    "adv": "adverbs.lexc",
+    "pron": "pronouns.lexc",
+    "det": "determiners.lexc",
+    "prep": "prepositions.lexc",
+    "pref": "prefixes.lexc",
+    "fork": "abbreviations.lexc",
+    "interj": "interjections.lexc",
+    "konj": "conjunctions.lexc",
+    "sbu": "subjunctions.lexc",
+    "symb": "symbols.lexc",
+    "i": "multiword.lexc",
+    "other": "other.lexc",
 }
+
+STEM_ROOT_LEXICONS = {
+    "nouns.lexc": "NounRoot",
+    "propernouns.lexc": "ProperNoun",
+    "adjectives.lexc": "AdjectiveRoot",
+    "verbs.lexc": "VerbRoot",
+}
+
+LEGACY_ROOT_TO_EXISTING = {
+    "NounOrdbankNN": "NounRoot",
+    "ProperNounOrdbankNN": "ProperNoun",
+    "AdjectiveOrdbankNN": "AdjectiveRoot",
+    "VerbOrdbankNN": "VerbRoot",
+}
+
+MANAGED_STEM_FILES = set(STEM_ROOT_LEXICONS.keys())
+MANAGED_AFFIX_FILES = {"nouns.lexc", "propernouns.lexc", "adjectives.lexc", "verbs.lexc"}
+
+STEM_BLOCK_BEGIN = "! BEGIN ORDBANK_NN AUTO"
+STEM_BLOCK_END = "! END ORDBANK_NN AUTO"
+AFFIX_BLOCK_BEGIN = "! BEGIN ORDBANK_NN AUTO"
+AFFIX_BLOCK_END = "! END ORDBANK_NN AUTO"
+
+LEMMA_ID_RE = re.compile(r"\bLEMMA_ID=([^\s]+)")
 
 POS_TO_TAG = {
     "subst": "+N",
@@ -214,7 +245,7 @@ def classify_pos(raw_label: str) -> str:
     return base if base in POS_TO_STEM_FILE else "other"
 
 
-def pos_bucket(raw_label: str) -> Tuple[str, str]:
+def pos_bucket(raw_label: str) -> str:
     key = classify_pos(raw_label)
     return POS_TO_STEM_FILE[key]
 
@@ -407,41 +438,251 @@ def stem_pos_tag(raw_pos_label: str) -> str:
     return POS_TO_TAG.get(pos_key, "+X")
 
 
+def split_unescaped_plus(left: str) -> Tuple[str, List[str]]:
+    parts = re.split(r"(?<!%)\+", left)
+    lemma = parts[0]
+    tags = ["+" + part for part in parts[1:] if part]
+    return lemma, tags
+
+
+def parse_lexc_entry(line: str) -> Tuple[str, str, str, str, str] | None:
+    comment = ""
+    code = line.rstrip("\n")
+    if "!" in code:
+        code, comment = code.split("!", 1)
+        comment = comment.strip()
+    code = code.strip()
+    if not code or ":" not in code or ";" not in code:
+        return None
+    code = code.split(";", 1)[0].rstrip()
+    left, right = code.split(":", 1)
+    right = right.strip()
+    if not right:
+        return None
+    if " " not in right:
+        return None
+    stem, cont_lex = right.rsplit(None, 1)
+    lead = line[: len(line) - len(line.lstrip())]
+    return lead, left.strip(), stem, cont_lex, comment
+
+
+def extract_lemma_id(comment: str) -> str:
+    match = LEMMA_ID_RE.search(comment)
+    return match.group(1) if match else ""
+
+
+def strip_managed_comment_fields(comment: str) -> str:
+    out = re.sub(r"\bLEMMA_ID=[^\s]+", "", comment)
+    out = re.sub(r"\bPARADIGME_ID=[^\s]+", "", out)
+    out = re.sub(r"\bSOURCE_ROW=[^\s]+", "", out)
+    out = re.sub(r"\bROOT=[^\s]+", "", out)
+    return re.sub(r"\s+", " ", out).strip()
+
+
+def format_stem_line(
+    left: str,
+    stem: str,
+    cont_lex: str,
+    lemma_id: str,
+    paradigm_id: str,
+    source_row: int,
+    root_lexicon: str,
+    extra_comment: str,
+) -> str:
+    base_comment = (
+        f"LEMMA_ID={lemma_id} PARADIGME_ID={paradigm_id} "
+        f"SOURCE_ROW={source_row} ROOT={root_lexicon}"
+    )
+    if extra_comment:
+        base_comment += " " + extra_comment
+    return f"{left}:{stem} {cont_lex} ; ! {base_comment}"
+
+
+def find_lexicon_bounds(lines: List[str], lexicon_name: str) -> Tuple[int, int]:
+    start = -1
+    for idx, line in enumerate(lines):
+        if line.strip() == f"LEXICON {lexicon_name}":
+            start = idx
+            break
+    if start < 0:
+        for idx, line in enumerate(lines):
+            if not line_starts_lexicon(line):
+                continue
+            name = line.strip().split(maxsplit=1)[1]
+            if LEGACY_ROOT_TO_EXISTING.get(name) == lexicon_name:
+                lines[idx] = f"LEXICON {lexicon_name}"
+                start = idx
+                break
+    if start < 0:
+        lines.extend(["", f"LEXICON {lexicon_name}"])
+        start = len(lines) - 1
+
+    end = len(lines)
+    for idx in range(start + 1, len(lines)):
+        if line_starts_lexicon(lines[idx]):
+            end = idx
+            break
+    return start, end
+
+
+def line_starts_lexicon(line: str) -> bool:
+    return line.lstrip().startswith("LEXICON ")
+
+
+def ensure_managed_block(lines: List[str], start: int, end: int, begin: str, finish: str) -> Tuple[int, int]:
+    begin_idx = -1
+    end_idx = -1
+    for idx in range(start + 1, end):
+        if lines[idx].strip() == begin:
+            begin_idx = idx
+        if lines[idx].strip() == finish and begin_idx >= 0:
+            end_idx = idx
+            break
+
+    if begin_idx >= 0 and end_idx >= 0:
+        return begin_idx, end_idx
+
+    insert_at = start + 1
+    block = [begin, finish]
+    lines[insert_at:insert_at] = block
+    return insert_at, insert_at + 1
+
+
+def merge_stem_file(path: str, root_lexicon: str, generated: Dict[str, Tuple[str, str, str, int]]) -> int:
+    if os.path.exists(path):
+        with open(path, "r", encoding="utf-8") as fh:
+            lines = [line.rstrip("\n") for line in fh]
+    else:
+        lines = [
+            "! Generated from ordbank_nn/fullformer_2012.txt.zip (ISO-8859-1 -> UTF-8).",
+            f"LEXICON {root_lexicon}",
+        ]
+
+    if lines and "Generated from ordbank_nn/" in lines[0] and STEM_BLOCK_BEGIN not in lines:
+        lines = [f"LEXICON {root_lexicon}"]
+
+    start, end = find_lexicon_bounds(lines, root_lexicon)
+    begin_idx, end_idx = ensure_managed_block(lines, start, end, STEM_BLOCK_BEGIN, STEM_BLOCK_END)
+
+    existing_by_id: Dict[str, str] = {}
+    for line in lines[begin_idx + 1 : end_idx]:
+        parsed = parse_lexc_entry(line)
+        if not parsed:
+            continue
+        lemma_id = extract_lemma_id(parsed[4])
+        if lemma_id:
+            existing_by_id[lemma_id] = line
+
+    merged_lines: List[str] = []
+    for lemma_id in sorted(generated.keys(), key=to_int):
+        new_left, new_stem, new_cont, source_row = generated[lemma_id]
+        extra_comment = ""
+        if lemma_id in existing_by_id:
+            parsed = parse_lexc_entry(existing_by_id[lemma_id])
+            if parsed:
+                _, existing_left, _, _, existing_comment = parsed
+                new_lemma, new_tags = split_unescaped_plus(new_left)
+                pos_tag = new_tags[0] if new_tags else ""
+                _, existing_tags = split_unescaped_plus(existing_left)
+                kept_tags = [tag for tag in existing_tags if tag != pos_tag]
+                new_left = new_lemma + pos_tag + "".join(kept_tags)
+                extra_comment = strip_managed_comment_fields(existing_comment)
+
+        merged_lines.append(
+            format_stem_line(
+                left=new_left,
+                stem=new_stem,
+                cont_lex=new_cont,
+                lemma_id=lemma_id,
+                paradigm_id=new_cont,
+                source_row=source_row,
+                root_lexicon=root_lexicon,
+                extra_comment=extra_comment,
+            )
+        )
+
+    lines[begin_idx + 1 : end_idx] = merged_lines
+    with open(path, "w", encoding="utf-8", newline="\n") as fh:
+        for line in lines:
+            fh.write(line + "\n")
+
+    return len(merged_lines)
+
+
 def write_stems(grouped_fullforms: Dict[str, List[FullformRow]], stem_dir: str) -> Dict[str, int]:
     os.makedirs(stem_dir, exist_ok=True)
 
-    by_file: Dict[str, List[str]] = defaultdict(list)
+    generated_by_file: Dict[str, Dict[str, Tuple[str, str, str, int]]] = defaultdict(dict)
     counters: Dict[str, int] = defaultdict(int)
 
     for lemma_id, rows in grouped_fullforms.items():
         base = choose_base_row(rows)
+        stem_file = pos_bucket(base.tags)
+        if stem_file not in MANAGED_STEM_FILES:
+            continue
+
         forms = sorted({row.wordform for row in rows})
-        stem = longest_common_prefix(forms)
-        if not stem:
-            stem = base.wordform
-
-        stem_file, root_lexicon = pos_bucket(base.tags)
+        stem = longest_common_prefix(forms) or base.wordform
         pos_tag = stem_pos_tag(base.tags)
-        line = (
-            f"{escape_lexc_lexeme(base.wordform)}{pos_tag}:{escape_lexc_lexeme(stem)} {base.paradigm_id} ; "
-            f"! LEMMA_ID={lemma_id} PARADIGME_ID={base.paradigm_id} "
-            f"SOURCE_ROW={base.source_row} ROOT={root_lexicon}"
+        left = f"{escape_lexc_lexeme(base.wordform)}{pos_tag}"
+        generated_by_file[stem_file][lemma_id] = (
+            left,
+            escape_lexc_lexeme(stem),
+            base.paradigm_id,
+            base.source_row,
         )
-        by_file[stem_file].append(line)
-        counters[stem_file] += 1
 
-    for stem_file, lines in by_file.items():
-        lines.sort()
-        root_lexicon = next((mapping[1] for mapping in POS_TO_STEM_FILE.values() if mapping[0] == stem_file), "OtherOrdbankNN")
+    for stem_file, generated in generated_by_file.items():
         path = os.path.join(stem_dir, stem_file)
-        with open(path, "w", encoding="utf-8", newline="\n") as fh:
-            fh.write("! Generated from ordbank_nn/fullformer_2012.txt.zip (ISO-8859-1 -> UTF-8).\n")
-            fh.write("! One lemma per LEMMA_ID, stem=longest common prefix, POS tag in stem line.\n")
-            fh.write(f"LEXICON {root_lexicon}\n")
-            for line in lines:
-                fh.write(line + "\n")
+        root_lexicon = STEM_ROOT_LEXICONS[stem_file]
+        counters[stem_file] = merge_stem_file(path, root_lexicon, generated)
 
     return counters
+
+
+def merge_affix_file(path: str, generated_blocks: Sequence[str]) -> int:
+    if os.path.exists(path):
+        with open(path, "r", encoding="utf-8") as fh:
+            lines = [line.rstrip("\n") for line in fh]
+    else:
+        lines = []
+
+    if lines and "Generated from ordbank_nn/" in lines[0] and AFFIX_BLOCK_BEGIN not in lines:
+        lines = []
+
+    begin_idx = -1
+    end_idx = -1
+    for idx, line in enumerate(lines):
+        if line.strip() == AFFIX_BLOCK_BEGIN:
+            begin_idx = idx
+        if line.strip() == AFFIX_BLOCK_END and begin_idx >= 0:
+            end_idx = idx
+            break
+
+    block_lines: List[str] = [AFFIX_BLOCK_BEGIN]
+    if generated_blocks:
+        block_lines.append("! Generated from ordbank_nn/paradigme_nn.txt (ISO-8859-1 -> UTF-8).")
+        block_lines.append("! Continuation lexicon names are raw PARADIGME_ID values.")
+        block_lines.append("! POS stays in stem entries; all other tags are here.")
+        block_lines.append("")
+        for i, block in enumerate(sorted(generated_blocks)):
+            block_lines.extend(block.split("\n"))
+            if i != len(generated_blocks) - 1:
+                block_lines.append("")
+    block_lines.append(AFFIX_BLOCK_END)
+
+    if begin_idx >= 0 and end_idx >= 0:
+        lines[begin_idx : end_idx + 1] = block_lines
+    else:
+        if lines and lines[-1] != "":
+            lines.append("")
+        lines.extend(block_lines)
+
+    with open(path, "w", encoding="utf-8", newline="\n") as fh:
+        for line in lines:
+            fh.write(line + "\n")
+
+    return sum(1 for block in generated_blocks for line in block.split("\n") if line.startswith(" "))
 
 
 def write_affixes(grouped_paradigms: Dict[str, List[ParadigmRow]], affix_dir: str) -> Dict[str, int]:
@@ -452,7 +693,10 @@ def write_affixes(grouped_paradigms: Dict[str, List[ParadigmRow]], affix_dir: st
 
     for paradigm_id, rows in grouped_paradigms.items():
         pos = rows[0].pos if rows else ""
-        affix_file = POS_TO_STEM_FILE[classify_pos(pos)][0]
+        affix_file = POS_TO_STEM_FILE[classify_pos(pos)]
+        if affix_file not in MANAGED_AFFIX_FILES:
+            continue
+
         lexicon_header = f"LEXICON {paradigm_id}"
         lex_lines = [lexicon_header]
         for row in rows:
@@ -465,16 +709,12 @@ def write_affixes(grouped_paradigms: Dict[str, List[ParadigmRow]], affix_dir: st
                 lex_lines.append(
                     f" {tag}:{surf} # ; ! POS={row.pos} LINE={row.line_no} ENDING_RAW={row.ending}"
                 )
-                counters[affix_file] += 1
         by_file[affix_file].append("\n".join(lex_lines))
 
-    for affix_file, blocks in by_file.items():
+    for affix_file in MANAGED_AFFIX_FILES:
+        blocks = by_file.get(affix_file, [])
         path = os.path.join(affix_dir, affix_file)
-        with open(path, "w", encoding="utf-8", newline="\n") as fh:
-            fh.write("! Generated from ordbank_nn/paradigme_nn.txt (ISO-8859-1 -> UTF-8).\n")
-            fh.write("! Continuation lexicon names are raw PARADIGME_ID values.\n")
-            fh.write("! POS stays in stem entries; all other tags are here.\n\n")
-            fh.write("\n\n".join(sorted(blocks)) + "\n")
+        counters[affix_file] = merge_affix_file(path, blocks)
 
     return counters
 
@@ -483,16 +723,16 @@ def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument(
         "--fullforms-zip",
-        default="ordbank_nn/fullformer_2012.txt.zip",
+        default=DEFAULT_FULLFORMS_ZIP,
         help="Path to fullform zip export",
     )
     parser.add_argument(
         "--paradigms",
-        default="ordbank_nn/paradigme_nn.txt",
+        default=DEFAULT_PARADIGMS,
         help="Path to paradigm export",
     )
-    parser.add_argument("--stems-dir", default="../stems", help="Output directory for stem lexc files")
-    parser.add_argument("--affixes-dir", default="../affixes", help="Output directory for affix lexc files")
+    parser.add_argument("--stems-dir", default=DEFAULT_STEMS_DIR, help="Output directory for stem lexc files")
+    parser.add_argument("--affixes-dir", default=DEFAULT_AFFIXES_DIR, help="Output directory for affix lexc files")
     args = parser.parse_args()
 
     grouped_fullforms = parse_fullforms(args.fullforms_zip)
