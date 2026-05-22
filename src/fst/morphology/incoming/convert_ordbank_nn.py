@@ -334,7 +334,7 @@ def noun_gender_tags(pos_text: str) -> List[str]:
 
 
 def map_noun_tags(pos_text: str, morph_desc: str) -> List[str]:
-    tags = ["+N"]
+    tags: List[str] = []
     if "prop" in pos_text.lower():
         tags.append("+Prop")
     tags.extend(noun_gender_tags(pos_text))
@@ -355,69 +355,68 @@ def map_noun_tags(pos_text: str, morph_desc: str) -> List[str]:
             mapped = normalize_free_token(tok)
             if mapped:
                 tags.append("+" + mapped)
-    return ["".join(tags)]
+    return ["".join(tags)] if tags else ["+X"]
 
 
 def map_adj_tags(morph_desc: str) -> List[str]:
     md = morph_desc.strip().lower()
     if md == "pos m/f ub eint":
-        return ["+A+Msc+Sg+Indef", "+A+Fem+Sg+Indef"]
+        return ["+Msc+Sg+Indef", "+Fem+Sg+Indef"]
     if md == "pos fl":
-        return ["+A+Pl+Indef"]
+        return ["+Pl+Indef"]
     if md == "pos bu eint":
-        return ["+A+Sg+Def"]
+        return ["+Sg+Def"]
     if md == "pos nøyt ub eint" or md == "pos noyt ub eint":
-        return ["+A+Neu+Sg+Indef"]
+        return ["+Neu+Sg+Indef"]
     if md == "komp":
-        return ["+A+Comp"]
+        return ["+Comp"]
     if md == "sup ub":
-        return ["+A+Superl+Indef"]
+        return ["+Superl+Indef"]
     if md == "sup bu":
-        return ["+A+Superl+Def"]
+        return ["+Superl+Def"]
 
-    tags = ["+A"]
+    tags: List[str] = []
     for tok in md.split():
         mapped = normalize_free_token(tok)
         if mapped:
             tags.append("+" + mapped)
-    return ["".join(tags)]
+    return ["".join(tags)] if tags else ["+X"]
 
 
 def map_verb_tags(morph_desc: str) -> List[str]:
     md = morph_desc.strip().lower()
     if md == "inf":
-        return ["+V+Inf"]
+        return ["+Inf"]
     if md == "inf pass":
-        return ["+V+Inf+Pass"]
+        return ["+Inf+Pass"]
     if md == "pres":
-        return ["+V+Ind+Prs"]
+        return ["+Ind+Prs"]
     if md == "pret":
-        return ["+V+Ind+Prt"]
+        return ["+Ind+Prt"]
     if md == "perf-part":
-        return ["+V+PrfPtc"]
+        return ["+PrfPtc"]
     if md.startswith("adj <perf-part>"):
-        return ["+V+PrfPtc"]
+        return ["+PrfPtc"]
     if md.startswith("adj <pres-part>"):
-        return ["+V+PrsPtc"]
+        return ["+PrsPtc"]
     if md == "imp":
-        return ["+V+Imp"]
+        return ["+Imp"]
 
-    tags = ["+V"]
+    tags: List[str] = []
     for tok in md.replace("<", " ").replace(">", " ").split():
         mapped = normalize_free_token(tok)
         if mapped:
             tags.append("+" + mapped)
-    return ["".join(tags)]
+    return ["".join(tags)] if tags else ["+X"]
 
 
 def map_generic_tags(pos: str, morph_desc: str) -> List[str]:
-    stem_tag = POS_TO_TAG.get(pos, "+X")
-    tags = [stem_tag]
+    tags: List[str] = []
     for tok in morph_desc.strip().lower().split():
         mapped = normalize_free_token(tok)
         if mapped:
             tags.append("+" + mapped)
-    return ["".join(tags)]
+    return ["".join(tags)] if tags else ["+X"]
 
 
 def map_affix_tags(pos_label: str, morph_desc: str) -> List[str]:
@@ -484,15 +483,9 @@ def format_stem_line(
     stem: str,
     cont_lex: str,
     lemma_id: str,
-    paradigm_id: str,
-    source_row: int,
-    root_lexicon: str,
     extra_comment: str,
 ) -> str:
-    base_comment = (
-        f"LEMMA_ID={lemma_id} PARADIGME_ID={paradigm_id} "
-        f"SOURCE_ROW={source_row} ROOT={root_lexicon}"
-    )
+    base_comment = f"LEMMA_ID={lemma_id}"
     if extra_comment:
         base_comment += " " + extra_comment
     return f"{left}:{stem} {cont_lex} ; ! {base_comment}"
@@ -548,7 +541,7 @@ def ensure_managed_block(lines: List[str], start: int, end: int, begin: str, fin
     return insert_at, insert_at + 1
 
 
-def merge_stem_file(path: str, root_lexicon: str, generated: Dict[str, Tuple[str, str, str, int]]) -> int:
+def merge_stem_file(path: str, root_lexicon: str, generated: Dict[str, Tuple[str, str, str]]) -> int:
     if os.path.exists(path):
         with open(path, "r", encoding="utf-8") as fh:
             lines = [line.rstrip("\n") for line in fh]
@@ -575,7 +568,7 @@ def merge_stem_file(path: str, root_lexicon: str, generated: Dict[str, Tuple[str
 
     merged_lines: List[str] = []
     for lemma_id in sorted(generated.keys(), key=to_int):
-        new_left, new_stem, new_cont, source_row = generated[lemma_id]
+        new_left, new_stem, new_cont = generated[lemma_id]
         extra_comment = ""
         if lemma_id in existing_by_id:
             parsed = parse_lexc_entry(existing_by_id[lemma_id])
@@ -594,9 +587,6 @@ def merge_stem_file(path: str, root_lexicon: str, generated: Dict[str, Tuple[str
                 stem=new_stem,
                 cont_lex=new_cont,
                 lemma_id=lemma_id,
-                paradigm_id=new_cont,
-                source_row=source_row,
-                root_lexicon=root_lexicon,
                 extra_comment=extra_comment,
             )
         )
@@ -612,7 +602,7 @@ def merge_stem_file(path: str, root_lexicon: str, generated: Dict[str, Tuple[str
 def write_stems(grouped_fullforms: Dict[str, List[FullformRow]], stem_dir: str) -> Dict[str, int]:
     os.makedirs(stem_dir, exist_ok=True)
 
-    generated_by_file: Dict[str, Dict[str, Tuple[str, str, str, int]]] = defaultdict(dict)
+    generated_by_file: Dict[str, Dict[str, Tuple[str, str, str]]] = defaultdict(dict)
     counters: Dict[str, int] = defaultdict(int)
 
     for lemma_id, rows in grouped_fullforms.items():
@@ -629,7 +619,6 @@ def write_stems(grouped_fullforms: Dict[str, List[FullformRow]], stem_dir: str) 
             left,
             escape_lexc_lexeme(stem),
             base.paradigm_id,
-            base.source_row,
         )
 
     for stem_file, generated in generated_by_file.items():
