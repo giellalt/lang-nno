@@ -36,6 +36,7 @@ class FullformRow:
     lemma_id: str
     wordform: str
     tags: str
+    status: str
     paradigm_id: str
     paradigm_line: str
 
@@ -153,6 +154,7 @@ def parse_fullforms(path: str) -> Dict[str, List[FullformRow]]:
         lemma_id = cols[1].strip()
         wordform = cols[2].strip()
         tags = cols[3].strip()
+        status = cols[-1].strip()
         paradigm_id = cols[4].strip()
         paradigm_line = cols[5].strip()
         if not lemma_id or not wordform or not paradigm_id:
@@ -163,6 +165,7 @@ def parse_fullforms(path: str) -> Dict[str, List[FullformRow]]:
                 lemma_id=lemma_id,
                 wordform=wordform,
                 tags=tags,
+                status=status,
                 paradigm_id=paradigm_id,
                 paradigm_line=paradigm_line,
             )
@@ -437,6 +440,14 @@ def stem_pos_tag(raw_pos_label: str) -> str:
     return POS_TO_TAG.get(pos_key, "+X")
 
 
+def has_err_orth_marker(rows: List[FullformRow]) -> bool:
+    for row in rows:
+        low = row.status.lower()
+        if "unormert" in low or "unomert" in low:
+            return True
+    return False
+
+
 def split_unescaped_plus(left: str) -> Tuple[str, List[str]]:
     parts = re.split(r"(?<!%)\+", left)
     lemma = parts[0]
@@ -541,7 +552,7 @@ def ensure_managed_block(lines: List[str], start: int, end: int, begin: str, fin
     return insert_at, insert_at + 1
 
 
-def merge_stem_file(path: str, root_lexicon: str, generated: Dict[str, Tuple[str, str, str]]) -> int:
+def merge_stem_file(path: str, root_lexicon: str, generated: Dict[str, Tuple[str, str, str, bool]]) -> int:
     if os.path.exists(path):
         with open(path, "r", encoding="utf-8") as fh:
             lines = [line.rstrip("\n") for line in fh]
@@ -568,7 +579,7 @@ def merge_stem_file(path: str, root_lexicon: str, generated: Dict[str, Tuple[str
 
     merged_lines: List[str] = []
     for lemma_id in sorted(generated.keys(), key=to_int):
-        new_left, new_stem, new_cont = generated[lemma_id]
+        new_left, new_stem, new_cont, needs_err_orth = generated[lemma_id]
         extra_comment = ""
         if lemma_id in existing_by_id:
             parsed = parse_lexc_entry(existing_by_id[lemma_id])
@@ -578,8 +589,12 @@ def merge_stem_file(path: str, root_lexicon: str, generated: Dict[str, Tuple[str
                 pos_tag = new_tags[0] if new_tags else ""
                 _, existing_tags = split_unescaped_plus(existing_left)
                 kept_tags = [tag for tag in existing_tags if tag != pos_tag]
+                if needs_err_orth and "+Err/Orth" not in kept_tags:
+                    kept_tags.append("+Err/Orth")
                 new_left = new_lemma + pos_tag + "".join(kept_tags)
                 extra_comment = strip_managed_comment_fields(existing_comment)
+        elif needs_err_orth and "+Err/Orth" not in new_left:
+            new_left += "+Err/Orth"
 
         merged_lines.append(
             format_stem_line(
@@ -602,7 +617,7 @@ def merge_stem_file(path: str, root_lexicon: str, generated: Dict[str, Tuple[str
 def write_stems(grouped_fullforms: Dict[str, List[FullformRow]], stem_dir: str) -> Dict[str, int]:
     os.makedirs(stem_dir, exist_ok=True)
 
-    generated_by_file: Dict[str, Dict[str, Tuple[str, str, str]]] = defaultdict(dict)
+    generated_by_file: Dict[str, Dict[str, Tuple[str, str, str, bool]]] = defaultdict(dict)
     counters: Dict[str, int] = defaultdict(int)
 
     for lemma_id, rows in grouped_fullforms.items():
@@ -615,10 +630,14 @@ def write_stems(grouped_fullforms: Dict[str, List[FullformRow]], stem_dir: str) 
         stem = longest_common_prefix(forms) or base.wordform
         pos_tag = stem_pos_tag(base.tags)
         left = f"{escape_lexc_lexeme(base.wordform)}{pos_tag}"
+        err_orth = has_err_orth_marker(rows)
+        if err_orth:
+            left += "+Err/Orth"
         generated_by_file[stem_file][lemma_id] = (
             left,
             escape_lexc_lexeme(stem),
             base.paradigm_id,
+            err_orth,
         )
 
     for stem_file, generated in generated_by_file.items():
