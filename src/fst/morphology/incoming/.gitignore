@@ -3,3 +3,4 @@ __pycache__/
 fullform.utf8.txt
 ordbank_nn/fullform_nn.txt
 tags.txt
+tmp/

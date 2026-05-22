@@ -28,6 +28,8 @@ DEFAULT_FULLFORMS_ZIP = os.path.join(SCRIPT_DIR, "ordbank_nn", "fullformer_2012.
 DEFAULT_PARADIGMS = os.path.join(SCRIPT_DIR, "ordbank_nn", "paradigme_nn.txt")
 DEFAULT_STEMS_DIR = os.path.normpath(os.path.join(SCRIPT_DIR, "..", "stems"))
 DEFAULT_AFFIXES_DIR = os.path.normpath(os.path.join(SCRIPT_DIR, "..", "affixes"))
+DEFAULT_TMP_DIR = os.path.join(SCRIPT_DIR, "tmp")
+DEFAULT_MULTIWORD_REPORT = os.path.join(DEFAULT_TMP_DIR, "ordbank_plusmarked_forms_from_conversion.txt")
 
 
 @dataclass(frozen=True)
@@ -144,8 +146,9 @@ def normalize_input_lines(lines: Iterable[str]) -> Iterable[str]:
             yield line
 
 
-def parse_fullforms(path: str) -> Dict[str, List[FullformRow]]:
+def parse_fullforms(path: str) -> Tuple[Dict[str, List[FullformRow]], List[str]]:
     grouped: Dict[str, List[FullformRow]] = defaultdict(list)
+    skipped_multiwords: set[str] = set()
     for line in normalize_input_lines(read_zip_text(path)):
         cols = line.split("\t")
         if len(cols) < 6:
@@ -158,6 +161,9 @@ def parse_fullforms(path: str) -> Dict[str, List[FullformRow]]:
         paradigm_id = cols[4].strip()
         paradigm_line = cols[5].strip()
         if not lemma_id or not wordform or not paradigm_id:
+            continue
+        if has_plus_marker(wordform):
+            skipped_multiwords.add(wordform)
             continue
         grouped[lemma_id].append(
             FullformRow(
@@ -172,7 +178,21 @@ def parse_fullforms(path: str) -> Dict[str, List[FullformRow]]:
         )
     for lemma_id in grouped:
         grouped[lemma_id].sort(key=lambda row: row.source_row)
-    return grouped
+    return grouped, sorted(skipped_multiwords)
+
+
+def has_plus_marker(value: str) -> bool:
+    return "+" in value
+
+
+def write_multiword_report(path: str, forms: Sequence[str]) -> None:
+    os.makedirs(os.path.dirname(path), exist_ok=True)
+    with open(path, "w", encoding="utf-8", newline="\n") as fh:
+        fh.write("# Plus-marked forms skipped by conversion\n")
+        fh.write("# marker: '+'\n")
+        fh.write(f"# count={len(forms)}\n")
+        for form in forms:
+            fh.write(form + "\n")
 
 
 def parse_paradigms(path: str) -> Dict[str, List[ParadigmRow]]:
@@ -779,10 +799,16 @@ def main() -> int:
     )
     parser.add_argument("--stems-dir", default=DEFAULT_STEMS_DIR, help="Output directory for stem lexc files")
     parser.add_argument("--affixes-dir", default=DEFAULT_AFFIXES_DIR, help="Output directory for affix lexc files")
+    parser.add_argument(
+        "--multiword-report",
+        default=DEFAULT_MULTIWORD_REPORT,
+        help="Path to report file for skipped multiword forms",
+    )
     args = parser.parse_args()
 
-    grouped_fullforms = parse_fullforms(args.fullforms_zip)
+    grouped_fullforms, skipped_multiwords = parse_fullforms(args.fullforms_zip)
     grouped_paradigms = parse_paradigms(args.paradigms)
+    write_multiword_report(args.multiword_report, skipped_multiwords)
 
     stem_counts = write_stems(grouped_fullforms, args.stems_dir)
     affix_counts = write_affixes(grouped_paradigms, args.affixes_dir)
@@ -790,6 +816,9 @@ def main() -> int:
     print(f"Generated stems for {len(grouped_fullforms)} lemma IDs")
     for name in sorted(stem_counts):
         print(f"  stems/{name}: {stem_counts[name]} entries")
+
+    print(f"Skipped plus-marked forms in conversion: {len(skipped_multiwords)}")
+    print(f"  report: {args.multiword_report}")
 
     print(f"Generated affix lexicons for {len(grouped_paradigms)} paradigm IDs")
     for name in sorted(affix_counts):

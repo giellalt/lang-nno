@@ -12,6 +12,8 @@ lookup_tool=@HFST_OPTIMIZED_LOOKUP@
 
 fullforms_zip=$top_srcdir/src/fst/morphology/incoming/ordbank_nn/fullformer_2012.txt.zip
 analyser=$top_builddir/src/fst/analyser-gt-desc.hfstol
+incoming_tmp_dir=$top_srcdir/src/fst/morphology/incoming/tmp
+multiword_report=$incoming_tmp_dir/ordbank_plusmarked_forms_from_test.txt
 
 if ! command -v "$lookup_tool" >/dev/null 2>&1; then
     echo "skip: lookup tool not found: $lookup_tool"
@@ -35,9 +37,12 @@ if ! test -f "$analyser"; then
 fi
 
 forms_file=$(mktemp)
+forms_for_lookup=$(mktemp)
 lookup_out=$(mktemp)
 failed_file=$(mktemp)
-trap 'rm -f "$forms_file" "$lookup_out" "$failed_file"' EXIT
+trap 'rm -f "$forms_file" "$forms_for_lookup" "$lookup_out" "$failed_file"' EXIT
+
+mkdir -p "$incoming_tmp_dir"
 
 # Extract data rows, keep column 3 (wordform), and deduplicate.
 unzip -p "$fullforms_zip" \
@@ -61,16 +66,33 @@ BEGIN { started=0 }
 ' \
 | LC_ALL=C sort -u > "$forms_file"
 
+awk '!/\+/' "$forms_file" > "$forms_for_lookup"
+
 total_forms=$(wc -l < "$forms_file" | tr -d ' ')
 if test "$total_forms" -eq 0; then
     echo "fail: no forms extracted from $fullforms_zip"
     exit 1
 fi
 
-"$lookup_tool" "$analyser" < "$forms_file" > "$lookup_out"
+multiword_forms=$(awk '/\+/ {n++} END {print n+0}' "$forms_file")
+lookup_forms=$(wc -l < "$forms_for_lookup" | tr -d ' ')
+
+{
+    echo "# Plus-marked forms skipped by test"
+    echo "# marker: '+'"
+    echo "# count=$multiword_forms"
+    awk '/\+/' "$forms_file"
+} > "$multiword_report"
+
+if test "$lookup_forms" -eq 0; then
+    echo "fail: no non-multiword forms left after filtering"
+    exit 1
+fi
+
+"$lookup_tool" "$analyser" < "$forms_for_lookup" > "$lookup_out"
 
 read looked_up ok bad < <(
-awk -v failf="$failed_file" '
+awk -F '\t' -v failf="$failed_file" '
 function flush_group() {
     if (!seen) return
     total++
@@ -115,11 +137,14 @@ END {
 
 echo "Ordbank coverage test"
 echo "  source forms (unique): $total_forms"
+echo "  multiword forms skipped: $multiword_forms"
+echo "  multiword report:        $multiword_report"
+echo "  forms tested:            $lookup_forms"
 echo "  forms seen in lookup:   $looked_up"
 echo "  accepted:               $ok"
 echo "  failed:                 $bad"
 
-if test "$looked_up" -ne "$total_forms"; then
+if test "$looked_up" -ne "$lookup_forms"; then
     echo "fail: mismatch between extracted forms and lookup groups"
     exit 1
 fi
