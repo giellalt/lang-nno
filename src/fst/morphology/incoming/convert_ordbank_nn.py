@@ -533,6 +533,31 @@ def line_starts_lexicon(line: str) -> bool:
     return line.lstrip().startswith("LEXICON ")
 
 
+def lexicon_name_from_line(line: str) -> str:
+    stripped = line.strip()
+    if not stripped.startswith("LEXICON "):
+        return ""
+    parts = stripped.split(maxsplit=1)
+    return parts[1].strip() if len(parts) > 1 else ""
+
+
+def find_named_lexicon_bounds(lines: List[str], lexicon_name: str) -> Tuple[int, int]:
+    start = -1
+    for idx, line in enumerate(lines):
+        if lexicon_name_from_line(line) == lexicon_name:
+            start = idx
+            break
+    if start < 0:
+        return -1, -1
+
+    end = len(lines)
+    for idx in range(start + 1, len(lines)):
+        if line_starts_lexicon(lines[idx]):
+            end = idx
+            break
+    return start, end
+
+
 def ensure_managed_block(lines: List[str], start: int, end: int, begin: str, finish: str) -> Tuple[int, int]:
     begin_idx = -1
     end_idx = -1
@@ -655,42 +680,57 @@ def merge_affix_file(path: str, generated_blocks: Sequence[str]) -> int:
     else:
         lines = []
 
-    if lines and "Generated from ordbank_nn/" in lines[0] and AFFIX_BLOCK_BEGIN not in lines:
-        lines = []
+    # Remove legacy auto-block markers and old generated header comments.
+    lines = [
+        line
+        for line in lines
+        if line.strip() not in {AFFIX_BLOCK_BEGIN, AFFIX_BLOCK_END}
+        and not line.startswith("! Generated from ordbank_nn/")
+        and line.strip() != "! Continuation lexicon names are raw PARADIGME_ID values."
+        and line.strip() != "! POS stays in stem entries; all other tags are here."
+    ]
 
-    begin_idx = -1
-    end_idx = -1
-    for idx, line in enumerate(lines):
-        if line.strip() == AFFIX_BLOCK_BEGIN:
-            begin_idx = idx
-        if line.strip() == AFFIX_BLOCK_END and begin_idx >= 0:
-            end_idx = idx
-            break
+    generated_map: Dict[str, List[str]] = {}
+    for block in generated_blocks:
+        block_lines = block.split("\n")
+        if not block_lines:
+            continue
+        name = lexicon_name_from_line(block_lines[0])
+        if not name:
+            continue
+        if block_lines[0] != "":
+            block_lines = [""] + block_lines
+        generated_map[name] = block_lines
 
-    block_lines: List[str] = [AFFIX_BLOCK_BEGIN]
-    if generated_blocks:
-        block_lines.append("! Generated from ordbank_nn/paradigme_nn.txt (ISO-8859-1 -> UTF-8).")
-        block_lines.append("! Continuation lexicon names are raw PARADIGME_ID values.")
-        block_lines.append("! POS stays in stem entries; all other tags are here.")
-        block_lines.append("")
-        for i, block in enumerate(sorted(generated_blocks)):
-            block_lines.extend(block.split("\n"))
-            if i != len(generated_blocks) - 1:
-                block_lines.append("")
-    block_lines.append(AFFIX_BLOCK_END)
+    for lex_name in sorted(generated_map.keys()):
+        block_lines = generated_map[lex_name]
+        start, end = find_named_lexicon_bounds(lines, lex_name)
+        if start >= 0:
+            lines[start:end] = block_lines
+        else:
+            if lines and lines[-1] != "":
+                lines.append("")
+            lines.extend(block_lines)
 
-    if begin_idx >= 0 and end_idx >= 0:
-        lines[begin_idx : end_idx + 1] = block_lines
-    else:
-        if lines and lines[-1] != "":
-            lines.append("")
-        lines.extend(block_lines)
+    lines = ensure_blank_before_every_lexicon(lines)
 
     with open(path, "w", encoding="utf-8", newline="\n") as fh:
         for line in lines:
             fh.write(line + "\n")
 
     return sum(1 for block in generated_blocks for line in block.split("\n") if line.startswith(" "))
+
+
+def ensure_blank_before_every_lexicon(lines: List[str]) -> List[str]:
+    out: List[str] = []
+    for line in lines:
+        normalized = "" if line.strip() == "" else line
+        if normalized.startswith("LEXICON ") and out and out[-1] != "":
+            out.append("")
+        if normalized == "" and out and out[-1] == "":
+            continue
+        out.append(normalized)
+    return out
 
 
 def write_affixes(grouped_paradigms: Dict[str, List[ParadigmRow]], affix_dir: str) -> Dict[str, int]:
@@ -714,9 +754,7 @@ def write_affixes(grouped_paradigms: Dict[str, List[ParadigmRow]], affix_dir: st
             ending = parse_ending_code(row.ending)
             surf = "%>" + escape_affix_literal(ending)
             for tag in tags:
-                lex_lines.append(
-                    f" {tag}:{surf} # ; ! POS={row.pos} LINE={row.line_no} ENDING_RAW={row.ending}"
-                )
+                lex_lines.append(f" {tag}:{surf} # ;")
         by_file[affix_file].append("\n".join(lex_lines))
 
     for affix_file in MANAGED_AFFIX_FILES:
