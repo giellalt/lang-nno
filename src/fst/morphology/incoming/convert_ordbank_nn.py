@@ -203,6 +203,7 @@ ADJ_PARADIGM_TO_LEGACY_CONT = {
 
 PROPERNOUN_PARADIGM_TO_LEGACY_CONT = {
     # Manual propernoun section consistently uses PROP; map Ordbank name paradigms to PROP.
+    "000": "PROP",
     "79B": "PROP",
     "89B": "PROP",
     "994": "PROP",
@@ -699,6 +700,12 @@ def map_stem_continuation(raw_pos_label: str, paradigm_id: str) -> str:
     return paradigm_id
 
 
+def should_emit_raw_affix_lexicon(raw_pos_label: str, paradigm_id: str) -> bool:
+    # Raw Ordbank affix lexicons are transitional. Once a paradigm is mapped
+    # to a legacy continuation class in stems, we stop emitting the raw block.
+    return map_stem_continuation(raw_pos_label, paradigm_id) == paradigm_id
+
+
 def has_err_orth_marker(rows: List[FullformRow]) -> bool:
     for row in rows:
         low = row.status.lower()
@@ -957,8 +964,6 @@ def merge_affix_file(path: str, generated_blocks: Sequence[str]) -> int:
         name = lexicon_name_from_line(block_lines[0])
         if not name:
             continue
-        if block_lines[0] != "":
-            block_lines = [""] + block_lines
         generated_map[name] = block_lines
 
     for lex_name in sorted(generated_map.keys()):
@@ -966,12 +971,11 @@ def merge_affix_file(path: str, generated_blocks: Sequence[str]) -> int:
         start, end = find_named_lexicon_bounds(lines, lex_name)
         if start >= 0:
             lines[start:end] = block_lines
-        else:
-            if lines and lines[-1] != "":
-                lines.append("")
-            lines.extend(block_lines)
+        # Don't add blocks that don't already exist in the file.
+        # The affix file is the authority on which raw paradigm blocks to maintain.
 
     lines = ensure_blank_before_every_lexicon(lines)
+    lines = remove_mapping_comment_blank_lines(lines)
 
     with open(path, "w", encoding="utf-8", newline="\n") as fh:
         for line in lines:
@@ -997,6 +1001,25 @@ def ensure_blank_before_every_lexicon(lines: List[str]) -> List[str]:
     return out
 
 
+def remove_mapping_comment_blank_lines(lines: List[str]) -> List[str]:
+    out: List[str] = []
+    i = 0
+    while i < len(lines):
+        line = lines[i]
+        if (
+            line.lstrip().startswith("! Ordbank mapping")
+            and i + 2 < len(lines)
+            and lines[i + 1].strip() == ""
+            and lines[i + 2].lstrip().startswith("LEXICON ")
+        ):
+            out.append(line)
+            i += 2
+            continue
+        out.append(line)
+        i += 1
+    return out
+
+
 def write_affixes(grouped_paradigms: Dict[str, List[ParadigmRow]], affix_dir: str) -> Dict[str, int]:
     os.makedirs(affix_dir, exist_ok=True)
 
@@ -1007,6 +1030,9 @@ def write_affixes(grouped_paradigms: Dict[str, List[ParadigmRow]], affix_dir: st
         pos = rows[0].pos if rows else ""
         affix_file = POS_TO_STEM_FILE[classify_pos(pos)]
         if affix_file not in MANAGED_AFFIX_FILES:
+            continue
+
+        if not should_emit_raw_affix_lexicon(pos, paradigm_id):
             continue
 
         lexicon_header = f"LEXICON {paradigm_id}"
