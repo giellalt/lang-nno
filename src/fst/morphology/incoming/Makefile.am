@@ -20,5 +20,12 @@ FORCE:
 
 .PHONY: all FORCE
 
+fullform.utf8.txt: ordbank_nn/fullformer_2012.txt.zip
+	$(AM_V_GEN)unzip -p $< |\
+		 iconv -f ISO-8859-1 -t UTF-8 |\
+		 sed '/Mac OS X/,$$d' |\
+		 tail +1893 \
+		 > $@
+
 clean-local:
-	-rm -f ordbank_nn/fullform_nn.txt
+	-rm -f ordbank_nn/fullform.utf8.txt
