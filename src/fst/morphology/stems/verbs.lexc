@@ -1,5 +1,4 @@
 LEXICON VerbRoot
-! BEGIN ORDBANK_NN AUTO
 -ere+V:-er V04 ; ! LEMMA_ID=18623
 -escere+V:-escer V04 ; ! LEMMA_ID=18831
 -fisere+V:-fiser V04 ; ! LEMMA_ID=21811
@@ -8893,9 +8892,8 @@ zoome+V:zoom V01 ; ! LEMMA_ID=113487
 øyre+V:øyr V04V05 ; ! LEMMA_ID=113888
 øyremerke+V:øyremerk V04 ; ! LEMMA_ID=114193
 øyremerkje+V:øyremerk V04j ; ! LEMMA_ID=114194
-! END ORDBANK_NN AUTO
+
 irregular-verb ;
-regular-verb ;
 
 
 LEXICON irregular-verb

@@ -1,5 +1,4 @@
 LEXICON AdjectiveRoot
-! BEGIN ORDBANK_NN AUTO
 -abel+A:-ab a1 ; ! LEMMA_ID=33
 -aktig+A:-aktig a2 ; ! LEMMA_ID=707
 -al+A:-al a1 ; ! LEMMA_ID=780
@@ -16572,9 +16571,9 @@ zygotisk+A:zygotisk a2 ; ! LEMMA_ID=113502
 øyresprengande+A:øyresprengande a3 ; ! LEMMA_ID=114213
 øyresprengjande+A:øyresprengjande a3 ; ! LEMMA_ID=114214
 øyrete+A:øyrete a3 ; ! LEMMA_ID=113940
-! END ORDBANK_NN AUTO
+
 irregadj ;
-regadj ;
+
 
 LEXICON irregadj
 GOD ;
