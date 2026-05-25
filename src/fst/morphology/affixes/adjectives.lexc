@@ -16,7 +16,6 @@
 ! !!            !!!Norwegian Nynorsk morphological analyser                  !
 ! ========================================================================== !
 !! INTRODUCTION TO MORPHOLOGICAL ANALYSER OF Norwegian Nynorsk LANGUAGE.
- 
 
 ! ==========================
 ! LEXICA FOR ADJECTIVE ROOTS
@@ -25,16 +24,19 @@
 ! Basic paradigms
 ! ===============
 
+! Ordbank mapping: 501, 535, 540, 541, 550, 551, 553, 570, 571, 575, 575G, 611 -> a1
 LEXICON a1 ! 
  +A: positive ;
  +A: a-neuter ;
  +A: a-grade ;
 
+! Ordbank mapping: 510, 511 -> a2
 LEXICON a2 ! 
  +A: positive ;
  +A: a-no-neuter ;
  +A: a-grade ;
 
+! Ordbank mapping: 515, 532 -> a3
 LEXICON a3 ! 
  +A: positive ;
  +A: a-no-neuter ;
@@ -51,11 +53,391 @@ LEXICON positive
 
 LEXICON a-neuter ! fint
  +Neu+Sg+Indef:%>Q3t # ;
- 
+
 LEXICON a-no-neuter ! vennlig
  +Neu+Sg+Indef: # ;
 
+! Ordbank mapping: 629, 654 -> a-grade
 LEXICON a-grade
  +Comp:%>are # ;
  +Superl+Indef:%>ast # ;
  +Superl+Def:%>aste # ;
+
+LEXICON 500
+ +Msc+Sg+Indef:%> # ;
+ +Fem+Sg+Indef:%> # ;
+ +Pl+Indef:%>e # ;
+ +Sg+Def:%>e # ;
+ +Neu+Sg+Indef:%>t # ;
+ +Comp:%>are # ;
+ +Superl+Indef:%>ast # ;
+ +Superl+Def:%>aste # ;
+
+LEXICON 502
+ +Msc+Sg+Indef:%>é # ;
+ +Fem+Sg+Indef:%>é # ;
+ +Pl+Indef:%>ee # ;
+ +Sg+Def:%>ee # ;
+ +Neu+Sg+Indef:%>é # ;
+ +Comp:%>eare # ;
+ +Superl+Indef:%>east # ;
+ +Superl+Def:%>easte # ;
+
+LEXICON 519
+ +Comp:%>verre # ;
+ +Superl+Indef:%>verst # ;
+ +Superl+Def:%>verste # ;
+
+LEXICON 520
+ +Msc+Sg+Indef:%> # ;
+ +Fem+Sg+Indef:%> # ;
+ +Pl+Indef:%>e # ;
+ +Sg+Def:%>e # ;
+ +Neu+Sg+Indef:%>t # ;
+ +Comp:%>are # ;
+ +Superl+Indef:%>st # ;
+ +Superl+Def:%>ste # ;
+
+LEXICON 529
+ +Msc+Sg+Indef:%> # ;
+ +Fem+Sg+Indef:%> # ;
+ +Pl+Indef:%> # ;
+ +Sg+Def:%> # ;
+ +Neu+Sg+Indef:%>tt # ;
+
+LEXICON 530
+ +Msc+Sg+Indef:%> # ;
+ +Fem+Sg+Indef:%> # ;
+ +Pl+Indef:%>e # ;
+ +Sg+Def:%>e # ;
+ +Neu+Sg+Indef:%>tt # ;
+ +Comp:%>are # ;
+ +Superl+Indef:%>ast # ;
+ +Superl+Def:%>aste # ;
+
+LEXICON 531
+ +Msc+Sg+Indef:%> # ;
+ +Fem+Sg+Indef:%> # ;
+ +Pl+Indef:%> # ;
+ +Sg+Def:%> # ;
+ +Neu+Sg+Indef:%>tt # ;
+ +Comp:%>are # ;
+ +Superl+Indef:%>ast # ;
+ +Superl+Def:%>aste # ;
+
+LEXICON 533
+ +Msc+Sg+Indef:%> # ;
+ +Fem+Sg+Indef:%> # ;
+ +Pl+Indef:%> # ;
+ +Sg+Def:%> # ;
+ +Neu+Sg+Indef:%> # ;
+ +Comp:%>are # ;
+ +Superl+Indef:%>ast # ;
+ +Superl+Def:%>aste # ;
+
+LEXICON 556
+ +Msc+Sg+Indef:%>is # ;
+ +Fem+Sg+Indef:%>is # ;
+ +Pl+Indef:%>se # ;
+ +Sg+Def:%>se # ;
+ +Neu+Sg+Indef:%>ist # ;
+
+LEXICON 558
+ +Neu+Sg+Indef:%> # ;
+
+LEXICON 560
+ +Msc+Sg+Indef:%> # ;
+ +Fem+Sg+Indef:%> # ;
+ +Pl+Indef:%>e # ;
+ +Sg+Def:%>e # ;
+ +Neu+Sg+Indef:%>t # ;
+ +Comp:%>are # ;
+ +Superl+Indef:%>st # ;
+ +Superl+Def:%>ste # ;
+
+LEXICON 564
+ +Msc+Sg+Indef:%>en # ;
+ +Fem+Sg+Indef:%>en # ;
+ +Pl+Indef:%>ene # ;
+ +Sg+Def:%>ene # ;
+ +Neu+Sg+Indef:%>e # ;
+
+LEXICON 564T
+ +Msc+Sg+Indef:%>en # ;
+ +Fem+Sg+Indef:%>en # ;
+ +Pl+Indef:%>ene # ;
+ +Sg+Def:%>ene # ;
+ +Neu+Sg+Indef:%>ent # ;
+
+LEXICON 572
+ +Msc+Sg+Indef:%>en # ;
+ +Fem+Sg+Indef:%>en # ;
+ +Pl+Indef:%>ne # ;
+ +Sg+Def:%>ne # ;
+ +Neu+Sg+Indef:%>e # ;
+ +Comp:%>nare # ;
+ +Superl+Indef:%>nast # ;
+ +Superl+Def:%>naste # ;
+
+LEXICON 572G
+ +Msc+Sg+Indef:%>en # ;
+ +Fem+Sg+Indef:%>en # ;
+ +Pl+Indef:%>ne # ;
+ +Sg+Def:%>ne # ;
+ +Neu+Sg+Indef:%>e # ;
+
+LEXICON 572T
+ +Msc+Sg+Indef:%>en # ;
+ +Fem+Sg+Indef:%>en # ;
+ +Pl+Indef:%>ne # ;
+ +Sg+Def:%>ne # ;
+ +Neu+Sg+Indef:%>ent # ;
+ +Comp:%>nare # ;
+ +Superl+Indef:%>nast # ;
+ +Superl+Def:%>naste # ;
+
+LEXICON 573
+ +Msc+Sg+Indef:%>en # ;
+ +Fem+Sg+Indef:%>en # ;
+ +Pl+Indef:%>ne # ;
+ +Sg+Def:%>ne # ;
+ +Neu+Sg+Indef:%>i # ;
+ +Comp:%>nare # ;
+ +Superl+Indef:%>nast # ;
+ +Superl+Def:%>naste # ;
+
+LEXICON 577
+ +Msc+Sg+Indef:%>en # ;
+ +Fem+Sg+Indef:%>en # ;
+ +Pl+Indef:%>ne # ;
+ +Sg+Def:%>ne # ;
+ +Neu+Sg+Indef:%>e # ;
+ +Comp:%>nare # ;
+ +Superl+Indef:%>nast # ;
+ +Superl+Def:%>naste # ;
+
+LEXICON 577T
+ +Msc+Sg+Indef:%>en # ;
+ +Fem+Sg+Indef:%>en # ;
+ +Pl+Indef:%>ne # ;
+ +Sg+Def:%>ne # ;
+ +Neu+Sg+Indef:%>ent # ;
+ +Comp:%>nare # ;
+ +Superl+Indef:%>nast # ;
+ +Superl+Def:%>naste # ;
+
+LEXICON 583
+ +Msc+Sg+Indef:%>en # ;
+ +Fem+Sg+Indef:%>en # ;
+ +Pl+Indef:%>e # ;
+ +Sg+Def:%>e # ;
+ +Neu+Sg+Indef:%>e # ;
+
+LEXICON 583T
+ +Msc+Sg+Indef:%>en # ;
+ +Fem+Sg+Indef:%>en # ;
+ +Pl+Indef:%>e # ;
+ +Sg+Def:%>e # ;
+ +Neu+Sg+Indef:%>ent # ;
+
+LEXICON 585
+ +Msc+Sg+Indef:%>en # ;
+ +Fem+Sg+Indef:%>en # ;
+ +Pl+Indef:%>gne # ;
+ +Sg+Def:%>gne # ;
+ +Neu+Sg+Indef:%>e # ;
+ +Comp:%>gnare # ;
+ +Superl+Indef:%>gnast # ;
+ +Superl+Def:%>gnaste # ;
+
+LEXICON 593
+ +Msc+Sg+Indef:%>dd # ;
+ +Fem+Sg+Indef:%>dd # ;
+ +Pl+Indef:%>dde # ;
+ +Sg+Def:%>dde # ;
+ +Neu+Sg+Indef:%>tt # ;
+
+LEXICON 595
+ +Msc+Sg+Indef:%>vd # ;
+ +Fem+Sg+Indef:%>vd # ;
+ +Pl+Indef:%>vde # ;
+ +Sg+Def:%>vde # ;
+ +Neu+Sg+Indef:%>tt # ;
+
+LEXICON 598
+ +Pl+Indef:%>fåe # ;
+ +Sg+Def:%>fåe # ;
+ +Comp:%>færre # ;
+ +Superl+Indef:%>færrast # ;
+ +Superl+Def:%>færraste # ;
+
+LEXICON 599
+ +Msc+Sg+Indef:%>an # ;
+ +Fem+Sg+Indef:%>an # ;
+ +Pl+Indef:%>ne # ;
+ +Sg+Def:%>ne # ;
+ +Neu+Sg+Indef:%>an # ;
+ +Comp:%>nare # ;
+ +Superl+Indef:%>nast # ;
+ +Superl+Def:%>naste # ;
+
+LEXICON 601
+ +Msc+Sg+Indef:%>lang # ;
+ +Fem+Sg+Indef:%>lang # ;
+ +Pl+Indef:%>lange # ;
+ +Sg+Def:%>lange # ;
+ +Neu+Sg+Indef:%>langt # ;
+ +Comp:%>lengre # ;
+ +Superl+Indef:%>lengst # ;
+ +Superl+Def:%>lengste # ;
+
+LEXICON 602
+ +Msc+Sg+Indef:%>stor # ;
+ +Fem+Sg+Indef:%>stor # ;
+ +Pl+Indef:%>store # ;
+ +Sg+Def:%>store # ;
+ +Neu+Sg+Indef:%>stort # ;
+ +Comp:%>større # ;
+ +Superl+Indef:%>størst # ;
+ +Superl+Def:%>største # ;
+
+LEXICON 603
+ +Msc+Sg+Indef:%>u # ;
+ +Fem+Sg+Indef:%>u # ;
+ +Pl+Indef:%>ue # ;
+ +Sg+Def:%>ue # ;
+ +Neu+Sg+Indef:%>ut # ;
+ +Comp:%>yre # ;
+ +Superl+Indef:%>yst # ;
+ +Superl+Def:%>yste # ;
+
+LEXICON 607
+ +Msc+Sg+Indef:%>bra # ;
+ +Fem+Sg+Indef:%>bra # ;
+ +Pl+Indef:%>bra # ;
+ +Sg+Def:%>bra # ;
+ +Neu+Sg+Indef:%>bra # ;
+ +Comp:%>betre # ;
+ +Superl+Indef:%>best # ;
+ +Superl+Def:%>beste # ;
+
+LEXICON 609
+ +Msc+Sg+Indef:%>d # ;
+ +Fem+Sg+Indef:%>d # ;
+ +Pl+Indef:%>de # ;
+ +Sg+Def:%>de # ;
+ +Neu+Sg+Indef:%>t # ;
+
+LEXICON 610
+ +Msc+Sg+Indef:%>gammal # ;
+ +Fem+Sg+Indef:%>gammal # ;
+ +Pl+Indef:%>gamle # ;
+ +Sg+Def:%>gamle # ;
+ +Neu+Sg+Indef:%>gammalt # ;
+ +Comp:%>eldre # ;
+ +Superl+Indef:%>eldst # ;
+ +Superl+Def:%>eldste # ;
+
+LEXICON 612
+ +Msc+Sg+Indef:%>god # ;
+ +Fem+Sg+Indef:%>god # ;
+ +Pl+Indef:%>gode # ;
+ +Sg+Def:%>gode # ;
+ +Neu+Sg+Indef:%>godt # ;
+ +Comp:%>betre # ;
+ +Superl+Indef:%>best # ;
+ +Superl+Def:%>beste # ;
+
+LEXICON 616
+ +Pl+Indef:%>mange # ;
+ +Sg+Def:%>mange # ;
+ +Comp:%>fleire # ;
+ +Superl+Indef:%>flest # ;
+ +Superl+Def:%>fleste # ;
+
+LEXICON 618
+ +Msc+Sg+Indef:%>mykje # ;
+ +Fem+Sg+Indef:%>mykje # ;
+ +Pl+Indef:%>mykje # ;
+ +Sg+Def:%>mykje # ;
+ +Neu+Sg+Indef:%>mykje # ;
+ +Comp:%>meir # ;
+ +Superl+Indef:%>mest # ;
+ +Superl+Def:%>meste # ;
+
+LEXICON 623
+ +Comp:%>re # ;
+ +Superl+Indef:%>st # ;
+ +Superl+Def:%>ste # ;
+
+LEXICON 625
+ +Comp:%>indre # ;
+ +Superl+Indef:%>inst # ;
+ +Superl+Def:%>inste # ;
+
+LEXICON 628
+ +Msc+Sg+Indef:%>e # ;
+ +Fem+Sg+Indef:%>e # ;
+ +Pl+Indef:%>e # ;
+ +Sg+Def:%>e # ;
+ +Neu+Sg+Indef:%>e # ;
+ +Comp:%>are # ;
+ +Superl+Indef:%>ast # ;
+ +Superl+Def:%>aste # ;
+
+LEXICON 630
+ +Comp:%>re # ;
+ +Superl+Indef:%>ast # ;
+ +Superl+Def:%>aste # ;
+
+LEXICON 634
+ +Msc+Sg+Indef:%>n # ;
+ +Fem+Sg+Indef:%>n # ;
+ +Pl+Indef:%>ne # ;
+ +Sg+Def:%>ne # ;
+ +Neu+Sg+Indef:%>t # ;
+ +Comp:%>nare # ;
+ +Superl+Indef:%>nast # ;
+ +Superl+Def:%>naste # ;
+
+LEXICON 647
+ +Msc+Sg+Indef:%>grov # ;
+ +Fem+Sg+Indef:%>grov # ;
+ +Pl+Indef:%>grove # ;
+ +Sg+Def:%>grove # ;
+ +Neu+Sg+Indef:%>grovt # ;
+ +Comp:%>grøvre # ;
+ +Superl+Indef:%>grøvst # ;
+ +Superl+Def:%>grøvste # ;
+
+LEXICON 649
+ +Msc+Sg+Indef:%>øyen # ;
+ +Fem+Sg+Indef:%>øyen # ;
+ +Pl+Indef:%>øgne # ;
+ +Sg+Def:%>øgne # ;
+ +Neu+Sg+Indef:%>øye # ;
+ +Comp:%>øgnare # ;
+ +Superl+Indef:%>øgnast # ;
+ +Superl+Def:%>øgnaste # ;
+
+LEXICON 651
+ +Comp:%>re # ;
+ +Superl+Indef:%>arst # ;
+ +Superl+Def:%>arste # ;
+
+LEXICON 662
+ +Pos+Mask+Ub+Eint:%>eigen # ;
+ +Pos+Fem+Ub+Eint:%>eiga # ;
+ +Neu+Sg+Indef:%>eige # ;
+ +Sg+Def:%>eigne # ;
+ +Pl+Indef:%>eigne # ;
+
+LEXICON 66A
+ +Pos+Mask+Ub+Eint:%>liten # ;
+ +Pos+Fem+Ub+Eint:%>lita # ;
+ +Neu+Sg+Indef:%>lite # ;
+ +Sg+Def:%>litle # ;
+ +Pl+Indef:%>små # ;
+ +Comp:%>mindre # ;
+ +Superl+Indef:%>minst # ;
+ +Superl+Def:%>minste # ;
