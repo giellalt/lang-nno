@@ -11214,7 +11214,7 @@ cruiseturisme+N:cruiseturism M2 ; ! LEMMA_ID=134380
 cruiseturist+N:cruiseturist M1 ; ! LEMMA_ID=134379
 cruzeiro+N:cruzeiro M0 ; ! LEMMA_ID=12905
 crêpe+N:crêp M2 ; ! LEMMA_ID=131654
-crËme%+N:crËme% de% la% crËme S0 ;
+crème%+N:crème% de% la% crème S0 ;
 csardas+N:csardas M1 ; ! LEMMA_ID=12907
 CT+N:CT 704 ; ! LEMMA_ID=135938
 ct+N:ct 704 ; ! LEMMA_ID=135939
@@ -32563,7 +32563,7 @@ høgsterettsdom+N:høgsterettsdom M1 ; ! LEMMA_ID=39585
 høgsterettsdomar+N:høgsterettsdomar M1 ; ! LEMMA_ID=39586
 høgsterettsdommar+N:høgsterettsdommar M1 ; ! LEMMA_ID=39587
 høgsterettsjustitiarius+N:høgsterettsjustitiarius M1 ; ! LEMMA_ID=39588
-høgsterettsjustitiarius:høgsterettsjustitiari+N:høgsterettsjustitiarius:høgsterettsjustitiari M0-us ;
+høgsterettsjustitiarius+N:høgsterettsjustitiari M0-us ;
 høgsteverd+N:høgsteverd N1 ;
 høgsteverde+N:høgsteverde N2 ;
 høgsteverdi+N:høgsteverdi M1 ; ! LEMMA_ID=39591
@@ -35564,7 +35564,7 @@ justismord+N:justismord N1 ; ! LEMMA_ID=43825
 justisnemnd+N:justisnemnd F1 ; ! LEMMA_ID=43826
 justitia+N:justitia S0 ; ! LEMMA_ID=43827
 justitiarius+N:justitiarius M1 ; ! LEMMA_ID=43828
-justitiarius:justitiari+N:justitiarius:justitiari M0-us ;
+justitiarius+N:justitiari M0-us ;
 jute+N:jut F2 ; ! LEMMA_ID=43829
 jute+N:jut M2 ; ! LEMMA_ID=43829
 jutehamp+N:jutehamp M1 ; ! LEMMA_ID=43831
@@ -57957,7 +57957,7 @@ radiumemanasjon+N:radiumemanasjon M1 ; ! LEMMA_ID=130239
 radiumstråle+N:radiumstrål M2 ; ! LEMMA_ID=72999
 radiumterapi+N:radiumterapi M1 ; ! LEMMA_ID=73000
 radius+N:radius M1 ; ! LEMMA_ID=73001
-radius:radi+N:radius:radi M0-us ;
+radius+N:radi M0-us ;
 radl+N:radl N1 ; ! LEMMA_ID=73003
 radom+N:radom M1 ; ! LEMMA_ID=73008
 radon+N:radon N1 ; ! LEMMA_ID=73009
@@ -63246,7 +63246,7 @@ sirkelline+N:sirkellin F2 ; ! LEMMA_ID=80114
 sirkellinje+N:sirkellinj F2 ; ! LEMMA_ID=80115
 sirkelprov+N:sirkelprov N1 ; ! LEMMA_ID=80116
 sirkelradius+N:sirkelradius M1 ; ! LEMMA_ID=80117
-sirkelradius:sirkelradi+N:sirkelradius:sirkelradi M0-us ;
+sirkelradius+N:sirkelradi M0-us ;
 sirkelsag+N:sirkelsag F1 ; ! LEMMA_ID=80119
 sirkelsektor+N:sirkelsektor M1 ; ! LEMMA_ID=80120
 sirkeltrening+N:sirkeltrening F3 ; ! LEMMA_ID=80121
@@ -82026,7 +82026,7 @@ vektor+N:vektor M1 ; ! LEMMA_ID=108957
 vektoralgebra+N:vektoralgebra M1e ; ! LEMMA_ID=108958
 vektordiagram+N:vektordiagram N1m ; ! LEMMA_ID=108959
 vektorradius+N:vektorradius M1 ; ! LEMMA_ID=108960
-vektorradius:vektorradi+N:vektorradius:vektorradi M0-us ;
+vektorradius+N:vektorradi M0-us ;
 vektorrekning+N:vektorrekning F3 ; ! LEMMA_ID=108961
 vektprosent+N:vektprosent M0M1 ; ! LEMMA_ID=108962
 vektrør+N:vektrør F1N1 ;
