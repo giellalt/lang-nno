@@ -25,7 +25,7 @@ endif
 
 ####### Morphology source file defs: ########
 # build before test
-SUBDIRS=incoming . test
+SUBDIRS=. test
 
 # Set this to name of lexc file containing Multichar_Symbols and LEXICON Root
 GT_LEXC_ROOT=root.lexc
