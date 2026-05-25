@@ -984,7 +984,12 @@ def ensure_blank_before_every_lexicon(lines: List[str]) -> List[str]:
     out: List[str] = []
     for line in lines:
         normalized = "" if line.strip() == "" else line
-        if normalized.startswith("LEXICON ") and out and out[-1] != "":
+        if (
+            normalized.startswith("LEXICON ")
+            and out
+            and out[-1] != ""
+            and not out[-1].lstrip().startswith("! Ordbank mapping")
+        ):
             out.append("")
         if normalized == "" and out and out[-1] == "":
             continue
