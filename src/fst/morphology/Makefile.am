@@ -48,17 +48,6 @@ GT_LEXC_SRCS_L1_L2=\
 			 stems/propernouns.lexc    \
 			 stems/verbs.lexc
 
-#			 stems/abbreviations.lexc  \
-#			 stems/adjectives.lexc     \
-#			 stems/adverbs.lexc        \
-#			 stems/closed-classes.lexc \
-#			 stems/nouns.lexc          \
-#			 stems/numerals.lexc       \
-#			 stems/prepositions.lexc   \
-#			 stems/pronouns.lexc       \
-#			 stems/propernouns.lexc    \
-#			 stems/verbs.lexc
-
 # If you are building an error-detecting L2 analyser, specify the lexc files
 # that differ between the regular L1 and the L2 analysers below, in L1 and
 # L2 respectively. L2 files must end in "*-L2.lexc". See SME for an example.
