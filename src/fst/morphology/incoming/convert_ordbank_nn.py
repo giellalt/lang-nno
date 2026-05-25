@@ -147,6 +147,90 @@ VERB_PARADIGM_TO_LEGACY_CONT = {
 }
 
 
+NOUN_PARADIGM_TO_LEGACY_CONT = {
+    # Dominant overlap matches (auto Ordbank noun block vs legacy manual noun classes).
+    "700": "M1",
+    "701": "M1",
+    "702": "M2",
+    "720": "M1t",
+    "721": "M1dt",
+    "722": "M1t",
+    "739": "M1dt",
+    "761": "M0",
+    "763": "M3o",
+    "764": "MANN",
+    "800": "N1",
+    "802": "N2",
+    "823": "N1dsN1dt",
+    "830": "N1m",
+    "850": "N3",
+    "858": "N0",
+    "883": "N1N1o",
+    "900": "F1",
+    "905": "F2",
+    "908": "F3",
+    "923": "F1t",
+    "965": "F0",
+    "968": "F1o",
+    "973": "F1o",
+    "990": "S0",
+}
+
+
+ADJ_PARADIGM_TO_LEGACY_CONT = {
+    # Dominant overlap matches (auto Ordbank adjective block vs legacy manual adjective classes).
+    "501": "a1",
+    "510": "a2",
+    "511": "a2",
+    "515": "a3",
+    "532": "a3",
+    "535": "a1",
+    "540": "a1",
+    "541": "a1",
+    "550": "a1",
+    "551": "a1",
+    "553": "a1",
+    "570": "a1",
+    "571": "a1",
+    "575": "a1",
+    "575G": "a1",
+    "611": "a1",
+    # Exact-equivalence matches against legacy adjective continuation classes.
+    "629": "a-grade",
+    "654": "a-grade",
+}
+
+
+PROPERNOUN_PARADIGM_TO_LEGACY_CONT = {
+    # Manual propernoun section consistently uses PROP; map Ordbank name paradigms to PROP.
+    "79B": "PROP",
+    "89B": "PROP",
+    "994": "PROP",
+    "997": "PROP",
+    "998": "PROP",
+    "99A": "PROP",
+    "99B": "PROP",
+}
+
+
+ADVERB_PARADIGM_TO_LEGACY_CONT = {
+    # Legacy adverb model uses a single continuation lexicon: adv.
+    # Current converter does not yet manage stems/adverbs.lexc, but keep mapping ready.
+    "000": "adv",
+    "670": "adv",
+    "673": "adv",
+    "674": "adv",
+    "675": "adv",
+    "676": "adv",
+    "677": "adv",
+    "678": "adv",
+    "679": "adv",
+    "680": "adv",
+    "681": "adv",
+    "683": "adv",
+}
+
+
 def read_zip_text(path: str, encoding: str = "iso-8859-1") -> Iterable[str]:
     with zipfile.ZipFile(path) as zf:
         members = [name for name in zf.namelist() if not name.endswith("/")]
@@ -601,9 +685,18 @@ def stem_pos_tag(raw_pos_label: str) -> str:
 
 
 def map_stem_continuation(raw_pos_label: str, paradigm_id: str) -> str:
-    if classify_pos(raw_pos_label) != "verb":
-        return paradigm_id
-    return VERB_PARADIGM_TO_LEGACY_CONT.get(paradigm_id, paradigm_id)
+    pos_key = classify_pos(raw_pos_label)
+    if pos_key == "verb":
+        return VERB_PARADIGM_TO_LEGACY_CONT.get(paradigm_id, paradigm_id)
+    if pos_key == "subst":
+        return NOUN_PARADIGM_TO_LEGACY_CONT.get(paradigm_id, paradigm_id)
+    if pos_key == "adj":
+        return ADJ_PARADIGM_TO_LEGACY_CONT.get(paradigm_id, paradigm_id)
+    if pos_key == "subst_prop":
+        return PROPERNOUN_PARADIGM_TO_LEGACY_CONT.get(paradigm_id, paradigm_id)
+    if pos_key == "adv":
+        return ADVERB_PARADIGM_TO_LEGACY_CONT.get(paradigm_id, paradigm_id)
+    return paradigm_id
 
 
 def has_err_orth_marker(rows: List[FullformRow]) -> bool:
