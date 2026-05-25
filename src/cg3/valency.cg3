@@ -1,0 +1,4227 @@
+# Auto-generated from ordbank_nn/fullformer_2012.txt.zip.
+# Converted from Ordbank angle-bracket tags (<...>) to CG3 lemma lists.
+# This file keeps valency/transitivity information outside lexc.
+
+BEFORE-SECTIONS
+
+MAPPING-PREFIX = & ;
+
+SETS
+
+# <ditrans1>
+LIST ORDBANK_VAL_DITRANS1 =
+    "allokere" "avkle" "avklede" "bake" "befale" "betale"
+    "blåse" "booke" "borge" "bringe" "diktere" "erklære"
+    "esle" "etle" "ettergi" "ettergje" "ettergjeve" "ettersende"
+    "fakse" "fli" "forgi" "forgje" "forgjeve" "formeinke"
+    "fortenke" "forunne" "frådøme" "frådømme" "fråkjenne" "fråskrive"
+    "førespegle" "gi" "gje" "gjere" "gjeve" "godskrive"
+    "heimle" "ilikne" "innbille" "innprente" "kaste" "kjøpe"
+    "kreditere" "kviskre" "levere" "love" "låne" "lære"
+    "meinke" "neitte" "nekte" "offerere" "ofre" "overlate"
+    "overlevere" "overrekke" "overrekkje" "poste" "presentere" "påføre"
+    "pålegge" "påleggje" "rekkje" "rette" "seie" "selje"
+    "sende" "servere" "skaffe" "skjenke" "skjenkje" "skrive"
+    "skulde" "skylde" "slenge" "slengje" "spele" "spå"
+    "strikke" "svare" "syne" "te" "testamentere" "tilby"
+    "tilbyde" "tildele" "tildøme" "tildømme" "tileigne" "tilføre"
+    "tilgi" "tilgje" "tilgjeve" "tilkjenne" "tillate" "tilrå"
+    "tilråde" "tilsetje" "tilsette" "tiltru" "tilvise" "underkaste"
+    "underordne" "unne" "utbetale" "utlevere" "vende" "vie"
+    "vilje" "vise" "vone" "yte" ;
+
+# <ditrans1/med>
+LIST ORDBANK_VAL_DITRANS1_MED = "overtrekke" "overtrekkje" ;
+
+# <ditrans2>
+LIST ORDBANK_VAL_DITRANS2 =
+    "fortenke" "forunne" "innbille" "love" "svare" "syne"
+    "tilføre" "vise" ;
+
+# <ditrans3>
+LIST ORDBANK_VAL_DITRANS3 = "by" "byde" "love" "lære" "skulde" "skylde" ;
+
+# <ditrans4>
+LIST ORDBANK_VAL_DITRANS4 =
+    "adressere" "allokere" "angi" "angjeve" "be" "bede"
+    "bringe" "dedisere" "delegere" "donere" "dotere" "eigne"
+    "eksportere" "ettersende" "fakse" "fortenke" "gi" "gje"
+    "gjeve" "glette" "kaste" "kjøpe" "kviskre" "lange"
+    "levere" "låne" "løyve" "offerere" "ofre" "omadressere"
+    "overdra" "overdrage" "overføre" "overgi" "overgje" "overgjeve"
+    "overlate" "overlevere" "overrekke" "overrekkje" "poste" "prisgi"
+    "referere" "remittere" "reservere" "returnere" "seie" "selje"
+    "sende" "servere" "skaffe" "skrike" "slenge" "slengje"
+    "stile" "testamentere" "tigge" "tileigne" "transferere" "transmittere"
+    "utbetale" "utlevere" "vende" "vidaresende" ;
+
+# <ditrans4/av>
+LIST ORDBANK_VAL_DITRANS4_AV = "krevje" ;
+
+# <ditrans4/til>
+LIST ORDBANK_VAL_DITRANS4_TIL = "esle" "etle" "kostnadsrekne" ;
+
+# <ditrans5/att>
+LIST ORDBANK_VAL_DITRANS5_ATT = "gi" "gje" "gjeve" ;
+
+# <ditrans5/av>
+LIST ORDBANK_VAL_DITRANS5_AV =
+    "avleie" "ekstrahere" "kappe" "klappe" "låne" "lære"
+    "rive" "skrape" "skumme" "skylje" "sleike" "sleikje"
+    "slikke" "snitte" "sprette" "ta" "take" ;
+
+# <ditrans5/av+med>
+LIST ORDBANK_VAL_DITRANS5_AV_MED = "lære" ;
+
+# <ditrans5/etter>
+LIST ORDBANK_VAL_DITRANS5_ETTER =
+    "adaptere" "avmåte" "avpasse" "differensiere" "gradere" "gruppere"
+    "innstille" "lage" "rangere" "sende" "skreddarsy" "skyte"
+    "slenge" "slengje" "tilpasse" "trive" "ågå" ;
+
+# <ditrans5/for>
+LIST ORDBANK_VAL_DITRANS5_FOR =
+    "arrestere" "bane" "betale" "beundre" "by" "byde"
+    "byte" "bøtelegge" "bøteleggje" "bøtlegge" "bøtleggje" "dølje"
+    "eksponere" "erte" "etterlyse" "fakturere" "foreslå" "forskylde"
+    "framstille" "freiste" "fremje" "fremme" "frifinne" "frikjenne"
+    "frita" "fritake" "fullrose" "fulltakke" "førehandsdøme" "førehandsdømme"
+    "føreslå" "gi" "gje" "gjeve" "gøyme" "heidre"
+    "hylle" "håne" "ille" "introdusere" "klandre" "klargjere"
+    "klårgjere" "kreditere" "kurere" "lette" "loppe" "løyne"
+    "mista" "mistake" "mistenke" "mistenkje" "misunne" "mjølke"
+    "mobbe" "mulkte" "mulktere" "nære" "openberre" "operere"
+    "orsake" "predisponere" "premiere" "presentere" "presse" "prise"
+    "prosedere" "prosentløne" "prosentlønne" "prøve" "pumpe" "påskjøne"
+    "påskjønne" "refse" "reinse" "reinske" "respektere" "rette"
+    "ribbe" "robbe" "rose" "saksøke" "saksøkje" "selje"
+    "sertifisere" "skjerme" "skjule" "skreddarsy" "skrifte" "skuldgi"
+    "skuldgje" "skuldgjeve" "skyldgi" "skyldgje" "skyldgjeve" "skyle"
+    "skåne" "snyte" "spare" "spotte" "stemne" "straffe"
+    "svindle" "ta" "take" "takke" "tappe" "tigge"
+    "tilgi" "tilgje" "tilgjeve" "tilstå" "tiltale" "tryggje"
+    "tømme" "unnskylde" "utruste" "utsetje" "utsette" "velsigne" ;
+
+# <ditrans5/foran>
+LIST ORDBANK_VAL_DITRANS5_FORAN = "prioritere" ;
+
+# <ditrans5/forpart2over>
+LIST ORDBANK_VAL_DITRANS5_FORPART2OVER = "gi" "gje" "gjeve" ;
+
+# <ditrans5/fra>
+LIST ORDBANK_VAL_DITRANS5_FRA =
+    "avstå" "berge" "bevare" "dimittere" "ekstrahere" "flytte"
+    "få" "knabbe" "rive" "rå" "råde" "sakse" ;
+
+# <ditrans5/framfor>
+LIST ORDBANK_VAL_DITRANS5_FRAMFOR = "prioritere" ;
+
+# <ditrans5/frå>
+LIST ORDBANK_VAL_DITRANS5_FR =
+    "avleie" "avrå" "avråde" "avskjere" "avtelje" "dedusere"
+    "derivere" "ekskludere" "ekskommunisere" "emigrere" "fjerne" "fordrive"
+    "forvise" "frelse" "fri" "frie" "frifinne" "frigi"
+    "frigje" "frigjere" "frigjeve" "frita" "fritake" "helse"
+    "hente" "hundjage" "inndra" "inndrage" "liskre" "låne"
+    "lære" "nappe" "narre" "omsetje" "omsette" "redde"
+    "rekvirere" "røve" "separere" "skilje" "skjerme" "stele"
+    "subtrahere" "suspendere" "svindle" "ta" "take" "tigge"
+    "tjuvlåne" "trekkje" "tvangsevakuere" "tvangsflytte" "underslå" "utelate"
+    "utrydde" "utrydje" "utvise" ;
+
+# <ditrans5/i>
+LIST ORDBANK_VAL_DITRANS5_I =
+    "blande" "dimittere" "dynke" "eksaminere" "inkludere" "innarbeide"
+    "innfatte" "innleme" "innlemme" "innordne" "innpasse" "innvie"
+    "instruere" "introdusere" "investere" "invitere" "kurse" "meinke"
+    "omsetje" "omsette" "skolere" "undervise" "utdanne" "veksle" ;
+
+# <ditrans5/igjen>
+LIST ORDBANK_VAL_DITRANS5_IGJEN = "gi" "gje" "gjeve" ;
+
+# <ditrans5/imot>
+LIST ORDBANK_VAL_DITRANS5_IMOT = "ha" ;
+
+# <ditrans5/inn+til>
+LIST ORDBANK_VAL_DITRANS5_INN_TIL = "kalle" ;
+
+# <ditrans5/kring>
+LIST ORDBANK_VAL_DITRANS5_KRING = "tulle" ;
+
+# <ditrans5/med>
+LIST ORDBANK_VAL_DITRANS5_MED =
+    "alliere" "assosiere" "avdra" "avdrage" "avdøme" "avdømme"
+    "belaste" "belegge" "beleggje" "beslå" "beverte" "blande"
+    "blidge" "blidke" "bombardere" "bry" "byte" "dividere"
+    "dynke" "ekvipere" "erstatte" "erte" "etterfylle" "forsyne"
+    "fortynne" "forveksle" "forvenje" "freiste" "furnere" "fusjonere"
+    "fylle" "fôre" "gamble" "gante" "godge" "gonge"
+    "gratulere" "jamføre" "jamstille" "komplimentere" "konfrontere" "krone"
+    "laste" "leite" "likestille" "likne" "mate" "menge"
+    "mengje" "multiplisere" "omfatte" "overlesse" "overraske" "pare"
+    "regalere" "samanlikne" "samkøyre" "smitte" "spraye" "stikke"
+    "substituere" "supplere" "ta" "take" "tekkje" "tilgodesjå"
+    "traktere" "true" "truge" "tynge" "tyngje" "underbygge"
+    "underbyggje" "underhalde" "unnskylde" "utruste" "utsmykke" "utstyre"
+    "utveksle" "veksle" "velsigne" ;
+
+# <ditrans5/mellom>
+LIST ORDBANK_VAL_DITRANS5_MELLOM = "dele" ;
+
+# <ditrans5/mot>
+LIST ORDBANK_VAL_DITRANS5_MOT =
+    "assurere" "byte" "immunisere" "innstille" "lene" "rette"
+    "skjerme" "skyte" "sprøyte" "stemme" "trygde" "tryggje"
+    "vaksinere" "verje" "verne" "vernebu" "vigsle" "øve" ;
+
+# <ditrans5/om>
+LIST ORDBANK_VAL_DITRANS5_OM =
+    "be" "bede" "bevisstgjere" "bønfalle" "bønnfalle" "eksaminere"
+    "forhøyre" "forsegne" "forvisse" "fråge" "informere" "instruere"
+    "kryssforhøyre" "minne" "naudbe" "naudbede" "nibe" "nibede"
+    "opplyse" "oppmode" "orientere" "overtyde" "rådspørje" "seie"
+    "spørje" "supplikkere" "tipse" "trygle" "tulle" "underrette"
+    "varsku" "varsle" "visse" ;
+
+# <ditrans5/or>
+LIST ORDBANK_VAL_DITRANS5_OR = "kryste" "presse" "smokke" ;
+
+# <ditrans5/over>
+LIST ORDBANK_VAL_DITRANS5_OVER = "heve" "rangere" ;
+
+# <ditrans5/på>
+LIST ORDBANK_VAL_DITRANS5_P =
+    "applisere" "basere" "be" "bede" "by" "byde"
+    "bysse" "fiksere" "fokusere" "førebu" "hisse" "innstille"
+    "invitere" "lene" "minne" "mynte" "narre" "ofre"
+    "prakke" "satse" "skyte" "spandere" "spraye" "øve" ;
+
+# <ditrans5/til>
+LIST ORDBANK_VAL_DITRANS5_TIL =
+    "adaptere" "animere" "attachere" "avstå" "binde" "datere"
+    "degradere" "dømme" "emigrere" "estimere" "feste" "flytte"
+    "forvise" "få" "gi" "gje" "gjeve" "hente"
+    "hisse" "incitere" "innby" "innbyde" "innkalle" "inspirere"
+    "invitere" "jamne" "klargjere" "klårgjere" "lene" "låne"
+    "melde" "mobilisere" "motivere" "nå" "nære" "omsetje"
+    "omsette" "oppmane" "oppmode" "oppmuntre" "overtale" "overtelje"
+    "predestinere" "predeterminere" "rekruttere" "relatere" "rette" "rå"
+    "råde" "skreddarsy" "stimulere" "stipulere" "taksere" "tene"
+    "terse" "tidfeste" "tillempe" "tilmåte" "tilpasse" "translitterere"
+    "true" "truge" "tvangsflytte" "tvinge" "utdanne" "utfordre"
+    "utparsellere" "utruste" "utstyre" "utvikle" "velje" "verdsetje"
+    "verdsette" "verve" "åmoge" ;
+
+# <ditrans5/under>
+LIST ORDBANK_VAL_DITRANS5_UNDER = "rangere" "subordinere" ;
+
+# <ditrans5/ut+av>
+LIST ORDBANK_VAL_DITRANS5_UT_AV = "tyne" ;
+
+# <ditrans5/ut+frå>
+LIST ORDBANK_VAL_DITRANS5_UT_FR = "skilje" ;
+
+# <ditrans6/for>
+LIST ORDBANK_VAL_DITRANS6_FOR = "bøtelegge" "bøteleggje" "bøtlegge" "bøtleggje" "mistenke" "mistenkje" ;
+
+# <ditrans6/fra>
+LIST ORDBANK_VAL_DITRANS6_FRA = "avstå" "rå" "råde" ;
+
+# <ditrans6/frå>
+LIST ORDBANK_VAL_DITRANS6_FR = "fri" "frie" "hindre" "redde" ;
+
+# <ditrans6/i>
+LIST ORDBANK_VAL_DITRANS6_I = "hindre" ;
+
+# <ditrans6/med>
+LIST ORDBANK_VAL_DITRANS6_MED = "hjelpe" ;
+
+# <ditrans6/om>
+LIST ORDBANK_VAL_DITRANS6_OM =
+    "be" "bede" "bønfalle" "bønnfalle" "naudbe" "naudbede"
+    "nibe" "nibede" "oppmode" ;
+
+# <ditrans6/opp+til>
+LIST ORDBANK_VAL_DITRANS6_OPP_TIL = "stelle" ;
+
+# <ditrans6/til>
+LIST ORDBANK_VAL_DITRANS6_TIL =
+    "beordre" "drive" "dømme" "få" "ha" "hjelpe"
+    "incitere" "inspirere" "kommandere" "lokke" "mane" "motivere"
+    "narre" "nøyde" "oppmane" "oppmode" "oppmuntre" "overtale"
+    "overtelje" "presse" "programmere" "rå" "råde" "stimulere"
+    "stolpe" "stolpre" "støre" "terse" "true" "truge"
+    "trugle" "tvinge" "umake" "utfordre" "venje" "venne"
+    "åmoge" "øsle" ;
+
+# <ditrans7>
+LIST ORDBANK_VAL_DITRANS7 =
+    "befale" "påby" "påbyde" "pålegge" "påleggje" "tillate"
+    "tilrå" "tilråde" ;
+
+# <ditrans7/til>
+LIST ORDBANK_VAL_DITRANS7_TIL = "vie" "vigsle" ;
+
+# <ditrans8>
+LIST ORDBANK_VAL_DITRANS8 = "innvie" ;
+
+# <ditrans8/til>
+LIST ORDBANK_VAL_DITRANS8_TIL =
+    "esle" "etle" "fortette" "krone" "omskape" "ordinere"
+    "salve" "samle" ;
+
+# <ditrans9/etter>
+LIST ORDBANK_VAL_DITRANS9_ETTER = "arve" "erve" ;
+
+# <ditrans9/fra>
+LIST ORDBANK_VAL_DITRANS9_FRA = "arve" ;
+
+# <ditrans9/frå>
+LIST ORDBANK_VAL_DITRANS9_FR = "erve" ;
+
+# <ditrans9/ned>
+LIST ORDBANK_VAL_DITRANS9_NED = "erve" ;
+
+# <ditrans9/til>
+LIST ORDBANK_VAL_DITRANS9_TIL = "forandre" ;
+
+# <intrans>
+LIST ORDBANK_VAL_INTRANS = "jafse" "kjøpe" "maskinstrikke" ;
+
+# <intrans1>
+LIST ORDBANK_VAL_INTRANS1 =
+    "abdisere" "absolvere" "abstrahere" "advisere" "age" "agere"
+    "agitere" "ake" "akke" "akkompagnere" "akkvirere" "akselerere"
+    "aksjonere" "akvarellere" "alke" "ambulere" "ame" "amle"
+    "amme" "ampe" "amre" "amstre" "ande" "andgjegle"
+    "andstemne" "andvarpe" "andøve" "anke" "ankre" "annamme"
+    "anne" "ansle" "antre" "apostrofere" "applaudere" "applikere"
+    "apportere" "arbeide" "artikulere" "ase" "asne" "attrast"
+    "aule" "ause" "auskultere" "avalere" "avansere" "avmønstre"
+    "avreagere" "avspasere" "bable" "bade" "bagle" "baisse"
+    "bake" "balansere" "baldre" "bale" "balere" "balle"
+    "ballottere" "bangle" "bangse" "banne" "barne" "barsle"
+    "base" "bauge" "bauke" "baule" "bause" "be"
+    "bede" "begynne" "beinfly" "beinflyge" "beite" "bele"
+    "belge" "belgje" "bendast" "bengle" "bere" "berte"
+    "bese" "betale" "bie" "bile" "billettere" "bine"
+    "bingse" "bite" "bivuakkere" "bjeffe" "bjore" "bjukte"
+    "bjølle" "bla" "blade" "bladre" "blage" "blake"
+    "ble" "blekte" "blingse" "blinke" "blistre" "blitse"
+    "blodmelte" "blote" "blunke" "blusse" "blånekte" "bløffe"
+    "bokle" "bokse" "bole" "bolse" "bondske" "bonge"
+    "borde" "bore" "borke" "bose" "botanisere" "botne"
+    "bowle" "bragde" "brakeva" "brakevade" "bramme" "brase"
+    "braske" "bratle" "braute" "bre" "brede" "bregde"
+    "breke" "brekte" "bremse" "brengle" "brevbyte" "brevveksle"
+    "brikettere" "briljere" "briske" "brodere" "brolte" "bronse"
+    "bronsere" "brosjere" "brote" "brotsje" "brumle" "brumme"
+    "brysje" "bråle" "bråsnu" "bråstanse" "bråstogge" "bråstoppe"
+    "bråsvinge" "bråvende" "bræle" "brøle" "bue" "bufse"
+    "buhage" "bukke" "bulke" "bumse" "bune" "bunkre"
+    "bureise" "burle" "buskape" "busse" "byggje" "bykse"
+    "bylje" "bynje" "byrge" "byrgsle" "byrje" "bysse"
+    "byte" "bælfly" "bælflyge" "bælskrike" "bæsje" "bølje"
+    "bølle" "børse" "campe" "celebrere" "changere" "chevrotere"
+    "choke" "clutche" "cruise" "dable" "daffe" "dagdrøyme"
+    "dagse" "dagverde" "dalge" "dalle" "dalte" "damle"
+    "danke" "danse" "danske" "darre" "darte" "dasle"
+    "dasse" "datle" "dave" "debarkere" "debutere" "defilere"
+    "deile" "deke" "deklamere" "delirere" "delje" "deltake"
+    "demisjonere" "demle" "demonstrere" "dente" "derivere" "derte"
+    "desertere" "deviere" "devle" "dibbe" "dikte" "dilke"
+    "dille" "dilte" "dimme" "dinere" "dise" "disputere"
+    "disse" "dissentere" "done" "donte" "dorge" "dosere"
+    "dote" "dra" "drabbe" "drage" "dralte" "drangle"
+    "drasle" "dratle" "dregge" "drible" "drifte" "drikke"
+    "drille" "drite" "drivle" "drunse" "drunte" "dryle"
+    "drynje" "drøle" "drønne" "drøse" "drøyle" "duellere"
+    "dukke" "dumle" "dunke" "dure" "durle" "duse"
+    "dusje" "duste" "dutle" "dykke" "dyvje" "døyste"
+    "einglane" "einglo" "einstire" "ejakulere" "eksellere" "eksersere"
+    "eksperimentere" "ekstemporere" "elle" "embarkere" "emigrere" "emittere"
+    "emje" "emne" "engle" "enje" "eskapere" "estetisere"
+    "ete" "evangelisere" "exe" "fable" "fabulere" "fale"
+    "famle" "fangste" "fantasere" "fantegå" "farke" "farte"
+    "faste" "feie" "feikte" "feile" "feilparkere" "feime"
+    "feire" "fekte" "fele" "fengje" "ferdast" "feriere"
+    "ferje" "feste" "fete" "fighte" "figurere" "fike"
+    "fikle" "fikte" "filere" "filetere" "filme" "filosofere"
+    "fime" "fimre" "fingle" "fingre" "finrekne" "finske"
+    "finte" "fire" "firre" "fise" "fiske" "fisle"
+    "fjagge" "fjakle" "fjampe" "fjamse" "fjante" "fjase"
+    "fjaske" "fjasle" "fjatle" "fjernsyne" "fjerte" "fjeske"
+    "fjolle" "fjone" "fjukte" "fjuntre" "fjuske" "fjåme"
+    "fjåse" "flagge" "flakke" "flakre" "flakse" "flane"
+    "flanere" "flangre" "flangse" "fleine" "fleipe" "fleke"
+    "flenge" "flengje" "flepe" "flike" "flikje" "flikre"
+    "flindre" "fline" "flipe" "flire" "flise" "fliske"
+    "fliskre" "flogse" "flokse" "floppe" "floragrafere" "flu"
+    "flue" "flugse" "flukte" "flume" "fly" "flyge"
+    "flykte" "flysje" "flytte" "flåse" "flørte" "fløyte"
+    "fnise" "fnyse" "fnøse" "fomle" "fomme" "forelese"
+    "forne" "fororde" "forrette" "forske" "fosforescere" "fossro"
+    "fotografere" "frasere" "frilanse" "fryne" "fråge" "frøse"
+    "frøyne" "fubbe" "fugle" "fukle" "fumpe" "furasjere"
+    "furte" "fuske" "fye" "fyle" "fyllekøyre" "fyre"
+    "fåme" "fòre" "fôrhauste" "førebere" "førelese" "føreorde"
+    "føte" "gage" "gagle" "galdre" "gale" "galoppere"
+    "gamble" "gamse" "gande" "gane" "gantast" "gante"
+    "gape" "gapflire" "gaple" "gapskratte" "gardfare" "gare"
+    "garnisonere" "garpe" "garte" "gase" "gasterere" "gaue"
+    "gauke" "gaule" "gauske" "geie" "geige" "geigle"
+    "geigre" "geine" "geipe" "geiple" "geivle" "generalisere"
+    "gestikulere" "gidde" "gigge" "gildre" "gimpe" "gipe"
+    "gire" "gise" "gisse" "gjegne" "gjelle" "gjeme"
+    "gjengle" "gjestespele" "gjete" "gjette" "gjøgle" "gjøle"
+    "gjøne" "glafse" "glame" "glamre" "glamse" "glane"
+    "glanke" "glante" "glefse" "gleime" "gleine" "gleipe"
+    "gleivre" "glette" "glire" "glise" "glispe" "glo"
+    "glufse" "glumse" "glupe" "glutte" "glyfse" "glyme"
+    "glyre" "glyrne" "glåme" "glåpe" "gløse" "gløyre"
+    "gnafse" "gnage" "gnagle" "gnaldre" "gnarre" "gnaule"
+    "gnavle" "gneldre" "gnelle" "gnette" "gnidre" "gnike"
+    "gnikke" "gnise" "gnisle" "gniste" "gnitre" "gnu"
+    "gnudre" "gnukke" "gnurke" "gnåle" "godprate" "godrøde"
+    "godsnakke" "godsvalle" "godtale" "gofse" "golve" "gomle"
+    "gonge" "graduere" "grafse" "grassere" "graute" "grave"
+    "grefte" "grenje" "grine" "grise" "grisle" "grope"
+    "gruble" "grublisere" "grufse" "grunde" "grune" "gruvle"
+    "gryle" "grylte" "grymje" "grymte" "grynne" "grynte"
+    "gråle" "gråte" "græle" "grøfte" "grøype" "gugge"
+    "gulke" "gulpe" "gumpe" "gurgle" "gurpe" "gylte"
+    "gyltre" "gymnastisere" "gyne" "gynge" "gysje" "gyte"
+    "gytte" "gå" "gørre" "gøy" "hafse" "haike"
+    "hakke" "hale" "halloe" "halme" "halse" "halte"
+    "hamle" "hamre" "hamstre" "handle" "handse" "hanse"
+    "hare" "harke" "harkle" "harselere" "harve" "haste"
+    "hatre" "hauke" "heade" "hegre" "heie" "heite"
+    "hekke" "hekse" "helake" "helse" "hengle" "herje"
+    "hesje" "hevle" "hike" "hikste" "hile" "hinke"
+    "hinkre" "hjale" "hoe" "hoie" "homme" "honke"
+    "hoppe" "hore" "horse" "horve" "hose" "hospitere"
+    "hoste" "hovere" "hue" "huie" "hukre" "hulke"
+    "hultre" "humpe" "humre" "hundfare" "hurgle" "hurke"
+    "hurve" "husere" "huske" "husle" "hutte" "hyfse"
+    "hykle" "hyle" "hylme" "hyne" "hyppe" "hyre"
+    "hyrgje" "hysje" "hyste" "håe" "hækje" "hæle"
+    "hòpe" "høkre" "høle" "høye" "høyste" "ide"
+    "idke" "illgråte" "illgøy" "illremje" "illskrike" "immigrere"
+    "improvisere" "inhalere" "innovere" "innvandre" "inseminere" "insistere"
+    "interferere" "interpellere" "interpolere" "intervenere" "intimere" "intonere"
+    "intrigere" "inventere" "invitere" "ironisere" "ivre" "jabbe"
+    "jagle" "jakse" "jaksle" "jalme" "jamme" "jamre"
+    "jamse" "jarpe" "jarve" "jasle" "jasse" "jatle"
+    "jatte" "javle" "jazze" "jerpe" "jibbe" "jobbe"
+    "jodle" "jogge" "joike" "joke" "jorte" "jubilere"
+    "juble" "jue" "jukse" "jumle" "jumpe" "juske"
+    "jåsse" "kadreie" "kafse" "kage" "kagge" "kakle"
+    "kakse" "kaldfline" "kaldflire" "kaldprate" "kaldrøyke" "kaldrøykje"
+    "kaldskratte" "kaldsmi" "kaldsmide" "kaldstarte" "kalkulere" "kalle"
+    "kalligrafere" "kaltre" "kalve" "kampere" "kannelere" "kapitulere"
+    "kappdrikke" "kappete" "kappkøyre" "kappro" "kappsegle" "kappsigle"
+    "kappspringe" "kappsymje" "karde" "katekisere" "katte" "kaue"
+    "kauke" "kausjonere" "keike" "keive" "keivle" "kike"
+    "kikke" "kikre" "kikse" "kingse" "kipe" "kise"
+    "kive" "kjage" "kjake" "kjase" "kjave" "kjederøyke"
+    "kjederøykje" "kjefte" "kjegle" "kjempe" "kjeppast" "kjerve"
+    "kjese" "kjå" "kjære" "kjøgle" "klage" "klampe"
+    "klappe" "klatre" "klatte" "klattemåle" "klattmåle" "kleise"
+    "klengje" "klette" "klimpre" "kline" "klinkbygge" "klinkbyggje"
+    "klinke" "klippe" "klisse" "klive" "klivre" "klore"
+    "klove" "klubbe" "kludre" "klukke" "klukkle" "klundre"
+    "klunke" "klusse" "klutre" "klynke" "klyve" "klø"
+    "kløne" "kløtsje" "kløvkøyre" "knabbe" "knarke" "knarre"
+    "knee" "knege" "knegge" "kneggje" "knegå" "kneise"
+    "knele" "knepre" "knikse" "kniple" "knipse" "knise"
+    "knisle" "knistre" "knite" "knoge" "knope" "knote"
+    "knubbe" "knuffe" "knurke" "knurre" "knuspe" "kny"
+    "knyste" "knøse" "kokettere" "kokle" "kokre" "kolke"
+    "kollidere" "kollsegle" "kollsigle" "kome" "kommatere" "komme"
+    "kommunisere" "kompe" "kompostere" "kompromisse" "kondolere" "konkludere"
+    "konsertere" "kontinuere" "kontre" "konvertere" "kore" "koreografere"
+    "korne" "kose" "kostnadsrekne" "kovre" "krabbe" "krafse"
+    "krakle" "kramse" "krasle" "kraule" "kraume" "kraune"
+    "kravellbygge" "kravellbyggje" "kravle" "krekle" "krekse" "krele"
+    "kremte" "kreppe" "krepse" "krese" "krete" "krige"
+    "krikle" "kringe" "kringle" "kronikkere" "kroppe" "krote"
+    "kruke" "krungle" "krusle" "kry" "kryle" "krype"
+    "kråle" "kròke" "kukelure" "kukke" "kulke" "kulte"
+    "kumle" "kure" "kute" "kvakke" "kvakle" "kvede"
+    "kveike" "kveikje" "kvekke" "kvelde" "kvelle" "kverulere"
+    "kverve" "kvese" "kvime" "kvimse" "kvine" "kvinke"
+    "kvinkre" "kvisje" "kviskre" "kvisle" "kvitre" "kvittere"
+    "kyte" "kåsere" "køe" "køye" "køyre" "labbe"
+    "laborere" "ladde" "lale" "lalle" "lamre" "lande"
+    "larme" "larve" "laupe" "le" "leie" "leike"
+    "leire" "leiste" "leite" "leke" "lende" "lepje"
+    "lese" "lespe" "leste" "likke" "lindre" "liskre"
+    "litografere" "live" "ljugast" "ljuge" "loffe" "logre"
+    "loke" "lokke" "loope" "losse" "love" "lovere"
+    "lufse" "lugge" "luke" "lulle" "lune" "lunsje"
+    "lunte" "lurre" "lurtenke" "lurtenkje" "lyde" "lye"
+    "lygast" "lyge" "lykte" "låte" "male" "manudusere"
+    "mare" "marsjere" "mase" "maskinskrive" "masturbere" "maule"
+    "maure" "meite" "mekle" "mekre" "mellomlande" "menesere"
+    "messe" "midle" "mige" "migrere" "mime" "mimre"
+    "mine" "minere" "misjonere" "missjå" "missnakke" "mistale"
+    "mjaue" "mjølke" "modulere" "moke" "mompe" "moppe"
+    "moralisere" "morse" "mose" "mosjonere" "mudre" "mukke"
+    "mule" "mulle" "mumle" "mumpe" "munnhoggast" "mure"
+    "murke" "murre" "muse" "musisere" "musle" "myldre"
+    "myle" "mylje" "myrje" "myse" "måpe" "mødast"
+    "møre" "nafse" "nappe" "nase" "naske" "naudstire"
+    "naukre" "navigere" "neie" "neitte" "nekte" "niglane"
+    "nigle" "nikke" "nikse" "nippe" "niskrike" "nisse"
+    "nistire" "njode" "nomadisere" "none" "nose" "nubbe"
+    "nudde" "nugge" "nuske" "nusle" "nusse" "nykkje"
+    "nynne" "nype" "nyse" "nysne" "nøffe" "nøle"
+    "ofse" "oie" "okke" "olle" "olme" "olstre"
+    "onanere" "ongle" "onne" "operere" "opponere" "opptre"
+    "oppvarte" "orge" "orkestrere" "oscillere" "otre" "overdrive"
+    "overnatte" "overspele" "overvintre" "ovete" "pace" "padle"
+    "paffe" "pakke" "pale" "panorere" "paradere" "parasittere"
+    "parkere" "parlere" "partisipere" "passe" "passere" "patruljere"
+    "patte" "pauke" "peike" "pelletere" "pelletisere" "pendle"
+    "pese" "pete" "pigge" "pile" "pilke" "pilte"
+    "pimpe" "pingse" "pinke" "pipe" "piple" "pire"
+    "piruettere" "pisse" "pisseprate" "pissprate" "piste" "pistre"
+    "pjaske" "pjatte" "pjoltre" "pjuske" "pjutre" "planke"
+    "plapre" "plaske" "ploge" "pludre" "plundre" "plyndre"
+    "plystre" "pløye" "poke" "pokulere" "polemisere" "polymerisere"
+    "posere" "preike" "preludere" "prime" "proe" "profittere"
+    "prognosere" "prognostisere" "promenere" "promillekøyre" "prompe" "propagandere"
+    "prosessere" "protestere" "protte" "proviantere" "pruppe" "pruste"
+    "prute" "prøvefilme" "prøvehoppe" "prøvekøyre" "ptroe" "puffe"
+    "puge" "pugge" "pumpe" "punche" "purle" "purre"
+    "pusle" "puste" "putle" "påle" "påmønstre" "pæle"
+    "pòte" "rabbe" "radde" "radle" "ragge" "rakle"
+    "rakse" "rale" "raljere" "ralle" "ramskrike" "rangle"
+    "rangstrikke" "rappellere" "rapse" "rase" "rasse" "ratte"
+    "raule" "raute" "rave" "ravle" "reagere" "redoble"
+    "regjere" "regle" "reike" "reinvestere" "reke" "reklamere"
+    "rekne" "rekognosere" "rekreere" "rele" "remje" "rengle"
+    "repe" "replisere" "representere" "reprodusere" "resistere" "resitere"
+    "resonnere" "respondere" "retirere" "revje" "revle" "revoltere"
+    "ri" "ride" "rikje" "rikse" "rine" "ripostere"
+    "rise" "rite" "rive" "ro" "rocke" "rokere"
+    "rolle" "rolpe" "rolse" "romstere" "rope" "rote"
+    "ruffe" "ruge" "rugle" "rulte" "rune" "runke"
+    "rushe" "ruske" "rutle" "rutsje" "ruvle" "rydde"
+    "rydje" "rygge" "ryggje" "ryle" "ryte" "rå"
+    "råde" "råkøyre" "råle" "rækje" "ræpe" "ræse"
+    "rø" "røde" "røle" "rømme" "røyke" "røykje"
+    "røyste" "sabbe" "sadde" "safte" "sage" "sagge"
+    "sake" "sakse" "sale" "saluttere" "samringe" "samringje"
+    "samrøde" "sande" "sangre" "sarre" "sarve" "satse"
+    "sautre" "savle" "score" "sege" "segle" "seide"
+    "seigdra" "seigdrage" "sekundere" "semaforere" "senge" "sengje"
+    "serve" "servere" "sesongdebutere" "setre" "sexdebutere" "shake"
+    "shoppe" "showe" "sidrikke" "sigge" "sigle" "signe"
+    "signere" "sigre" "sikksakke" "sirkle" "sjabbe" "sjage"
+    "sjakre" "sjakse" "sjanse" "sjaske" "sjaue" "sjefe"
+    "sjeide" "sjofle" "sjogse" "sjokke" "sjonglere" "sjue"
+    "sjugse" "sjugte" "sjuske" "skalkeherme" "skalte" "skamby"
+    "skambyde" "skamete" "skandere" "skanse" "skarke" "skarre"
+    "skeike" "skeise" "skeivle" "skifte" "skinke" "skite"
+    "skitre" "skjaltre" "skjekte" "skjelettere" "skjelle" "skjemte"
+    "skjenne" "skjerpe" "skjåsse" "skjørpe" "skjøve" "skode"
+    "skofte" "skogre" "skokle" "skole" "skope" "skotte"
+    "skrakle" "skrasle" "skrate" "skratle" "skratte" "skrattle"
+    "skrave" "skravle" "skredderere" "skreppe" "skreve" "skri"
+    "skrible" "skride" "skrifte" "skrike" "skrikke" "skrive"
+    "skru" "skrue" "skrumle" "skrye" "skrynje" "skryte"
+    "skråle" "skræke" "skrækje" "skrø" "skrømte" "skrøne"
+    "skule" "skulke" "skulme" "skumlese" "skumpe" "skumtygge"
+    "skumtyggje" "skute" "skvadronere" "skvakke" "skvakle" "skvaldre"
+    "skvape" "skvate" "skvatre" "skvinkle" "skvise" "skvitre"
+    "skvæle" "skyre" "skyrpe" "skå" "skåle" "skåre"
+    "skøye" "skøyre" "slabbe" "sladre" "slafse" "slage"
+    "slampe" "slanke" "slankre" "slapse" "slarke" "slarpe"
+    "slarve" "slaure" "slave" "slegge" "sleggje" "sleike"
+    "sleikje" "sleiske" "sleive" "slentre" "slette" "slikke"
+    "sliske" "slisse" "slite" "slitre" "sloe" "sloke"
+    "slubbe" "slubre" "sludre" "sluffe" "slufse" "slunke"
+    "sluntre" "slurke" "slurpe" "slurve" "sluske" "slutte"
+    "slå" "slåpe" "slø" "sløse" "smaske" "smatte"
+    "smeike" "smeikje" "smelle" "smere" "smi" "smide"
+    "smile" "smiske" "smole" "smolle" "smugdrikke" "smuglese"
+    "smugrøyke" "smugrøykje" "smuske" "smusle" "smyge" "smågråte"
+    "småle" "småprate" "småsnakke" "småspringe" "småstele" "snadre"
+    "snafse" "snakke" "snaldre" "snaltre" "snapse" "snaske"
+    "snavle" "sneise" "snerpe" "snerre" "sneve" "snide"
+    "sniffe" "snigle" "snike" "snikje" "snikkere" "snikre"
+    "snippe" "snobbe" "snoke" "snope" "snorke" "snu"
+    "snubbe" "snufse" "snugge" "snulle" "snurkle" "snurpe"
+    "snuse" "snuske" "snuvle" "snyde" "snykte" "snylte"
+    "snåle" "snåpe" "snækje" "snøfte" "snørekøyre" "snøse"
+    "snøvle" "snøype" "sodde" "solle" "sollisitere" "somle"
+    "sope" "soppe" "sordinere" "sose" "spa" "spade"
+    "spandere" "spanke" "spankulere" "spare" "sparre" "spase"
+    "spasere" "spauke" "spee" "speede" "speide" "speike"
+    "spekulere" "spele" "spenne" "spikke" "spikre" "spinke"
+    "spionere" "spjarre" "spjette" "sporte" "sprale" "spratle"
+    "sprelle" "sprengfyre" "sprengkøyre" "sprenglese" "sprengri" "sprengride"
+    "springe" "sprinte" "sprone" "språke" "spurte" "sputre"
+    "spy" "spytte" "spøkje" "spøne" "spørje" "stabbe"
+    "stage" "stanse" "stare" "starte" "starve" "stauke"
+    "stave" "stege" "stegle" "stele" "stelpe" "stengje"
+    "steppe" "sterte" "stevjast" "stevje" "stie" "stike"
+    "stikle" "stikte" "stinte" "stire" "stjoltre" "stjorne"
+    "stogge" "stolle" "stoltsere" "stomle" "storgråte" "storle"
+    "storskratte" "storskrike" "storspringe" "stotre" "strante" "streike"
+    "streite" "strende" "stresse" "strete" "streve" "stri"
+    "stride" "stridgråte" "strigråte" "strikke" "strile" "strinte"
+    "strippe" "stroke" "strøne" "stubbe" "stulle" "stultre"
+    "stumse" "stupe" "stute" "stylte" "stynje" "styrje"
+    "ståke" "ståsse" "stòte" "stødve" "støle" "stønne"
+    "støvsuge" "støyre" "subbe" "subtrahere" "sudde" "sufflere"
+    "suge" "sukke" "sule" "sulke" "sulle" "supe"
+    "supere" "surfe" "surle" "surre" "susle" "sutle"
+    "sutre" "svabbe" "svalke" "svalle" "svamle" "svanse"
+    "svare" "svasse" "sveise" "sveivle" "svelgje" "svemje"
+    "svenske" "sverje" "sverme" "sverve" "svervle" "svige"
+    "svike" "svikte" "svime" "svinse" "svire" "svirpe"
+    "svirte" "svitte" "svåle" "svåsse" "swinge" "sy"
+    "sykle" "sylte" "symje" "sympatistreike" "synde" "synge"
+    "syngje" "synse" "syte" "sytre" "så" "såle"
+    "sæme" "søkje" "søle" "ta" "take" "takke"
+    "takse" "taktere" "tale" "tamburere" "tamse" "tandle"
+    "tandre" "tane" "tanke" "tanspringe" "tantre" "taske"
+    "tasle" "tasse" "taste" "tatle" "tegle" "teie"
+    "teikne" "teksle" "telefonere" "telegrafere" "teleksere" "telje"
+    "telte" "tenje" "tenke" "tenkje" "tenne" "tentere"
+    "terse" "teve" "tevle" "tide" "tigge" "tikke"
+    "tikse" "tirle" "tise" "tiske" "tisse" "titte"
+    "tjadre" "tjatre" "tjatte" "tjelde" "tjone" "tjuve"
+    "tjuvlese" "tjuvskyte" "tjuvstarte" "tjuvtrene" "tjåke" "tomme"
+    "tomte" "tore" "torne" "torve" "toske" "totte"
+    "trabelere" "trakke" "trale" "tralle" "trampe" "transcendere"
+    "trappe" "traske" "trasle" "trasse" "trave" "traversere"
+    "trekkje" "tremulere" "trenge" "trengje" "trette" "triangulere"
+    "trikke" "trikse" "trilte" "trimme" "trinse" "trippe"
+    "trisse" "triumfere" "troke" "trolle" "tromme" "trompetere"
+    "trose" "trumfe" "trumpe" "truske" "trygle" "trylle"
+    "tryte" "trå" "tråkke" "tråkle" "tråle" "tråraute"
+    "tråve" "træle" "trælke" "trø" "trøysteete" "tudre"
+    "tuffe" "tufle" "tufte" "tugge" "tugle" "tulle"
+    "tunne" "ture" "turne" "turnere" "turrete" "tuse"
+    "tusje" "tuske" "tusle" "tusse" "tute" "tutle"
+    "tutre" "tvage" "tvagle" "tvare" "tveite" "tverke"
+    "tverrsnu" "tverrstane" "tverrstanse" "tverrstogge" "tverrstoppe" "tverrvende"
+    "tvibykse" "tvikøyre" "tvirenne" "tvispringe" "twiste" "tygge"
+    "tyggje" "tylte" "tymte" "tysje" "tyste" "tyte"
+    "tåte" "tære" "tæse" "tøffe" "tøfle" "tøle"
+    "tømre" "tørne" "tørrbanne" "tørrete" "tørrmaule" "tørrprate"
+    "tørrsymje" "tørrtrene" "tøve" "tøvle" "tøyme" "tøyse"
+    "ule" "underdrive" "undervise" "urinere" "urydde" "urydje"
+    "urø" "utlikne" "utvandre" "va" "vabbe" "vade"
+    "vadre" "vagabondere" "vage" "vagge" "vagle" "vake"
+    "valdre" "valfarte" "valke" "valte" "vandre" "vanstelle"
+    "vanstyre" "varle" "varpe" "varre" "varsle" "vase"
+    "vasle" "vasse" "vave" "vavre" "vedde" "vede"
+    "vegre" "veide" "veifte" "veime" "veite" "veitte"
+    "veive" "vende" "venge" "verpe" "verse" "veve"
+    "vifte" "vigilere" "vikariere" "vildre" "vime" "vimle"
+    "vimre" "vimse" "vinke" "vinne" "vinse" "vintre"
+    "virre" "viske" "visle" "vitne" "vitse" "vitte"
+    "vivisekere" "voffe" "voltere" "voltigere" "vorre" "votere"
+    "vrake" "vralte" "vrangstrikke" "vrengjast" "vrengle" "vrikke"
+    "vrimle" "vrine" "vringle" "vrinske" "vræle" "vrøvle"
+    "våme" "våne" "våronne" "våse" "væse" "vòke"
+    "vøle" "xerografere" "xylografere" "y" "yle" "ylje"
+    "ymje" "yngle" "yrje" "yrkje" "yste" "yvast"
+    "yve" "økonomisere" "økte" "ølje" "øne" "ørte"
+    "øve" "øye" "øygle" "øyre" ;
+
+# <intrans1.part4/opp>
+LIST ORDBANK_VAL_INTRANS1_PART4_OPP = "kvise" ;
+
+# <intrans12>
+LIST ORDBANK_VAL_INTRANS12 = "rusle" ;
+
+# <intrans1intrans2>
+LIST ORDBANK_VAL_INTRANS1INTRANS2 = "draule" ;
+
+# <intrans1part3/i>
+LIST ORDBANK_VAL_INTRANS1PART3_I = "grapse" ;
+
+# <intrans1part3/med>
+LIST ORDBANK_VAL_INTRANS1PART3_MED = "grapse" ;
+
+# <intrans1part3/til>
+LIST ORDBANK_VAL_INTRANS1PART3_TIL = "grapse" ;
+
+# <intrans1trans11/etter>
+LIST ORDBANK_VAL_INTRANS1TRANS11_ETTER = "gny" ;
+
+# <intrans1trans11/om>
+LIST ORDBANK_VAL_INTRANS1TRANS11_OM = "gny" ;
+
+# <intrans1trans11/til>
+LIST ORDBANK_VAL_INTRANS1TRANS11_TIL = "rappe" ;
+
+# <intrans2>
+LIST ORDBANK_VAL_INTRANS2 =
+    "abortere" "adle" "aldrast" "allitterere" "andast" "ange"
+    "apokopere" "arrivere" "ase" "atrofiere" "avdagast" "avspore"
+    "avstresse" "bakke" "balansere" "banke" "bannast" "batne"
+    "bauke" "beiskne" "bendast" "bere" "besne" "bestå"
+    "betrast" "beve" "bibre" "bide" "bikke" "bisne"
+    "bivre" "bjå" "blaffe" "blafre" "blage" "blake"
+    "blakne" "blakre" "blandast" "blaskre" "blautne" "bleikne"
+    "blenke" "blenkje" "blesme" "bli" "blidkast" "blidne"
+    "blikre" "blikte" "blive" "blome" "blomstre" "blotne"
+    "blunde" "blunke" "blå" "blåne" "blære" "blòte"
+    "blø" "bløde" "bløkte" "bløme" "boble" "bogne"
+    "bokne" "bolke" "bomme" "botnfryse" "bragde" "brage"
+    "bragle" "brake" "bramme" "bratne" "bre" "brede"
+    "brekke" "brenge" "brengje" "brenne" "breste" "brike"
+    "brikje" "brime" "brodde" "brotne" "brume" "brunde"
+    "brunke" "bruse" "brydde" "bryte" "brå" "bråne"
+    "bråstanse" "bråstogge" "bråstoppe" "buge" "båre" "bære"
+    "bærle" "bøke" "bøkje" "bølgje" "bøyast" "dadre"
+    "dagne" "daldre" "dale" "dalle" "dampe" "dampkoke"
+    "darre" "dase" "daude" "daudne" "davre" "deflatere"
+    "deggje" "deke" "dekkje" "demle" "demre" "desintegrere"
+    "detonere" "dette" "didre" "die" "differere" "diffundere"
+    "digne" "dildre" "dimme" "dingle" "dirre" "diskvalifisere"
+    "disse" "dissonere" "divergere" "djervast" "djupne" "doggast"
+    "dogge" "dokke" "dolke" "dolme" "dorme" "dosme"
+    "dove" "dovne" "dragne" "dratte" "dreie" "drenere"
+    "drive" "drjose" "druknast" "drukne" "drulte" "drunse"
+    "drupe" "druse" "dryge" "drynje" "drype" "dryppturke"
+    "drypptørke" "dryse" "drysje" "drysse" "drønne" "drøyme"
+    "dubbe" "dudre" "dufte" "duge" "dulpe" "dumpe"
+    "dundre" "dune" "dunse" "dunste" "duse" "duve"
+    "duvle" "dvele" "dvelje" "dynje" "dyrkast" "dyrne"
+    "dysje" "dyvje" "dåfurdast" "dåfurde" "dåme" "dæme"
+    "dæse" "døkkast" "dønne" "dørgje" "døse" "døy"
+    "eime" "einlyde" "eire" "ekse" "eksistere" "ekspandere"
+    "ekspirere" "eksplodere" "eldast" "elgje" "emanere" "emulgere"
+    "ende" "endestupe" "engasjere" "erigere" "erodere" "ese"
+    "esje" "eskalere" "etse" "eutrofiere" "falle" "fallere"
+    "falmast" "falme" "falne" "fascinere" "fastne" "fate"
+    "fatne" "fauskne" "feime" "feitne" "fenne" "fermentere"
+    "finnast" "finregne" "fisjonere" "fjakle" "fjampe" "fjase"
+    "fjelgne" "fjåme" "fjære" "fjøre" "flage" "flagne"
+    "flagre" "flakne" "flamme" "flangre" "flangse" "flare"
+    "flase" "flasse" "flatne" "flaue" "flaume" "flektere"
+    "flike" "flikje" "flikre" "flimre" "flipe" "floge"
+    "florere" "flose" "flotne" "flotre" "flugse" "fluktuere"
+    "fluorescere" "fluse" "flyte" "flåne" "flæse" "flø"
+    "fløde" "fløyme" "fole" "folne" "forbløde" "forfarast"
+    "forgå" "forgåast" "forlise" "forplikte" "forslå" "forstumme"
+    "forsvinne" "fortne" "forvelle" "forvitnast" "forvitre" "fosse"
+    "fosskoke" "frase" "frate" "fraue" "friskne" "frode"
+    "fryne" "fryse" "frøse" "frøye" "fuge" "fundere"
+    "fungere" "funkle" "funksjonere" "furdast" "furde" "fuske"
+    "fyke" "fylje" "fyllast" "fysse" "fånast" "fåne"
+    "fósne" "fø" "føde" "føle" "følje" "føykje"
+    "føyrast" "føyrne" "gabbe" "galnast" "gause" "gauve"
+    "geime" "geine" "geise" "geispe" "geivle" "gidde"
+    "gidre" "gigle" "gigre" "gildre" "gine" "gisle"
+    "gisne" "gistne" "givast" "gjalle" "gjeldne" "gjeme"
+    "gjerast" "gjespe" "gjevast" "gjordne" "gjorne" "gjære"
+    "gla" "glade" "glanse" "glape" "gleine" "glenne"
+    "glense" "gleppe" "glette" "gli" "glide" "glidke"
+    "glikke" "glime" "glimre" "glimte" "glindre" "gline"
+    "glinse" "glipe" "glitre" "glope" "glore" "glose"
+    "glume" "glymje" "glå" "glø" "gløde" "gløse"
+    "gløtte" "gnage" "gnaure" "gneiste" "gneistre" "gnelle"
+    "gneste" "gnette" "gnikse" "gnirke" "gnisle" "gnisse"
+    "gniste" "gnusse" "gnyste" "gose" "gove" "gravitere"
+    "grisne" "gro" "grovne" "grunne" "grunnstøyte" "grupe"
+    "gry" "grynnast" "grynne" "grå" "gråe" "gråne"
+    "grønast" "grøne" "grønkast" "grønke" "grønskast" "grønske"
+    "grøppe" "gufse" "gulne" "guve" "gyfte" "gynge"
+    "gyse" "gyve" "gå" "gårast" "gøyse" "gøyve"
+    "hagle" "halle" "halte" "hangle" "hardne" "harskne"
+    "harvle" "haste" "hauge" "havarere" "heilne" "heitne"
+    "heke" "helle" "hende" "henge" "heppe" "herdne"
+    "herke" "herkje" "hete" "hetne" "hevle" "higre"
+    "hikke" "hildre" "hime" "himle" "hire" "hive"
+    "holast" "holdast" "holne" "hose" "hovne" "hukre"
+    "hume" "humse" "hurke" "hurkle" "hurre" "huske"
+    "husse" "hutle" "hutre" "hyde" "hye" "hyke"
+    "hykje" "hyme" "hyvekse" "håe" "håke" "håle"
+    "håne" "hæse" "hæsne" "høgde" "høgne" "hølje"
+    "høse" "høve" "høyrast" "ime" "implodere" "inklinere"
+    "irisere" "ise" "isne" "isskyte" "jadre" "jangle"
+    "jare" "joke" "kaldne" "kaldsveitte" "kalne" "kalve"
+    "kante" "kantre" "kapseise" "kavle" "keise" "kike"
+    "kime" "kisle" "kjee" "kjelve" "kjene" "kjølne"
+    "klabbe" "klaffe" "klake" "klakne" "klapre" "klarne"
+    "kleie" "kleime" "klemte" "kli" "klikke" "klinge"
+    "klingre" "klirre" "klisse" "klovne" "klunke" "klykke"
+    "klykkje" "klårne" "klø" "knake" "knalle" "knase"
+    "knatre" "knee" "kneise" "kneppe" "knerke" "knerte"
+    "kneste" "knette" "knipe" "knirke" "knisle" "knistre"
+    "knitre" "knoppe" "knuppe" "koagulere" "koke" "kollapse"
+    "kolle" "kollsegle" "kollsigle" "kolne" "kolte" "koltne"
+    "koltre" "kome" "komme" "kondensere" "konke" "kontinuere"
+    "kope" "korrespondere" "korrodere" "kortne" "kovne" "krasje"
+    "krasjlande" "krengje" "krepere" "krible" "krile" "krisle"
+    "kritle" "kropne" "kruse" "krympe" "krype" "kråne"
+    "kròkne" "krølle" "kulminere" "kumulere" "kvalpe" "kvamne"
+    "kvape" "kvatne" "kvavne" "kveikne" "kvelpe" "kvelve"
+    "kverve" "kvervle" "kvike" "kvile" "kvingle" "kvisje"
+    "kvisle" "kvite" "kvitne" "kynge" "kyngje" "kyrkne"
+    "kyve" "kåre" "kåtne" "lagast" "lakre" "laksere"
+    "lamme" "lape" "larke" "laupe" "lausne" "lauve"
+    "lave" "leggjast" "legne" "leke" "lemme" "lengjast"
+    "lepe" "letne" "lette" "leve" "levrast" "li"
+    "lide" "ligge" "liggje" "lignifisere" "linne" "linnkoke"
+    "ljode" "ljome" "ljoske" "ljosne" "lode" "loe"
+    "loge" "lognast" "logne" "loope" "losne" "lue"
+    "lufse" "luftturke" "lufttørke" "lukkast" "lute" "luve"
+    "lydast" "lygne" "lykkast" "lykte" "lyne" "lyse"
+    "lysne" "lytte" "lågne" "lòse" "løye" "magrast"
+    "mankere" "mannast" "marme" "maure" "meditere" "menstruere"
+    "mildne" "minke" "minske" "mislukkast" "mislykkast" "misminnast"
+    "mistvile" "mjuklande" "mjukne" "mjølke" "modnast" "modne"
+    "moe" "mognast" "mogne" "mone" "monne" "morkne"
+    "mugne" "mussere" "mutere" "mygle" "myrje" "myte"
+    "mørkne" "mørne" "møyrne" "nare" "naudlande" "nite"
+    "nuppe" "nyggje" "nytte" "nødlande" "nøyte" "oksidere"
+    "olmast" "opalisere" "oppstå" "ore" "ormektast" "ormekte"
+    "orminnast" "orne" "ose" "overleve" "perennere" "perle"
+    "persistere" "perspirere" "perte" "pigmentere" "pipe" "piple"
+    "pire" "pjuskast" "pjutre" "plane" "plinge" "plire"
+    "plumpe" "pløse" "pose" "posne" "prange" "presipitere"
+    "puldre" "pulle" "pulse" "pulsere" "punktere" "purke"
+    "purle" "putre" "pønitere" "pøse" "radiere" "rage"
+    "ragle" "rakne" "ramle" "rape" "rase" "rasle"
+    "raste" "raude" "raudne" "rause" "reagere" "regenerere"
+    "regne" "rekast" "reke" "rekke" "rene" "rennast"
+    "renne" "residivere" "resignere" "respirere" "reste" "restere"
+    "retardere" "retne" "returnere" "revle" "rige" "rigle"
+    "rikle" "rikosjettere" "rikse" "rikte" "rine" "ringast"
+    "ringje" "ringle" "risle" "rivne" "rode" "rodne"
+    "rotere" "rotne" "ruge" "rugge" "rulle" "rullere"
+    "rulte" "rumle" "ruste" "rustne" "ruve" "ry"
+    "ryke" "ryktast" "rynje" "rysje" "råflire" "råne"
+    "ræse" "sakke" "saktne" "sangle" "sarre" "sause"
+    "secernere" "segle" "seigne" "seinke" "setne" "sevje"
+    "sige" "sigle" "sigrine" "sikle" "sikne" "silblø"
+    "silbløde" "sildre" "sile" "sille" "silrenne" "sindre"
+    "sine" "singre" "sinke" "sipe" "siple" "sippe"
+    "sirkulere" "sirle" "sitje" "sitre" "sitte" "sjangle"
+    "sjevre" "sjoge" "sjue" "sjuge" "sjukne" "sjølvdaude"
+    "skage" "skake" "skaldre" "skamfryse" "skamraudne" "skanse"
+    "skarve" "skifte" "skimre" "skine" "skingle" "skingre"
+    "skiplast" "skje" "skjegle" "skjekle" "skjele" "skjelme"
+    "skjelve" "skjene" "skjærne" "skjørne" "skli" "sklide"
+    "skolle" "skolme" "skolne" "skorpne" "skortne" "skramle"
+    "skrangle" "skrankast" "skrante" "skrappe" "skrauve" "skrelle"
+    "skrense" "skreppe" "skri" "skride" "skrike" "skrikke"
+    "skrimsle" "skrinnast" "skrokne" "skrukne" "skrumpe" "skrå"
+    "skråne" "skråve" "skræne" "skrøkke" "skrøyve" "skudre"
+    "skume" "skumme" "skumple" "skunke" "skunkle" "skure"
+    "skurke" "skurne" "skurre" "skusle" "skute" "skvale"
+    "skvalpe" "skvampe" "skvample" "skvasle" "skvatle" "skvelje"
+    "skvelpe" "skvette" "skvinkle" "skyme" "skymre" "skòle"
+    "sladde" "slagge" "slagne" "slakke" "slakne" "slamme"
+    "slamre" "slamse" "slankre" "slapne" "slarke" "slarre"
+    "slaske" "slatre" "sleine" "sletne" "slette" "sleve"
+    "slike" "slikje" "slime" "slingre" "slinke" "slire"
+    "slitast" "slokne" "slote" "slume" "slumpe" "slumre"
+    "slure" "slute" "slå" "slåpe" "sløkke" "sløvast"
+    "sløve" "sløvne" "sløyme" "smake" "smale" "smalke"
+    "smalne" "smatre" "smelle" "smelte" "smite" "smitte"
+    "smogne" "smulne" "småkoke" "småne" "snarke" "sneke"
+    "snerpe" "snorksove" "snuble" "snurre" "snåve" "snære"
+    "snøype" "sote" "sove" "sovne" "spakne" "spekne"
+    "spinne" "spire" "spite" "spjarre" "sprake" "sprekke"
+    "sprekkje" "sprene" "sprette" "sprike" "sprikje" "springe"
+    "sprotne" "sprudle" "sprute" "spræne" "sputre" "spæke"
+    "spækje" "spørjast" "stagnere" "stalme" "stane" "stanke"
+    "stanse" "starte" "starve" "stegle" "steike" "steikje"
+    "stemme" "sterkne" "stige" "stikne" "stilne" "stinke"
+    "stinte" "stivfryse" "stivle" "stivne" "stogge" "stolpe"
+    "stolpre" "storkne" "strakne" "stramme" "strande" "strangle"
+    "streite" "stropne" "strunte" "strutte" "stråle" "strøyme"
+    "stumpe" "stumre" "stumse" "stupne" "sture" "stutne"
+    "styrme" "styrtblø" "styrtbløde" "styrte" "styve" "stå"
+    "stødve" "støkke" "stølne" "støne" "størkne" "størne"
+    "støve" "sugle" "sukle" "summe" "surke" "surkle"
+    "surle" "surmule" "surne" "surre" "suse" "sva"
+    "svade" "svage" "svaie" "svakke" "svalne" "svamle"
+    "svane" "svartne" "svarve" "sveime" "sveitte" "svelle"
+    "sveve" "svi" "svide" "svike" "svikte" "svimle"
+    "svimre" "svinge" "svinne" "svirre" "svive" "svolne"
+    "svortne" "svulme" "svulne" "svæle" "swinge" "syde"
+    "sykjast" "syre" "syrne" "syvje" "sålast" "såne"
+    "sælast" "sæme" "søgje" "søkke" "søtne" "søye"
+    "søyre" "tagne" "tape" "tase" "tele" "tetne"
+    "teve" "tevje" "tikle" "tille" "tindre" "tine"
+    "tinkle" "tiple" "tippe" "tire" "titre" "tjukne"
+    "togne" "tokne" "tone" "toppe" "tovne" "transpirere"
+    "traustne" "trene" "trille" "trilte" "trinse" "trone"
+    "trote" "trotne" "trulle" "trulte" "trutne" "trysje"
+    "tryte" "tråne" "trøtne" "trøytne" "tumle" "tusne"
+    "tute" "tverre" "tvike" "tvile" "tvingle" "tvinle"
+    "tvinte" "tylle" "tynge" "tyngje" "tyngne" "tystne"
+    "tåne" "tåttespringe" "tåttspringe" "tæpe" "tø" "tørke"
+    "tørrhoste" "tørrkoke" "tørrtenke" "tørrtenkje" "tøvre" "tøye"
+    "tøyre" "uggre" "ugjerast" "uheppast" "ulagast" "ulke"
+    "ulme" "ulne" "undrast" "unngjelde" "utarte" "vage"
+    "vagle" "vaie" "vake" "vakle" "vakne" "validere"
+    "valne" "valtre" "vare" "variere" "varle" "varmgjære"
+    "varmheve" "varmhevje" "vaslast" "vassfly" "vassflyge" "vatre"
+    "vavre" "vege" "vegetere" "veikne" "veive" "vekse"
+    "velte" "vemle" "vente" "verke" "verkje" "versere"
+    "versne" "verte" "vibrere" "vidne" "vifte" "vike"
+    "vingle" "vippe" "visle" "visne" "vitrast" "vogge"
+    "vomere" "våtne" "våtte" "vægje" "væske" "ydde"
+    "yksne" "yllast" "ylmast" "ymse" "yngast" "ynge"
+    "yngjast" "yngje" "yngle" "yppast" "yvast" "yve"
+    "óme" "øksne" "øle" "ølnast" "ølne" "ørast"
+    "øre" "ørmekte" "ørske" "ørvænast" "øydast" ;
+
+# <intrans2.>
+LIST ORDBANK_VAL_INTRANS2 = "slitne" ;
+
+# <intrans3>
+LIST ORDBANK_VAL_INTRANS3 =
+    "avstyggast" "avstyggjast" "blygjast" "dåne" "fegnast" "fortvile"
+    "fryse" "fæle" "grysje" "grøsse" "gyse" "hipe"
+    "hungre" "hustre" "idke" "ilengast" "ilengjast" "illtrivast"
+    "ilskast" "ire" "kleie" "kulse" "kulske" "kulsle"
+    "lengjast" "lengte" "mistrivast" "myklast" "naude" "nauve"
+    "orvonast" "ottast" "otte" "pinast" "plagast" "reddast"
+    "ryggjast" "skjemmast" "skvette" "småfryse" "stortrivast" "stunde"
+    "styggast" "styggjast" "svelte" "sørgje" "tyrste" "tørste"
+    "unast" "une" "utrivast" "uvete" "uvite" "vansmekte"
+    "vantrivast" "vemjast" "vemmast" "vreidast" "vægjast" ;
+
+# <intrans4>
+LIST ORDBANK_VAL_INTRANS4 =
+    "agglutinere" "akkedere" "akkordere" "alternere" "andfare" "argumentere"
+    "bendast" "bengle" "bitast" "brevbytast" "brevbyte" "brevskiftast"
+    "brevveksle" "bulke" "byte" "clinche" "debattere" "deile"
+    "dele" "devlast" "diskutere" "divergere" "duellere" "einast"
+    "elske" "forhandle" "fraternisere" "fusjonere" "harmonere" "hore"
+    "husle" "interferere" "kampast" "kappast" "kappdrikke" "kappete"
+    "kappkøyre" "kappro" "kappsegle" "kappsigle" "kappspringe" "kappsymje"
+    "kivast" "kive" "kjake" "kjeftast" "kjekle" "kjeppast"
+    "kjøpslå" "kline" "klinke" "knulle" "kollaborere" "kollidere"
+    "kollokvere" "kommunisere" "kompromisse" "konferere" "kongruere" "konkurrere"
+    "konspirere" "konvergere" "konversere" "kooperere" "kopulere" "korrespondere"
+    "krangle" "krasje" "krige" "kukelure" "kysse" "leiast"
+    "likne" "møtast" "nappast" "nebbast" "nevast" "nevetakast"
+    "nusse" "omfarast" "omgåast" "ordskiftast" "overlappe" "parlamentere"
+    "parlere" "passiare" "pirast" "prate" "pule" "rivast"
+    "rådlegge" "rådleggje" "rådslå" "råkast" "samarbeide" "sameksistere"
+    "samfarast" "samrøde" "samsnakke" "samstavast" "samstave" "samstemme"
+    "samsvare" "samtale" "samtykke" "samtykkje" "semjast" "sjåast"
+    "skalle" "skeide" "skulse" "skåle" "sludre" "slåst"
+    "sparre" "stangast" "stange" "susse" "sverme" "tanne"
+    "tevle" "tiske" "trette" "vrengjast" "vringle" ;
+
+# <part/bort>
+LIST ORDBANK_VAL_PART_BORT = "smørje" ;
+
+# <part1>
+LIST ORDBANK_VAL_PART1 = "samle" ;
+
+# <part1(opp>
+LIST ORDBANK_VAL_PART1_OPP = "knappe" ;
+
+# <part1/>
+LIST ORDBANK_VAL_PART1 = "spare" ;
+
+# <part1/att>
+LIST ORDBANK_VAL_PART1_ATT =
+    "aure" "blinde" "finne" "fylle" "gi" "gje"
+    "gjeve" "kleise" "late" "lime" "lukke" "låse"
+    "mure" "næle" "plugge" "skrelle" "slamre" "slå"
+    "smekke" "smelle" "snøre" "spikre" "tape" "teipe"
+    "vinne" "øyre" ;
+
+# <part1/attende>
+LIST ORDBANK_VAL_PART1_ATTENDE = "ha" "trekkje" ;
+
+# <part1/av>
+LIST ORDBANK_VAL_PART1_AV =
+    "berke" "binde" "bite" "bleikje" "blende" "bolke"
+    "breie" "brekke" "brenne" "brigde" "bryte" "by"
+    "byde" "bægje" "dele" "døyve" "feie" "felle"
+    "fendre" "file" "flate" "flekkje" "flenge" "flengje"
+    "flerre" "flesje" "flette" "fli" "flå" "fryne"
+    "fure" "fyre" "gjerde" "gjølme" "gnage" "gøyme"
+    "hogge" "hyne" "kaure" "kjøle" "klippe" "knekke"
+    "knekkje" "knipe" "korte" "kutte" "laste" "lyfte"
+    "løfte" "løyse" "merkje" "måte" "mønstre" "nyggje"
+    "panele" "rive" "runde" "ryskje" "røske" "sage"
+    "sike" "skave" "skjere" "skjønse" "skrape" "skru"
+    "skrue" "slipe" "slite" "slutte" "slå" "sneie"
+    "snitte" "snuppe" "sperre" "spikke" "stage" "stengje"
+    "stive" "stygge" "styggje" "stytte" "syde" "ta"
+    "take" "vaske" "venje" "venne" "vinke" ;
+
+# <part1/bort>
+LIST ORDBANK_VAL_PART1_BORT =
+    "adoptere" "auksjonere" "barbere" "boste" "bygsle" "byte"
+    "børste" "drangle" "drunte" "durle" "elte" "etse"
+    "feste" "fjase" "fjuntre" "fli" "fløkje" "forpakte"
+    "få" "føykje" "føyse" "gi" "gifte" "gje"
+    "gjete" "gjeve" "gøyme" "hefte" "hutle" "jage"
+    "klatte" "klippe" "late" "leige" "luke" "låne"
+    "lære" "lùte" "mane" "nuske" "nøle" "pakke"
+    "pakte" "rasjonalisere" "retusjere" "rote" "rydde" "rydje"
+    "rø" "sende" "setje" "sette" "skjemme" "skremme"
+    "skusle" "skuve" "skvakle" "skvasle" "skvatle" "skvisle"
+    "skvitle" "skyve" "slarve" "slipe" "sløse" "snakke"
+    "snope" "somle" "sove" "sprenge" "sprengje" "stue"
+    "stuve" "støvsuge" "støyte" "susle" "sutle" "søle"
+    "ta" "take" "taue" "testamentere" "trolle" "trylle"
+    "tufse" "tulle" "ture" "tvangsauksjonere" "tøyse" "usse"
+    "vase" "vaske" "velje" "vesle" "vifte" "vinke"
+    "vise" "viske" "øydsle" ;
+
+# <part1/borti>
+LIST ORDBANK_VAL_PART1_BORTI = "strene" ;
+
+# <part1/fast>
+LIST ORDBANK_VAL_PART1_FAST =
+    "bolte" "gjorde" "halde" "holde" "lekkje" "lime"
+    "lodde" "nagle" "pinne" "setje" "sette" "spenne"
+    "spikre" "sy" "tape" "teipe" "tjore" "trykke"
+    "tømre" ;
+
+# <part1/for>
+LIST ORDBANK_VAL_PART1_FOR = "beite" "byggje" "bægje" "dra" "drage" ;
+
+# <part1/forbi>
+LIST ORDBANK_VAL_PART1_FORBI = "strene" ;
+
+# <part1/fram>
+LIST ORDBANK_VAL_PART1_FRAM =
+    "ake" "ale" "arbeide" "bere" "bjeffe" "by"
+    "byde" "byrte" "finne" "flytte" "forde" "forhandle"
+    "forsere" "få" "fôre" "grave" "ha" "halde"
+    "hjelpe" "holde" "kalle" "leite" "lokke" "mane"
+    "odle" "provosere" "rekkje" "rette" "setje" "sette"
+    "skyte" "spole" "stampe" "trasse" "trekkje" "trolle"
+    "trumpe" "trylle" ;
+
+# <part1/frem>
+LIST ORDBANK_VAL_PART1_FREM = "få" ;
+
+# <part1/fri>
+LIST ORDBANK_VAL_PART1_FRI = "sleppe" ;
+
+# <part1/frå>
+LIST ORDBANK_VAL_PART1_FR = "kople" "sprette" "sundre" ;
+
+# <part1/føre>
+LIST ORDBANK_VAL_PART1_F_RE = "trekkje" ;
+
+# <part1/gjennom>
+LIST ORDBANK_VAL_PART1_GJENNOM = "få" "tenke" "tenkje" ;
+
+# <part1/i>
+LIST ORDBANK_VAL_PART1_I = "bolte" "plugge" "smekke" ;
+
+# <part1/i+hop>
+LIST ORDBANK_VAL_PART1_I_HOP =
+    "balle" "binde" "bite" "blande" "bose" "brette"
+    "bunke" "bunte" "bylte" "dragast" "dulte" "dynge"
+    "dyngje" "dysse" "fjaske" "fløkje" "fure" "føye"
+    "føyse" "gnu" "grade" "grapse" "grave" "gryte"
+    "gøyme" "hake" "hanke" "heimle" "herke" "herkje"
+    "hespe" "hesple" "honkle" "hyke" "hykje" "hyrpe"
+    "kare" "kjede" "klase" "klaske" "klemme" "klumpe"
+    "knurve" "kople" "krøke" "krøkje" "krølle" "lappe"
+    "lekkje" "lime" "maksle" "mare" "menge" "mengje"
+    "montere" "muge" "mugge" "måte" "neppe" "neste"
+    "nuske" "nyste" "pakke" "raske" "rufse" "røre"
+    "samse" "sanke" "saume" "semje" "sikke" "skake"
+    "skillinge" "skramle" "skru" "skrue" "skøyte" "smelte"
+    "smokke" "sope" "spikre" "spinne" "stampe" "subbe"
+    "sveivle" "sørpe" "trykke" "tulle" "tuste" "tvare"
+    "tvinle" "tvinne" "tøle" "vase" "veve" "vikle"
+    "vispe" ;
+
+# <part1/i+koll>
+LIST ORDBANK_VAL_PART1_I_KOLL = "rulle" ;
+
+# <part1/i+land>
+LIST ORDBANK_VAL_PART1_I_LAND = "håve" ;
+
+# <part1/ifra>
+LIST ORDBANK_VAL_PART1_IFRA = "beite" ;
+
+# <part1/ifrå>
+LIST ORDBANK_VAL_PART1_IFR = "beite" "hufse" ;
+
+# <part1/igang>
+LIST ORDBANK_VAL_PART1_IGANG = "få" ;
+
+# <part1/igjen>
+LIST ORDBANK_VAL_PART1_IGJEN =
+    "bolte" "esle" "etle" "finne" "gi" "gje"
+    "gjelde" "gjeve" "ha" "kjenne" "klappe" "lukke"
+    "låse" "mure" "slå" "spikre" "ta" "take" ;
+
+# <part1/igjennom>
+LIST ORDBANK_VAL_PART1_IGJENNOM = "få" "klubbe" "presse" "trumfe" "trumpe" ;
+
+# <part1/imellom>
+LIST ORDBANK_VAL_PART1_IMELLOM = "gi" "gje" "gjeve" ;
+
+# <part1/imot>
+LIST ORDBANK_VAL_PART1_IMOT = "bægje" "mæle" "seie" "stå" ;
+
+# <part1/inn>
+LIST ORDBANK_VAL_PART1_INN =
+    "arbeide" "ause" "banke" "brette" "bringe" "byggje"
+    "byte" "dele" "drøype" "elske" "etse" "fange"
+    "felle" "flette" "fløkje" "føre" "gjegne" "gjerde"
+    "gå" "hale" "hamre" "hauste" "hente" "hylje"
+    "håve" "høye" "kapsle" "kassere" "klarere" "klokke"
+    "kode" "korte" "krevje" "lange" "laste" "legge"
+    "leggje" "leie" "leige" "lime" "logge" "låse"
+    "løyse" "meisle" "mure" "nyste" "pakke" "peile"
+    "plotte" "plugge" "pode" "polstre" "prente" "presse"
+    "putte" "ramme" "ringe" "risse" "rope" "rydde"
+    "rydje" "rø" "sanke" "sause" "segle" "setje"
+    "sette" "sigle" "sikte" "sirkle" "sjakle" "sjalte"
+    "sjekke" "skipe" "skrive" "skrumpe" "skøyte" "sleppe"
+    "slå" "smugle" "smøre" "smørje" "snelle" "snevre"
+    "snøre" "sope" "spare" "spenne" "sperre" "stengje"
+    "stikke" "stramme" "subbe" "supe" "sy" "synge"
+    "syngje" "såpe" "taste" "taue" "trykke" "tvinge"
+    "tøyme" "veksle" "votere" "zoome" "øve" ;
+
+# <part1/inn.bort>
+LIST ORDBANK_VAL_PART1_INN_BORT = "gni" "gnide" ;
+
+# <part1/inne>
+LIST ORDBANK_VAL_PART1_INNE = "sperre" "stengje" ;
+
+# <part1/istykker>
+LIST ORDBANK_VAL_PART1_ISTYKKER = "rive" ;
+
+# <part1/laus>
+LIST ORDBANK_VAL_PART1_LAUS =
+    "brytje" "kople" "sleppe" "slite" "spa" "spade"
+    "vrikke" ;
+
+# <part1/løs>
+LIST ORDBANK_VAL_PART1_L_S = "skjere" ;
+
+# <part1/med>
+LIST ORDBANK_VAL_PART1_MED = "få" "skusle" ;
+
+# <part1/ned>
+LIST ORDBANK_VAL_PART1_NED =
+    "breie" "brenne" "bryte" "buge" "byggje" "dempe"
+    "dore" "drangle" "duve" "dyne" "dynge" "dyngje"
+    "døyve" "feise" "fergje" "file" "frede" "fryse"
+    "gnure" "grave" "heise" "hjule" "hogge" "høvle"
+    "jekke" "kaste" "kjøle" "klubbe" "knalle" "knerte"
+    "knive" "kolle" "korte" "krasse" "krote" "køyre"
+    "legge" "leggje" "lesse" "låse" "matte" "meie"
+    "molde" "mylde" "notere" "paffe" "pakke" "plaffe"
+    "plukke" "presse" "prioritere" "prise" "prute" "puffe"
+    "regulere" "rigge" "roe" "rulle" "røyse" "sable"
+    "sage" "sakke" "salte" "senke" "setje" "sette"
+    "sitje" "sitte" "skalle" "skrive" "skru" "skrue"
+    "skubbe" "skunkle" "skylje" "slipe" "slite" "slå"
+    "stemme" "stikke" "subbe" "svelgje" "sylte" "søple"
+    "teikne" "tone" "trakke" "trykke" "tynge" "tyngje"
+    "tyste" "tørke" "urde" "ure" "valse" "votere"
+    "økse" ;
+
+# <part1/ned+på>
+LIST ORDBANK_VAL_PART1_NED_P = "rakke" ;
+
+# <part1/nær>
+LIST ORDBANK_VAL_PART1_N_R = "stå" ;
+
+# <part1/om>
+LIST ORDBANK_VAL_PART1_OM =
+    "brekke" "bryte" "bu" "byggje" "hengsle" "prise"
+    "skape" "skifte" "smelte" "støype" "sy" "vri"
+    "vride" ;
+
+# <part1/opp>
+LIST ORDBANK_VAL_PART1_OPP =
+    "age" "ale" "arbeide" "arge" "ause" "banke"
+    "bere" "binde" "blande" "blenke" "blenkje" "blåse"
+    "bløyte" "bore" "brenne" "brette" "bryte" "buge"
+    "by" "byde" "byggje" "byrte" "dampe" "dele"
+    "demme" "denge" "dengje" "dikte" "dirke" "dore"
+    "dra" "drage" "dresse" "dunge" "egle" "elde"
+    "elje" "erte" "fange" "feie" "feite" "ferske"
+    "fetje" "fiffe" "fike" "fikse" "fiske" "fjelge"
+    "flenge" "flengje" "flerre" "flise" "fostre" "frese"
+    "friske" "frynse" "fylle" "fòre" "følgje" "føre"
+    "gaupe" "gaupne" "gigle" "gigre" "gildre" "gjenge"
+    "gjere" "gjø" "gjøde" "gjøle" "glø" "gløde"
+    "grave" "grugge" "grute" "gulke" "gulpe" "ha"
+    "hakke" "hale" "hauge" "hausse" "hefte" "heise"
+    "hengje" "hente" "hespe" "hisse" "hive" "hogge"
+    "hope" "hoste" "huse" "håve" "høgje" "jage"
+    "jasse" "jazze" "jekke" "jule" "kappe" "kaste"
+    "kle" "klede" "kleime" "klippe" "klynge" "klyngje"
+    "knyte" "konstruere" "koppe" "krevje" "kutte" "kveile"
+    "kvervle" "kvikke" "la" "lade" "lage" "laste"
+    "late" "legge" "leggje" "leite" "lekse" "leme"
+    "lesse" "lime" "lirke" "liste" "live" "loe"
+    "luke" "lukke" "lurve" "lyfte" "låse" "lø"
+    "løde" "løfte" "løyse" "manne" "maske" "merkje"
+    "mjuke" "montere" "moske" "mote" "mudre" "muntre"
+    "mure" "myke" "mykje" "måle" "møre" "nase"
+    "neise" "neste" "neve" "nevle" "norske" "nye"
+    "nykkje" "nyste" "pakke" "piffe" "pikke" "piske"
+    "plukke" "prikke" "prioritere" "prise" "pumpe" "pynte"
+    "ramse" "rape" "regulere" "reinske" "reise" "rekkje"
+    "remse" "rengje" "rette" "rigge" "rikje" "ringje"
+    "riple" "risse" "rive" "rope" "rote" "rulle"
+    "rykke" "rykkje" "ryske" "ryskje" "røre" "røske"
+    "sage" "sakse" "sede" "setje" "sette" "sjekke"
+    "skake" "skive" "skjørte" "skrape" "skremme" "skripe"
+    "skritte" "skrive" "skru" "skrue" "skrye" "skrøyte"
+    "skrøyve" "skubbe" "skvære" "skòre" "slakke" "slå"
+    "snappe" "sneie" "snelle" "snitte" "snuse" "snyrte"
+    "snøre" "sole" "spa" "spade" "spare" "speede"
+    "spele" "spenne" "sperre" "spile" "spjerre" "splitte"
+    "spole" "sprette" "sprite" "spøne" "spøte" "stake"
+    "stampe" "stase" "stege" "stegle" "stemme" "stensilere"
+    "stive" "stramme" "streke" "strekke" "strekkje" "strenge"
+    "strengje" "stresse" "strimle" "stripe" "stykkje" "stæle"
+    "stø" "støtte" "støve" "støvsuge" "støype" "støyte"
+    "suge" "sule" "summere" "sveive" "ta" "take"
+    "tanke" "teie" "teikne" "teite" "telje" "terse"
+    "tine" "trase" "trevle" "trykke" "træ" "træde"
+    "tå" "tårne" "tæ" "tære" "tømre" "tørke"
+    "urde" "ure" "varde" "varme" "varte" "vigle"
+    "vikle" "vinkle" "vispe" "vrenge" "vrengje" "vri"
+    "vride" "yfse" "ynge" "yngje" "yrve" "øle"
+    "øse" "øve" ;
+
+# <part1/opp+for>
+LIST ORDBANK_VAL_PART1_OPP_FOR = "demme" ;
+
+# <part1/over>
+LIST ORDBANK_VAL_PART1_OVER =
+    "breie" "brekke" "bryte" "exe" "file" "glatte"
+    "høvle" "kaste" "klippe" "knipe" "sjalte" "skjere"
+    "slite" "stå" ;
+
+# <part1/på>
+LIST ORDBANK_VAL_PART1_P =
+    "base" "brigde" "drisle" "fikse" "legge" "leggje"
+    "lesse" "logge" "mønstre" "skru" "skrue" "skøyte"
+    "sy" "ta" "take" ;
+
+# <part1/rundt>
+LIST ORDBANK_VAL_PART1_RUNDT = "sende" "snakke" "snurre" "tvirle" "vri" "vride" ;
+
+# <part1/saman>
+LIST ORDBANK_VAL_PART1_SAMAN =
+    "balle" "binde" "bite" "blande" "brette" "bunte"
+    "bylte" "dragast" "dulte" "false" "fange" "fate"
+    "felle" "flette" "fløkje" "folde" "fuge" "føye"
+    "føykje" "føyse" "gaupne" "hefte" "hekte" "hespe"
+    "hurpe" "kare" "kitte" "kjede" "klaske" "klemme"
+    "klumpe" "knipe" "knippe" "knyte" "kople" "krulle"
+    "krøke" "krøkje" "krølle" "kveile" "lappe" "laske"
+    "lime" "menge" "mengje" "montere" "muge" "mugge"
+    "nagle" "pakke" "plukke" "raske" "rote" "rulle"
+    "rynke" "røre" "sanke" "sinkle" "sjakle" "skillinge"
+    "skjerve" "skrangle" "skrape" "skrible" "skrukke" "skyte"
+    "skøyte" "slå" "smelte" "snevre" "snikre" "snurpe"
+    "snøre" "sope" "spare" "spikre" "spleise" "spole"
+    "stroppe" "stue" "stuve" "subbe" "sy" "tromme"
+    "trykke" "tråkle" "tulle" "tulte" "tvinge" "tvinle"
+    "tvinne" "tømre" "veve" "vikle" "vispe" ;
+
+# <part1/samman>
+LIST ORDBANK_VAL_PART1_SAMMAN = "dunge" ;
+
+# <part1/sammen>
+LIST ORDBANK_VAL_PART1_SAMMEN =
+    "balle" "flette" "klappe" "knipe" "knippe" "knyte"
+    "kople" "krulle" "krøke" "krøkje" "krølle" "kveile"
+    "lappe" "laske" "rade" "stikke" ;
+
+# <part1/sund>
+LIST ORDBANK_VAL_PART1_SUND =
+    "bryte" "brytje" "flenge" "flengje" "flise" "gnure"
+    "hakke" "kakke" "knekke" "knekkje" "kutte" "kverne"
+    "lamre" "leme" "lùte" "male" "rive" "skive"
+    "skjere" "slite" "slå" "støkke" "støkkje" ;
+
+# <part1/sundt>
+LIST ORDBANK_VAL_PART1_SUNDT = "sjakse" ;
+
+# <part1/til>
+LIST ORDBANK_VAL_PART1_TIL =
+    "binde" "blekke" "bu" "buste" "bøye" "drasse"
+    "duste" "feitte" "ferde" "flekke" "forme" "fryne"
+    "få" "føye" "gjere" "glatte" "grise" "grugge"
+    "grumse" "gurme" "herke" "herkje" "hespe" "hogge"
+    "hysje" "kappe" "klippe" "klisse" "kludre" "kople"
+    "labbe" "lage" "legge" "leggje" "lorte" "lurve"
+    "maksle" "måte" "møke" "møkje" "pjuske" "rakke"
+    "rigge" "rote" "rufse" "setje" "sette" "sjaske"
+    "skante" "skitne" "skjere" "skyte" "slime" "slumse"
+    "sløre" "smusse" "sote" "stase" "sulke" "svine"
+    "så" "søple" "sørpe" "tjafse" "trumpe" "tvare"
+    "usse" "vri" "vride" ;
+
+# <part1/tilbake>
+LIST ORDBANK_VAL_PART1_TILBAKE =
+    "gi" "gje" "gjeve" "kalle" "kaste" "skru"
+    "skrue" "slå" "spole" "ta" "take" "vinne"
+    "vise" ;
+
+# <part1/unna>
+LIST ORDBANK_VAL_PART1_UNNA =
+    "fli" "få" "gøyme" "jage" "nuske" "rydde"
+    "rydje" "rø" "sjaske" "skuve" "skyve" "stue"
+    "stuve" ;
+
+# <part1/ut>
+LIST ORDBANK_VAL_PART1_UT =
+    "arbeide" "arme" "ause" "basunere" "blande" "blekke"
+    "blinke" "blokke" "blåse" "bore" "boste" "breie"
+    "brette" "bu" "buke" "byggje" "byte" "børste"
+    "bøye" "danke" "dele" "djupe" "dra" "drage"
+    "drite" "dryge" "dumme" "exe" "feise" "feitte"
+    "felle" "ferde" "finte" "flate" "flekke" "fløkje"
+    "folde" "forme" "frege" "freiste" "frette" "fri"
+    "frie" "fryse" "føyse" "galde" "gate" "gi"
+    "gje" "gjerde" "gjere" "gjeve" "glatte" "gote"
+    "grise" "grøfte" "gå" "hale" "hamre" "helake"
+    "helle" "hengje" "hente" "hire" "hyre" "hòle"
+    "kaste" "kjevle" "klarere" "kle" "klede" "klippe"
+    "koke" "konke" "kutte" "kvittere" "la" "lade"
+    "late" "le" "leie" "leige" "lese" "logge"
+    "lorte" "lufte" "luke" "lute" "lyse" "låse"
+    "løyse" "lùte" "maie" "matte" "meisle" "merkje"
+    "møde" "nappe" "niste" "nulle" "parsellere" "peike"
+    "pelme" "penne" "pensle" "pete" "pine" "pipe"
+    "planere" "plante" "plukke" "porsjonere" "presse" "prikle"
+    "prøve" "punge" "pøse" "radere" "rasjonere" "rause"
+    "reinske" "rette" "rope" "rote" "ruge" "rulle"
+    "rydde" "rydje" "rykke" "rykkje" "ryskje" "rø"
+    "røske" "røyke" "røykje" "saume" "selje" "sende"
+    "setje" "sette" "sile" "single" "sjakle" "sjalte"
+    "sjekke" "skifte" "skilje" "skipe" "skitne" "skjelle"
+    "skjemme" "skjere" "skrike" "skrinne" "skrukke" "skvise"
+    "sleppe" "slime" "slite" "slyngje" "slå" "sløkkje"
+    "smugle" "spele" "spenne" "spikke" "spile" "spraye"
+    "sprenge" "sprengje" "sprike" "sprikje" "spy" "spørje"
+    "stake" "stase" "stengje" "stikke" "stoppe" "strekke"
+    "strekkje" "striple" "stråle" "stykkje" "støyte" "suge"
+    "sulke" "sundre" "svelte" "sy" "tenke" "tenkje"
+    "tikse" "tjå" "tjåke" "trekkje" "trote" "trykke"
+    "tryste" "trøyte" "trøytte" "tufse" "tuppe" "tusse"
+    "tvare" "tvære" "tyde" "tynne" "tømme" "tørke"
+    "usse" "valse" "vaske" "vatne" "veite" "velje"
+    "vide" "vise" "viske" "væte" ;
+
+# <part1/ute>
+LIST ORDBANK_VAL_PART1_UTE = "stengje" ;
+
+# <part1/utor>
+LIST ORDBANK_VAL_PART1_UTOR = "fli" "gate" "hjule" ;
+
+# <part1/utover>
+LIST ORDBANK_VAL_PART1_UTOVER = "base" "busme" "smite" "spenne" "spraye" ;
+
+# <part1/utpart2opp>
+LIST ORDBANK_VAL_PART1_UTPART2OPP = "feite" ;
+
+# <part1/vekk>
+LIST ORDBANK_VAL_PART1_VEKK =
+    "boste" "børste" "få" "skusle" "slarve" "slipe"
+    "snope" "sprenge" "sprengje" "støyte" "susle" "sutle"
+    "ta" "take" "veite" "vifte" "vinke" "viske" ;
+
+# <part1/åt>
+LIST ORDBANK_VAL_PART1_T = "finne" ;
+
+# <part11/opp>
+LIST ORDBANK_VAL_PART11_OPP = "falde" ;
+
+# <part11/saman>
+LIST ORDBANK_VAL_PART11_SAMAN = "falde" ;
+
+# <part11/ut>
+LIST ORDBANK_VAL_PART11_UT = "falde" ;
+
+# <part2/attover>
+LIST ORDBANK_VAL_PART2_ATTOVER = "halle" ;
+
+# <part2/av>
+LIST ORDBANK_VAL_PART2_AV = "kjøle" "lagre" "smite" ;
+
+# <part2/bort>
+LIST ORDBANK_VAL_PART2_BORT =
+    "drøyme" "gløyme" "gå" "gøyme" "smette" "smøre"
+    "snu" "tulle" "vase" "vasle" "vildre" "vime"
+    "øne" ;
+
+# <part2/fast>
+LIST ORDBANK_VAL_PART2_FAST =
+    "etse" "herke" "herkje" "huke" "kake" "kile"
+    "klamre" "klynge" "klyngje" "køyre" "lenke" "lenkje"
+    "setje" "sette" "vase" ;
+
+# <part2/for>
+LIST ORDBANK_VAL_PART2_FOR = "spørje" ;
+
+# <part2/fram>
+LIST ORDBANK_VAL_PART2_FRAM =
+    "aksle" "bløffe" "bryne" "by" "byde" "freiste"
+    "kafse" "prøve" "slå" "snigle" "true" "truge"
+    "trumfe" "trumpe" ;
+
+# <part2/fri>
+LIST ORDBANK_VAL_PART2_FRI = "sleppe" ;
+
+# <part2/føre>
+LIST ORDBANK_VAL_PART2_F_RE = "sjå" ;
+
+# <part2/i+hop>
+LIST ORDBANK_VAL_PART2_I_HOP =
+    "bunke" "krøke" "krøkje" "krølle" "nyste" "ringe"
+    "tvarle" "tville" ;
+
+# <part2/igjen>
+LIST ORDBANK_VAL_PART2_IGJEN = "kjenne" ;
+
+# <part2/igjennom>
+LIST ORDBANK_VAL_PART2_IGJENNOM = "bryte" ;
+
+# <part2/inn>
+LIST ORDBANK_VAL_PART2_INN =
+    "bryte" "dirke" "kapsle" "snevre" "snøre" "såpe"
+    "tjelde" ;
+
+# <part2/laus>
+LIST ORDBANK_VAL_PART2_LAUS = "lirke" "rive" "sleppe" "slå" ;
+
+# <part2/ned>
+LIST ORDBANK_VAL_PART2_NED =
+    "bremse" "dempe" "grave" "heise" "huke" "jekke"
+    "kjøle" "roe" "setje" "sette" ;
+
+# <part2/nedpå>
+LIST ORDBANK_VAL_PART2_NEDP = "halle" ;
+
+# <part2/om>
+LIST ORDBANK_VAL_PART2_OM = "sjå" ;
+
+# <part2/opp>
+LIST ORDBANK_VAL_PART2_OPP =
+    "age" "blåse" "byggje" "byste" "dresse" "dunge"
+    "egse" "ese" "esje" "fiffe" "fikse" "flise"
+    "flistre" "grugge" "hauge" "heise" "hirre" "hisse"
+    "hope" "ille" "ilske" "jekke" "kle" "klede"
+    "kutte" "kvikke" "lyfte" "løfte" "manne" "mjuke"
+    "mote" "myke" "mykje" "reise" "rette" "rive"
+    "setje" "sette" "skjele" "skrape" "slå" "stase"
+    "stive" "stramme" "stylte" "trase" "trevle" "tårne"
+    "ylme" "yve" "øse" ;
+
+# <part2/på>
+LIST ORDBANK_VAL_PART2_P = "trenge" "trengje" "true" "truge" ;
+
+# <part2/rundt>
+LIST ORDBANK_VAL_PART2_RUNDT = "hive" "snu" "tunne" ;
+
+# <part2/saman>
+LIST ORDBANK_VAL_PART2_SAMAN =
+    "bunte" "flokke" "fløkje" "huke" "klemme" "klynge"
+    "klyngje" "kroke" "krulle" "krøke" "krøkje" "krølle"
+    "kveile" "rotte" "rulle" "skutte" "slutte" "snøre"
+    "ta" "take" "tette" "trenge" "trengje" "tukke"
+    "ty" "vikle" ;
+
+# <part2/sammen>
+LIST ORDBANK_VAL_PART2_SAMMEN =
+    "filtre" "kroke" "krulle" "krøke" "krøkje" "krølle"
+    "kveile" ;
+
+# <part2/sund>
+LIST ORDBANK_VAL_PART2_SUND = "rive" ;
+
+# <part2/til>
+LIST ORDBANK_VAL_PART2_TIL =
+    "ape" "bragde" "buste" "dalke" "emne" "ferde"
+    "fine" "flekke" "fli" "gjempe" "grise" "grugge"
+    "gå" "hamse" "hemse" "jamne" "jugle" "jåle"
+    "lage" "lorte" "lurve" "møke" "møkje" "pjuske"
+    "rigge" "skitne" "slå" "smusse" "sote" "spisse"
+    "spjåke" "stase" "trase" ;
+
+# <part2/til+sides>
+LIST ORDBANK_VAL_PART2_TIL_SIDES = "tukke" ;
+
+# <part2/tilbake>
+LIST ORDBANK_VAL_PART2_TILBAKE = "lene" "trekkje" ;
+
+# <part2/unna>
+LIST ORDBANK_VAL_PART2_UNNA = "smette" "tukke" ;
+
+# <part2/ut>
+LIST ORDBANK_VAL_PART2_UT =
+    "ampe" "ase" "buste" "dalke" "drite" "dumme"
+    "falde" "flate" "flekke" "greine" "grise" "hyre"
+    "jamne" "jåle" "kjase" "kle" "klede" "kukke"
+    "køyre" "la" "lade" "lorte" "maie" "mase"
+    "merkje" "molde" "mylde" "niste" "pisse" "pose"
+    "rigge" "skifte" "skilje" "skitne" "skjemme" "slite"
+    "spjåke" "staffere" "stase" "ta" "tabbe" "take"
+    "vide" "væte" "yve" ;
+
+# <part2/utovert>
+LIST ORDBANK_VAL_PART2_UTOVERT = "kake" ;
+
+# <part2/vekk>
+LIST ORDBANK_VAL_PART2_VEKK = "gå" "himle" "hute" "smette" "snu" "vildre" ;
+
+# <part3/av>
+LIST ORDBANK_VAL_PART3_AV = "barbere" "lekse" "rengje" "skramme" "vrenge" "vrengje" ;
+
+# <part3/fast>
+LIST ORDBANK_VAL_PART3_FAST = "bite" ;
+
+# <part3/fra>
+LIST ORDBANK_VAL_PART3_FRA = "bite" "rafse" "setje" "sette" "skrive" ;
+
+# <part3/frå>
+LIST ORDBANK_VAL_PART3_FR =
+    "bruke" "fjuske" "fuske" "gi" "gje" "gjeve"
+    "grufse" "hafse" "hurve" "hysje" "larve" "late"
+    "sarve" "seie" "sjaske" "sjuske" "skyte" "slafse"
+    "slamse" "slaure" "slenge" "slengje" "slette" "slurve"
+    "stygge" "styggje" "støyte" "yte" ;
+
+# <part3/i>
+LIST ORDBANK_VAL_PART3_I =
+    "baske" "belge" "belgje" "belje" "belme" "bemle"
+    "bite" "bose" "buse" "byrje" "bæle" "ete"
+    "gafle" "garpe" "gaupe" "gaupne" "glefse" "glufse"
+    "glupe" "gløype" "gurme" "gurpe" "hekse" "helle"
+    "jafse" "jarve" "moke" "pelme" "pine" "skufle"
+    "slafse" "slubre" "sluke" "slurke" "slurpe" "slå"
+    "suge" "supe" "svelgje" "terpe" "true" "truge"
+    "tylle" ;
+
+# <part3/ifrå>
+LIST ORDBANK_VAL_PART3_IFR = "føyse" "jaske" ;
+
+# <part3/med>
+LIST ORDBANK_VAL_PART3_MED =
+    "dragse" "draske" "frakte" "føre" "rafse" "smugle"
+    "subbe" ;
+
+# <part3/or>
+LIST ORDBANK_VAL_PART3_OR = "ause" "bere" "rengje" "vrenge" "vrengje" ;
+
+# <part3/på>
+LIST ORDBANK_VAL_PART3_P = "ergre" "erte" "ha" "koste" "spandere" ;
+
+# <part3/til>
+LIST ORDBANK_VAL_PART3_TIL =
+    "ale" "byte" "eigne" "gaupe" "gaupne" "grabbe"
+    "grafse" "gramse" "grave" "heimle" "huke" "kare"
+    "klore" "krafse" "krame" "kåve" "mase" "nappe"
+    "prosedere" "rafse" "rane" "sko" "skufle" "snake"
+    "snike" "snikje" "snuske" "snåle" "snøye" "subbe"
+    "suge" "svindle" "toske" "trasse" "true" "truge"
+    "trøyste" "tvinge" ;
+
+# <part3/tilpart4på>
+LIST ORDBANK_VAL_PART3_TILPART4P = "trykke" ;
+
+# <part3/utor>
+LIST ORDBANK_VAL_PART3_UTOR = "hekse" "hose" ;
+
+# <part3/åt>
+LIST ORDBANK_VAL_PART3_T = "eigne" "gråle" "neve" "nevle" ;
+
+# <part4.adv12/fram>
+LIST ORDBANK_VAL_PART4_ADV12_FRAM = "puldre" ;
+
+# <part4/akterut>
+LIST ORDBANK_VAL_PART4_AKTERUT = "sakke" ;
+
+# <part4/att>
+LIST ORDBANK_VAL_PART4_ATT =
+    "gline" "gro" "henge" "ligge" "liggje" "smekke"
+    "snø" "snøe" "verte" ;
+
+# <part4/av>
+LIST ORDBANK_VAL_PART4_AV =
+    "blomstre" "blunde" "blåne" "blåse" "bratte" "brenne"
+    "breste" "bryte" "bøye" "dorme" "dove" "drive"
+    "dubbe" "dåne" "falle" "farge" "felle" "fjære"
+    "fjøre" "flase" "flasse" "fluse" "flysje" "fåne"
+    "gjeldne" "gå" "late" "li" "lide" "léte"
+    "magre" "prelle" "sakke" "sine" "sjukne" "skale"
+    "skolne" "skri" "skride" "slappe" "sleine" "slote"
+    "sløye" "smalke" "smelle" "smulne" "spore" "svime"
+    "svive" "vike" ;
+
+# <part4/bort>
+LIST ORDBANK_VAL_PART4_BORT =
+    "dampe" "dunste" "dåne" "falle" "fjære" "fjøre"
+    "folne" "fånast" "fåne" "kjøve" "koke" "kome"
+    "komme" "kverve" "maure" "sine" "sjukne" "smuldre"
+    "svinne" "valne" "visne" "øne" ;
+
+# <part4/etter>
+LIST ORDBANK_VAL_PART4_ETTER = "dalte" "høyre" ;
+
+# <part4/fast>
+LIST ORDBANK_VAL_PART4_FAST =
+    "fryse" "gro" "henge" "ruste" "sitje" "sitte"
+    "stå" ;
+
+# <part4/fram>
+LIST ORDBANK_VAL_PART4_FRAM =
+    "bere" "blomstre" "bryte" "buse" "busme" "dukke"
+    "fuse" "gro" "gyse" "hildre" "kike" "kikke"
+    "piple" "pire" "skri" "skride" "skute" "sprute"
+    "tyte" "vekse" "velle" "ydde" ;
+
+# <part4/fri>
+LIST ORDBANK_VAL_PART4_FRI = "sleppe" ;
+
+# <part4/frå>
+LIST ORDBANK_VAL_PART4_FR = "falle" "sleppe" ;
+
+# <part4/full>
+LIST ORDBANK_VAL_PART4_FULL = "snø" "snøe" ;
+
+# <part4/hen>
+LIST ORDBANK_VAL_PART4_HEN = "sjukne" "sove" ;
+
+# <part4/i>
+LIST ORDBANK_VAL_PART4_I = "frase" ;
+
+# <part4/i+hop>
+LIST ORDBANK_VAL_PART4_I_HOP = "knekke" "kverve" "sige" "skreppe" "skrøkke" "smogne" ;
+
+# <part4/i+koll>
+LIST ORDBANK_VAL_PART4_I_KOLL = "tulle" ;
+
+# <part4/igjen>
+LIST ORDBANK_VAL_PART4_IGJEN = "klappe" "sitje" "sitte" ;
+
+# <part4/igjennom>
+LIST ORDBANK_VAL_PART4_IGJENNOM = "bryte" "falle" ;
+
+# <part4/imot>
+LIST ORDBANK_VAL_PART4_IMOT = "bere" "purke" ;
+
+# <part4/inn>
+LIST ORDBANK_VAL_PART4_INN =
+    "ande" "koke" "skrumpe" "sleppe" "smalne" "sove"
+    "sovne" "strøyme" "svinne" "tørke" ;
+
+# <part4/inne>
+LIST ORDBANK_VAL_PART4_INNE = "brenne" "fryse" ;
+
+# <part4/istykker>
+LIST ORDBANK_VAL_PART4_ISTYKKER = "gå" ;
+
+# <part4/klar>
+LIST ORDBANK_VAL_PART4_KLAR = "skjere" ;
+
+# <part4/laus>
+LIST ORDBANK_VAL_PART4_LAUS = "sleppe" ;
+
+# <part4/løs>
+LIST ORDBANK_VAL_PART4_L_S = "bryte" ;
+
+# <part4/med>
+LIST ORDBANK_VAL_PART4_MED = "dalte" ;
+
+# <part4/ned>
+LIST ORDBANK_VAL_PART4_NED =
+    "ause" "bremse" "brenne" "bumse" "dale" "dette"
+    "falle" "fjære" "fjøre" "gå" "hagle" "hølje"
+    "lave" "plaske" "pøse" "rase" "rause" "sige"
+    "sile" "skli" "sklide" "snø" "snøe" "strøyme"
+    "styrte" "støve" "svane" "søkke" ;
+
+# <part4/ned+i>
+LIST ORDBANK_VAL_PART4_NED_I = "falle" ;
+
+# <part4/nedpå>
+LIST ORDBANK_VAL_PART4_NEDP = "snerte" "tylle" "tæpe" ;
+
+# <part4/om>
+LIST ORDBANK_VAL_PART4_OM = "styrte" ;
+
+# <part4/opp>
+LIST ORDBANK_VAL_PART4_OPP =
+    "ankre" "blaffe" "blomstre" "blusse" "bolne" "bremse"
+    "brenne" "bruse" "bunkre" "diske" "dukke" "fare"
+    "fjase" "flamme" "flare" "flotne" "flyte" "flø"
+    "fløde" "frase" "fyke" "gline" "gro" "grunne"
+    "hildre" "hovne" "hæse" "kjøve" "koke" "leve"
+    "livne" "loge" "lue" "lyse" "piple" "pire"
+    "pulle" "rotne" "ruste" "sine" "skrelle" "skråne"
+    "skræne" "smuldre" "smule" "snugge" "spire" "sprekke"
+    "sprekkje" "sprotne" "sprute" "stivle" "svirre" "svulme"
+    "teite" "tine" "trotne" "trutne" "tø" "tøye"
+    "vakne" "vatne" "vekse" "yngast" "yngjast" ;
+
+# <part4/over>
+LIST ORDBANK_VAL_PART4_OVER =
+    "boble" "flaume" "flyte" "fløyme" "gå" "gøyse"
+    "gøyve" "koke" "ligge" "liggje" "renne" "skvalpe"
+    "skvasle" "skvatle" "skvinkle" "sove" "strøyme" ;
+
+# <part4/på>
+LIST ORDBANK_VAL_PART4_P =
+    "auke" "bryte" "buse" "bæsje" "friske" "fuse"
+    "hardne" "li" "lide" "røyne" "sakte" "sige"
+    "strøyme" "ta" "take" "våtte" ;
+
+# <part4/rundt>
+LIST ORDBANK_VAL_PART4_RUNDT = "snurre" "svirre" ;
+
+# <part4/saman>
+LIST ORDBANK_VAL_PART4_SAMAN =
+    "bryte" "flyte" "klappe" "knekke" "koke" "kròkne"
+    "rase" "sige" ;
+
+# <part4/sammen>
+LIST ORDBANK_VAL_PART4_SAMMEN = "koke" "kròkne" "søkke" ;
+
+# <part4/sund>
+LIST ORDBANK_VAL_PART4_SUND = "fryse" "gå" "slitne" ;
+
+# <part4/til>
+LIST ORDBANK_VAL_PART4_TIL =
+    "bere" "bli" "busme" "dubbe" "friskne" "fryse"
+    "fuse" "glimte" "gro" "hardne" "hyre" "klekke"
+    "kvekke" "kveppe" "kvikne" "livne" "måtte" "nyggje"
+    "nøydast" "rekke" "strekke" "strekkje" "tetne" "tjukne"
+    "tøle" "vekse" "verte" ;
+
+# <part4/under>
+LIST ORDBANK_VAL_PART4_UNDER = "bukke" ;
+
+# <part4/unna>
+LIST ORDBANK_VAL_PART4_UNNA = "bøye" "vike" ;
+
+# <part4/ut>
+LIST ORDBANK_VAL_PART4_UT =
+    "ande" "arte" "blåse" "bolne" "bryte" "dragast"
+    "droppe" "ebbe" "ese" "esje" "fjære" "fjøre"
+    "flagge" "fosse" "fysse" "gyse" "gå" "kvile"
+    "leke" "piple" "pøse" "rase" "rause" "sige"
+    "skjene" "skli" "sklide" "sleppe" "sove" "springe"
+    "sprute" "sveitte" "tyte" "tørke" "vekse" "velte"
+    "øydast" ;
+
+# <part4/ut+or>
+LIST ORDBANK_VAL_PART4_UT_OR = "bryte" ;
+
+# <part4/utfor>
+LIST ORDBANK_VAL_PART4_UTFOR = "styrte" ;
+
+# <part4/utor>
+LIST ORDBANK_VAL_PART4_UTOR = "dåne" "sine" ;
+
+# <part4/utover>
+LIST ORDBANK_VAL_PART4_UTOVER = "bere" "flaume" "flyte" "flø" "fløde" "fløyme" ;
+
+# <part4/ved>
+LIST ORDBANK_VAL_PART4_VED = "vare" ;
+
+# <part4/vekk>
+LIST ORDBANK_VAL_PART4_VEKK =
+    "dunste" "dåne" "fåne" "kome" "komme" "skrinnast"
+    "visne" ;
+
+# <part5/5>
+LIST ORDBANK_VAL_PART5_5 = "byte" ;
+
+# <part5/att>
+LIST ORDBANK_VAL_PART5_ATT = "gå" "ta" "take" ;
+
+# <part5/attende>
+LIST ORDBANK_VAL_PART5_ATTENDE = "tre" ;
+
+# <part5/av>
+LIST ORDBANK_VAL_PART5_AV =
+    "gå" "krysse" "laupe" "pigge" "reke" "slutte"
+    "stige" "takke" "tre" "troppe" ;
+
+# <part5/bak>
+LIST ORDBANK_VAL_PART5_BAK = "sparke" ;
+
+# <part5/bort>
+LIST ORDBANK_VAL_PART5_BORT = "laupe" ;
+
+# <part5/etter>
+LIST ORDBANK_VAL_PART5_ETTER =
+    "dalke" "dralte" "følgje" "gi" "gje" "gjeve"
+    "kjenne" ;
+
+# <part5/forbi>
+LIST ORDBANK_VAL_PART5_FORBI = "smette" ;
+
+# <part5/fram>
+LIST ORDBANK_VAL_PART5_FRAM =
+    "druse" "dure" "fare" "finne" "gytte" "kome"
+    "komme" "møte" "nå" "springe" "stige" "stå"
+    "tre" "trø" "ture" ;
+
+# <part5/frampå>
+LIST ORDBANK_VAL_PART5_FRAMP = "orde" "ymte" ;
+
+# <part5/frem>
+LIST ORDBANK_VAL_PART5_FREM = "nå" ;
+
+# <part5/frå>
+LIST ORDBANK_VAL_PART5_FR = "melde" "sparke" ;
+
+# <part5/gjennom>
+LIST ORDBANK_VAL_PART5_GJENNOM = "slå" ;
+
+# <part5/i>
+LIST ORDBANK_VAL_PART5_I =
+    "gnelle" "henge" "kvesse" "stemme" "sylte" "ta"
+    "take" ;
+
+# <part5/i veg>
+LIST ORDBANK_VAL_PART5_I_VEG = "lange" ;
+
+# <part5/i+gang>
+LIST ORDBANK_VAL_PART5_I_GANG = "setje" "sette" ;
+
+# <part5/i+hop>
+LIST ORDBANK_VAL_PART5_I_HOP = "krype" ;
+
+# <part5/i+veg>
+LIST ORDBANK_VAL_PART5_I_VEG = "druse" "dure" "durre" ;
+
+# <part5/igjen>
+LIST ORDBANK_VAL_PART5_IGJEN = "gå" ;
+
+# <part5/igjennom>
+LIST ORDBANK_VAL_PART5_IGJENNOM = "slå" ;
+
+# <part5/imot>
+LIST ORDBANK_VAL_PART5_IMOT = "sparke" "stauke" "streite" "strete" ;
+
+# <part5/inn>
+LIST ORDBANK_VAL_PART5_INN =
+    "gløtte" "gripe" "kome" "komme" "puste" "ringje"
+    "sjekke" "smette" "steppe" "tre" "troppe" "trø"
+    "tåe" "tørne" ;
+
+# <part5/inne>
+LIST ORDBANK_VAL_PART5_INNE = "sitje" "sitte" ;
+
+# <part5/innom>
+LIST ORDBANK_VAL_PART5_INNOM = "snerte" "titte" ;
+
+# <part5/innpå>
+LIST ORDBANK_VAL_PART5_INNP = "dra" "drage" ;
+
+# <part5/laus>
+LIST ORDBANK_VAL_PART5_LAUS = "dundre" "dure" "fyre" "gyve" "plaffe" ;
+
+# <part5/mot>
+LIST ORDBANK_VAL_PART5_MOT = "sterre" ;
+
+# <part5/ned>
+LIST ORDBANK_VAL_PART5_NED = "gire" "knele" "sitje" "sitte" "slakke" "stresse" ;
+
+# <part5/om>
+LIST ORDBANK_VAL_PART5_OM = "bla" "blade" "fli" "skifte" "snu" ;
+
+# <part5/omkring>
+LIST ORDBANK_VAL_PART5_OMKRING = "reke" ;
+
+# <part5/opp>
+LIST ORDBANK_VAL_PART5_OPP =
+    "elde" "fyre" "gape" "gi" "gire" "gje"
+    "gjeve" "gløtte" "kaste" "kveike" "kveikje" "køyre"
+    "la" "lade" "legge" "leggje" "møte" "nå"
+    "nøre" "ordne" "pusse" "rise" "rope" "rydde"
+    "rydje" "rø" "skrike" "slå" "speede" "springe"
+    "stanse" "starte" "stege" "stemme" "stresse" "stå"
+    "tanke" "tenne" "troppe" "varme" "varte" "vaske" ;
+
+# <part5/over>
+LIST ORDBANK_VAL_PART5_OVER = "kome" "komme" "natte" "tråkke" "trø" ;
+
+# <part5/på>
+LIST ORDBANK_VAL_PART5_P =
+    "anne" "banke" "dure" "fete" "fike" "firre"
+    "flenge" "flengje" "flyte" "følgje" "herde" "hevle"
+    "idke" "kile" "kvaste" "kvesse" "køyre" "lange"
+    "legge" "leggje" "mone" "monne" "murke" "peise"
+    "pjuske" "skjøre" "skritte" "stege" "stige" "stå"
+    "trenge" "trengje" "trysje" "vafse" ;
+
+# <part5/rundt>
+LIST ORDBANK_VAL_PART5_RUNDT = "rase" ;
+
+# <part5/saman>
+LIST ORDBANK_VAL_PART5_SAMAN =
+    "krype" "pakke" "senge" "sengje" "stimle" "støyte"
+    "vanke" ;
+
+# <part5/sammen>
+LIST ORDBANK_VAL_PART5_SAMMEN = "krype" ;
+
+# <part5/til>
+LIST ORDBANK_VAL_PART5_TIL =
+    "hjelpe" "kleise" "klemme" "nykkje" "slå" "smelle"
+    "søple" "trø" ;
+
+# <part5/under>
+LIST ORDBANK_VAL_PART5_UNDER = "skrive" ;
+
+# <part5/unna>
+LIST ORDBANK_VAL_PART5_UNNA = "smette" "snultre" "trenge" "trengje" ;
+
+# <part5/ut>
+LIST ORDBANK_VAL_PART5_UT =
+    "gløtte" "gytte" "kome" "komme" "lange" "lufte"
+    "ordne" "puste" "rykke" "rykkje" "sjekke" "sjå"
+    "skeie" "skrike" "skritte" "snakke" "springe" "spytte"
+    "synge" "syngje" "titte" "tygge" "tyggje" "tåe"
+    "tørne" "vandre" ;
+
+# <part5/utor>
+LIST ORDBANK_VAL_PART5_UTOR = "gape" ;
+
+# <part6/att>
+LIST ORDBANK_VAL_PART6_ATT = "få" ;
+
+# <part6/igjen>
+LIST ORDBANK_VAL_PART6_IGJEN = "ha" ;
+
+# <part6/imot>
+LIST ORDBANK_VAL_PART6_IMOT = "ta" "take" ;
+
+# <part6/tibake>
+LIST ORDBANK_VAL_PART6_TIBAKE = "ha" ;
+
+# <part7/frå>
+LIST ORDBANK_VAL_PART7_FR = "ta" "take" ;
+
+# <part8/imot>
+LIST ORDBANK_VAL_PART8_IMOT = "by" "byde" ;
+
+# <predik1>
+LIST ORDBANK_VAL_PREDIK1 = "agere" "bli" "utgjere" "vere" "verte" ;
+
+# <predik10>
+LIST ORDBANK_VAL_PREDIK10 = "rekne" ;
+
+# <predik11/fram>
+LIST ORDBANK_VAL_PREDIK11_FRAM = "fare" ;
+
+# <predik11/gjennom>
+LIST ORDBANK_VAL_PREDIK11_GJENNOM = "slå" ;
+
+# <predik11/igjennom>
+LIST ORDBANK_VAL_PREDIK11_IGJENNOM = "slå" ;
+
+# <predik12>
+LIST ORDBANK_VAL_PREDIK12 = "fungere" "funksjonere" "ljode" ;
+
+# <predik13>
+LIST ORDBANK_VAL_PREDIK13 =
+    "arbeide" "debutere" "jobbe" "operere" "overta" "overtake"
+    "praktisere" "sesongdebutere" "stille" ;
+
+# <predik2>
+LIST ORDBANK_VAL_PREDIK2 =
+    "agere" "bli" "synast" "tykkje" "vere" "verke"
+    "verte" ;
+
+# <predik3>
+LIST ORDBANK_VAL_PREDIK3 = "finne" "gjere" "kalle" "lyse" "titulere" ;
+
+# <predik4/for>
+LIST ORDBANK_VAL_PREDIK4_FOR = "kalle" ;
+
+# <predik4/i>
+LIST ORDBANK_VAL_PREDIK4_I = "bringe" ;
+
+# <predik4/med>
+LIST ORDBANK_VAL_PREDIK4_MED = "titulere" ;
+
+# <predik4/til>
+LIST ORDBANK_VAL_PREDIK4_TIL = "nominere" "steine" ;
+
+# <predik5>
+LIST ORDBANK_VAL_PREDIK5 = "titulere" ;
+
+# <predik6>
+LIST ORDBANK_VAL_PREDIK6 =
+    "drikke" "erkjenne" "erklære" "ete" "fortone" "føle"
+    "gå" "halde" "holde" "kalle" "legge" "leggje"
+    "neitte" "nekte" "prise" "skjenke" "skjenkje" "slå"
+    "vekse" ;
+
+# <predik7>
+LIST ORDBANK_VAL_PREDIK7 =
+    "beise" "erklære" "farge" "få" "halde" "hamre"
+    "holde" "måle" "polere" "skjenke" "skjenkje" "slå"
+    "vaske" "vispe" ;
+
+# <predik8>
+LIST ORDBANK_VAL_PREDIK8 =
+    "bedøme" "bedømme" "bokføre" "definere" "figurere" "foreslå"
+    "føreslå" "godkjenne" "godta" "godtake" "identifisere" "innkalle"
+    "innsetje" "innsette" "innstille" "innvie" "introdusere" "karakterisere"
+    "kategorisere" "kjenne" "klassifisere" "kode" "nominere" "opptre"
+    "plassere" "presentere" "proklamere" "registrere" "skildre" "spesifisere"
+    "stemne" "stemple" "stille" "tolke" "verve" "vurdere" ;
+
+# <predik9>
+LIST ORDBANK_VAL_PREDIK9 =
+    "brødfø" "brødføde" "definere" "etablere" "fakte" "fortone"
+    "føle" "geberde" "introdusere" "konstituere" "livnære" "manifestere"
+    "markere" "melde" "openberre" "plassere" "presentere" "registrere"
+    "ste" "stede" "stille" "utmerke" "utmerkje" "verve" ;
+
+# <refl1>
+LIST ORDBANK_VAL_REFL1 =
+    "arge" "ergre" "eve" "fagne" "fegne" "forundre"
+    "fryde" "frygde" "fæle" "gasse" "gle" "glede"
+    "godgjere" "gremje" "gremme" "grue" "harme" "hyggje"
+    "irritere" "keie" "klemme" "kvi" "kvide" "like"
+    "more" "nosse" "pine" "sinne" "sjenere" "skamme"
+    "skjale" "ulyste" "une" "unnsjå" "uroe" "vå"
+    "yksne" "øksne" ;
+
+# <refl10/etter>
+LIST ORDBANK_VAL_REFL10_ETTER = "forme" "føye" ;
+
+# <refl10/for>
+LIST ORDBANK_VAL_REFL10_FOR = "opne" ;
+
+# <refl10/fra>
+LIST ORDBANK_VAL_REFL10_FRA = "datere" ;
+
+# <refl10/i>
+LIST ORDBANK_VAL_REFL10_I = "finne" "utkrystallisere" ;
+
+# <refl10/på>
+LIST ORDBANK_VAL_REFL10_P = "basere" "forstå" "furde" ;
+
+# <refl10/til>
+LIST ORDBANK_VAL_REFL10_TIL = "djerve" "relatere" "utarte" "utkrystallisere" "utvikle" ;
+
+# <refl11>
+LIST ORDBANK_VAL_REFL11 = "avleire" "forakte" "klistre" "nedfelle" "spegle" "tane" ;
+
+# <refl11/for>
+LIST ORDBANK_VAL_REFL11_FOR = "kvi" "kvide" ;
+
+# <refl12/for>
+LIST ORDBANK_VAL_REFL12_FOR = "ottast" "unnsjå" ;
+
+# <refl12/i>
+LIST ORDBANK_VAL_REFL12_I = "gasse" ;
+
+# <refl12/med>
+LIST ORDBANK_VAL_REFL12_MED =
+    "gasse" "gode" "godgjere" "godne" "hyggje" "meiske"
+    "meske" "regalere" "ulyste" ;
+
+# <refl12/over>
+LIST ORDBANK_VAL_REFL12_OVER =
+    "ergre" "forundre" "fryde" "frygde" "gle" "glede"
+    "harme" "irritere" "skamme" "uroe" ;
+
+# <refl12/på>
+LIST ORDBANK_VAL_REFL12_P = "ulyste" ;
+
+# <refl12/til>
+LIST ORDBANK_VAL_REFL12_TIL = "gle" "glede" ;
+
+# <refl13>
+LIST ORDBANK_VAL_REFL13 = "vrikke" ;
+
+# <refl13/av>
+LIST ORDBANK_VAL_REFL13_AV =
+    "kaste" "kle" "klede" "krengje" "range" "spenne"
+    "ta" "take" "tørke" ;
+
+# <refl13/frå>
+LIST ORDBANK_VAL_REFL13_FR = "slå" ;
+
+# <refl13/om>
+LIST ORDBANK_VAL_REFL13_OM = "låte" ;
+
+# <refl13/på>
+LIST ORDBANK_VAL_REFL13_P =
+    "aksle" "fate" "flytte" "friske" "geie" "geige"
+    "geigle" "geigre" "gjempe" "hamse" "hemse" "hufse"
+    "hyfse" "hypje" "kle" "klede" "linke" "rikke"
+    "rulle" "røre" "skake" "spenne" "ta" "take"
+    "vampe" ;
+
+# <refl14/av>
+LIST ORDBANK_VAL_REFL14_AV =
+    "gnure" "kaste" "kippe" "kle" "klede" "krengje"
+    "lire" "lyfte" "løfte" "range" "rive" "smøye"
+    "spenne" "stryke" "ta" "take" "tørke" "vekse" ;
+
+# <refl14/fra>
+LIST ORDBANK_VAL_REFL14_FRA = "leggje" ;
+
+# <refl14/frå>
+LIST ORDBANK_VAL_REFL14_FR = "legge" "slå" "snøype" ;
+
+# <refl14/i>
+LIST ORDBANK_VAL_REFL14_I =
+    "bere" "køyre" "lepje" "renne" "skylje" "sleike"
+    "sleikje" "slikke" ;
+
+# <refl14/ifrå>
+LIST ORDBANK_VAL_REFL14_IFR = "rufse" ;
+
+# <refl14/med>
+LIST ORDBANK_VAL_REFL14_MED = "bringe" "få" "raspe" ;
+
+# <refl14/om>
+LIST ORDBANK_VAL_REFL14_OM = "neppe" ;
+
+# <refl14/or>
+LIST ORDBANK_VAL_REFL14_OR = "lire" ;
+
+# <refl14/på>
+LIST ORDBANK_VAL_REFL14_P =
+    "fate" "forsverje" "fryse" "hafse" "hemse" "hespe"
+    "hesple" "hufse" "hypje" "kippe" "kle" "klede"
+    "lede" "lee" "legge" "leggje" "lette" "måte"
+    "smette" "smokke" "spenne" "ta" "take" "trekkje"
+    "træ" "træde" "vampe" ;
+
+# <refl14/til>
+LIST ORDBANK_VAL_REFL14_TIL = "handle" "naske" "raske" "rive" ;
+
+# <refl14/under>
+LIST ORDBANK_VAL_REFL14_UNDER = "legge" "leggje" "slå" ;
+
+# <refl14/ut>
+LIST ORDBANK_VAL_REFL14_UT = "lire" ;
+
+# <refl15>
+LIST ORDBANK_VAL_REFL15 =
+    "bade" "benkje" "dølje" "frøyse" "gni" "gnide"
+    "gnu" "hogge" "innarbeide" "innlosjere" "installere" "kaste"
+    "klabbe" "klapse" "kleie" "klore" "klype" "klå"
+    "klø" "knipe" "kome" "komme" "kutte" "legge"
+    "leggje" "pele" "pete" "pigge" "pirke" "pitle"
+    "puske" "skjere" "skjule" "skyle" "sleike" "sleikje"
+    "sleiske" "slenge" "slengje" "slikke" "slå" "stable"
+    "stryke" "sverte" "ta" "take" "vaske" "velte" ;
+
+# <refl16/over>
+LIST ORDBANK_VAL_REFL16_OVER = "ergre" "gle" "glede" ;
+
+# <refl16/til>
+LIST ORDBANK_VAL_REFL16_TIL = "gle" "glede" ;
+
+# <refl17/for>
+LIST ORDBANK_VAL_REFL17_FOR = "grue" "unnsjå" ;
+
+# <refl17/med>
+LIST ORDBANK_VAL_REFL17_MED = "hyggje" ;
+
+# <refl17/over>
+LIST ORDBANK_VAL_REFL17_OVER = "gle" "glede" ;
+
+# <refl17/til>
+LIST ORDBANK_VAL_REFL17_TIL = "gle" "glede" "grue" ;
+
+# <refl18/for>
+LIST ORDBANK_VAL_REFL18_FOR = "sjenere" ;
+
+# <refl18/i>
+LIST ORDBANK_VAL_REFL18_I = "fortape" ;
+
+# <refl19/med>
+LIST ORDBANK_VAL_REFL19_MED = "forlove" ;
+
+# <refl2>
+LIST ORDBANK_VAL_REFL2 =
+    "eine" "forlove" "forsone" "gifte" "nedverdige" "samansverje"
+    "sameine" "samrå" "samråde" ;
+
+# <refl21/om>
+LIST ORDBANK_VAL_REFL21_OM = "forvisse" ;
+
+# <refl3>
+LIST ORDBANK_VAL_REFL3 = "muntre" ;
+
+# <refl3/etter>
+LIST ORDBANK_VAL_REFL3_ETTER = "innrette" ;
+
+# <refl3/for>
+LIST ORDBANK_VAL_REFL3_FOR = "grue" "interessere" "vegre" ;
+
+# <refl3/frå>
+LIST ORDBANK_VAL_REFL3_FR = "fri" "frie" ;
+
+# <refl3/mot>
+LIST ORDBANK_VAL_REFL3_MOT = "vegre" ;
+
+# <refl3/om>
+LIST ORDBANK_VAL_REFL3_OM = "konsentrere" ;
+
+# <refl3/på>
+LIST ORDBANK_VAL_REFL3_P =
+    "forbanne" "forplikte" "freiste" "innrette" "prøve" "rikgjere"
+    "ruinere" "skjøne" "skjønne" "våge" ;
+
+# <refl3/til>
+LIST ORDBANK_VAL_REFL3_TIL =
+    "driste" "eigne" "formaste" "fornedre" "forplikte" "få"
+    "grue" "lure" "nedlate" "nedverdige" "stele" "trumfe"
+    "tvinge" "venje" "venne" ;
+
+# <refl3/ut+for>
+LIST ORDBANK_VAL_REFL3_UT_FOR = "gi" "gje" "gjeve" ;
+
+# <refl4>
+LIST ORDBANK_VAL_REFL4 =
+    "absentere" "age" "akklimatisere" "akkommodere" "aksle" "akte"
+    "aktivisere" "ame" "angre" "ansvarsforsikre" "ansvarstrygde" "artikulere"
+    "assurere" "attrast" "attre" "audmjuke" "audmykje" "aue"
+    "avgrense" "avkjøle" "avlage" "avruse" "avrå" "avråde"
+    "bade" "bake" "barbere" "barme" "barrikadere" "barske"
+    "benkje" "bere" "berge" "binde" "blakke" "blamere"
+    "blande" "blidge" "blidke" "blotte" "blottstille" "blære"
+    "bløyte" "bole" "bolle" "boltre" "braske" "breie"
+    "brekke" "brigde" "briske" "bruke" "brune" "bry"
+    "bryne" "brynne" "bryske" "bryste" "brødfø" "brødføde"
+    "bu" "buke" "bukke" "bukte" "byrte" "byste"
+    "båse" "bøle" "børste" "bøye" "dekkje" "delikatere"
+    "demaskere" "dempe" "disiplinere" "diskvalifisere" "distansere" "divertere"
+    "dope" "drepe" "drive" "drukne" "dugeleggjere" "dugleggjere"
+    "dukke" "dusje" "dy" "dyste" "døre" "eie"
+    "ekspatriere" "eksponere" "ekvipere" "emansipere" "endre" "engasjere"
+    "enke" "enkje" "etterutdanne" "fakte" "fate" "fatte"
+    "feite" "fjelge" "fjerne" "fjerre" "fjonge" "fli"
+    "flistre" "fljote" "flokke" "flotre" "flotte" "flytte"
+    "fløte" "fløygje" "folke" "forankre" "forbarme" "forbere"
+    "forbetre" "forde" "forderve" "forete" "forfare" "forfjase"
+    "forglagge" "forhaste" "forherde" "forhøyre" "forlesse" "formaste"
+    "formeire" "formulere" "fornedre" "fornye" "fororde" "forplante"
+    "forrekne" "forrenne" "forråde" "forrøyne" "forselje" "forsjå"
+    "forskanse" "forskjere" "forskreve" "forsnakke" "forspane" "forspørje"
+    "forstire" "forsvare" "forsynde" "forsyne" "forsyte" "forsøme"
+    "forsømme" "forsørgje" "forta" "fortake" "fortale" "forte"
+    "forvisse" "forvite" "forynge" "foryngje" "fote" "frede"
+    "freiste" "fremde" "fribanke" "frigjere" "frisere" "frottere"
+    "fylke" "fylkje" "fylle" "føne" "føre" "førebu"
+    "føreorde" "førpensjonere" "førtidspensjonere" "gagle" "gamse" "gape"
+    "gardere" "geberde" "geminere" "gerere" "gi" "gifte"
+    "gilde" "gje" "gjenreise" "gjentake" "gjeve" "gjø"
+    "gjøde" "glattbarbere" "glattkjemme" "gramme" "graute" "greie"
+    "gruppere" "gurgle" "gynge" "gøyme" "halle" "hamse"
+    "hegde" "hegne" "heilage" "heile" "helge" "heme"
+    "hemse" "hengje" "herde" "hevde" "hevje" "hevle"
+    "hie" "huske" "hyfse" "hyke" "hykje" "hækje"
+    "idke" "igle" "immatrikulere" "innfinne" "innordne" "innpasse"
+    "innrette" "innskipe" "installere" "interessere" "involvere" "isolere"
+    "jamre" "jenke" "jule" "jåle" "kamuflere" "kantre"
+    "keike" "kjappe" "kjekke" "kjemme" "kjæte" "klare"
+    "kle" "klede" "klippe" "klore" "klø" "kompromittere"
+    "konsentrere" "konstituere" "kontrollere" "korrumpere" "kro" "krode"
+    "kroke" "krosse" "krukse" "krympe" "krøke" "krøkje"
+    "kurre" "kutte" "kvakle" "kvalifisere" "kvare" "kveike"
+    "kveikje" "kvike" "kvikke" "kåle" "kåte" "lauge"
+    "lede" "lee" "legge" "leggje" "legitimere" "leike"
+    "leite" "lempe" "leske" "lete" "livberge" "live"
+    "livje" "livnære" "livsforsikre" "loppe" "lufte" "lukke"
+    "lyske" "lægre" "markere" "maskere" "matberge" "matstelle"
+    "melde" "mette" "misfare" "misrekne" "missjå" "missnakke"
+    "mista" "mistake" "moderere" "molde" "morske" "motsetje"
+    "motsette" "movere" "mylde" "måle" "målføre" "møde"
+    "møyke" "møykje" "namngi" "namngje" "namngjeve" "natte"
+    "naukre" "nyansere" "nyte" "nytte" "nækje" "nærme"
+    "nøre" "nøyte" "ofre" "oie" "okke" "olboge"
+    "olme" "omrømme" "omskape" "openberre" "oppe" "ordlegge"
+    "ordleggje" "ordleie" "organisere" "orientere" "orme" "orsake"
+    "ote" "overbelaste" "overeksponere" "overgi" "overgje" "overgjeve"
+    "pare" "parfymere" "pensjonere" "perfeksjonere" "pjuske" "platte"
+    "plente" "posisjonere" "preparere" "presentere" "presse" "profilere"
+    "prostituere" "prøve" "pudre" "pynte" "rake" "ranke"
+    "realisere" "reinvaske" "reire" "reise" "rekkje" "rekreere"
+    "rele" "rembe" "rengje" "reservere" "restituere" "rettferdiggjere"
+    "revansjere" "rikgjere" "ringe" "ruffe" "ruinere" "ruse"
+    "rådføre" "røpe" "røre" "røyne" "røyve" "sale"
+    "samføre" "samlage" "samordne" "samstille" "sanke" "sanse"
+    "sede" "selje" "separere" "sesse" "setje" "sette"
+    "sibreie" "sjamponere" "sjarmantisere" "sjukmelde" "ska" "skade"
+    "skalpere" "skamete" "skamfare" "skamfere" "skamføre" "skandalisere"
+    "skape" "skikke" "skilje" "skjegge" "skjeggje" "skjerpe"
+    "skjule" "sko" "skolere" "skope" "skorsetje" "skorsette"
+    "skreide" "skripe" "skriple" "skrubbe" "skubbe" "skunde"
+    "skutte" "skyle" "skyte" "slange" "slanke" "sminke"
+    "småminke" "småskunde" "snerte" "snirkle" "snoe" "snu"
+    "snyrte" "snyte" "snøgge" "sosialisere" "spanske" "spegle"
+    "spesialisere" "spissformulere" "spreie" "sprenge" "sprengje" "sprike"
+    "sprikje" "stagge" "stave" "stelle" "sterilisere" "stigmatisere"
+    "strekke" "strekkje" "strukturere" "stusse" "stålsetje" "stålsette"
+    "subordinere" "sutenere" "svale" "svelte" "svenge" "svengje"
+    "sverte" "svinte" "svive" "syne" "sysselsetje" "sysselsette"
+    "søte" "tatovere" "taumkøyre" "te" "teie" "teikne"
+    "torpe" "trekkje" "trulove" "trøyte" "tupere" "tverrkaste"
+    "tvette" "tygle" "tyne" "tyrme" "tøle" "tømme"
+    "tøyme" "ubbe" "uffe" "uge" "ugge" "ugjere"
+    "ulage" "ulukkeforsikre" "ulukkesforsikre" "ulukkestrygde" "ulukketrygde" "ulykkeforsikre"
+    "ulykkesforsikre" "ulykkestrygde" "ulykketrygde" "umake" "undre" "uniformere"
+    "unnskylde" "unnslå" "utdanne" "utfalde" "utfolde" "utlevere"
+    "utmatte" "utmerke" "utmerkje" "utsmykke" "utstaffere" "uttale"
+    "uttrykke" "uttrykkje" "utyrste" "utørste" "vagle" "vaksinere"
+    "vare" "varme" "vaske" "vasskjemme" "vege" "vegre"
+    "verje" "verve" "vidareutdanne" "vidareutvikle" "vikte" "vinne"
+    "vise" "vogge" "vrenge" "vrengje" "vri" "vride"
+    "våge" "væ" "væde" "væpne" "være" "væte"
+    "ybbe" "ymse" "ynke" "yppe" "ytre" "yve"
+    "ømme" "øne" "øve" "øydeleggje" "øye" ;
+
+# <refl4/inn>
+LIST ORDBANK_VAL_REFL4_INN = "samle" ;
+
+# <refl4/opp>
+LIST ORDBANK_VAL_REFL4_OPP = "idke" "samle" ;
+
+# <refl4/saman>
+LIST ORDBANK_VAL_REFL4_SAMAN = "samle" ;
+
+# <refl5>
+LIST ORDBANK_VAL_REFL5 =
+    "are" "avleire" "beke" "betale" "botnfelle" "botnlegge"
+    "botnleggje" "brenne" "bunge" "buske" "buste" "by"
+    "byde" "daude" "dele" "disse" "dovne" "dra"
+    "drage" "eigne" "fastne" "fenne" "feste" "festne"
+    "filtre" "flette" "flise" "floke" "flotre" "fløkje"
+    "forakte" "forandre" "fordryge" "forfryse" "forme" "forplante"
+    "forrente" "forskuve" "forskyve" "forsove" "forstå" "forta"
+    "fortake" "fortape" "fortette" "fortorve" "forvede" "fræve"
+    "frø" "føye" "gare" "gjentake" "gløyme" "gode"
+    "godge" "godgjere" "godne" "greine" "gryne" "grø"
+    "grøde" "grøype" "hemle" "heve" "hime" "hjelle"
+    "hyde" "hye" "håtte" "høgne" "høve" "jamne"
+    "kake" "karte" "kaure" "kavle" "kinke" "kinkse"
+    "kipe" "kippe" "kjøle" "kjøte" "kjøtte" "klake"
+    "klase" "kleppe" "klimatisere" "klumpe" "kløfte" "kløyve"
+    "knoppe" "knuppe" "knyte" "kome" "komme" "konfirmere"
+    "korke" "korne" "krave" "kruse" "krystallisere" "kurle"
+    "kurve" "kuve" "kvile" "kvisle" "late" "leire"
+    "levre" "lognast" "logne" "låse" "lægje" "løne"
+    "lønne" "løyse" "magre" "mate" "materialisere" "morgne"
+    "muldre" "netje" "normalisere" "nupre" "nyggje" "nærme"
+    "opne" "ordne" "oste" "ovre" "pakke" "platte"
+    "pløse" "pose" "pøyse" "rente" "rikke" "roe"
+    "røte" "sakte" "saktne" "same" "sampe" "sedimentere"
+    "segmentere" "seile" "semje" "skavle" "skjemme" "skjere"
+    "skjolde" "skjøre" "skorpe" "skove" "slå" "smule"
+    "snage" "snerke" "spegle" "stabilisere" "stå" "svampe"
+    "svare" "søme" "sømme" "tape" "tette" "tide"
+    "tjafse" "toppe" "tove" "tvinne" "tvirle" "tårne"
+    "uhappe" "uheppe" "utkrystallisere" "utvide" "utvikle" "vri"
+    "vride" "væske" "ymse" "øksle" ;
+
+# <refl6>
+LIST ORDBANK_VAL_REFL6 =
+    "attachere" "attrahere" "avkle" "avklede" "bane" "brøyte"
+    "bygsle" "danne" "etablere" "feste" "finne" "fråskrive"
+    "få" "gjere" "ha" "hente" "iføre" "ikle"
+    "iklede" "innbille" "kjøpe" "lage" "leite" "merke"
+    "motsetje" "motsette" "neitte" "nekte" "notere" "nyttiggjere"
+    "nærme" "pådra" "pådrage" "påkalle" "setje" "sette"
+    "sikre" "skaffe" "skape" "ta" "take" "tileigne"
+    "tilhevde" "tilpasse" "tryggje" "underkaste" "underordne" "unne"
+    "vedkjenne" "vedstå" "velje" "ynskje" "ønskje" ;
+
+# <refl7>
+LIST ORDBANK_VAL_REFL7 =
+    "innbille" "merke" "notere" "sikre" "tenke" "tenkje"
+    "vedkjenne" "vedstå" ;
+
+# <refl8>
+LIST ORDBANK_VAL_REFL8 =
+    "esle" "etle" "tenke" "tenkje" "tilby" "tilbyde"
+    "tillate" ;
+
+# <refl9(fram+til>
+LIST ORDBANK_VAL_REFL9_FRAM_TIL = "resonnere" ;
+
+# <refl9/av>
+LIST ORDBANK_VAL_REFL9_AV = "livberge" "nære" "rose" "ta" "take" ;
+
+# <refl9/av+med>
+LIST ORDBANK_VAL_REFL9_AV_MED = "skilje" "venje" "venne" ;
+
+# <refl9/bort>
+LIST ORDBANK_VAL_REFL9_BORT = "rote" ;
+
+# <refl9/bort+i>
+LIST ORDBANK_VAL_REFL9_BORT_I = "blande" ;
+
+# <refl9/bortåt>
+LIST ORDBANK_VAL_REFL9_BORT_T = "egne" ;
+
+# <refl9/etter>
+LIST ORDBANK_VAL_REFL9_ETTER =
+    "adaptere" "byste" "innrette" "jenke" "lage" "lempe"
+    "rette" ;
+
+# <refl9/fast+i>
+LIST ORDBANK_VAL_REFL9_FAST_I = "hengje" "kile" ;
+
+# <refl9/for>
+LIST ORDBANK_VAL_REFL9_FOR =
+    "blottstille" "dy" "eksponere" "grue" "gøyme" "interessere"
+    "jamre" "kjære" "kvalifisere" "ofre" "oie" "okke"
+    "openberre" "orsake" "reinvaske" "ribbe" "røpe" "selje"
+    "skjerme" "skjule" "skyle" "tømme" "unnskylde" "utruste"
+    "utsetje" "utsette" "vakte" "øyde" ;
+
+# <refl9/fra>
+LIST ORDBANK_VAL_REFL9_FRA = "berge" "distansere" ;
+
+# <refl9/fram+til>
+LIST ORDBANK_VAL_REFL9_FRAM_TIL = "abstrahere" "analysere" "diskutere" "forhandle" ;
+
+# <refl9/frå>
+LIST ORDBANK_VAL_REFL9_FR =
+    "fjerne" "fri" "frie" "frigjere" "skilje" "skjerme"
+    "trekkje" ;
+
+# <refl9/i>
+LIST ORDBANK_VAL_REFL9_I =
+    "engasjere" "etterutdanne" "innlate" "innpasse" "involvere" "skolere"
+    "spesialisere" "utdanne" "vidareutdanne" "øve" ;
+
+# <refl9/inn>
+LIST ORDBANK_VAL_REFL9_INN = "egne" "logge" "låse" ;
+
+# <refl9/inn+blandt>
+LIST ORDBANK_VAL_REFL9_INN_BLANDT = "kile" ;
+
+# <refl9/inn+i>
+LIST ORDBANK_VAL_REFL9_INN_I = "blande" "bryte" "etse" "kile" "vikle" ;
+
+# <refl9/inn+på>
+LIST ORDBANK_VAL_REFL9_INN_P =
+    "antre" "elke" "rengle" "sikte" "trenge" "trengje"
+    "vrengle" ;
+
+# <refl9/innpå>
+LIST ORDBANK_VAL_REFL9_INNP = "egle" "ete" "reite" ;
+
+# <refl9/innåt>
+LIST ORDBANK_VAL_REFL9_INN_T = "fyne" "lene" ;
+
+# <refl9/med>
+LIST ORDBANK_VAL_REFL9_MED =
+    "alliere" "assosiere" "blande" "bry" "ekvipere" "fororde"
+    "forsone" "forsyne" "forvåge" "føreorde" "gifte" "identifisere"
+    "innlate" "kvitte" "leike" "leske" "menge" "mengje"
+    "måle" "nøye" "ordne" "proppe" "pryde" "rådføre"
+    "samanlikne" "samansverje" "samføre" "samrå" "samråde" "smykke"
+    "smøre" "smørje" "solidarisere" "ta" "take" "trulove"
+    "trøye" "trøyste" "umake" "underhalde" "underordne" "unnskylde"
+    "utruste" "utsmykke" "utstaffere" "utstyre" "utykke" "utykkje"
+    "yte" ;
+
+# <refl9/mot>
+LIST ORDBANK_VAL_REFL9_MOT =
+    "assurere" "forgå" "forsynde" "gardere" "lene" "reservere"
+    "samansverje" "skjerme" "trygde" "tryggje" "vaksinere" "vegre"
+    "vende" "verje" "verne" ;
+
+# <refl9/ned+i>
+LIST ORDBANK_VAL_REFL9_NED_I = "etse" ;
+
+# <refl9/om>
+LIST ORDBANK_VAL_REFL9_OM =
+    "bry" "eine" "forhøyre" "fororde" "forvisse" "forvite"
+    "fylke" "fylkje" "føreorde" "kjære" "konsentrere" "orientere"
+    "rådføre" "samle" "spørje" "uttale" "visse" ;
+
+# <refl9/opp>
+LIST ORDBANK_VAL_REFL9_OPP = "gjere" ;
+
+# <refl9/opp+i>
+LIST ORDBANK_VAL_REFL9_OPP_I = "blande" "hekte" "hengje" ;
+
+# <refl9/opp+på>
+LIST ORDBANK_VAL_REFL9_OPP_P = "slå" ;
+
+# <refl9/opp+til>
+LIST ORDBANK_VAL_REFL9_OPP_TIL = "melde" ;
+
+# <refl9/over>
+LIST ORDBANK_VAL_REFL9_OVER =
+    "forarge" "forbarme" "heve" "jamre" "kjære" "miskunne"
+    "oie" "okke" "uffe" "undre" "ynke" ;
+
+# <refl9/part1opp>
+LIST ORDBANK_VAL_REFL9_PART1OPP = "øyde" ;
+
+# <refl9/på>
+LIST ORDBANK_VAL_REFL9_P =
+    "basere" "bruke" "bryne" "egle" "forbanne" "forgi"
+    "forgje" "forgjeve" "forplikte" "forsjå" "forstire" "forvåge"
+    "freiste" "førebu" "hemne" "hengje" "innlate" "innrette"
+    "innstille" "lene" "leske" "livberge" "logge" "make"
+    "melde" "presse" "prøve" "rikgjere" "ruinere" "skjøne"
+    "skjønne" "sko" "slå" "spesialisere" "styrkje" "teikne"
+    "trenge" "trengje" "våge" "øve" ;
+
+# <refl9/til>
+LIST ORDBANK_VAL_REFL9_TIL =
+    "adaptere" "ale" "ame" "binde" "brigde" "driste"
+    "eigne" "forhandle" "forplikte" "forvåge" "gifte" "gjete"
+    "gjette" "grue" "hykle" "hækje" "kvalifisere" "lukte"
+    "lure" "melde" "overgi" "overgje" "overgjeve" "preparere"
+    "referere" "selje" "slutte" "stele" "tore" "tryggje"
+    "två" "ulke" "utdanne" "utruste" "utstyre" "vende"
+    "venje" "venne" "væpne" ;
+
+# <refl9/til+med>
+LIST ORDBANK_VAL_REFL9_TIL_MED = "ta" "take" ;
+
+# <refl9/under>
+LIST ORDBANK_VAL_REFL9_UNDER = "innordne" "subordinere" ;
+
+# <refl9/unna>
+LIST ORDBANK_VAL_REFL9_UNNA = "vri" "vride" ;
+
+# <refl9/ut>
+LIST ORDBANK_VAL_REFL9_UT = "logge" "låse" "øyde" ;
+
+# <refl9/ut+av>
+LIST ORDBANK_VAL_REFL9_UT_AV = "klare" ;
+
+# <refl9/ut+for>
+LIST ORDBANK_VAL_REFL9_UT_FOR = "gi" "gje" "gjeve" ;
+
+# <refl9/ut+i>
+LIST ORDBANK_VAL_REFL9_UT_I = "hive" ;
+
+# <refl9/ut+på>
+LIST ORDBANK_VAL_REFL9_UT_P = "rine" ;
+
+# <refl9/utover>
+LIST ORDBANK_VAL_REFL9_UTOVER = "lene" ;
+
+# <refl9/ved>
+LIST ORDBANK_VAL_REFL9_VED = "feste" "hefte" ;
+
+# <trans>
+LIST ORDBANK_VAL_TRANS =
+    "avvege" "forgi" "forgje" "forgjeve" "skjønse" "sverje"
+    "vade" ;
+
+# <trans1>
+LIST ORDBANK_VAL_TRANS1 =
+    "-ere" "-escere" "-fisere" "TV-overvake" "abandonere" "abbreviere"
+    "abortere" "absoluttere" "absolvere" "abstrahere" "adaptere" "addere"
+    "adherere" "adjektivere" "adle" "administrere" "adoptere" "adressere"
+    "advisere" "affektere" "afrikanisere" "age" "agglutinere" "ajourføre"
+    "akklimatisere" "akkommodere" "akkompagnere" "akkreditere" "akkumulere" "akselerere"
+    "aksentuere" "akseptere" "aksle" "akte" "aktivere" "aktivisere"
+    "aktualisere" "akvarellere" "alarmere" "alfabetisere" "alienere" "alkoholisere"
+    "allegorisere" "allitterere" "allmenngjere" "allokere" "alterere" "aluminere"
+    "amalgamere" "ame" "amerikanisere" "amme" "amortisere" "amputere"
+    "amre" "amstre" "analysere" "andfare" "andstemne" "anduge"
+    "andøve" "ane" "anestesere" "angi" "angjeve" "anglisere"
+    "angre" "angripe" "animalisere" "animere" "anke" "ankre"
+    "anløpe" "annamme" "annektere" "annonsere" "annullere" "anodisere"
+    "ansvarsforsikre" "ansvarstrygde" "antedatere" "antesipere" "antikisere" "antikrympebehandle"
+    "antikrympehandsame" "antireflekshandsame" "antistatbehandle" "antistathandsame" "apokopere" "apostrofere"
+    "applaudere" "applikere" "applisere" "apportere" "appretere" "approbere"
+    "appropriere" "aptere" "arbeide" "arde" "arkaisere" "arkebusere"
+    "arkivere" "armere" "aromatisere" "arrangere" "arrestere" "arretere"
+    "arrondere" "artikulere" "asfaltere" "aspirere" "assimilere" "assistere"
+    "assortere" "assurere" "atomisere" "attachere" "attakkere" "atterfø"
+    "atterføde" "attergjelde" "atterløyse" "atterreise" "atterskape" "atterskipe"
+    "attertrygde" "attestere" "attføre" "attrahere" "attrappere" "attre"
+    "attskape" "audmjuke" "audmykje" "augefare" "augefeste" "augnefare"
+    "augnefeste" "auke" "aure" "aurvelte" "auskultere" "autoklavere"
+    "automatisere" "autorisere" "avalere" "avalkoholisere" "avansere" "avbalansere"
+    "avbetale" "avbilde" "avbryte" "avdage" "avdekke" "avdekkje"
+    "avdra" "avdrage" "avdramatisere" "avduke" "avdøme" "avdømme"
+    "avekse" "avertere" "avfeie" "avfeitte" "avfolke" "avgjere"
+    "avgrense" "avheidre" "avhende" "avherde" "avhjelpe" "avhorne"
+    "avhovde" "avhumanisere" "avhøyre" "avise" "avkjøle" "avkjønne"
+    "avklare" "avkle" "avklede" "avklåre" "avkolonisere" "avkorte"
+    "avkriminalisere" "avkristne" "avlage" "avlaste" "avle" "avleie"
+    "avleire" "avlete" "avlive" "avloe" "avluse" "avlyse"
+    "avlytte" "avløyse" "avmagnetisere" "avmilitarisere" "avmytologisere" "avmåte"
+    "avmønstre" "avnasjonalisere" "avnorske" "avpasse" "avpatruljere" "avpolitisere"
+    "avrette" "avrime" "avruse" "avrå" "avråde" "avsanne"
+    "avseie" "avsetje" "avsette" "avskaffe" "avskape" "avskilte"
+    "avskipe" "avskjere" "avslutte" "avslå" "avsoppe" "avspasere"
+    "avsperre" "avspore" "avstresse" "avstyre" "avstytte" "avstå"
+    "avtale" "avtelje" "avtene" "avtinge" "avtrappe" "avverje"
+    "avverke" "avvikle" "avvise" "avvæpne" "bade" "bagatellisere"
+    "bakbinde" "bake" "baklaste" "baksnakke" "bakvaske" "balansere"
+    "balkanisere" "ballaste" "balle" "balsamere" "banalisere" "bandasjere"
+    "bande" "banderolere" "bandlegge" "bandleggje" "bane" "banelegge"
+    "baneleggje" "banepålegge" "banepåleggje" "banke" "bannlyse" "bannstøyte"
+    "barbere" "bare" "barke" "barne" "barrikadere" "baste"
+    "be" "bede" "bedekkje" "bedra" "bedrage" "bedøme"
+    "bedømme" "bedøve" "befale" "befrukte" "begynne" "behandle"
+    "behovsprøve" "beine" "beinke" "beise" "beite" "beke"
+    "beksle" "belaste" "belegge" "beleggje" "belgflå" "belje"
+    "belme" "bemle" "bende" "bendsle" "benefisere" "benkje"
+    "beordre" "bere" "berge" "bergta" "bergtake" "berje"
+    "berke" "berkje" "berre" "berrlegge" "berrleggje" "bese"
+    "beslagleggje" "beslå" "beste" "besøke" "besøkje" "betale"
+    "betre" "beundre" "bevare" "beverte" "bevisstgjere" "bikke"
+    "binde" "bisetje" "bisette" "bite" "bjukte" "blakke"
+    "blamere" "blande" "blanke" "blankpusse" "blankskure" "blankslite"
+    "blasonere" "blautkoke" "blegge" "bleggje" "bleigje" "bleikje"
+    "blekke" "blekkje" "blende" "blenge" "blengje" "blidge"
+    "blidke" "blikte" "blinde" "blistre" "blode" "blodmelte"
+    "blodvekke" "blodvekkje" "blokke" "blokkere" "blokkfryse" "blote"
+    "blotne" "blotte" "blottlegge" "blottleggje" "blottstille" "blyge"
+    "blygje" "blåpugge" "blåse" "bløffe" "bløgge" "bløyte"
+    "bode" "bodsende" "boikotte" "bokføre" "bokse" "bokstavere"
+    "bolse" "bolte" "bombardere" "bombe" "bondefange" "bone"
+    "bonge" "bonitere" "booke" "borde" "bordsy" "bortforklare"
+    "bortføre" "boste" "botne" "botnfelle" "botnlegge" "botnleggje"
+    "botnskrape" "brakke" "brannforsikre" "brannskatte" "branntrygde" "bre"
+    "brede" "bregde" "breie" "brekke" "bremse" "brenge"
+    "brengje" "brenne" "brennemerkje" "brese" "bresere" "breste"
+    "brette" "brife" "brigde" "brigsle" "bringe" "brodde"
+    "brodere" "bronse" "bronsere" "brosjere" "brote" "brudevie"
+    "bruke" "brulegge" "bruleggje" "brune" "brunke" "brunsteike"
+    "brunsteikje" "brurevie" "brurvie" "brutalisere" "bry" "brygge"
+    "bryggje" "bryne" "brynne" "bryte" "brå" "bråke"
+    "bråne" "bråsnu" "bråstanse" "bråstogge" "bråstoppe" "bråsvinge"
+    "bråvende" "brødfø" "brødføde" "brøle" "brøyte" "bu"
+    "budsjettere" "buføre" "buge" "buhage" "bukke" "bukle"
+    "buksere" "bukte" "bulke" "bunge" "bunkre" "bunte"
+    "bute" "by" "byde" "bye" "bygsle" "byrge"
+    "byrje" "byrte" "byråkratisere" "bysje" "bysse" "byste"
+    "byte" "bytne" "båse" "båsfôre" "bægje" "bæle"
+    "bøke" "bøkje" "bønfalle" "bønhøyre" "bønnfalle" "bønnhøyre"
+    "børse" "børste" "bøte" "bøtelegge" "bøteleggje" "bøtlegge"
+    "bøtleggje" "bøye" "bøyke" "bøykje" "celebrere" "chartre"
+    "chiffrere" "cyanidisere" "dagsetje" "dagsette" "dalge" "dampe"
+    "dampkoke" "dandere" "danne" "danse" "danske" "daske"
+    "databehandle" "dataføre" "datastyre" "datere" "datomerke" "datomerkje"
+    "datostemple" "debarkere" "debattere" "debitere" "dechiffrere" "dedusere"
+    "definere" "deflatere" "deflorere" "deformere" "degenerere" "degradere"
+    "dehydrere" "deige" "deilde" "dekantere" "dekatere" "dekkje"
+    "deklamere" "deklarere" "deklassere" "deklinere" "dekode" "dekomponere"
+    "dekorere" "dekretere" "dekupere" "delabialisere" "dele" "delegere"
+    "delikatere" "demarkere" "demaskere" "dementere" "demilitarisere" "demobilisere"
+    "demokratisere" "demolere" "demonstrere" "demontere" "demoralisere" "dempe"
+    "denasjonalisere" "denaturalisere" "denaturere" "denge" "dengje" "denotere"
+    "deponere" "deportere" "derangere" "derivere" "desarmere" "desavuere"
+    "desidere" "designe" "desimere" "desinfisere" "desintegrere" "desorganisere"
+    "desorientere" "destillere" "destruere" "detaljere" "detasjere" "determinere"
+    "detonere" "detronisere" "devaluere" "diagnostisere" "die" "differensiere"
+    "diftongere" "digge" "digitalisere" "dikte" "diktere" "dimensjonere"
+    "dimittere" "dimme" "dirigere" "disiplinere" "diskontere" "diskreditere"
+    "diskriminere" "diskutere" "diskvalifisere" "dispensere" "disponere" "disputere"
+    "disse" "dissekere" "dissimilere" "dissonere" "dissosiere" "distansere"
+    "distrahere" "distribuere" "divergere" "divertere" "dividere" "djupfryse"
+    "doble" "dokke" "dokksetje" "dokksette" "dokterere" "dokumentere"
+    "domfelle" "dominere" "domisiliere" "donere" "dope" "dore"
+    "dorge" "dose" "dossere" "dotere" "dra" "drabbe"
+    "drage" "dramatisere" "drangle" "drapere" "drasjere" "dregge"
+    "dreie" "drenere" "drepe" "dressere" "drible" "drikke"
+    "drisle" "drive" "droppe" "drosle" "drukne" "drusle"
+    "dryge" "drype" "dryppturke" "drypptørke" "dråtte" "drøfte"
+    "drøype" "dublere" "dugeleggjere" "dugleggjere" "duke" "dulke"
+    "dulle" "dulme" "dumpe" "dunge" "duplisere" "dusje"
+    "duste" "dutte" "duve" "dykje" "dyne" "dynke"
+    "dynte" "dyrke" "dysse" "dyste" "dytte" "dåre"
+    "dølje" "dømme" "døyde" "døype" "døyste" "døyve"
+    "edle" "effektivisere" "effektuere" "effeminere" "egalisere" "egne"
+    "egse" "eidfeste" "eikje" "eikle" "einsrette" "ejakulere"
+    "eksaminere" "ekse" "eksegere" "eksekvere" "eksemplifisere" "ekserpere"
+    "eksersere" "ekskludere" "ekskommunisere" "ekspandere" "ekspatriere" "ekspedere"
+    "eksploatere" "eksplodere" "eksponere" "eksportere" "ekspropriere" "ekstemporere"
+    "ekstrahere" "ekstrapolere" "ekte" "ektevie" "ekvipere" "elde"
+    "elektrifisere" "elektrisere" "elevere" "elgje" "eliminere" "elke"
+    "eloksere" "elske" "elte" "eludere" "emaljere" "emansipere"
+    "emballere" "embarkere" "emendere" "emittere" "emne" "emulgere"
+    "endefare" "endefete" "endereise" "endesnu" "endevende" "endossere"
+    "endre" "engasjere" "ensilere" "entre" "erigere" "erkjenne"
+    "erklære" "erobre" "erodere" "erotisere" "erstatte" "eskalere"
+    "eskapere" "eskortere" "esle" "estetisere" "estimere" "etablere"
+    "ete" "etikettere" "etle" "etse" "etterbetale" "etterforske"
+    "etterfylle" "ettergi" "ettergje" "ettergjeve" "etterleve" "etterlikne"
+    "etterlyse" "etterløyve" "etterprøve" "ettersende" "ettersjå" "ettersløkke"
+    "ettersløkkje" "etterutdanne" "ettervise" "etymologisere" "euforisere" "europeisere"
+    "evakuere" "evaluere" "evle" "evne" "fabrikkere" "fagne"
+    "fakke" "fakse" "faksimilere" "faktorisere" "fakturere" "falby"
+    "falbyde" "falde" "falme" "false" "falske" "famne"
+    "famnta" "famntake" "fange" "fangta" "fangtake" "farborde"
+    "farge" "fargelegge" "fargeleggje" "farsere" "fase" "fasettere"
+    "fasle" "fasongere" "fastsetje" "fastsette" "fastslå" "fate"
+    "fatle" "fatte" "favorisere" "feie" "feire" "fekte"
+    "fele" "felle" "femdoble" "feminisere" "fendre" "fengje"
+    "fengsle" "ferde" "fergje" "ferje" "ferme" "fermentere"
+    "fernissere" "ferske" "fesle" "feste" "fetere" "fetje"
+    "fetle" "fette" "figurere" "fikse" "fiksere" "file"
+    "filere" "filetere" "filmatisere" "filme" "filtre" "filtrere"
+    "finansiere" "findele" "fine" "finere" "finfordele" "fingere"
+    "fingradere" "finhakke" "finhogge" "finhøvle" "finkjemme" "finlese"
+    "finmale" "finne" "finpolere" "finpusse" "finrake" "finsikte"
+    "finslipe" "finstille" "fintelje" "firdoble" "fire" "firedoble"
+    "fise" "fisjonere" "fiske" "fjelge" "fjerne" "fjerte"
+    "fjetre" "fjåge" "flabbe" "flambere" "flamme" "flankere"
+    "flattere" "fleine" "fleirdoble" "fleirfalde" "flekke" "flekkje"
+    "flenge" "flengje" "flense" "flette" "fli" "flikke"
+    "flindre" "fliselegge" "fliseleggje" "flislegge" "flisleggje" "flolegge"
+    "floleggje" "floragrafere" "flote" "flotre" "fluorescere" "fluoridere"
+    "fluorisere" "flure" "fly" "flyge" "flysje" "flytte"
+    "flå" "flåhakke" "flæ" "flækje" "flø" "fløe"
+    "fløkje" "fløygje" "fløyte" "foge" "fokusere" "folde"
+    "foliere" "folke" "folkesetje" "folkesette" "forakte" "forandre"
+    "forankre" "forarme" "forbanne" "forbetre" "forborde" "forde"
+    "forderve" "fordre" "fordrive" "fordyre" "forenkle" "foreslå"
+    "forfare" "forfordele" "forfryse" "forføtte" "forgasse" "forgrove"
+    "forgylle" "forhage" "forhale" "forhandle" "forhefte" "forhekse"
+    "forherde" "forhorne" "forhøgje" "forhøyre" "forkromme" "forlesse"
+    "forlise" "formalisere" "formatere" "forme" "formeire" "formulere"
+    "fornedre" "fornikle" "fornye" "forpakte" "forpeste" "forpleie"
+    "forprosjektere" "forpurre" "forrette" "forråde" "forråe" "forrøyne"
+    "forsarve" "forsegle" "forsegne" "forseinke" "forselje" "forsere"
+    "forsetje" "forsette" "forsimple" "forsinke" "forskale" "forskanse"
+    "forskjere" "forskotere" "forskottere" "forskusle" "forskuve" "forskylde"
+    "forskyve" "forslumme" "forsmå" "forsnevre" "forsone" "forspane"
+    "forspille" "forsterke" "forstyrre" "forstørre" "forsumpe" "forsure"
+    "forsvare" "forsvenske" "forsverje" "forsyne" "forsyte" "forsølve"
+    "forsøme" "forsømme" "forsøple" "forsørgje" "forteie" "forteikne"
+    "fortenke" "fortette" "fortifisere" "fortinne" "fortjone" "fortjukke"
+    "fortolke" "fortolle" "fortrenge" "fortrengje" "fortrolle" "fortrykke"
+    "fortrykkje" "fortynne" "fortære" "fortøye" "forureine" "forvalte"
+    "forvanske" "forvare" "forveksle" "forvelle" "forvende" "forvenje"
+    "forvildre" "forville" "forvise" "forvrengje" "forvri" "forvride"
+    "forvrøvle" "forynge" "foryngje" "fostre" "fotografere" "fotokopiere"
+    "fotostatkopiere" "fragmentere" "fraksjonere" "frakte" "framandgjere" "framføre"
+    "framheve" "framkalle" "framskrive" "framstille" "frankere" "frasere"
+    "fraue" "frede" "fredlyse" "frege" "freiste" "frekventere"
+    "frelse" "fremde" "fremje" "fremme" "frese" "frette"
+    "fri" "frie" "frifinne" "frigi" "frigje" "frigjere"
+    "frigjeve" "frikjenne" "friliste" "frisere" "fritere" "frottere"
+    "fryse" "fryselagre" "fryseturke" "frysetørke" "fråge" "fråtre"
+    "fråvike" "fræve" "frø" "frøye" "frøyse" "fuge"
+    "fukte" "fullautomatisere" "fullende" "fullfylgje" "fullfølgje" "fullføre"
+    "fullgjere" "fullne" "fullnøye" "fullrose" "fulltakke" "fundamentere"
+    "furasjere" "fure" "fylke" "fylkje" "fylle" "fyne"
+    "få" "fòre" "fôre" "fø" "føde" "føle"
+    "følgje" "føne" "føre" "førebere" "førebu" "førebygge"
+    "førebyggje" "føregripe" "førehandsdøme" "førehandsdømme" "førehandstinge" "føreseie"
+    "føresetje" "føresette" "føresjå" "føreskrive" "føreslå" "føretrekke"
+    "føretrekkje" "førpensjonere" "førtidspensjonere" "føykje" "gafle" "galde"
+    "galdre" "galdtrakke" "galonere" "galvanisere" "gande" "gane"
+    "garantere" "gardere" "gare" "garnere" "garrottere" "garve"
+    "gasjere" "gassforgifte" "geiple" "geminere" "generere" "germanisere"
+    "gi" "gidde" "gifte" "gilde" "gildre" "gilje"
+    "giljotinere" "gimle" "gipe" "gipse" "girere" "gje"
+    "gjegne" "gjekke" "gjelde" "gjendikte" "gjenge" "gjengjelde"
+    "gjengle" "gjennomarbeide" "gjennombore" "gjennomdebattere" "gjennomdiskutere" "gjennomdrøfte"
+    "gjennomføre" "gjennomglø" "gjennomgløde" "gjennomgranske" "gjennomgå" "gjennomhole"
+    "gjennomleve" "gjennomlyse" "gjennomprøve" "gjennomskode" "gjennomsteike" "gjennomsteikje"
+    "gjenreise" "gjentake" "gjeppe" "gjere" "gjeste" "gjete"
+    "gjette" "gjeve" "gjorde" "gjære" "gjø" "gjøde"
+    "gjødsle" "gjølme" "glamorisere" "glanse" "glase" "glasere"
+    "glattbarbere" "glattkjemme" "glattrake" "glorifisere" "glosteike" "glosteikje"
+    "gløype" "gnage" "gni" "gnide" "gnidre" "gnike"
+    "gnikke" "gnu" "gnuffe" "gnukke" "gnure" "gode"
+    "godge" "godgjere" "godkjenne" "godskrive" "godta" "godtake"
+    "godtgjere" "golve" "gonge" "gote" "grabbe" "gradbøye"
+    "grade" "gradere" "graduere" "grande" "granske" "granulere"
+    "grasbinde" "grase" "gratinere" "gratulere" "graute" "grave"
+    "gravere" "gravfeste" "gravlegge" "gravleggje" "gravsetje" "gravsette"
+    "grefte" "greie" "greipe" "grepje" "grevje" "grevsetje"
+    "grevsette" "griljere" "grille" "grillsteike" "grillsteikje" "grime"
+    "grimeleie" "gripe" "grisle" "grope" "grovhakke" "grovhogge"
+    "grovmale" "grovreinse" "grovreinske" "grovsikte" "grovsortere" "grovtelje"
+    "grugge" "grundere" "grunnfeste" "grunngi" "grunngje" "grunngjeve"
+    "grunnlegge" "grunnleggje" "grupe" "gruppere" "gruse" "gruslegge"
+    "grusleggje" "grute" "gryne" "gryte" "gråte" "grø"
+    "grøde" "grøfte" "grøppe" "grøte" "grøype" "guide"
+    "gummiere" "gumpe" "gurgle" "gurme" "gylle" "gyrde"
+    "gyte" "gå" "gåre" "gørrstikke" "gøyme" "hakke"
+    "halde" "halme" "halve" "halvere" "halvte" "hame"
+    "hamre" "hamse" "hamstre" "handle" "handtere" "hanke"
+    "hanse" "hanske" "hardstappe" "hare" "harpe" "harpikse"
+    "harve" "hase" "hasle" "hatre" "hauste" "heade"
+    "hefte" "hegde" "heidre" "heilage" "heile" "heimle"
+    "heine" "heise" "heite" "hekle" "hekte" "helde"
+    "helge" "helme" "helse" "helvte" "heme" "hemje"
+    "hemme" "hemne" "hemse" "hemte" "hengje" "hengle"
+    "hengsle" "hente" "herberge" "herde" "herke" "herkje"
+    "hermetisere" "heroisere" "hesje" "hespe" "hesple" "hete"
+    "hetse" "hevde" "heve" "hevje" "hindre" "hirre"
+    "hisse" "hive" "hjelpe" "hjule" "hogge" "holde"
+    "holke" "holme" "homme" "honkle" "hoppe" "horve"
+    "hote" "hulle" "humle" "hundjage" "hundse" "husbankfinansiere"
+    "huse" "huske" "huste" "hute" "hye" "hyfse"
+    "hyke" "hykje" "hykle" "hylje" "hylle" "hylme"
+    "hyne" "hypje" "hyrde" "hyve" "håne" "håre"
+    "hæde" "hæle" "hære" "høgje" "høgne" "høle"
+    "høvle" "ide" "idealisere" "identifisere" "ideologisere" "idyllisere"
+    "igle" "ignorere" "ille" "illsvi" "illsvide" "illudere"
+    "illuminere" "illustrere" "imaginere" "imitere" "immatrikulere" "immortalisere"
+    "immunisere" "implantere" "implementere" "imponere" "importere" "impregnere"
+    "improvisere" "imøtegå" "inaktivere" "inaugurere" "incitere" "indikere"
+    "individualisere" "indoktrinere" "indusere" "industrialisere" "infantilisere" "infiltrere"
+    "infisere" "inflammere" "inflatere" "influere" "informere" "inhalere"
+    "inhibere" "initiere" "injisere" "injuriere" "inkarnere" "inklinere"
+    "inkludere" "inkorporere" "innarbeide" "inndra" "inndrage" "innfatte"
+    "innfri" "innføre" "inngå" "innhente" "innkalle" "innkassere"
+    "innkvartere" "innleie" "innleme" "innlemme" "innlosjere" "innordne"
+    "innovere" "innpasse" "innprente" "innreie" "innrette" "innrullere"
+    "innsegle" "innsetje" "innsette" "innskipe" "innskjerpe" "innskrive"
+    "innstille" "innstudere" "innvende" "innvie" "inokulere" "inseminere"
+    "insinuere" "inspirere" "inspisere" "installere" "instituere" "institusjonalisere"
+    "instruere" "instrumentere" "integrere" "intellektualisere" "intendere" "intensivere"
+    "interessere" "interfoliere" "internasjonalisere" "internere" "interpolere" "intervenere"
+    "intervjue" "intimidere" "intonere" "introdusere" "invadere" "invalidisere"
+    "invertere" "investere" "invitere" "involvere" "ionisere" "irettesetje"
+    "irettesette" "irrigere" "isolere" "jage" "jamføre" "jamne"
+    "jamstille" "jare" "jassifisere" "jazzifisere" "jelke" "jenke"
+    "jibbe" "jobbe" "jodisere" "jogge" "joike" "jorde"
+    "jordfeste" "jordslå" "journalføre" "journalisere" "jukse" "jule"
+    "justere" "kabbe" "kadmiere" "kadreie" "kakstryke" "kalandrere"
+    "kaldhamre" "kaldrøyke" "kaldrøykje" "kaldsmi" "kaldsmide" "kaldstarte"
+    "kalfatre" "kalibrere" "kalke" "kalkere" "kalkslå" "kalkulere"
+    "kalsinere" "kamse" "kamuflere" "kanalisere" "kandisere" "kangle"
+    "kanne" "kannelere" "kanonisere" "kanse" "kansellere" "kante"
+    "kanthogge" "kantre" "kantskjere" "kantstikke" "kapitalisere" "kappe"
+    "kapre" "kapseise" "kapsle" "kapunere" "karakterisere" "karamellisere"
+    "karde" "karikere" "karnefle" "karnøfle" "karte" "kartere"
+    "kartlegge" "kartleggje" "kartonere" "karve" "kase" "kaskoforsikre"
+    "kaskotrygde" "kaste" "kastehandle" "kastrere" "katalogisere" "katalysere"
+    "kategorisere" "katekisere" "katte" "kaure" "kavle" "keike"
+    "keive" "kibbe" "kidnappe" "kike" "kile" "kingse"
+    "kinke" "kinkse" "kinne" "kippe" "kitte" "kjafse"
+    "kjakse" "kjede" "kjekse" "kjeltre" "kjemme" "kjempe"
+    "kjeppjage" "kjerve" "kjese" "kjevle" "kjose" "kjå"
+    "kjæle" "kjærteikne" "kjøle" "kjølhale" "kjølsprenge" "kjølsprengje"
+    "kjønnskvotere" "kjønnssortere" "kjøpe" "kjørne" "kjøte" "kjøtte"
+    "kjøve" "kladde" "klakke" "klandre" "klappe" "klapse"
+    "klare" "klarere" "klargjere" "klarlegge" "klarleggje" "klasse"
+    "klassifisere" "klatre" "klattemåle" "klattmåle" "klausulere" "klave"
+    "klavebinde" "klekkje" "klemme" "kleppe" "klimaregulere" "klimatisere"
+    "klipe" "klippe" "klisjere" "klistre" "klive" "klivre"
+    "kloakkere" "klone" "klore" "klorere" "klosshale" "klubbe"
+    "klumse" "klundre" "klype" "klåre" "klårgjere" "klårlegge"
+    "klårleggje" "klø" "kløfte" "kløvje" "kløvkøyre" "kløyve"
+    "kna" "knabbe" "knappe" "knarte" "knase" "knaske"
+    "knatre" "knatte" "kneble" "knege" "knegå" "knekke"
+    "knekkje" "knekte" "knerte" "knesetje" "knesette" "kneskure"
+    "knipe" "kniple" "knippe" "knote" "knubbe" "knue"
+    "knuffe" "knulle" "knurpe" "knurve" "knuse" "knuselske"
+    "knustre" "knuvle" "knysje" "knyte" "knòde" "knø"
+    "knøde" "kode" "kodifisere" "kogle" "koke" "kokemale"
+    "kokevaske" "kokmale" "kole" "kollasjonere" "kolle" "kollektivisere"
+    "kollkaste" "kollsegle" "kollsigle" "kolonisere" "kolorere" "kolportere"
+    "kombinere" "kommandere" "kommentere" "kommersialisere" "kommutere" "komparere"
+    "kompe" "kompensere" "kompilere" "komplettere" "komplimentere" "komplisere"
+    "komponere" "kompostere" "komprimere" "kompromittere" "kondemnere" "kondensere"
+    "kondisjonere" "kondolere" "konferere" "konfirmere" "konfiskere" "konfrontere"
+    "konjugere" "konke" "konkludere" "konnektere" "konnotere" "konsentrere"
+    "konservere" "konsignere" "konsipere" "konskribere" "konsolidere" "konstatere"
+    "konstituere" "konsultere" "konsumere" "kontakte" "kontaminere" "kontere"
+    "kontingentere" "kontinuere" "kontorisere" "kontrahere" "kontrasignere" "kontre"
+    "kontrollere" "konvergere" "konversere" "konvertere" "konvoiere" "koordinere"
+    "kopiere" "kople" "koppe" "kopulere" "kore" "koreografere"
+    "korke" "korporativisere" "korrigere" "korrugere" "korrumpere" "korte"
+    "kose" "kostnadsrekne" "kostymere" "krakelere" "krakke" "krame"
+    "kranse" "krase" "kreditere" "kreere" "kreiste" "kremere"
+    "krenelere" "krengje" "krenke" "krenkje" "kreppe" "krevje"
+    "krikle" "kriminalisere" "kringgå" "kringkaste" "kringsetje" "kringsette"
+    "kristne" "krite" "kritisere" "kromgarve" "krone" "kroppe"
+    "kroppsvisitere" "krosse" "krossfeste" "krosskaste" "krosslegge" "krossleggje"
+    "krossmerkje" "krote" "krulle" "krumme" "krumpe" "kruse"
+    "krydre" "krympe" "kryne" "kryptifisere" "kryss-stille" "krysse"
+    "kryssforhøyre" "kryssklippe" "krysstille" "kryste" "krøke" "krøkje"
+    "krølle" "krøple" "kubbe" "kube" "kubere" "kue"
+    "kujonere" "kulte" "kultivere" "kumle" "kumulere" "kunne"
+    "kunngjere" "kuppe" "kurere" "kurle" "kurre" "kurse"
+    "kursivere" "kurtisere" "kurve" "kuste" "kutte" "kuve"
+    "kvadrere" "kvalifisere" "kvantifisere" "kvantitere" "kvarde" "kvarte"
+    "kvede" "kvee" "kveike" "kveikje" "kvekkje" "kvele"
+    "kvelve" "kverke" "kverne" "kverrsetje" "kverrsette" "kverve"
+    "kvesse" "kvetje" "kvike" "kviste" "kvite" "kvitkalke"
+    "kvitte" "kvitvaske" "kvotere" "kylje" "kylle" "kynge"
+    "kyngje" "kynne" "kyrkje" "kysse" "kyve" "kå"
+    "kåle" "kåve" "køyre" "la" "labialisere" "lade"
+    "lafte" "lagdele" "lagerføre" "lagge" "lagre" "lake"
+    "lakesalte" "lakke" "lakkere" "laksere" "laminere" "lamre"
+    "lamslå" "landdra" "landdrage" "landlyse" "landsetje" "landsette"
+    "landsforvise" "langkoke" "lansere" "lappe" "lasere" "laske"
+    "laste" "late" "latinisere" "latterleggjere" "lauge" "laupe"
+    "lauve" "le" "legalisere" "legere" "legge" "leggje"
+    "legitimere" "leie" "leige" "leike" "leiste" "leive"
+    "lekamleggjere" "leke" "lekkje" "lemje" "lemleste" "lempe"
+    "lemstre" "lengje" "lenke" "lenkje" "lense" "lepje"
+    "lese" "leske" "lesse" "leste" "lette" "levandegjere"
+    "levere" "liberalisere" "likerette" "likestille" "likke" "likne"
+    "likvidere" "linde" "line" "lingse" "linjere" "linne"
+    "linnkoke" "lisensiere" "lisitere" "listeføre" "livberge" "live"
+    "livsforsikre" "livstrygde" "ljodisolere" "lobbe" "lodde" "logge"
+    "lognast" "logne" "lokalbedøve" "lokalisere" "lokke" "longere"
+    "loppe" "lorgnettere" "losjere" "losse" "love" "lovfeste"
+    "lovprise" "lovsynge" "lovsyngje" "lufte" "luftturke" "lufttørke"
+    "lugge" "luke" "lukke" "lukkynskje" "lukkønskje" "luksere"
+    "lukte" "lulle" "lumpe" "lune" "lunke" "lure"
+    "lurke" "luse" "lute" "lutre" "lydisolere" "lye"
+    "lyfte" "lykkynskje" "lykkønskje" "lyne" "lynne" "lynsje"
+    "lyre" "lyse" "lyske" "låne" "lånta" "låntake"
+    "låre" "låse" "låte" "låtteleggjere" "lægje" "lækje"
+    "lære" "léte" "lòse" "lóse" "lø" "løde"
+    "løfte" "løgste" "løne" "lønne" "løyne" "løynmyrde"
+    "løype" "løyse" "løyve" "lùte" "magasinere" "mage"
+    "magnetisere" "magre" "makadamisere" "make" "maksimalisere" "maksimere"
+    "maksle" "maktast" "makte" "maktstele" "makulere" "male"
+    "malte" "maltraktere" "mangdoble" "mangedoble" "mangfalde" "manifestere"
+    "manikyrere" "manipulere" "manne" "manudusere" "manøvrere" "marinere"
+    "markere" "marknadsføre" "marmorere" "marsjere" "maskere" "maskinere"
+    "maskinskrive" "maskinstrikke" "maskulinisere" "massakrere" "massere" "maste"
+    "mastre" "matberge" "matche" "mate" "materialisere" "matrikulere"
+    "matstelle" "matte" "mattere" "maule" "medføre" "medgi"
+    "medgje" "medgjeve" "medunderskrive" "meie" "meine" "meinhalde"
+    "meiske" "meisle" "meistre" "meite" "mekanisere" "mekke"
+    "melde" "melere" "melte" "memorere" "mentalgranske" "mentalundersøke"
+    "mentalundersøkje" "mercerisere" "mergle" "mergstele" "merittere" "merkje"
+    "merle" "meske" "messe" "metallisere" "midle" "midtmåle"
+    "mikroskopere" "mikse" "milde" "mildne" "militarisere" "mime"
+    "mine" "minelegge" "mineleggje" "minere" "minimalisere" "minimere"
+    "minke" "minske" "misakte" "misbruke" "misby" "misbyde"
+    "misbyte" "misfarge" "misgjere" "mishalde" "mishandle" "miskjenne"
+    "miskunne" "misleghalde" "misse" "mista" "mistake" "mistenke"
+    "mistenkeleggjere" "mistenkje" "mistenkjeleggjere" "misunne" "mjøle" "mjølke"
+    "mobbe" "mobilisere" "modellere" "moderere" "modernisere" "modifisere"
+    "modne" "modulere" "mogeleggjere" "mogleggjere" "mogne" "moke"
+    "mole" "molestere" "monoftongere" "monopolisere" "montere" "moppe"
+    "morse" "mortifisere" "mose" "mosjonere" "motarbeide" "motivere"
+    "motorisere" "motprove" "motseie" "motstå" "motverke" "muge"
+    "mugge" "mulebinde" "muljere" "mulkte" "mulktere" "multiplisere"
+    "mumifisere" "mumisere" "mumse" "munse" "muntre" "mute"
+    "mutere" "myke" "mykje" "myle" "mylje" "myrde"
+    "mysje" "mystifisere" "målbere" "målbinde" "måle" "mæle"
+    "møblere" "møde" "møke" "møkje" "mønje" "mønstre"
+    "mørbanke" "mørkje" "mørklegge" "mørkleggje" "møte" "møyke"
+    "møykje" "møyrbanke" "nafse" "nagle" "naglefare" "nakke"
+    "namne" "namngi" "namngje" "namngjeve" "namnkjenne" "nappe"
+    "narkotisere" "narre" "nasalere" "nasjonalisere" "naske" "nate"
+    "naturalisere" "naudbe" "naudbede" "naude" "naudlande" "naudslakte"
+    "nauve" "nave" "navigere" "navle" "nazifisere" "nebbe"
+    "nedbetale" "nedfelle" "nedkjempe" "nedprioritere" "nedre" "nedverdige"
+    "nedvurdere" "negere" "negle" "neglisjere" "neie" "neise"
+    "neitte" "nekte" "nenne" "neppe" "nette" "neve"
+    "nevle" "nibe" "nibede" "nidoble" "nilese" "nitrere"
+    "nitrifisere" "nivellere" "node" "nominere" "normalisere" "normere"
+    "norske" "notere" "notifisere" "nummerere" "numre" "nuppe"
+    "nupre" "nusse" "nuve" "nyansere" "nydyrke" "nynne"
+    "nype" "nyreise" "nyste" "nyte" "nytte" "nyttiggjere"
+    "nyve" "nå" "nåde" "nåtle" "nækje" "næle"
+    "nære" "nødlande" "nødslakte" "nøre" "nøyde" "nøyte"
+    "nøytralisere" "obdusere" "objektivere" "obstruere" "odle" "offentleggjere"
+    "offerere" "ofre" "okkupere" "oksidere" "oktroajere" "okulere"
+    "olje" "omadressere" "omfamne" "omgå" "omgåast" "ominnreie"
+    "omkalfatre" "ommøblere" "omorganisere" "omsetje" "omsette" "omskape"
+    "ondulere" "opalescere" "opalisere" "openberre" "operasjonalisere" "operere"
+    "opne" "opplyse" "oppmane" "oppmode" "oppmuntre" "oppnå"
+    "opprette" "oppsede" "oppspore" "oppsøke" "oppsøkje" "oppvarte"
+    "oppvurdere" "optere" "optimalisere" "optimere" "orde" "ordinere"
+    "ordne" "oreigne" "organisere" "orge" "orientere" "orke"
+    "orkestrere" "ornamentere" "orsake" "oscillere" "oste" "ote"
+    "overbelaste" "overdimensjonere" "overdra" "overdrage" "overdrive" "overdøyve"
+    "overeksponere" "overfalle" "overfuse" "overføre" "overgi" "overgje"
+    "overgjeve" "overgå" "overhalde" "overhale" "overhøvle" "overhøyre"
+    "overkome" "overkomme" "overkompensere" "overlaste" "overlesse" "overlevere"
+    "overliste" "overmanne" "overopphete" "overprøve" "overraske" "overrekke"
+    "overrekkje" "overrumple" "oversjå" "overspele" "overta" "overtake"
+    "overtale" "overteikne" "overtelje" "overtrekke" "overtrekkje" "overtyde"
+    "overvake" "overvurdere" "pace" "padle" "paginere" "pakke"
+    "pakse" "pakte" "palatalisere" "palme" "palmere" "palpere"
+    "panele" "panere" "pansre" "pante" "pantgi" "pantgje"
+    "pantgjeve" "pantsetje" "pantsette" "pantslå" "pantstille" "pappe"
+    "parafere" "parafrasere" "paragrafere" "parallellflytte" "parallellforskuve" "parallellforskyve"
+    "parallellisere" "parallellskuve" "parallellskyve" "paralysere" "pare" "parere"
+    "parfymere" "parkere" "parlere" "parodiere" "parsellere" "partere"
+    "pasifisere" "passere" "passivisere" "pasteurisere" "patentere" "patinere"
+    "patronisere" "patruljere" "peile" "peise" "pele" "pelletere"
+    "pelletisere" "pelme" "pelse" "penne" "pensjonere" "pensle"
+    "pepre" "perfeksjonere" "perforere" "perkolere" "perkutere" "permittere"
+    "permutere" "perse" "persiflere" "personifisere" "personleggjere" "perturbere"
+    "pervertere" "pigge" "pilke" "pimpe" "pinne" "pinse"
+    "piske" "pitle" "plagiere" "planere" "planke" "planlegge"
+    "planleggje" "plante" "plastre" "platinere" "pledere" "pleie"
+    "plenarbehandle" "plenarhandsame" "plettere" "plissere" "plombere" "plugge"
+    "plukke" "plyndre" "plystre" "pløye" "pode" "poengtere"
+    "poetisere" "polarisere" "pole" "polere" "politisere" "pollinere"
+    "polstre" "polymerisere" "pomadisere" "poncere" "popularisere" "pore"
+    "porsjonere" "portrettere" "posisjonere" "posjere" "postdatere" "poste"
+    "postere" "postlegge" "postleggje" "poststemple" "postulere" "potensere"
+    "potte" "praie" "praktisere" "prate" "predestinere" "predeterminere"
+    "predisponere" "prefabrikkere" "preferere" "prege" "preike" "prejudisere"
+    "prekludere" "preludere" "premiere" "prente" "prenumerere" "preparere"
+    "preppe" "presentere" "preservere" "presidere" "presisere" "preskribere"
+    "presse" "prestere" "prestevie" "pretendere" "prette" "prikke"
+    "prikle" "primsigne" "prioritere" "prise" "prisgi" "prisgje"
+    "prisgjeve" "privatisere" "privatkøyre" "privilegere" "probere" "problematisere"
+    "produsere" "profanere" "profesjonalisere" "profetere" "profilere" "prognosere"
+    "prognostisere" "programfeste" "programmere" "projisere" "proklamere" "proletarisere"
+    "promenere" "promovere" "promulgere" "pronominalisere" "propagere" "proponere"
+    "proporsjonere" "proppe" "prosedere" "prosentlikne" "prosentløne" "prosentlønne"
+    "prosessere" "prosjektere" "proskribere" "prospektere" "prostituere" "protesjere"
+    "protokollere" "prove" "proviantere" "provosere" "pryle" "prøve"
+    "prøveskyte" "psykoanalysere" "publisere" "pudre" "puffe" "puge"
+    "pugge" "pukke" "pukklegge" "pukkleggje" "pukksetje" "pukksette"
+    "pulverisere" "pumpe" "punche" "punktere" "punktsveise" "pusse"
+    "pynte" "påby" "påbyde" "påkalle" "påkjære" "påmønstre"
+    "påpeike" "påskjøne" "påskjønne" "påskunde" "påstå" "påtale"
+    "påverke" "påvise" "rade" "radere" "radikalisere" "radreinse"
+    "radreinske" "radså" "raffinere" "rake" "ramponere" "ramsalte"
+    "rande" "randsy" "rane" "range" "rangere" "rangstrikke"
+    "ranke" "ransake" "rante" "rappellere" "rapportere" "rapse"
+    "rasere" "rasjonalisere" "rasjonere" "raspe" "rate" "ratifisere"
+    "raude" "rauke" "rauste" "reaktivere" "realisere" "realitetsbehandle"
+    "realitetsdrøfte" "realitetshandsame" "reassumere" "reassurere" "recensere" "redde"
+    "redigere" "rediskontere" "reduplisere" "redusere" "referere" "reformere"
+    "refse" "refundere" "refusere" "regalere" "regelfeste" "regenerere"
+    "regissere" "registrere" "regjere" "reglementere" "regularisere" "regulere"
+    "regummiere" "rehabilitere" "reie" "reime" "reindyrke" "reingjere"
+    "reinse" "reinske" "reinskrive" "reinvaske" "reinvestere" "reipe"
+    "reise" "reiste" "reite" "reive" "rejisere" "rekapitulere"
+    "rekke" "rekkje" "reklamere" "rekle" "rekognosere" "rekommandere"
+    "rekonstruere" "rekruttere" "rektifisere" "rekvirere" "relativisere" "relegere"
+    "relokere" "rembursere" "remittere" "remontere" "remplassere" "rende"
+    "rengje" "renne" "renovere" "reorganisere" "reparere" "repatriere"
+    "repetere" "replisere" "representere" "reprodusere" "reservere" "resipere"
+    "resirkulere" "resistere" "resitere" "resolvere" "resosialisere" "respektere"
+    "respondere" "restaurere" "restituere" "resymere" "retardere" "rete"
+    "rette" "rettferdiggjere" "rettkjenne" "returnere" "retusjere" "revaluere"
+    "revansjere" "reve" "reversere" "revidere" "revle" "revoltere"
+    "revolusjonere" "revurdere" "ri" "ribbe" "ride" "rifle"
+    "rigge" "rigle" "rikgjere" "rikje" "rikke" "ringe"
+    "ringje" "riple" "rise" "risikere" "rispe" "riste"
+    "ristornere" "rite" "rivalisere" "rive" "ro" "robbe"
+    "rode" "roe" "rogge" "rolpe" "rolse" "romanisere"
+    "romantisere" "rope" "rose" "rosemåle" "roste" "rotfylle"
+    "rubbe" "rubrisere" "rue" "ruge" "rugge" "rugle"
+    "ruinere" "ruke" "rukke" "rulle" "rullere" "rumple"
+    "runde" "rundjule" "rundkysse" "rundsnakke" "rundstele" "rundstrikke"
+    "rundvaske" "ruple" "ruse" "russifisere" "rustbehandle" "rusthandsame"
+    "rustifisere" "ruvle" "rydde" "rydje" "rygge" "ryggje"
+    "rynke" "ryske" "rådspørje" "råke" "råskale" "råskrelle"
+    "råsteike" "råsteikje" "ræle" "ròse" "rø" "røfle"
+    "røkje" "røkte" "rømme" "røntgenfotografere" "røpe" "røre"
+    "røste" "røve" "røyke" "røykje" "røyklegge" "røykleggje"
+    "røyne" "røynleggjere" "røyre" "røyse" "røyve" "sable"
+    "sabotere" "safte" "sage" "sakse" "saksøke" "saksøkje"
+    "saktne" "saldere" "salte" "saluttere" "salve" "samanfatte"
+    "samanlikne" "sambinde" "sameine" "samkøyre" "samlage" "samle"
+    "sammale" "samordne" "sampe" "sample" "samringe" "samringje"
+    "samse" "samstemme" "sandblåse" "sande" "sandmale" "sandstrø"
+    "sanere" "sanforisere" "sanke" "sanksjonere" "sanne" "sarve"
+    "satinere" "satse" "saume" "saumfare" "saure" "sause"
+    "save" "score" "sedimentere" "seede" "segle" "segmentere"
+    "segregere" "seie" "seigdra" "seigdrage" "seile" "seinke"
+    "seipe" "seise" "seksdoble" "seksualisere" "sekularisere" "sekundere"
+    "sele" "selektere" "selje" "semaforere" "sementere" "seminere"
+    "semje" "semsgarve" "semske" "semskgarve" "sende" "senke"
+    "sensurere" "sentimentalisere" "sentralisere" "sentre" "sentrere" "sentrifugere"
+    "separere" "serratere" "sertifisere" "servere" "sesse" "setje"
+    "sette" "settle" "sevjebarke" "sevjeberke" "sevjeberkje" "shoppe"
+    "shunte" "sibreie" "sideordne" "sidke" "sifrere" "sigle"
+    "signalere" "signalisere" "signe" "signere" "sike" "sikke"
+    "sikre" "sile" "simplifisere" "simulere" "sindre" "sinke"
+    "sinkle" "sinklegge" "sinkleggje" "sintre" "sirkulere" "siselere"
+    "sitere" "sitje" "sitte" "sivilisere" "sjakle" "sjakse"
+    "sjamponere" "sjanghaie" "sjarmantisere" "sjattere" "sjeide" "sjekke"
+    "sjikanere" "sjingle" "sjofle" "sjokkbehandle" "sjokkere" "sjokkhandsame"
+    "sjokkopne" "sjudoble" "sjukmelde" "sjå" "sjøsetje" "sjøsette"
+    "ska" "skade" "skadebite" "skadeskyte" "skadeslå" "skaffe"
+    "skafte" "skake" "skale" "skalere" "skalke" "skalkeherme"
+    "skalle" "skalpere" "skambite" "skamfare" "skamfere" "skamfile"
+    "skamføre" "skamhogge" "skamklippe" "skamkøyre" "skamraske" "skamrose"
+    "skamskyte" "skamslå" "skamstele" "skandalisere" "skandere" "skanne"
+    "skante" "skare" "skarifisere" "skarve" "skate" "skatte"
+    "skattlegge" "skattleggje" "skaute" "skave" "skeine" "skeive"
+    "skeivle" "skifte" "skikke" "skildre" "skilje" "skilte"
+    "skimle" "skimte" "skinne" "skipe" "skiple" "skire"
+    "skirsle" "skissere" "skitre" "skive" "skivje" "skjefte"
+    "skjekke" "skjekkje" "skjematisere" "skjemme" "skjenke" "skjenkje"
+    "skjerde" "skjere" "skjerme" "skjerpe" "skjersetje" "skjersette"
+    "skjerve" "skjule" "skjøne" "skjønne" "skjøre" "skjøtte"
+    "skoddelegge" "skoddeleggje" "skofte" "skolere" "skolme" "skorde"
+    "skorsetje" "skorsette" "skote" "skove" "skovle" "skrabbe"
+    "skramme" "skrape" "skravere" "skreddarsy" "skreide" "skrelle"
+    "skrible" "skrifte" "skriftfeste" "skrimsle" "skrinlegge" "skrinleggje"
+    "skrinne" "skripe" "skriple" "skrive" "skrote" "skru"
+    "skrubbe" "skrue" "skrukke" "skrumpe" "skryfte" "skrykke"
+    "skrykkje" "skrå" "skråsetje" "skråsette" "skræ" "skrøyte"
+    "skrøyve" "skubbe" "skudre" "skuffe" "skufle" "skugge"
+    "skulde" "skuldgi" "skuldgje" "skuldgjeve" "skuldskrive" "skulke"
+    "skulptere" "skumkøyre" "skumlese" "skumme" "skumpe" "skumpiske"
+    "skumple" "skumpløye" "skumreinse" "skunke" "skunkle" "skunse"
+    "skurdtreske" "skurdtreskje" "skurne" "skurtreske" "skurtreskje" "skuve"
+    "skvample" "skvasle" "skvatle" "skvette" "skvipe" "skvise"
+    "skvisle" "skvitle" "skvære" "skyfle" "skygge" "skyggje"
+    "skygne" "skylde" "skyldgi" "skyldgje" "skyldgjeve" "skyldsetje"
+    "skyldsette" "skyldskrive" "skyle" "skylje" "skylpe" "skysse"
+    "skyte" "skyve" "skålde" "skåne" "skåre" "skårjage"
+    "skòle" "skòre" "skøyte" "slagge" "slaglodde" "slakte"
+    "slamme" "slanke" "slappe" "slavebinde" "slegge" "sleggje"
+    "sleike" "sleikje" "slemme" "slenge" "slengje" "slepe"
+    "slepekøyre" "sleppe" "slettbygge" "slettbyggje" "slette" "slikke"
+    "slinde" "slindre" "slipe" "slitre" "slodde" "sloe"
+    "sloke" "sluke" "slumse" "slurke" "slurpe" "sluse"
+    "slutte" "sluttføre" "slyngje" "slå" "slåtre" "slø"
+    "sløkkje" "sløre" "sløve" "sløyfe" "smadre" "smakle"
+    "smalke" "smashe" "smelte" "smergle" "smi" "smide"
+    "smie" "smike" "sminke" "smite" "smole" "smugdrikke"
+    "smugle" "smuglese" "smugrøyke" "smugrøykje" "smuldre" "smule"
+    "smykke" "småete" "småstele" "smætte" "smøre" "smørje"
+    "snafse" "snake" "snappe" "snare" "snaske" "snaue"
+    "snaugnage" "snauhogge" "snauklippe" "snede" "sneie" "sneise"
+    "snelle" "snerre" "snerte" "snide" "sniffe" "snikkontorisere"
+    "snikmelde" "snikmyrde" "snikre" "snitte" "snoe" "snu"
+    "snubbe" "snultre" "snuppe" "snure" "snurle" "snurpe"
+    "snurre" "snusmale" "snype" "snyrte" "snyte" "snøbake"
+    "snøre" "snøye" "sokke" "sole" "sollisitere" "sondere"
+    "sope" "sordinere" "sortere" "sosialisere" "sote" "sove"
+    "spa" "spade" "spadevende" "spalte" "spandere" "spane"
+    "spanne" "spante" "spare" "sparke" "sparkle" "spasere"
+    "spauke" "spavende" "spe" "spee" "spegelvende" "spegle"
+    "speile" "spekje" "spekke" "spele" "spenne" "sperre"
+    "spesialisere" "spesifisere" "spidde" "spike" "spikke" "spikre"
+    "spildre" "spille" "spinne" "spiralisere" "spisse" "spissformulere"
+    "spite" "spjelke" "spjerre" "spleise" "splintre" "splitte"
+    "spole" "spolere" "sponse" "spore" "spotte" "spraye"
+    "spreie" "sprene" "sprenge" "sprengje" "sprengri" "sprengride"
+    "sprette" "spri" "spritle" "sprute" "sprøsteike" "sprøsteikje"
+    "sprøyte" "sprøytelakkere" "spunse" "spyle" "spytte" "spå"
+    "spørje" "spøte" "stabilisere" "stable" "stadfeste" "staffere"
+    "stage" "stagge" "stagvende" "stake" "stakke" "stakre"
+    "stalle" "stambokføre" "stampe" "standardisere" "stane" "stanse"
+    "staple" "stappe" "starte" "stasjonere" "statuere" "stauke"
+    "staure" "stave" "ste" "stede" "steike" "steikje"
+    "steine" "steinhogge" "steinsetje" "steinsette" "stekke" "stekkje"
+    "stele" "stelle" "stelpe" "stemme" "stemne" "stemple"
+    "stengje" "stenografere" "stensilere" "stereotypere" "sterilisere" "sterte"
+    "stette" "stevje" "stike" "stikke" "stilisere" "stille"
+    "stime" "stimreinse" "stimulere" "stinge" "stiple" "stipulere"
+    "stive" "stjorne" "stoffe" "stogge" "stokke" "stolpe"
+    "stolpre" "stople" "stoppe" "storme" "straffe" "straffedøme"
+    "straffedømme" "stramme" "strangulere" "stratifisere" "strekke" "strekkje"
+    "strende" "strenge" "strengje" "strengle" "strigle" "strimle"
+    "stripe" "striple" "stroppe" "strukturere" "strukturrasjonalisere" "strupe"
+    "stryke" "strylle" "strype" "strå" "strø" "strøye"
+    "strøype" "studere" "stue" "stuke" "stumpe" "stupe"
+    "stusse" "stuve" "styre" "styrkje" "styrte" "stytte"
+    "styve" "stå" "stålsetje" "stålsette" "stæle" "stø"
+    "støkke" "støkkje" "støre" "støtte" "støvsuge" "støype"
+    "støyre" "støyte" "sublimere" "subordinere" "subsidiere" "substantivere"
+    "substituere" "subsumere" "subtrahere" "subvenere" "suffigere" "sufflere"
+    "suge" "suggerere" "sukre" "sule" "summere" "sundre"
+    "supe" "supplere" "supponere" "supprimere" "suspendere" "susse"
+    "sva" "svabre" "svade" "svale" "svampe" "svare"
+    "svartmåle" "svarve" "sveie" "sveige" "sveipe" "sveise"
+    "sveive" "svekke" "svekkje" "svelgje" "svelte" "sveltefôre"
+    "svenge" "svengje" "sverte" "svide" "svike" "svikte"
+    "svimerke" "svimerkje" "svimeslå" "svindle" "svinebinde" "svinge"
+    "svipe" "svivyrde" "svivørde" "svolke" "svorte" "svovle"
+    "svæve" "sy" "syde" "syfte" "sykle" "sylte"
+    "synge" "syngje" "synkopere" "synkronisere" "synkverve" "synleggjere"
+    "synse" "syntetisere" "syre" "syrne" "sysselsetje" "sysselsette"
+    "systematisere" "så" "sålde" "såre" "sårke" "sæde"
+    "sælde" "sæle" "sælke" "sære" "sæte" "søkje"
+    "søkke" "søkkje" "sølvlegge" "sølvleggje" "sørpe" "søte"
+    "søve" "søye" "søyre" "ta" "tabellarisere" "tabulere"
+    "tafse" "tagge" "take" "takke" "takle" "taksere"
+    "takste" "tale" "talfeste" "talge" "talle" "talme"
+    "tamburere" "tampe" "tamponere" "tandle" "tane" "tanke"
+    "tankføre" "tanne" "tape" "tapetsere" "tappe" "tariffere"
+    "tatovere" "taue" "taumkøyre" "tauvre" "tave" "teie"
+    "teigpløye" "teikne" "teipe" "teite" "tekkje" "teknifisere"
+    "teksle" "tekste" "teksturere" "telefonere" "telegrafere" "teleksere"
+    "telgje" "telje" "telne" "tematisere" "temje" "temme"
+    "tempere" "temperere" "temporisere" "tendre" "tene" "tenje"
+    "tenke" "tenkje" "tenle" "tenne" "teoretisere" "teppe"
+    "teppelegge" "teppeleggje" "terminfeste" "terpe" "terrassere" "terre"
+    "terrorisere" "testamentere" "teste" "tette" "tide" "tidfeste"
+    "tidoble" "tidsnormere" "tikke" "tilarbeide" "tilbe" "tilbede"
+    "tilbrigde" "tilby" "tilbyde" "tilføre" "tilgi" "tilgje"
+    "tilgjeve" "tilgodesjå" "tilkalle" "tilkjenne" "tillate" "tillempe"
+    "tillyse" "tilmåte" "tilpasse" "tilrå" "tilråde" "tilsetje"
+    "tilsette" "tilsløre" "tilstå" "tiltale" "tilvise" "time"
+    "tinde" "tine" "tinge" "tingleggjere" "tinglese" "tinglyse"
+    "tipse" "title" "titrere" "tjelde" "tjone" "tjore"
+    "tjuve" "tjuvkjenne" "tjuvlese" "tjuvlåne" "tjuvskyte" "tjuvslakte"
+    "tjuvstarte" "tjå" "tjære" "tjærebre" "tjærebrede" "tjøre"
+    "tjørebre" "tjørebrede" "todele" "tokke" "tolerere" "tolke"
+    "tolle" "tollklarere" "tone" "tonesetje" "tonesette" "topphogge"
+    "toppmåle" "tore" "torpedere" "torturere" "torve" "tose"
+    "totalfrede" "tove" "trace" "tradere" "trafikkere" "trafse"
+    "trakassere" "trakke" "traktere" "tralle" "trame" "trampe"
+    "trandle" "transcendere" "transferere" "transfigurere" "transformere" "transfundere"
+    "transistorisere" "transitivere" "transittere" "transjere" "transkribere" "translitterere"
+    "transmittere" "transplantere" "transponere" "transportere" "trasere" "traspe"
+    "trassere" "travestere" "tre" "tredele" "tredoble" "trefalde"
+    "trekkje" "trekte" "trenere" "trenge" "trengje" "trepanere"
+    "treske" "treskje" "trevle" "triangulere" "trille" "trimme"
+    "trinse" "trive" "trivialisere" "trollbinde" "trollstemme" "trollstille"
+    "trollta" "trolltake" "tromle" "tromme" "trongsprøve" "trose"
+    "trote" "true" "truge" "trugle" "trumpe" "truske"
+    "trustifisere" "trygde" "tryggje" "trygle" "trykke" "trykkimpregnere"
+    "trysje" "tryste" "trå" "trågå" "tråkke" "tråkle"
+    "tråle" "træ" "træde" "trælbinde" "trælke" "trø"
+    "trøye" "trøyste" "trøysteete" "trøyte" "trøytte" "tufse"
+    "tufte" "tugge" "tukke" "tukte" "tulle" "tulte"
+    "tupere" "tuppe" "ture" "turnere" "turrete" "tusje"
+    "tuste" "tv-overvake" "tvage" "tvagle" "tvangsauksjonere" "tvangsdirigere"
+    "tvangsevakuere" "tvangsflytte" "tvangsfôre" "tvangsinnlegge" "tvangsinnleggje" "tvare"
+    "tveite" "tverr-rykke" "tverr-rykkje" "tverrhalde" "tverrkaste" "tverrsnu"
+    "tverrstane" "tverrstanse" "tverrstogge" "tverrstoppe" "tverrvende" "tverrykke"
+    "tverrykkje" "tvette" "tvidele" "tvidoble" "tvifalde" "tvihalde"
+    "tvikøyre" "tvilegge" "tvileggje" "tville" "tvinge" "tvinle"
+    "tvinne" "tvirle" "tvisteike" "tvisteikje" "tvita" "tvitake"
+    "tvoge" "två" "tyde" "tyfte" "tygge" "tyggje"
+    "tygle" "tyne" "tynne" "tynske" "type" "typisere"
+    "typpe" "tyrannisere" "tyrme" "tå" "tåkelegge" "tåkeleggje"
+    "tåtte" "tæ" "tætte" "tòne" "tøde" "tømme"
+    "tømre" "tørke" "tørne" "tørrbanke" "tørrdestillere" "tørrete"
+    "tørrkoke" "tørrlegge" "tørrleggje" "tørrmaule" "tørrsalte" "tøtsje"
+    "tøve" "tøvle" "tøyme" "ufarleggjere" "uge" "ugge"
+    "ugilde" "ugjere" "uglesjå" "ugreie" "uke" "ukvesse"
+    "ulage" "ulukkeforsikre" "ulukkesforsikre" "ulukkestrygde" "ulukketrygde" "ulykkeforsikre"
+    "ulykkesforsikre" "ulykkestrygde" "ulykketrygde" "ulyste" "umake" "umenneskeleggjere"
+    "umenneskjeleggjere" "umyndiggjere" "underbetale" "underbygge" "underbyggje" "underdrive"
+    "undereksponere" "undergrave" "underhalde" "underkjenne" "underkjøle" "underkue"
+    "underminere" "underrette" "underselje" "underskrive" "underslå" "understellsbehandle"
+    "understreke" "undersøke" "undersøkje" "undertrykke" "undertrykkje" "undertvinge"
+    "undervise" "undervurdere" "uniformere" "universalisere" "unngå" "unnskylde"
+    "urbanisere" "ureine" "urframføre" "uroppføre" "urydde" "urydje"
+    "urø" "uskadeleggjere" "usse" "usurpere" "utarbeide" "utbasunere"
+    "utbetale" "utbetre" "utbrodere" "utbyte" "utbytte" "utdanne"
+    "utdjupe" "uteksaminere" "utelate" "utfalde" "utferde" "utfolde"
+    "utfordre" "utforske" "utfylle" "utføre" "utgiftsføre" "utheve"
+    "utkjempe" "utklarere" "utklasse" "utkrystallisere" "utleie" "utlevere"
+    "utlikne" "utløyse" "utmanøvrere" "utmatte" "utnytte" "utparsellere"
+    "utplassere" "utprøve" "utradere" "utrangere" "utrette" "utruste"
+    "utrydde" "utrydje" "utsetje" "utsette" "utslette" "utsmykke"
+    "utspionere" "utstaffere" "utstasjonere" "utstyre" "uttale" "uttrykke"
+    "uttrykkje" "uttverve" "uttyde" "utveksle" "utvide" "utvikle"
+    "utvise" "utyrste" "utørste" "utøve" "va" "vafse"
+    "vaksinere" "vakte" "vakuumpakke" "valde" "valdta" "valdtake"
+    "validere" "valle" "valne" "valse" "valtre" "valutere"
+    "vampe" "vandalisere" "vanhelge" "vanhevde" "vanrøkte" "vanske"
+    "vanskjøtte" "vanstelle" "vanstyre" "vantakke" "vanvyrde" "vanvørde"
+    "vanære" "varde" "vare" "vareta" "varetake" "varetektsfengsle"
+    "variere" "varme" "varmeisolere" "varmgjære" "varmhamre" "varmherde"
+    "varmheve" "varmhevje" "varmrøyke" "varmrøykje" "varne" "varpe"
+    "varsku" "varsle" "varveitsle" "vaske" "vass-slipe" "vassbeise"
+    "vasskjemme" "vasslipe" "vatne" "vatre" "vattere" "vavle"
+    "vedde" "vedgå" "vedta" "vedtake" "vedtektsfeste" "vefte"
+    "vege" "veide" "veike" "veikje" "veivle" "vekkje"
+    "veksle" "velje" "velle" "velsigne" "velte" "vende"
+    "ventilere" "verbalisere" "verdsetje" "verdsette" "verdsleggjere" "verifisere"
+    "verje" "verke" "verkeleggjere" "verme" "vernalisere" "verne"
+    "vernebu" "verpe" "verse" "versifisere" "verve" "vesle"
+    "veve" "vevje" "vidareforedle" "vidaresende" "vidareutdanne" "vidareutvikle"
+    "vidke" "vie" "vigge" "vigle" "vigsle" "vikje"
+    "vikle" "vilje" "vill-leie" "ville" "villeie" "vinde"
+    "vindisere" "vinke" "vinkle" "vinne" "vinterfôre" "vinterfø"
+    "vinterføde" "vinterisolere" "vinterkle" "vire" "virilisere" "vise"
+    "visere" "visitere" "vispe" "visualisere" "vitalisere" "vitaminisere"
+    "vitje" "vitre" "vivisekere" "vogge" "vokalisere" "vokse"
+    "vole" "volle" "vondle" "vorpe" "vrake" "vrangstrikke"
+    "vrante" "vrenge" "vrengje" "vrikle" "vulgarisere" "vulkanisere"
+    "vulke" "vurdere" "våge" "våle" "våtsalte" "væ"
+    "væde" "væle" "væpne" "være" "væte" "vøle"
+    "vørdsle" "webbe" "xerografere" "xylografere" "yfse" "ylle"
+    "ymse" "ynke" "yppe" "yste" "yte" "ytre"
+    "yve" "åbende" "åbry" "åbyrgjast" "åbyrgsle" "ågå"
+    "ålmenngjere" "åmoge" "åndeleggjere" "ærekrenke" "ærekrenkje" "æreskjelle"
+    "æreskjemme" "ættleie" "økse" "øksle" "øle" "ølje"
+    "øsle" "øve" "øyde" "øydeleggje" "øydsle" ;
+
+# <trans1/med>
+LIST ORDBANK_VAL_TRANS1_MED = "kløne" "smaske" ;
+
+# <trans1/utover>
+LIST ORDBANK_VAL_TRANS1_UTOVER = "drupse" ;
+
+# <trans10>
+LIST ORDBANK_VAL_TRANS10 =
+    "affisere" "agge" "alterere" "ame" "arge" "blidgjere"
+    "deprimere" "desillusjonere" "dupere" "enervere" "ergre" "erte"
+    "fegne" "fjetre" "forarge" "forbløffe" "fornærme" "forskrekke"
+    "fortrolle" "fortrylle" "forundre" "forurette" "forvirre" "frappere"
+    "frustrere" "fryde" "frygde" "gilje" "gle" "glede"
+    "gripe" "harme" "huge" "hugge" "irre" "irritere"
+    "kippe" "kite" "kitle" "kjetle" "klumse" "kløkke"
+    "kløkkje" "kveppe" "lamslå" "livskremme" "mette" "more"
+    "pine" "pirre" "plage" "reite" "satisfisere" "seigpine"
+    "sjarmere" "sjenere" "sjokkere" "skjerre" "skremme" "smigre"
+    "støkke" "støyte" "såre" "sårke" "terge" "tilfredsstille"
+    "tirre" "trege" "tusjere" "uroe" "vettskremme" "vitskremme"
+    "vå" "ylme" "yrve" "øle" ;
+
+# <trans11/adv3>
+LIST ORDBANK_VAL_TRANS11_ADV3 = "sende" ;
+
+# <trans11/att>
+LIST ORDBANK_VAL_TRANS11_ATT = "nå" ;
+
+# <trans11/attende>
+LIST ORDBANK_VAL_TRANS11_ATTENDE = "drive" ;
+
+# <trans11/av>
+LIST ORDBANK_VAL_TRANS11_AV =
+    "blåse" "duste" "flire" "fløyte" "fnise" "fnyse"
+    "glise" "grense" "grine" "gråte" "halde" "holde"
+    "hoppe" "juble" "kimse" "kle" "klede" "kyte"
+    "le" "livnære" "lære" "reie" "rydde" "rydje"
+    "rø" "sele" "skante" "skreppe" "skrive" "skryte"
+    "skylje" "slakke" "sleike" "sleikje" "slikke" "smile"
+    "snubbe" "snøye" "stige" "stryke" "stynje" "stønne"
+    "troppe" "viske" "vrine" ;
+
+# <trans11/av+med>
+LIST ORDBANK_VAL_TRANS11_AV_MED = "gå" ;
+
+# <trans11/av+på>
+LIST ORDBANK_VAL_TRANS11_AV_P = "betale" "korte" ;
+
+# <trans11/bort>
+LIST ORDBANK_VAL_TRANS11_BORT = "drive" ;
+
+# <trans11/bort+ifrå>
+LIST ORDBANK_VAL_TRANS11_BORT_IFR = "sjå" ;
+
+# <trans11/borti>
+LIST ORDBANK_VAL_TRANS11_BORTI =
+    "deise" "gumpe" "nubbe" "nudde" "nufse" "nyggje"
+    "råke" "skrense" "skumpe" "sleive" "sneie" "snerte"
+    "snøse" "tørne" "tøtsje" ;
+
+# <trans11/etter>
+LIST ORDBANK_VAL_TRANS11_ETTER =
+    "annonsere" "anse" "ape" "avertere" "bla" "blade"
+    "blusse" "bore" "dalke" "dalte" "dasle" "datle"
+    "dilte" "dorge" "dråtte" "dukke" "dulle" "famle"
+    "fate" "fiske" "flane" "flu" "flue" "fomle"
+    "fomme" "forske" "frege" "frette" "fråge" "furde"
+    "følgje" "gaume" "geipe" "gildre" "gire" "glefse"
+    "glire" "glupe" "granske" "gripe" "gryle" "grylte"
+    "gyne" "harpe" "herme" "hytte" "ivre" "jage"
+    "jakte" "jamse" "jarpe" "jasle" "jatle" "jatte"
+    "jerpe" "kage" "kaste" "kviste" "leite" "lodde"
+    "låte" "nafse" "nase" "nigle" "plystre" "røkje"
+    "sanne" "segle" "sende" "sigle" "sikle" "sjå"
+    "skode" "snake" "snappe" "sneie" "snike" "snikje"
+    "snoke" "snuse" "sokne" "sparke" "speide" "spytte"
+    "spørje" "streve" "søkje" "ta" "take" "tane"
+    "tanspringe" "trive" "trivle" "tyte" "tøvre" "ågå"
+    "øne" ;
+
+# <trans11/etter+for>
+LIST ORDBANK_VAL_TRANS11_ETTER_FOR = "gi" "gje" "gjeve" ;
+
+# <trans11/etterpart1ut>
+LIST ORDBANK_VAL_TRANS11_ETTERPART1UT = "drive" ;
+
+# <trans11/for>
+LIST ORDBANK_VAL_TRANS11_FOR =
+    "agitere" "aksjonere" "argumentere" "attergjelde" "bale" "be"
+    "bede" "betale" "blende" "blånekte" "bode" "borge"
+    "bægje" "bøte" "degge" "demonstrere" "disputere" "duke"
+    "fisle" "fjeske" "flagge" "forelese" "førelese" "garantere"
+    "gildre" "gjengjelde" "gjerde" "gjøle" "glø" "gløde"
+    "grine" "gråte" "hjelpe" "hyggje" "ivre" "kapitulere"
+    "kausjonere" "kavere" "kjempe" "kjæle" "knele" "knyte"
+    "kompensere" "kri" "kritisere" "kvittere" "ljuge" "lyge"
+    "låte" "løne" "lønne" "misjonere" "mørkje" "overkompensere"
+    "polemisere" "propagandere" "prosedere" "reklamere" "retirere" "røyste"
+    "skugge" "skygge" "skyggje" "smiske" "snakke" "spionere"
+    "stelle" "stemme" "stengje" "stri" "stride" "stå"
+    "støvsuge" "sverme" "syte" "sytre" "sørgje" "takke"
+    "tale" "tilstå" "tute" "tutre" "verke" "vikariere"
+    "vitne" "votere" "yrkje" "åbyrgsle" "øydeleggje" ;
+
+# <trans11/forbi>
+LIST ORDBANK_VAL_TRANS11_FORBI = "smette" "strende" ;
+
+# <trans11/fra>
+LIST ORDBANK_VAL_TRANS11_FRA = "kome" "komme" "sakse" ;
+
+# <trans11/fram>
+LIST ORDBANK_VAL_TRANS11_FRAM =
+    "avle" "bla" "blade" "drive" "fø" "føde"
+    "kjempe" "kultivere" "skunde" "syne" "trekkje" "tvinge" ;
+
+# <trans11/fram+med>
+LIST ORDBANK_VAL_TRANS11_FRAM_MED = "kome" "komme" "nå" "vinne" ;
+
+# <trans11/fram+til>
+LIST ORDBANK_VAL_TRANS11_FRAM_TIL = "nå" ;
+
+# <trans11/framom>
+LIST ORDBANK_VAL_TRANS11_FRAMOM = "strende" ;
+
+# <trans11/frampå+om>
+LIST ORDBANK_VAL_TRANS11_FRAMP_OM = "ymte" ;
+
+# <trans11/frå>
+LIST ORDBANK_VAL_TRANS11_FR =
+    "byte" "dispensere" "flykte" "flytte" "helse" "lære"
+    "omsetje" "omsette" "referere" "rømme" ;
+
+# <trans11/frå+om>
+LIST ORDBANK_VAL_TRANS11_FR_OM = "melde" ;
+
+# <trans11/gjennom>
+LIST ORDBANK_VAL_TRANS11_GJENNOM = "fare" "kike" "kikke" "sjå" "telje" ;
+
+# <trans11/i>
+LIST ORDBANK_VAL_TRANS11_I =
+    "alke" "bite" "blåse" "brife" "briljere" "deltake"
+    "demle" "dosere" "eksellere" "forelese" "forske" "fuske"
+    "få" "førelese" "hufse" "innleie" "instruere" "intervenere"
+    "investere" "kike" "kikke" "kollokvere" "nykkje" "partisipere"
+    "pirke" "presidere" "ruske" "rykke" "rykkje" "ryskje"
+    "røre" "røske" "skite" "skjenke" "skjenkje" "skru"
+    "skrue" "slite" "smette" "spekulere" "spele" "spytte"
+    "stappe" "ta" "take" "tappe" "tre" "træ"
+    "træde" "tverr-rykke" "tverr-rykkje" "tverrykke" "tverrykkje" "undervise"
+    "vikariere" "vinne" ;
+
+# <trans11/i+hop>
+LIST ORDBANK_VAL_TRANS11_I_HOP = "brygge" "bryggje" ;
+
+# <trans11/igjennom>
+LIST ORDBANK_VAL_TRANS11_IGJENNOM = "skumme" ;
+
+# <trans11/imot>
+LIST ORDBANK_VAL_TRANS11_IMOT =
+    "argumentere" "mukke" "purke" "stampe" "stri" "stride"
+    "votere" ;
+
+# <trans11/inn>
+LIST ORDBANK_VAL_TRANS11_INN =
+    "binde" "gravere" "handle" "hegne" "kjøpe" "køyre"
+    "lange" "legge" "leggje" "skyte" "spele" ;
+
+# <trans11/inn+for>
+LIST ORDBANK_VAL_TRANS11_INN_FOR = "steppe" ;
+
+# <trans11/inn+i>
+LIST ORDBANK_VAL_TRANS11_INN_I = "gripe" "smette" "tre" "trenge" "trengje" ;
+
+# <trans11/inn+på>
+LIST ORDBANK_VAL_TRANS11_INN_P = "knipe" "sjekke" "slå" ;
+
+# <trans11/inn+til>
+LIST ORDBANK_VAL_TRANS11_INN_TIL = "kalle" ;
+
+# <trans11/innom>
+LIST ORDBANK_VAL_TRANS11_INNOM = "snerte" "sveipe" ;
+
+# <trans11/innpå>
+LIST ORDBANK_VAL_TRANS11_INNP = "dra" "drage" "hale" "snerte" "vinne" ;
+
+# <trans11/laus+på>
+LIST ORDBANK_VAL_TRANS11_LAUS_P = "gyve" "hamre" ;
+
+# <trans11/med>
+LIST ORDBANK_VAL_TRANS11_MED =
+    "akkedere" "akkordere" "alke" "alternere" "ampe" "andgjegle"
+    "ape" "avreagere" "bakse" "bale" "baske" "begynne"
+    "bengle" "betale" "blenke" "blenkje" "bragde" "brevbyte"
+    "brevveksle" "brife" "brigsle" "briljere" "briske" "bryte"
+    "budsjettere" "byrje" "byte" "børse" "bøte" "dalke"
+    "dalte" "degge" "deltake" "devlast" "dilke" "dille"
+    "dingle" "diskutere" "dote" "dragse" "drive" "drøle"
+    "duellere" "dulle" "dumle" "dutle" "duve" "dynte"
+    "einast" "eksperimentere" "elte" "evle" "fare" "fikle"
+    "fikte" "fingle" "fingre" "fiple" "fippe" "fisle"
+    "fitle" "fjante" "fjase" "fjolle" "fjone" "fjuske"
+    "flagre" "flangre" "flangse" "fleipe" "flikre" "flåse"
+    "flørte" "fomle" "fomme" "forhandle" "fraternisere" "fubbe"
+    "fukle" "fuske" "føle" "følgje" "gage" "garte"
+    "geie" "geige" "geigle" "geigre" "gjøgle" "gjøne"
+    "gjønstre" "glyre" "gnaldre" "gnidre" "godprate" "godrøde"
+    "godsnakke" "godsvalle" "godtale" "grassere" "greie" "haike"
+    "halde" "halvte" "hame" "handle" "hanske" "harmonere"
+    "harselere" "hegde" "heimle" "helvte" "herje" "herse"
+    "herske" "holde" "hufse" "hundse" "hytte" "høkre"
+    "interferere" "ironisere" "jamse" "jangle" "jasle" "jatle"
+    "jatte" "kalkulere" "kaltre" "kappdrikke" "kappete" "kappkøyre"
+    "kappro" "kappsegle" "kappsigle" "kappspringe" "kappsymje" "kive"
+    "kjake" "kjave" "kjekle" "kjempe" "kjæle" "kjøpslå"
+    "klapre" "klatte" "klinke" "klippe" "klisse" "kludre"
+    "klusse" "kneise" "knubbe" "knulle" "knusle" "kokettere"
+    "kollaborere" "kollidere" "kollokvere" "kombinere" "kommunisere" "komparere"
+    "konferere" "konkurrere" "konspirere" "kontribuere" "konversere" "kooperere"
+    "korrespondere" "krangle" "krasje" "krige" "lefle" "leike"
+    "ligge" "liggje" "liskre" "lokke" "luse" "maksle"
+    "manipulere" "mekle" "multiplisere" "munnhoggast" "murke" "musle"
+    "mødast" "nevast" "nevetakast" "nikke" "nuske" "ofse"
+    "operere" "ordne" "overraske" "parlamentere" "passiare" "pirast"
+    "pirke" "pjaske" "pjuske" "plettere" "plundre" "prakke"
+    "prate" "proppe" "prunke" "purle" "puske" "pusle"
+    "putle" "rasjonere" "rasle" "reagere" "regalere" "rekne"
+    "rikle" "ringje" "ringle" "rivast" "rutle" "rutte"
+    "rå" "råde" "rådlegge" "rådleggje" "rådslå" "røde"
+    "samarbeide" "samsnakke" "samstavast" "samstave" "samtale" "sanne"
+    "sjakre" "sjalte" "sjaue" "sjonglere" "skalte" "skeide"
+    "skeive" "skilte" "skingle" "skjemte" "skramle" "skrangle"
+    "skrasle" "skratle" "skrive" "skumle" "skåle" "skøye"
+    "slabbe" "slamre" "slenge" "slengje" "slite" "slubbe"
+    "slure" "slurve" "slutte" "slåst" "sløse" "smeike"
+    "smeikje" "smekke" "smelle" "smere" "småprate" "småsnakke"
+    "snakke" "snobbe" "somle" "spekke" "spele" "spjette"
+    "sprelle" "sprike" "sprikje" "spøkje" "starte" "stelle"
+    "stemme" "streve" "stri" "stride" "stulle" "styre"
+    "ståke" "ståsse" "susle" "sutle" "svabbe" "svalle"
+    "svare" "sveie" "sveige" "sympatisere" "sysle" "teie"
+    "terse" "trale" "trette" "trikse" "true" "truge"
+    "trysje" "tuffe" "tufse" "tugle" "tukle" "tulle"
+    "tumle" "tuske" "tute" "tvare" "tverke" "tøle"
+    "tøve" "tøyse" "vagge" "valte" "vedde" "veifte"
+    "veive" "vifte" "vinse" "vippe" "virre" "vitse"
+    "vogge" "vri" "vride" "vrikke" "vrikle" "våse"
+    "yvast" "åmoge" "økonomisere" "øle" "øydsle" ;
+
+# <trans11/mellom>
+LIST ORDBANK_VAL_TRANS11_MELLOM = "differensiere" "distingvere" "mekle" "sondre" ;
+
+# <trans11/mot>
+LIST ORDBANK_VAL_TRANS11_MOT =
+    "aksjonere" "argumentere" "butte" "demonstrere" "duellere" "glire"
+    "glyre" "gnisse" "gnure" "gnusse" "grine" "grymje"
+    "grymte" "heime" "hytte" "kjempe" "klaske" "lune"
+    "murre" "myse" "opponere" "polemisere" "propagandere" "prosedere"
+    "protestere" "rase" "reagere" "revoltere" "røyste" "sanksjonere"
+    "sikte" "spele" "sprøyte" "stemme" "stile" "stri"
+    "stride" "synde" "tale" "tendere" "tore" "torne"
+    "vaksinere" "vitne" "votere" ;
+
+# <trans11/ned>
+LIST ORDBANK_VAL_TRANS11_NED = "hoppe" "ise" "slakte" ;
+
+# <trans11/ned+på>
+LIST ORDBANK_VAL_TRANS11_NED_P = "betale" "korte" ;
+
+# <trans11/om>
+LIST ORDBANK_VAL_TRANS11_OM =
+    "akkedere" "be" "bede" "disputere" "dømme" "einast"
+    "fable" "fabulere" "famne" "fantasere" "fate" "fatte"
+    "forelese" "forhandle" "fororde" "frede" "frette" "førelese"
+    "føreorde" "garte" "glunke" "gnåle" "gripe" "hegne"
+    "hyggje" "informere" "innleie" "instruere" "jåsse" "kivast"
+    "kive" "kjave" "kjeftast" "kjekle" "kjempe" "kjøpslå"
+    "knive" "kommunisere" "konkurrere" "krangle" "kverne" "kviskre"
+    "kåsere" "ljuge" "lyge" "lære" "mase" "melde"
+    "mimre" "minne" "mukke" "mulle" "mumle" "mynte"
+    "nappast" "nebbast" "nibe" "nibede" "oppmode" "ordskiftast"
+    "orientere" "parlamentere" "potte" "prate" "preike" "rapportere"
+    "rope" "rådlegge" "rådleggje" "rådslå" "røde" "røre"
+    "samsnakke" "samtale" "sele" "semjast" "skravle" "skrike"
+    "skumle" "sladre" "slarve" "slåst" "småprate" "småsnakke"
+    "spå" "spørje" "supplikkere" "synge" "syngje" "synse"
+    "søkje" "tale" "tanne" "teie" "tevle" "tigge"
+    "tinge" "tipse" "tiske" "tjåke" "trette" "trygle"
+    "tviste" "tyste" "tyte" "underrette" "varsku" "varsle"
+    "vedde" "verne" "vitne" "vrøvle" "våge" "ymje"
+    "ymte" "yrkje" ;
+
+# <trans11/om+på>
+LIST ORDBANK_VAL_TRANS11_OM_P = "lage" ;
+
+# <trans11/opp>
+LIST ORDBANK_VAL_TRANS11_OPP =
+    "bla" "blade" "dekkje" "dra" "drage" "dyrke"
+    "ete" "finne" "flaske" "fø" "føde" "gi"
+    "gje" "gjeve" "kjøpe" "klare" "klåre" "lese"
+    "pløye" "pusse" "raspe" "reie" "rekne" "rute"
+    "rydde" "rydje" "rø" "seie" "skjenke" "skjenkje"
+    "skjere" "skorde" "skru" "skrue" "skryte" "skylje"
+    "slakke" "slå" "spe" "spore" "stalle" "starte"
+    "trekkje" "tråkke" "vaske" "vege" ;
+
+# <trans11/opp+etter>
+LIST ORDBANK_VAL_TRANS11_OPP_ETTER = "slå" ;
+
+# <trans11/opp+i>
+LIST ORDBANK_VAL_TRANS11_OPP_I =
+    "elde" "greie" "klare" "klåre" "ordne" "rippe"
+    "ruske" "tenne" ;
+
+# <trans11/opp+med>
+LIST ORDBANK_VAL_TRANS11_OPP_MED = "diske" "slå" "starte" ;
+
+# <trans11/opp+om>
+LIST ORDBANK_VAL_TRANS11_OPP_OM = "slutte" ;
+
+# <trans11/opp+på>
+LIST ORDBANK_VAL_TRANS11_OPP_P = "møte" "tenne" ;
+
+# <trans11/opp+til>
+LIST ORDBANK_VAL_TRANS11_OPP_TIL = "møte" "nå" "rekke" ;
+
+# <trans11/opp+under>
+LIST ORDBANK_VAL_TRANS11_OPP_UNDER = "fyre" "nøre" ;
+
+# <trans11/or>
+LIST ORDBANK_VAL_TRANS11_OR = "rydde" "rydje" "rø" "svarve" ;
+
+# <trans11/over>
+LIST ORDBANK_VAL_TRANS11_OVER =
+    "anke" "butte" "by" "byde" "dekkje" "disponere"
+    "fabulere" "fantasere" "fare" "filosofere" "forelese" "furte"
+    "førelese" "gape" "glefse" "grine" "gruble" "grublisere"
+    "grunde" "grune" "gruvle" "gråte" "harselere" "herske"
+    "hoppe" "hovere" "ironisere" "jamre" "juble" "kike"
+    "kikke" "klage" "kåsere" "køyre" "le" "moralisere"
+    "murre" "raljere" "reflektere" "regjere" "rekke" "rekne"
+    "resonnere" "ruge" "rå" "råde" "satirisere" "sigre"
+    "sjefe" "sjå" "skode" "skreve" "skygge" "skyggje"
+    "streke" "stryke" "stynje" "stønne" "sukke" "sveipe"
+    "ta" "take" "tale" "telje" "teoretisere" "triumfere"
+    "vake" "vaske" "vinne" "votere" ;
+
+# <trans11/over+med>
+LIST ORDBANK_VAL_TRANS11_OVER_MED = "bere" ;
+
+# <trans11/på>
+LIST ORDBANK_VAL_TRANS11_P =
+    "abonnere" "ale" "avreagere" "bakse" "banne" "begynne"
+    "beinke" "bere" "berte" "bie" "bisne" "bite"
+    "blistre" "blånekte" "blåse" "brygge" "bryggje" "buse"
+    "by" "byde" "byggje" "byrje" "bøte" "dampe"
+    "dekkje" "dele" "deltake" "dra" "drage" "dragse"
+    "draske" "drasle" "drasse" "dratle" "dreie" "drimse"
+    "dundre" "einglane" "einglo" "einstire" "emne" "endre"
+    "ete" "fale" "fangste" "fiffe" "file" "fine"
+    "fingle" "fingre" "finne" "finrekne" "fire" "flikke"
+    "flytte" "fløyte" "fokusere" "folke" "forandre" "forske"
+    "forte" "friske" "fye" "fyke" "fylle" "fø"
+    "føde" "føle" "gaume" "gjønstre" "glane" "gleime"
+    "gleine" "glo" "glore" "glotte" "glupe" "glutte"
+    "glygge" "glyggje" "glyme" "glyre" "glåme" "gløyre"
+    "gnafse" "gnage" "gnaule" "gnavle" "gni" "gnide"
+    "gnidre" "gnike" "gnikke" "gnikse" "gnu" "gnubbe"
+    "gnugge" "gnukke" "gnåle" "gomle" "greie" "grine"
+    "gruble" "grublisere" "grunde" "grune" "gruvle" "gøyme"
+    "hakke" "halde" "hamre" "harpe" "hegde" "heie"
+    "helse" "hitte" "holde" "hoppe" "hyppe" "hyrpe"
+    "hyste" "influere" "innverke" "insistere" "ise" "jage"
+    "jakte" "kalle" "kaste" "kaue" "kike" "kikke"
+    "kjefte" "kjenne" "klage" "klappe" "klapre" "klaske"
+    "kle" "klede" "klimpre" "klunke" "klå" "knaske"
+    "kneppe" "knipe" "knipse" "køyre" "lalle" "lappe"
+    "lede" "lee" "leike" "leke" "lempe" "lette"
+    "likke" "likne" "live" "livnære" "ljuge" "lokke"
+    "lukrere" "lukte" "lunke" "lure" "lye" "lyfte"
+    "lyge" "låte" "lòse" "løfte" "løyse" "maksle"
+    "male" "mase" "meine" "meinhalde" "mekke" "menesere"
+    "minke" "misse" "mumse" "myse" "méde" "nase"
+    "naudstire" "niglane" "nihalde" "nikke" "nistire" "norske"
+    "nose" "nynne" "nyse" "nøre" "nøyte" "oke"
+    "olme" "patte" "peike" "pine" "pirke" "plukke"
+    "plusse" "plystre" "prakke" "presse" "prikke" "prille"
+    "profittere" "prosedere" "protestere" "prute" "puffe" "pukke"
+    "pusse" "pynte" "pønse" "pønske" "rasjonere" "reagere"
+    "reflektere" "reie" "reklamere" "renne" "renonsere" "respondere"
+    "rette" "ri" "ride" "ridle" "rope" "ruge"
+    "rukke" "rulle" "rynke" "råke" "røre" "røyste"
+    "sage" "sakke" "samle" "satse" "segle" "seinke"
+    "sele" "sigle" "sikle" "sikte" "sjanse" "sjue"
+    "sjå" "skakke" "skamby" "skambyde" "skave" "skifte"
+    "skjenne" "skode" "skotte" "skrive" "skrykke" "skrykkje"
+    "skulde" "skule" "skunde" "skvette" "skygne" "skylde"
+    "skyte" "sladre" "slakke" "slarve" "sleike" "sleikje"
+    "slepe" "slikke" "slite" "sloe" "smatte" "smeise"
+    "smeite" "smuglese" "snede" "snikre" "snu" "snuse"
+    "snylte" "snyte" "spare" "spe" "spekulere" "spele"
+    "spikke" "spionere" "spleise" "sprenglese" "sprute" "spytte"
+    "stelle" "stemme" "stige" "stire" "strikke" "stryke"
+    "studere" "stylte" "stytte" "stå" "subskribere" "suge"
+    "sutte" "svare" "sverje" "søkje" "ta" "take"
+    "tanne" "tappe" "telje" "tene" "tenne" "terpe"
+    "tinge" "titte" "tjuvtrene" "totte" "trasle" "trekkje"
+    "trolle" "troppe" "tråkke" "trø" "trøyte" "tugge"
+    "tukke" "tutre" "tverrhalde" "tvihalde" "tyde" "tygge"
+    "tyggje" "tykkje" "tymte" "tysse" "tyste" "tåte"
+    "tære" "tørrtrene" "undre" "vakte" "vedde" "vinke"
+    "vrengjast" "vri" "vride" "vrikke" "vrine" "vringle"
+    "vøle" "ymse" "yte" "åbende" "åmoge" "øne" ;
+
+# <trans11/på)>
+LIST ORDBANK_VAL_TRANS11_P = "blåhalde" ;
+
+# <trans11/på+med>
+LIST ORDBANK_VAL_TRANS11_P_MED = "druse" "halde" "holde" "spe" ;
+
+# <trans11/på.bortpå>
+LIST ORDBANK_VAL_TRANS11_P_BORTP = "gløtte" ;
+
+# <trans11/på.mot>
+LIST ORDBANK_VAL_TRANS11_P_MOT = "glose" ;
+
+# <trans11/rundt+med>
+LIST ORDBANK_VAL_TRANS11_RUNDT_MED = "drasse" ;
+
+# <trans11/saman>
+LIST ORDBANK_VAL_TRANS11_SAMAN = "brygge" "bryggje" "tørne" ;
+
+# <trans11/saman+med>
+LIST ORDBANK_VAL_TRANS11_SAMAN_MED = "vanke" ;
+
+# <trans11/til>
+LIST ORDBANK_VAL_TRANS11_TIL =
+    "alludere" "appellere" "aspirere" "assosiere" "avansere" "blote"
+    "bokse" "by" "byde" "daske" "deise" "delje"
+    "dra" "drage" "dreise" "drifse" "drive" "drubbe"
+    "druse" "dryle" "dulte" "emne" "feise" "fike"
+    "file" "flabbe" "floragrafere" "flykte" "flytte" "fororde"
+    "fye" "føreorde" "gaule" "geipe" "gi" "gje"
+    "gjeve" "glette" "gnuffe" "gripe" "gumpe" "hysje"
+    "hytte" "hyve" "innby" "innbyde" "innkalle" "jugle"
+    "kakke" "kalkulere" "kjenne" "klabbe" "klage" "klappe"
+    "klaske" "klemme" "klesse" "klinke" "knerte" "kontribuere"
+    "konvertere" "kviskre" "lange" "le" "legge" "leggje"
+    "mane" "medverke" "nikke" "nippe" "nufse" "nugge"
+    "omsetje" "omsette" "oppmane" "oppmode" "oppmuntre" "pelme"
+    "prate" "puffe" "puste" "rapportere" "referere" "reie"
+    "ringje" "rope" "rykke" "rykkje" "seise" "sikte"
+    "sjå" "skatte" "skrappe" "skrelle" "skrike" "skubbe"
+    "skumpe" "skunse" "slarpe" "slå" "smake" "smeise"
+    "smeite" "smekke" "smelle" "smile" "snakke" "spare"
+    "sparke" "sprenglese" "stelle" "stige" "stimulere" "studere"
+    "suppe" "svarpe" "sveise" "sverje" "svirpe" "søle"
+    "ta" "take" "telefonere" "telegrafere" "teleksere" "telje"
+    "tendere" "tene" "terse" "tette" "trive" "ty"
+    "tyste" "utfordre" "vinke" "vise" "vrine" "yppe" ;
+
+# <trans11/til+med>
+LIST ORDBANK_VAL_TRANS11_TIL_MED = "hjelpe" ;
+
+# <trans11/tilbake>
+LIST ORDBANK_VAL_TRANS11_TILBAKE = "kjøpe" ;
+
+# <trans11/under>
+LIST ORDBANK_VAL_TRANS11_UNDER =
+    "by" "byde" "glygge" "glyggje" "skorde" "skrive"
+    "streke" ;
+
+# <trans11/unna>
+LIST ORDBANK_VAL_TRANS11_UNNA = "sluntre" "smette" "stalle" "styre" ;
+
+# <trans11/ut>
+LIST ORDBANK_VAL_TRANS11_UT =
+    "bjeffe" "ble" "brodere" "brøle" "by" "byde"
+    "eksperimentere" "finne" "forske" "fylle" "grunde" "grune"
+    "klekkje" "mynte" "potte" "pønse" "pønske" "reie"
+    "rekne" "skyte" "sortere" "spe" "stryke" "teste"
+    "trekkje" "vinne" ;
+
+# <trans11/ut+av>
+LIST ORDBANK_VAL_TRANS11_UT_AV = "tre" ;
+
+# <trans11/ut+for>
+LIST ORDBANK_VAL_TRANS11_UT_FOR = "punge" ;
+
+# <trans11/ut+med>
+LIST ORDBANK_VAL_TRANS11_UT_MED =
+    "buse" "gå" "plapre" "plumpe" "punge" "rykke"
+    "rykkje" "slå" "tale" ;
+
+# <trans11/ut+om>
+LIST ORDBANK_VAL_TRANS11_UT_OM = "greie" ;
+
+# <trans11/utor>
+LIST ORDBANK_VAL_TRANS11_UTOR = "grope" ;
+
+# <trans11/utover>
+LIST ORDBANK_VAL_TRANS11_UTOVER = "skule" ;
+
+# <trans11/ved>
+LIST ORDBANK_VAL_TRANS11_VED = "adherere" "pirke" "røre" "stå" "svalle" ;
+
+# <trans11/åt>
+LIST ORDBANK_VAL_TRANS11_T = "blåse" "flire" "glise" "kimse" "le" ;
+
+# <trans12/attover>
+LIST ORDBANK_VAL_TRANS12_ATTOVER = "halle" ;
+
+# <trans12/av>
+LIST ORDBANK_VAL_TRANS12_AV =
+    "avhenge" "bestå" "forgå" "fyllast" "gløyme" "kome"
+    "komme" "ose" "strutte" "svulme" ;
+
+# <trans12/av+for>
+LIST ORDBANK_VAL_TRANS12_AV_FOR = "vike" ;
+
+# <trans12/av+frå>
+LIST ORDBANK_VAL_TRANS12_AV_FR = "bøye" "vike" ;
+
+# <trans12/bort>
+LIST ORDBANK_VAL_TRANS12_BORT = "gløyme" ;
+
+# <trans12/bort+frå>
+LIST ORDBANK_VAL_TRANS12_BORT_FR = "vike" ;
+
+# <trans12/borti>
+LIST ORDBANK_VAL_TRANS12_BORTI = "snudde" "tøle" ;
+
+# <trans12/etter>
+LIST ORDBANK_VAL_TRANS12_ETTER =
+    "forvitnast" "geispe" "gjespe" "heite" "henge" "høyre"
+    "ljode" "lytte" "variere" ;
+
+# <trans12/fast+i>
+LIST ORDBANK_VAL_TRANS12_FAST_I = "henge" ;
+
+# <trans12/for>
+LIST ORDBANK_VAL_TRANS12_FOR =
+    "blø" "bløde" "deggje" "hefte" "resignere" "skile"
+    "sone" "stå" "svi" "svide" "unngjelde" "vike"
+    "vægje" ;
+
+# <trans12/fra>
+LIST ORDBANK_VAL_TRANS12_FRA = "vekse" ;
+
+# <trans12/framover>
+LIST ORDBANK_VAL_TRANS12_FRAMOVER = "halle" ;
+
+# <trans12/frå>
+LIST ORDBANK_VAL_TRANS12_FR =
+    "avvike" "deviere" "divergere" "kome" "komme" "lausne"
+    "nedstamme" "nedætte" "sleppe" "sovne" "stamme" "ættast" ;
+
+# <trans12/hos>
+LIST ORDBANK_VAL_TRANS12_HOS = "bu" ;
+
+# <trans12/i>
+LIST ORDBANK_VAL_TRANS12_I =
+    "bestå" "botne" "eksplodere" "inngå" "mislukkast" "mislykkast"
+    "munne" "resultere" "samtykke" "samtykkje" "skjelve" "snuble" ;
+
+# <trans12/igjen>
+LIST ORDBANK_VAL_TRANS12_IGJEN = "treffe" ;
+
+# <trans12/imot>
+LIST ORDBANK_VAL_TRANS12_IMOT = "ha" "halle" "stri" "stride" ;
+
+# <trans12/inne+med>
+LIST ORDBANK_VAL_TRANS12_INNE_MED = "brenne" ;
+
+# <trans12/med>
+LIST ORDBANK_VAL_TRANS12_MED =
+    "blandast" "bli" "ende" "flukte" "fyllast" "gidde"
+    "glimre" "glipe" "halle" "kongruere" "lukkast" "lute"
+    "lykkast" "mislukkast" "mislykkast" "samstemme" "samsvare" "samtykke"
+    "samtykkje" "variere" "verte" ;
+
+# <trans12/med+på>
+LIST ORDBANK_VAL_TRANS12_MED_P = "bli" ;
+
+# <trans12/mellom>
+LIST ORDBANK_VAL_TRANS12_MELLOM = "veksle" ;
+
+# <trans12/mot>
+LIST ORDBANK_VAL_TRANS12_MOT =
+    "kontrastere" "skjerme" "stri" "stride" "støyte" "tromme"
+    "vêre" "øle" ;
+
+# <trans12/nedpå>
+LIST ORDBANK_VAL_TRANS12_NEDP = "tøle" ;
+
+# <trans12/om>
+LIST ORDBANK_VAL_TRANS12_OM = "drøyme" "slå" "spenne" "synast" "tykkje" ;
+
+# <trans12/opp>
+LIST ORDBANK_VAL_TRANS12_OPP = "svelle" "vege" ;
+
+# <trans12/opp+for>
+LIST ORDBANK_VAL_TRANS12_OPP_FOR = "vege" ;
+
+# <trans12/opp+med>
+LIST ORDBANK_VAL_TRANS12_OPP_MED = "ende" ;
+
+# <trans12/opp+mot>
+LIST ORDBANK_VAL_TRANS12_OPP_MOT = "grense" ;
+
+# <trans12/opp+til>
+LIST ORDBANK_VAL_TRANS12_OPP_TIL = "brygge" "bryggje" "grense" ;
+
+# <trans12/over>
+LIST ORDBANK_VAL_TRANS12_OVER =
+    "fundere" "meditere" "rangere" "snuble" "spenne" "stå"
+    "tenke" "tenkje" "undrast" ;
+
+# <trans12/over+av>
+LIST ORDBANK_VAL_TRANS12_OVER_AV = "strøyme" ;
+
+# <trans12/på>
+LIST ORDBANK_VAL_TRANS12_P =
+    "angre" "beve" "bomme" "brygge" "bryggje" "davre"
+    "deggje" "duse" "dåfurdast" "dåfurde" "ende" "flyte"
+    "forvitnast" "fundere" "furdast" "gidde" "gjerast" "hugse"
+    "håpe" "håtte" "høyre" "kome" "komme" "leite"
+    "likast" "likjast" "ljode" "lytte" "skjelve" "slekte"
+    "stole" "støyte" "svipe" "tenke" "tenkje" "treffe"
+    "tru" "tvile" "undrast" "vanslekte" "vende" "vente"
+    "vone" ;
+
+# <trans12/rundt>
+LIST ORDBANK_VAL_TRANS12_RUNDT = "spenne" ;
+
+# <trans12/saman>
+LIST ORDBANK_VAL_TRANS12_SAMAN = "henge" ;
+
+# <trans12/til>
+LIST ORDBANK_VAL_TRANS12_TIL =
+    "bli" "duge" "føre" "grense" "høve" "ljode"
+    "lytte" "skjegle" "stemme" "stå" "trenge" "utarte" ;
+
+# <trans12/under>
+LIST ORDBANK_VAL_TRANS12_UNDER = "rangere" "sortere" ;
+
+# <trans12/unna>
+LIST ORDBANK_VAL_TRANS12_UNNA = "halle" ;
+
+# <trans12/unna+for>
+LIST ORDBANK_VAL_TRANS12_UNNA_FOR = "bøye" ;
+
+# <trans12/ut>
+LIST ORDBANK_VAL_TRANS12_UT = "sveitte" "svelle" ;
+
+# <trans12/ut+av>
+LIST ORDBANK_VAL_TRANS12_UT_AV = "strøyme" "tyte" "velte" ;
+
+# <trans12/ut+gjennom>
+LIST ORDBANK_VAL_TRANS12_UT_GJENNOM = "strøyme" ;
+
+# <trans12/ut+i>
+LIST ORDBANK_VAL_TRANS12_UT_I = "breste" "munne" "slå" ;
+
+# <trans12/ut+mot>
+LIST ORDBANK_VAL_TRANS12_UT_MOT = "grense" ;
+
+# <trans12/ved>
+LIST ORDBANK_VAL_TRANS12_VED = "bli" "dvele" "dvelje" "hefte" "henge" "verte" ;
+
+# <trans13/etter>
+LIST ORDBANK_VAL_TRANS13_ETTER = "herje" ;
+
+# <trans13/for>
+LIST ORDBANK_VAL_TRANS13_FOR = "nennast" ;
+
+# <trans13/i>
+LIST ORDBANK_VAL_TRANS13_I = "skjere" ;
+
+# <trans13/med>
+LIST ORDBANK_VAL_TRANS13_MED =
+    "konkludere" "nøle" "plundre" "slutte" "starte" "streve"
+    "trale" "true" "truge" "vente" ;
+
+# <trans13/mot>
+LIST ORDBANK_VAL_TRANS13_MOT = "tendere" ;
+
+# <trans13/på>
+LIST ORDBANK_VAL_TRANS13_P = "pønse" "pønske" "skifte" ;
+
+# <trans13/til>
+LIST ORDBANK_VAL_TRANS13_TIL = "duge" "suggerere" "teikne" "tendere" ;
+
+# <trans14>
+LIST ORDBANK_VAL_TRANS14 = "arve" "erve" "fate" "få" "hóle" ;
+
+# <trans15/av>
+LIST ORDBANK_VAL_TRANS15_AV =
+    "blygjast" "grysje" "grøsse" "gyse" "hustre" "skjemmast"
+    "vansmekte" ;
+
+# <trans15/etter>
+LIST ORDBANK_VAL_TRANS15_ETTER =
+    "ane" "fyse" "gire" "hipe" "hungre" "kri"
+    "lengjast" "lengte" "lyste" "skjesse" "sleve" "smekte"
+    "stunde" "sukke" "trå" "tyrste" "tørste" "verkje" ;
+
+# <trans15/for>
+LIST ORDBANK_VAL_TRANS15_FOR = "blygjast" "fæle" "skjemmast" ;
+
+# <trans15/frå>
+LIST ORDBANK_VAL_TRANS15_FR = "styggast" "styggjast" ;
+
+# <trans15/med>
+LIST ORDBANK_VAL_TRANS15_MED = "mistrivast" ;
+
+# <trans15/over>
+LIST ORDBANK_VAL_TRANS15_OVER =
+    "blygjast" "fortvile" "frustrere" "grysje" "grøsse" "skjemmast"
+    "sørgje" "vemjast" "vemmast" ;
+
+# <trans15/på>
+LIST ORDBANK_VAL_TRANS15_P =
+    "fortryte" "fyse" "hugast" "ire" "lyste" "skjesse"
+    "smake" "tenne" "trege" ;
+
+# <trans15/ved>
+LIST ORDBANK_VAL_TRANS15_VED =
+    "blygjast" "grysje" "grøsse" "styggast" "styggjast" "vemjast"
+    "vemmast" ;
+
+# <trans16>
+LIST ORDBANK_VAL_TRANS16 =
+    "drøyme" "frykte" "føle" "hate" "like" "mislike"
+    "presumere" "presupponere" ;
+
+# <trans17>
+LIST ORDBANK_VAL_TRANS17 = "djerve" "hate" "like" "lyste" "nyte" "une" ;
+
+# <trans18>
+LIST ORDBANK_VAL_TRANS18 =
+    "ense" "fatte" "forstå" "fortene" "forvente" "hugse"
+    "håpe" "håtte" "høyre" "implisere" "indikere" "innebere"
+    "innsjå" "involvere" "merke" "minnast" "oppleve" "orsake"
+    "sannkjenne" "skjøne" "skjønne" "synast" "tole" "tru"
+    "underforstå" "undrast" "vente" "vete" "vite" "vone"
+    "ynskje" "ønskje" ;
+
+# <trans19>
+LIST ORDBANK_VAL_TRANS19 =
+    "fortene" "forvente" "gløyme" "hugse" "håpe" "innebere"
+    "innsjå" "involvere" "oppleve" "tole" "trenge" "unast"
+    "vone" "ynskje" "ønskje" ;
+
+# <trans19/på>
+LIST ORDBANK_VAL_TRANS19_P = "insistere" ;
+
+# <trans1part1/opp>
+LIST ORDBANK_VAL_TRANS1PART1_OPP = "skure" ;
+
+# <trans1trans11/i>
+LIST ORDBANK_VAL_TRANS1TRANS11_I = "vande" ;
+
+# <trans2>
+LIST ORDBANK_VAL_TRANS2 =
+    "affektere" "akseptere" "ane" "annonsere" "avgjere" "avtale"
+    "avverje" "befale" "besøke" "besøkje" "blånekte" "bortforklare"
+    "celebrere" "dekretere" "dokumentere" "elske" "erkjenne" "erklære"
+    "fastslå" "feire" "forakte" "fordre" "foreslå" "forsverje"
+    "fortenke" "fortrenge" "fortrengje" "framheve" "frette" "førebygge"
+    "førebyggje" "føresetje" "føresette" "føreslå" "føretrekke" "føretrekkje"
+    "garantere" "gi" "gje" "gjennomgå" "gjentake" "gjete"
+    "gjette" "gjeve" "godkjenne" "godta" "godtake" "hevde"
+    "hindre" "hugse" "innskjerpe" "innvende" "insinuere" "kommentere"
+    "konfirmere" "konkludere" "konstatere" "kontrollere" "krevje" "kringkaste"
+    "kunngjere" "kviskre" "legitimere" "love" "lovfeste" "lære"
+    "manifestere" "medføre" "medgi" "medgje" "medgjeve" "meine"
+    "melde" "motverke" "notere" "notifisere" "offentleggjere" "opplyse"
+    "oppnå" "overhøyre" "planlegge" "planleggje" "poengtere" "postulere"
+    "presisere" "profetere" "programfeste" "proklamere" "proponere" "prove"
+    "publisere" "påby" "påbyde" "påpeike" "påstå" "påvise"
+    "regelfeste" "registrere" "repetere" "rettferdiggjere" "risikere" "røpe"
+    "sanne" "seie" "signalere" "signalisere" "sjekke" "sjå"
+    "skimte" "skjule" "skyle" "spå" "stadfeste" "supponere"
+    "svare" "symbolisere" "synleggjere" "tenke" "tenkje" "tillate"
+    "tilrå" "tilråde" "tilstå" "tolerere" "tykkje" "underslå"
+    "understreke" "undersøke" "undersøkje" "unngå" "utbasunere" "utelate"
+    "uttale" "vedde" "vedgå" "vedta" "vedtake" "verdsetje"
+    "verdsette" "verifisere" "versifisere" "vilje" "vise" "åbyrgjast" ;
+
+# <trans20/for>
+LIST ORDBANK_VAL_TRANS20_FOR = "sørgje" ;
+
+# <trans20/frampå+om>
+LIST ORDBANK_VAL_TRANS20_FRAMP_OM = "ymte" ;
+
+# <trans20/med>
+LIST ORDBANK_VAL_TRANS20_MED = "få" "kalkulere" "true" "truge" ;
+
+# <trans20/om>
+LIST ORDBANK_VAL_TRANS20_OM = "ymte" ;
+
+# <trans20/på>
+LIST ORDBANK_VAL_TRANS20_P = "insistere" ;
+
+# <trans20/til>
+LIST ORDBANK_VAL_TRANS20_TIL = "legge" "leggje" ;
+
+# <trans21/att>
+LIST ORDBANK_VAL_TRANS21_ATT = "gløyme" ;
+
+# <trans21/av>
+LIST ORDBANK_VAL_TRANS21_AV = "bestå" "gløyme" ;
+
+# <trans21/for>
+LIST ORDBANK_VAL_TRANS21_FOR = "frykte" ;
+
+# <trans21/i>
+LIST ORDBANK_VAL_TRANS21_I = "bestå" "resultere" ;
+
+# <trans21/over>
+LIST ORDBANK_VAL_TRANS21_OVER = "undrast" ;
+
+# <trans21/på>
+LIST ORDBANK_VAL_TRANS21_P = "hugse" "kome" "komme" "tvile" "tyde" "undrast" ;
+
+# <trans21/til>
+LIST ORDBANK_VAL_TRANS21_TIL = "slumpe" ;
+
+# <trans22/av>
+LIST ORDBANK_VAL_TRANS22_AV = "bestå" ;
+
+# <trans22/for>
+LIST ORDBANK_VAL_TRANS22_FOR = "gjelde" ;
+
+# <trans22/i>
+LIST ORDBANK_VAL_TRANS22_I = "bestå" ;
+
+# <trans22/med+på>
+LIST ORDBANK_VAL_TRANS22_MED_P = "bli" ;
+
+# <trans22/om>
+LIST ORDBANK_VAL_TRANS22_OM = "drøyme" ;
+
+# <trans22/på>
+LIST ORDBANK_VAL_TRANS22_P = "byte" "hugse" "kome" "komme" ;
+
+# <trans23/etter>
+LIST ORDBANK_VAL_TRANS23_ETTER = "ivre" ;
+
+# <trans23/for>
+LIST ORDBANK_VAL_TRANS23_FOR = "ivre" ;
+
+# <trans23/i>
+LIST ORDBANK_VAL_TRANS23_I = "setje" "sette" ;
+
+# <trans23/i+med>
+LIST ORDBANK_VAL_TRANS23_I_MED = "setje" "sette" ;
+
+# <trans23/med>
+LIST ORDBANK_VAL_TRANS23_MED = "kalkulere" "mødast" "slutte" ;
+
+# <trans23/om>
+LIST ORDBANK_VAL_TRANS23_OM = "fable" ;
+
+# <trans23/på>
+LIST ORDBANK_VAL_TRANS23_P = "innstille" "tinge" ;
+
+# <trans24>
+LIST ORDBANK_VAL_TRANS24 = "byte" ;
+
+# <trans3>
+LIST ORDBANK_VAL_TRANS3 =
+    "affektere" "akte" "avslå" "avtale" "begynne" "blånekte"
+    "bruke" "byrje" "droppe" "elske" "ense" "erkjenne"
+    "evle" "evne" "freiste" "gidde" "godta" "godtake"
+    "herde" "klare" "kunne" "love" "lære" "maktast"
+    "makte" "neitte" "nekte" "nennast" "nenne" "orke"
+    "planlegge" "planleggje" "plikte" "prestere" "pretendere" "prioritere"
+    "programfeste" "prøve" "rekke" "risikere" "sjå" "sleppe"
+    "slutte" "søkje" "tenke" "tenkje" "tilstå" "tore"
+    "une" "unngå" "utelate" "vedta" "vedtake" "vegre"
+    "velje" "vyrde" "våge" "vørde" ;
+
+# <trans3s>
+LIST ORDBANK_VAL_TRANS3S = "time" ;
+
+# <trans4>
+LIST ORDBANK_VAL_TRANS4 = "be" "bede" "ete" "høyre" "sjå" ;
+
+# <trans5>
+LIST ORDBANK_VAL_TRANS5 =
+    "absorbere" "adsorbere" "anse" "assimilere" "auge" "augne"
+    "avbilde" "bate" "bestå" "bjå" "blø" "bløde"
+    "danne" "drøyme" "eige" "ekvivalere" "ense" "erstatte"
+    "etterfylgje" "etterfølgje" "fattast" "fatte" "felle" "forsake"
+    "forstå" "fortene" "forvente" "freiste" "fylle" "fø"
+    "føde" "føye" "gagne" "gaume" "gleppe" "gløyme"
+    "godmæte" "gå" "hitte" "hugbere" "huge" "hugse"
+    "huse" "hyse" "hå" "håtte" "høyre" "innebere"
+    "innehalde" "interpretere" "involvere" "kjenne" "kjenneteikne" "kle"
+    "klede" "kontrastere" "koste" "lindre" "ljode" "lyte"
+    "matche" "merke" "misforstå" "mishugse" "mishøyre" "mismæte"
+    "misoppfatte" "misse" "miste" "mistolke" "mistru" "mistyde"
+    "narkotisere" "okkultere" "ombere" "omfatte" "overgå" "overlappe"
+    "overskride" "overskygge" "overskyggje" "overstige" "ovundre" "prege"
+    "presumere" "presupponere" "prosessere" "pryde" "reflektere" "resorbere"
+    "råke" "sannkjenne" "skale" "skile" "skjolde" "sky"
+    "sløre" "smitte" "snase" "sone" "spegle" "stigmatisere"
+    "streife" "substituere" "suksedere" "symbolisere" "såte" "særmerke"
+    "særmerkje" "særprege" "tangere" "tefte" "timje" "tole"
+    "toppe" "transcendere" "treffe" "trenge" "trotte" "tru"
+    "trøyte" "tynge" "tyngje" "underforstå" "utgjere" "vanakte"
+    "vanheidre" "vanvyrde" "vanvørde" "vedgå" "vedkjenne" "vente"
+    "vike" "vyrde" "våtte" "vørde" "øygje" ;
+
+# <trans6>
+LIST ORDBANK_VAL_TRANS6 =
+    "avsjå" "djerve" "dufte" "dåme" "døy" "emanere"
+    "feile" "frøyse" "gjelde" "gjennomstrøyme" "gjennomsyre" "ha"
+    "implisere" "innsjå" "interessere" "kanne" "laste" "late"
+    "likast" "likjast" "lystre" "mangle" "mankere" "minnast"
+    "motsvare" "måtte" "mæte" "nøydast" "oppleve" "oppta"
+    "opptake" "overleve" "romme" "runde" "røynast" "røyne"
+    "same" "tape" "tilkome" "tilkomme" "tryte" "turve"
+    "unast" "unnvere" "utstå" "vante" "varast" "vederfarast"
+    "vedkome" "vedkomme" "vete" "vite" "vone" "vrikke"
+    "vêre" "vønast" ;
+
+# <trans7>
+LIST ORDBANK_VAL_TRANS7 =
+    "fascinere" "incitere" "keie" "klemme" "kløkke" "kløkkje"
+    "martre" "mette" "mishage" "more" "pirre" "plage"
+    "satisfisere" "skake" "skremme" "smerte" "støkke" ;
+
+# <trans8>
+LIST ORDBANK_VAL_TRANS8 =
+    "anduge" "anke" "attrå" "avsky" "avunde" "belle"
+    "blåhate" "forgude" "fortryte" "frykte" "føle" "gutere"
+    "hate" "kjenne" "kjeske" "like" "lyste" "mislike"
+    "nyte" "oppleve" "ottast" "otte" "persipere" "sakne"
+    "sanse" "skatte" "smake" "utstå" "vårkunne" "ynkast" ;
+
+# <trans9>
+LIST ORDBANK_VAL_TRANS9 =
+    "arbeide" "bake" "bite" "bore" "bregde" "brodere"
+    "brygge" "bryggje" "byggje" "drille" "etablere" "file"
+    "flette" "forfatte" "fostre" "gate" "gimpe" "grave"
+    "hakke" "hogge" "inngå" "kakke" "klinkbygge" "klinkbyggje"
+    "knipse" "koke" "komponere" "konstituere" "konstruere" "kravellbygge"
+    "kravellbyggje" "kreere" "lage" "male" "maskinstrikke" "masseprodusere"
+    "modellere" "moke" "nyskape" "nyskipe" "opne" "opprette"
+    "pikke" "piske" "prefabrikkere" "prikke" "produsere" "rive"
+    "sementere" "skape" "slettbygge" "slettbyggje" "slite" "slutte"
+    "slå" "smi" "smide" "smie" "snikre" "snitte"
+    "spikke" "spinne" "spøte" "staure" "stifte" "stikke"
+    "stiple" "strikke" "støype" "svarve" "svide" "svige"
+    "sy" "ta" "take" "teikne" "tilverke" "troke"
+    "trykke" "tvinne" "tømre" "utløyse" "veve" ;
+
