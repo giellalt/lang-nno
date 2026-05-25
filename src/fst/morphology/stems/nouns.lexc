@@ -4854,7 +4854,7 @@ barndomsvenn+N:barndomsvenn M4 ; ! LEMMA_ID=5495
 barndomsvenninne+N:barndomsvenninn F2 ; ! LEMMA_ID=5497
 barndøme+N:barndøm N2 ; ! LEMMA_ID=5498
 barndømme+N:barndømm N2 ; ! LEMMA_ID=5499
-barne-%+N:barne-% og% familiedepartement N1 ;
+barne-% og% familiedepartement+N:barne-% og% familiedepartement N1 ;
 barne-TV+N:barne-TV 704 ; ! LEMMA_ID=118223
 barne-tv+N:barne-tv 704 ; ! LEMMA_ID=118224
 barnealder+N:barneald M1t ; ! LEMMA_ID=5503
@@ -30536,7 +30536,7 @@ hjarta+N:hjart N0 ; ! LEMMA_ID=37239
 hjartanskjær+N:hjartanskjær 79A ; ! LEMMA_ID=137748
 hjartdøl+N:hjartdøl M1 ; ! LEMMA_ID=132284
 hjarte+N:hjart N2 ; ! LEMMA_ID=37240
-hjarte-%+N:hjarte-% og% karsjukdom M1M1m ;
+hjarte-% og% karsjukdom+N:hjarte-% og% karsjukdom M1M1m ;
 hjarte-karsjukdom+N:hjarte-karsjukdom M1M1m ; ! LEMMA_ID=37290
 hjarte-lunge-maskin+N:hjarte-lunge-maskin F1M1 ;
 hjarte-lungemaskin+N:hjarte-lungemaskin M1 ; ! LEMMA_ID=37317
@@ -30690,7 +30690,7 @@ hjerneverksemd+N:hjerneverksemd F1 ; ! LEMMA_ID=37461
 hjernevev+N:hjernevev N1e ; ! LEMMA_ID=37462
 hjernevinding+N:hjernevinding F3 ; ! LEMMA_ID=37463
 hjerte+N:hjerte N2 ;
-hjerte-%+N:hjerte-% og% karsjukdom M1M1m ;
+hjerte-% og% karsjukdom+N:hjerte-% og% karsjukdom M1M1m ;
 hjerte-karsjukdom+N:hjerte-karsjukdom M1M1m ;
 hjerte-lunge-maskin+N:hjerte-lunge-maskin F1M1 ;
 hjerteanfall+N:hjerteanfall N1 ;
@@ -52901,7 +52901,7 @@ olivin+N:olivin M1 ; ! LEMMA_ID=66337
 olivinsand+N:olivinsand M1 ; ! LEMMA_ID=66338
 olivinstein+N:olivinstein M1 ; ! LEMMA_ID=66339
 olje+N:olj F2M2 ; ! LEMMA_ID=66340
-olje-%+N:olje-% og% energidepartement N1 ;
+olje-% og% energidepartement+N:olje-% og% energidepartement N1 ;
 oljeaksje+N:oljeaksj M2 ; ! LEMMA_ID=66342
 oljealder+N:oljeald M1t ; ! LEMMA_ID=129004
 oljebad+N:oljebad N1 ; ! LEMMA_ID=66343
