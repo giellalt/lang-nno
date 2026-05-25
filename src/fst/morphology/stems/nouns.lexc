@@ -788,7 +788,7 @@ aksjonskomite+N:aksjonskomite M1 ; ! LEMMA_ID=127736
 aksjonskomité+N:aksjonskomit M1 ; ! LEMMA_ID=627
 aksjonsnemnd+N:aksjonsnemnd F1 ; ! LEMMA_ID=628
 aksjonsradius+N:aksjonsradius M1 ; ! LEMMA_ID=629
-aksjonsradius:aksjonsradi+N:aksjonsradius:aksjonsradi M0-us ;
+aksjonsradius+N:aksjonsradi M0-us ;
 aksjonsutval+N:aksjonsutval N1 ; ! LEMMA_ID=630
 aksjonær+N:aksjonær M1 ; ! LEMMA_ID=631
 aksle+N:aksl F2 ; ! LEMMA_ID=127283
