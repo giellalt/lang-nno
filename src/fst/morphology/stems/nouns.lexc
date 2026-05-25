@@ -383,7 +383,7 @@ agnostikar+N:agnostikar M1 ; ! LEMMA_ID=433
 agnostisisme+N:agnostisism M2 ; ! LEMMA_ID=434
 agnsild+N:agnsild F4 ; ! LEMMA_ID=436
 agnskjel+N:agnskjel F1N1 ; ! LEMMA_ID=437
-agnus%+N:agnus% Dei N1 ;
+agnus% Dei+N:agnus% Dei N1 ;
 agoni+N:agoni M1 ; ! LEMMA_ID=439
 agora+N:agora M1 ; ! LEMMA_ID=123452
 agorafobi+N:agorafobi M1 ; ! LEMMA_ID=440
@@ -671,7 +671,7 @@ akvarellmålarstykke+N:akvarellmålarstykk N2 ; ! LEMMA_ID=765
 akvarellmåleri+N:akvarellmåleri N1 ; ! LEMMA_ID=766
 akvarellmåling+N:akvarellmåling F1 ; ! LEMMA_ID=131577
 akvariebygning+N:akvariebygning M1 ; ! LEMMA_ID=768
-akvariebygning%+N:akvariebygning% m1 M1 ;
+akvariebygning% m1+N:akvariebygning% m1 M1 ;
 akvariefisk+N:akvariefisk M1 ; ! LEMMA_ID=769
 akvarium+N:akvari N3 ; ! LEMMA_ID=770
 akvatint+N:akvatint M1 ; ! LEMMA_ID=123457
@@ -2616,7 +2616,7 @@ arsenikk+N:arsenikk M1 ; ! LEMMA_ID=2978
 arsenikkforgifting+N:arsenikkforgifting F3 ; ! LEMMA_ID=2979
 arsenikktårn+N:arsenikktårn N1 ; ! LEMMA_ID=127570
 art+N:art F1M1 ; ! LEMMA_ID=2981
-art%+N:art% nouveau M1e ;
+art% nouveau+N:art% nouveau M1e ;
 artefakt+N:artefakt M1 ; ! LEMMA_ID=125225
 arterie+N:arteri M2 ; ! LEMMA_ID=2985
 arterieblod+N:arterieblod N1 ; ! LEMMA_ID=2986
@@ -10865,13 +10865,13 @@ cargo+N:cargo M1 ; ! LEMMA_ID=12569
 cargoliner+N:cargoliner M1 ; ! LEMMA_ID=12570
 carnet+N:carnet N1 ; ! LEMMA_ID=12571
 carport+N:carport M1 ; ! LEMMA_ID=12572
-carte%+N:carte% blanche S0 ;
+carte% blanche+N:carte% blanche S0 ;
 carting+N:carting F3 ; ! LEMMA_ID=123497
 carving+N:carving F3 ; ! LEMMA_ID=123499
 carvingski+N:carvingski 903 ; ! LEMMA_ID=124702
 casanova+N:casanova M3 ; ! LEMMA_ID=12574
 case+N:cas M2 ; ! LEMMA_ID=12575
-case%+N:case% study S0 ;
+case% study+N:case% study S0 ;
 casestudie+N:casestudi M2 ; ! LEMMA_ID=131435
 cash+N:cash M1 ; ! LEMMA_ID=131439
 cash-and-carry-prinsipp+N:cash-and-carry-prinsipp N1 ; ! LEMMA_ID=125541
@@ -10953,8 +10953,8 @@ centimeter+N:centimet M0 ; ! LEMMA_ID=12647
 centimeter-gram-sekund-system+N:centimeter-gram-sekund-system N1 ; ! LEMMA_ID=12648
 centimo+N:centimo M0 ; ! LEMMA_ID=12649
 cereal+N:cereal N1 ; ! LEMMA_ID=12650
-cerebral%+N:cerebral% parese-pasient M1 ;
-cerebral%+N:cerebral% parese M2e ;
+cerebral% parese-pasient+N:cerebral% parese-pasient M1 ;
+cerebral% parese+N:cerebral% parese M2e ;
 cerebralparetikar+N:cerebralparetikar M1 ; ! LEMMA_ID=12657
 cerise+N:ceris M2 ; ! LEMMA_ID=131471
 cerium+N:cerium N1 ; ! LEMMA_ID=12658
@@ -10980,7 +10980,7 @@ champion+N:champion M1 ; ! LEMMA_ID=12681
 championat+N:championat N1 ; ! LEMMA_ID=12682
 champis+N:champis M1 ; ! LEMMA_ID=131501
 chardonnay+N:chardonnay M1 ; ! LEMMA_ID=131503
-chargé%+N:chargé% d'affaires M0 ;
+chargé% d'affaires+N:chargé% d'affaires M0 ;
 charleston+N:charleston M1e ; ! LEMMA_ID=12686
 charme+N:charme M2e ;
 charmeuse+N:charmeus M2 ; ! LEMMA_ID=12690
@@ -11079,7 +11079,7 @@ cliffhanger+N:cliffhang M1t ; ! LEMMA_ID=134359
 clinch+N:clinch M1 ; ! LEMMA_ID=12776
 cloisonne+N:cloisonne M1 ; ! LEMMA_ID=130832
 cloisonné+N:cloisonn M1 ; ! LEMMA_ID=130831
-close%+N:close% race N0 ;
+close% race+N:close% race N0 ;
 clou+N:clou M1N1 ; ! LEMMA_ID=12779
 clutch+N:clutch M1 ; ! LEMMA_ID=12780
 clutchpedal+N:clutchpedal M1 ; ! LEMMA_ID=12784
@@ -11094,7 +11094,7 @@ coach+N:coach M1 ; ! LEMMA_ID=131506
 coaching+N:coaching F3 ; ! LEMMA_ID=131510
 COBOL+N:COBOL S0 ; ! LEMMA_ID=12797
 Cobol+N:Cobol S0 ; ! LEMMA_ID=12798
-cocker%+N:cocker% spaniel M1 ;
+cocker% spaniel+N:cocker% spaniel M1 ;
 cockney+N:cockney M1 ; ! LEMMA_ID=12800
 cockpit+N:cockpit M1 ; ! LEMMA_ID=12801
 cocktail+N:cocktail M1 ; ! LEMMA_ID=12802
@@ -11118,7 +11118,7 @@ colombianar+N:colombianar M1 ; ! LEMMA_ID=12820
 coltpistol+N:coltpistol M1 ; ! LEMMA_ID=12825
 comeback+N:comeback N1 ; ! LEMMA_ID=12827
 comebackforsøk+N:comebackforsøk N1 ; ! LEMMA_ID=124121
-coming%+N:coming% man M0 ;
+coming% man+N:coming% man M0 ;
 commando+N:commando M0M1 ;
 commandoangrep+N:commandoangrep N1 ;
 commandolaup+N:commandolaup N1 ;
@@ -11148,8 +11148,8 @@ corner+N:corner M1 ; ! LEMMA_ID=12848
 cornerflagg+N:cornerflagg N1 ; ! LEMMA_ID=131667
 cornflakes+N:cornflakes M1 ; ! LEMMA_ID=12849
 corps+N:corps S0 ; ! LEMMA_ID=12850
-corps%+N:corps% diplomatique N0 ;
-corps%+N:corps% de% ballet N0 ;
+corps% diplomatique+N:corps% diplomatique N0 ;
+corps% de% ballet+N:corps% de% ballet N0 ;
 corsican+N:corsican M1 ;
 corsicanar+N:corsicanar M1 ;
 cortado+N:cortado M1 ; ! LEMMA_ID=131431
@@ -11164,12 +11164,12 @@ costa+N:costa 705 ; ! LEMMA_ID=123814
 costarican+N:costarican M1 ;
 costaricanar+N:costaricanar M1 ; ! LEMMA_ID=12862
 cotangens+N:cotangens M1 ; ! LEMMA_ID=12868
-cottage%+N:cottage% cheese S0 ;
+cottage% cheese+N:cottage% cheese S0 ;
 coulomb+N:coulomb M0 ; ! LEMMA_ID=12870
 coulombmeter+N:coulombmeter N1N1s ; ! LEMMA_ID=12871
 coulometer+N:coulometer N1N1s ;
 country+N:country M1 ; ! LEMMA_ID=127710
-country%+N:country% and% western S0 ;
+country% and% western+N:country% and% western S0 ;
 countrymusikk+N:countrymusikk M1 ; ! LEMMA_ID=12874
 countryrock+N:countryrock M1 ; ! LEMMA_ID=131671
 couronne+N:couronn M2 ; ! LEMMA_ID=12875
@@ -11214,7 +11214,7 @@ cruiseturisme+N:cruiseturism M2 ; ! LEMMA_ID=134380
 cruiseturist+N:cruiseturist M1 ; ! LEMMA_ID=134379
 cruzeiro+N:cruzeiro M0 ; ! LEMMA_ID=12905
 crêpe+N:crêp M2 ; ! LEMMA_ID=131654
-crème%+N:crème% de% la% crème S0 ;
+crème% de% la% crème+N:crème% de% la% crème S0 ;
 csardas+N:csardas M1 ; ! LEMMA_ID=12907
 CT+N:CT 704 ; ! LEMMA_ID=135938
 ct+N:ct 704 ; ! LEMMA_ID=135939
@@ -11570,7 +11570,7 @@ danskekonge+N:danskekong M2 ; ! LEMMA_ID=13245
 dansketid+N:dansketid F1 ; ! LEMMA_ID=13246
 dape+N:dap M2 ; ! LEMMA_ID=13249
 dari+N:dari 89A ; ! LEMMA_ID=134135
-dark%+N:dark% horse M0 ;
+dark% horse+N:dark% horse M0 ;
 darmstadtium+N:darmstadtium N1 ; ! LEMMA_ID=130496
 dart+N:dart M1 ; ! LEMMA_ID=13252
 darts+N:darts S0 ;
@@ -11904,7 +11904,7 @@ delinkvent+N:delinkvent M1 ; ! LEMMA_ID=13644
 delinnstilling+N:delinnstilling F3 ; ! LEMMA_ID=134495
 delirant+N:delirant M1 ; ! LEMMA_ID=13645
 delirium+N:deliri N3 ; ! LEMMA_ID=13647
-delirium%+N:delirium% tremens S0 ;
+delirium% tremens+N:delirium% tremens S0 ;
 delkultur+N:delkultur M1 ; ! LEMMA_ID=13650
 delløysing+N:delløysing F3 ; ! LEMMA_ID=13651
 delmengd+N:delmengd F1 ; ! LEMMA_ID=13652
@@ -12853,7 +12853,7 @@ domstol+N:domstol M1 ; ! LEMMA_ID=14749
 domstolsbehandling+N:domstolsbehandling F3 ; ! LEMMA_ID=134441
 don+N:don M1 ; ! LEMMA_ID=14750
 don+N:don N1 ; ! LEMMA_ID=14750
-don%+N:don% juan M1 ;
+don% juan+N:don% juan M1 ;
 donasjon+N:donasjon M1 ; ! LEMMA_ID=14752
 donator+N:donator M1 ; ! LEMMA_ID=14753
 done+N:don F2 ; ! LEMMA_ID=14754
@@ -13521,7 +13521,7 @@ dublungnavar+N:dublungnav M1t ; ! LEMMA_ID=15589
 dublungsnavar+N:dublungsnav M1t ; ! LEMMA_ID=15590
 dublé+N:dubl M1 ; ! LEMMA_ID=15585
 dubnium+N:dubnium N1 ; ! LEMMA_ID=130492
-duc%+N:duc% d'albe M2 ;
+duc% d'albe+N:duc% d'albe M2 ;
 duce+N:duce 79A ; ! LEMMA_ID=15593
 duchesse+N:duchess M2 ; ! LEMMA_ID=15594
 due+N:du F2 ; ! LEMMA_ID=15596
@@ -14012,7 +14012,7 @@ dæld+N:dæld F1 ;
 dælde+N:dælde F2 ;
 dæle+N:dæl F2 ; ! LEMMA_ID=16147
 dæme+N:dæm N2 ; ! LEMMA_ID=16150
-déjà%+N:déjà% vu S0 ;
+déjà% vu+N:déjà% vu S0 ;
 død+N:død M1 ; ! LEMMA_ID=13340
 dødball+N:dødball M1 ; ! LEMMA_ID=13334
 dødballsituasjon+N:dødballsituasjon M1 ; ! LEMMA_ID=125217
@@ -14258,8 +14258,8 @@ e-sport+N:e-sport M1 ; ! LEMMA_ID=130241
 e-verk+N:e-verk N1 ; ! LEMMA_ID=19314
 E-vitamin+N:E-vitamin N1 ; ! LEMMA_ID=130085
 eagle+N:eagle 79A ; ! LEMMA_ID=124998
-eau%+N:eau% de% vie M2 ;
-eau%+N:eau% de% cologne M2 ;
+eau% de% vie+N:eau% de% vie M2 ;
+eau% de% cologne+N:eau% de% cologne M2 ;
 ebola+N:ebola M1 ; ! LEMMA_ID=127665
 ebonitt+N:ebonitt M1 ; ! LEMMA_ID=16549
 ecstasy+N:ecstasy S0 ; ! LEMMA_ID=123409
@@ -15752,7 +15752,7 @@ energisparing+N:energisparing F3 ; ! LEMMA_ID=18324
 energitap+N:energitap N1 ; ! LEMMA_ID=135167
 energiverk+N:energiverk N1 ; ! LEMMA_ID=18325
 energiøkonomisering+N:energiøkonomisering F3 ; ! LEMMA_ID=18326
-enfant%+N:enfant% terrible M0 ;
+enfant% terrible+N:enfant% terrible M0 ;
 eng+N:eng F1 ; ! LEMMA_ID=18329
 engasjement+N:engasjement N1 ; ! LEMMA_ID=18330
 engbeite+N:engbeit N2e ; ! LEMMA_ID=18332
@@ -16645,9 +16645,9 @@ evolusjonslære+N:evolusjonslær F2 ; ! LEMMA_ID=19362
 evolusjonsteori+N:evolusjonsteori M1 ; ! LEMMA_ID=19363
 evpatride+N:evpatrid F2 ; ! LEMMA_ID=130539
 evtanasi+N:evtanasi M1 ; ! LEMMA_ID=19365
-ex%+N:ex% libris N1 ;
-examen%+N:examen% philosophicum S0 ;
-examen%+N:examen% artium S0 ;
+ex% libris+N:ex% libris N1 ;
+examen% philosophicum+N:examen% philosophicum S0 ;
+examen% artium+N:examen% artium S0 ;
 exit+N:exit S0 ; ! LEMMA_ID=19369
 eyeliner+N:eyeliner M1 ; ! LEMMA_ID=136220
 EØS-avtale+N:EØS-avtal M2 ; ! LEMMA_ID=19373
@@ -16804,10 +16804,10 @@ fahrenheit+N:fahrenheit S0 ; ! LEMMA_ID=19525
 fahrenheitgrad+N:fahrenheitgrad F1M1 ; ! LEMMA_ID=19526
 fahrenheitskala+N:fahrenheitskala M3 ; ! LEMMA_ID=19527
 fahrenheittermometer+N:fahrenheittermometer N1N1s ; ! LEMMA_ID=19528
-fair%+N:fair% play S0 ;
+fair% play+N:fair% play S0 ;
 fairway+N:fairway M1 ; ! LEMMA_ID=136599
 fait+N:fait M1 ; ! LEMMA_ID=123834
-fait%+N:fait% accompli N1 ;
+fait% accompli+N:fait% accompli N1 ;
 faitar+N:faitar M1 ; ! LEMMA_ID=123835
 faitareigenskap+N:faitareigenskap M1 ; ! LEMMA_ID=126019
 faitarevne+N:faitarevn F2 ; ! LEMMA_ID=126108
@@ -17361,7 +17361,7 @@ fastsetting+N:fastsetting F3 ; ! LEMMA_ID=20134
 fasttelefon+N:fasttelefon M1 ; ! LEMMA_ID=125274
 fastvare+N:fastvar F2 ; ! LEMMA_ID=128927
 fat+N:fat N1 ; ! LEMMA_ID=20142
-fata%+N:fata% morgana N0N1 ;
+fata% morgana+N:fata% morgana N0N1 ;
 fatalisme+N:fatalism M2 ; ! LEMMA_ID=20144
 fatalist+N:fatalist M1 ; ! LEMMA_ID=20145
 fatalitet+N:fatalitet M1 ; ! LEMMA_ID=20147
@@ -17771,7 +17771,7 @@ femliterskanne+N:femliterskann F2 ; ! LEMMA_ID=20629
 femmar+N:femmar M1 ; ! LEMMA_ID=20630
 femmarfotball+N:femmarfotball M1 ; ! LEMMA_ID=125419
 femme+N:femm F2 ; ! LEMMA_ID=20631
-femme%+N:femme% fatale F0 ;
+femme% fatale+N:femme% fatale F0 ;
 femmeter+N:femmet M1M1t ; ! LEMMA_ID=20633
 femmeterskast+N:femmeterskast N1 ; ! LEMMA_ID=20634
 femmil+N:femmil F1 ; ! LEMMA_ID=20635
@@ -18209,7 +18209,7 @@ fighter+N:fighter M1 ; ! LEMMA_ID=21123
 fightereigenskap+N:fightereigenskap M1 ; ! LEMMA_ID=21124
 fighterevne+N:fighterevn F2 ; ! LEMMA_ID=21125
 fightervilje+N:fightervilj M2e ; ! LEMMA_ID=21126
-fighting%+N:fighting% spirit M1 ;
+fighting% spirit+N:fighting% spirit M1 ;
 figur+N:figur M1 ; ! LEMMA_ID=21128
 figurant+N:figurant M1 ; ! LEMMA_ID=21129
 figurasjon+N:figurasjon M1 ; ! LEMMA_ID=135428
@@ -19781,7 +19781,7 @@ flyhavari+N:flyhavari N1 ; ! LEMMA_ID=23285
 flyhøgd+N:flyhøgd F1 ; ! LEMMA_ID=135591
 flyhøgde+N:flyhøgd F2 ; ! LEMMA_ID=135592
 flyindustri+N:flyindustri M1 ; ! LEMMA_ID=23286
-flying%+N:flying% start M1 ;
+flying% start+N:flying% start M1 ;
 flykaprar+N:flykaprar M1 ; ! LEMMA_ID=23288
 flykapring+N:flykapring F3 ; ! LEMMA_ID=23289
 flyklubb+N:flyklubb M1 ; ! LEMMA_ID=131106
@@ -20395,7 +20395,7 @@ forbygging+N:forbygging F3 ; ! LEMMA_ID=24073
 forbøn+N:forbøn F1 ; ! LEMMA_ID=24075
 forbønn+N:forbønn F1 ; ! LEMMA_ID=24076
 force+N:force M2 ;
-force%+N:force% majeure M0 ;
+force% majeure+N:force% majeure M0 ;
 fordamping+N:fordamping F3 ; ! LEMMA_ID=24081
 fordampingsskodde+N:fordampingsskodd F2 ; ! LEMMA_ID=129150
 fordampingsvarme+N:fordampingsvarm M2 ; ! LEMMA_ID=136103
@@ -24686,7 +24686,7 @@ gebiss+N:gebiss N1 ; ! LEMMA_ID=29716
 gebursdag+N:gebursdag M1 ; ! LEMMA_ID=29718
 gebursdagsgåve+N:gebursdagsgåv F2 ; ! LEMMA_ID=136360
 gebyr+N:gebyr N1 ; ! LEMMA_ID=29719
-gefundenes%+N:gefundenes% fressen N0 ;
+gefundenes% fressen+N:gefundenes% fressen N0 ;
 gefühl+N:gefühl M1 ; ! LEMMA_ID=132073
 gehalt+N:gehalt M1 ; ! LEMMA_ID=29722
 geheimeråd+N:geheimeråd M1 ; ! LEMMA_ID=29724
@@ -24883,7 +24883,7 @@ gentlemannsregel+N:gentlemannsreg M1t ; ! LEMMA_ID=131385
 gentlemansavtale+N:gentlemansavtal F2M2 ; ! LEMMA_ID=29938
 gentlemansparagraf+N:gentlemansparagraf M1 ; ! LEMMA_ID=29939
 gentlemansregel+N:gentlemansreg M1t ; ! LEMMA_ID=29940
-gentlemen's%+N:gentlemen's% agreement N0 ;
+gentlemen's% agreement+N:gentlemen's% agreement N0 ;
 gentrifisering+N:gentrifisering F3 ; ! LEMMA_ID=128876
 genuafokk+N:genuafokk F1 ; ! LEMMA_ID=29942
 genus+N:gen M0N0 ; ! LEMMA_ID=29945
@@ -26195,7 +26195,7 @@ gokartbane+N:gokartban F2M2 ; ! LEMMA_ID=31742
 gokartklubb+N:gokartklubb M1 ; ! LEMMA_ID=31743
 gokartsport+N:gokartsport M1 ; ! LEMMA_ID=31744
 gokk+N:gokk S0 ; ! LEMMA_ID=136183
-golden%+N:golden% retriever M0 ;
+golden% retriever+N:golden% retriever M0 ;
 goldheit+N:goldheit F1 ; ! LEMMA_ID=127233
 golf+N:golf M1 ; ! LEMMA_ID=31746
 golfar+N:golfar M1 ; ! LEMMA_ID=125005
@@ -26446,10 +26446,10 @@ granbar+N:granbar N1e ; ! LEMMA_ID=32048
 granbarlus+N:granbarl F0F1o ; ! LEMMA_ID=32049
 granborkbille+N:granborkbill F2 ; ! LEMMA_ID=32050
 grand+N:grand M0M1 ; ! LEMMA_ID=32051
-grand%+N:grand% old% man M0 ;
-grand%+N:grand% prix M0 ;
-grand%+N:grand% prix-vinnar M1 ;
-grand%+N:grand% danois M1 ;
+grand% old% man+N:grand% old% man M0 ;
+grand% prix+N:grand% prix M0 ;
+grand% prix-vinnar+N:grand% prix-vinnar M1 ;
+grand% danois+N:grand% danois M1 ;
 grande+N:grand M2 ; ! LEMMA_ID=32054
 grandeur+N:grandeur M1 ; ! LEMMA_ID=136828
 grandezza+N:grandezza M1e ; ! LEMMA_ID=32057
@@ -28945,8 +28945,8 @@ haplogruppe+N:haplogrupp F2 ; ! LEMMA_ID=129565
 haplotype+N:haplotyp M2 ; ! LEMMA_ID=129564
 happ+N:happ S0 ; ! LEMMA_ID=35248
 happening+N:happening M1 ; ! LEMMA_ID=35249
-happy%+N:happy% end M0 ;
-happy%+N:happy% ending M0 ;
+happy% end+N:happy% end M0 ;
+happy% ending+N:happy% ending M0 ;
 haraball+N:haraball N1 ; ! LEMMA_ID=125589
 harakiri+N:harakiri M1 ; ! LEMMA_ID=35252
 harang+N:harang M1 ; ! LEMMA_ID=35253
@@ -29130,7 +29130,7 @@ hastverk+N:hastverk N1e ; ! LEMMA_ID=35519
 hastverksarbeid+N:hastverksarbeid N1 ; ! LEMMA_ID=35520
 hasvikværing+N:hasvikværing M1 ; ! LEMMA_ID=132270
 hat+N:hat N1 ; ! LEMMA_ID=35521
-hat%+N:hat% trick N1 ;
+hat% trick+N:hat% trick N1 ;
 hatar+N:hatar M1 ; ! LEMMA_ID=35523
 hater+N:hater N1N1s ; ! LEMMA_ID=35526
 hatkriminalitet+N:hatkriminalitet M1 ; ! LEMMA_ID=137116
@@ -29260,7 +29260,7 @@ haustver+N:haustver N1 ; ! LEMMA_ID=137194
 haustvinne+N:haustvinn F2 ; ! LEMMA_ID=35673
 haustvæte+N:haustvæt F2 ; ! LEMMA_ID=35674
 haustvêr+N:haustvêr M1 ; ! LEMMA_ID=137193
-haute%+N:haute% couture S0 ;
+haute% couture+N:haute% couture S0 ;
 hautrelieff+N:hautrelieff N1 ; ! LEMMA_ID=35676
 hav+N:hav N1 ; ! LEMMA_ID=35677
 havald+N:havald N1 ; ! LEMMA_ID=35680
@@ -30349,7 +30349,7 @@ hifibutikk+N:hifibutikk M1 ; ! LEMMA_ID=136525
 hifientusiast+N:hifientusiast M1 ; ! LEMMA_ID=136523
 hifiljod+N:hifiljod M1 ; ! LEMMA_ID=136522
 hifilyd+N:hifilyd M1 ; ! LEMMA_ID=136521
-high%+N:high% fidelity S0 ;
+high% fidelity+N:high% fidelity S0 ;
 hihund+N:hihund M1 ; ! LEMMA_ID=37023
 hijab+N:hijab M1 ; ! LEMMA_ID=123569
 hijakt+N:hijakt F1 ; ! LEMMA_ID=37024
@@ -31000,7 +31000,7 @@ homiliebok+N:homilieb F1o ; ! LEMMA_ID=37848
 hommelviking+N:hommelviking M1 ; ! LEMMA_ID=132665
 homn+N:homn F1 ; ! LEMMA_ID=37851
 homo+N:homo M1 ; ! LEMMA_ID=37852
-homo%+N:homo% sapiens S0 ;
+homo% sapiens+N:homo% sapiens S0 ;
 homofili+N:homofili M1 ; ! LEMMA_ID=37856
 homofobi+N:homofobi M1 ; ! LEMMA_ID=125025
 homofon+N:homofon M1 ; ! LEMMA_ID=37857
@@ -31163,7 +31163,7 @@ horrorgenre+N:horrorgenr M2 ; ! LEMMA_ID=138708
 horrorshow+N:horrorshow N1 ; ! LEMMA_ID=137573
 horrorsjanger+N:horrorsjang M1t ; ! LEMMA_ID=137572
 hors+N:hors N1 ; ! LEMMA_ID=38021
-hors%+N:hors% d'oeuvre M0 ;
+hors% d'oeuvre+N:hors% d'oeuvre M0 ;
 horse+N:hors F2 ; ! LEMMA_ID=38023
 horseføl+N:horseføl N1 ; ! LEMMA_ID=38025
 horsegauk+N:horsegauk M1 ; ! LEMMA_ID=38026
@@ -33250,7 +33250,7 @@ inderst+N:inderst M1 ;
 inderøyning+N:inderøyning M1 ; ! LEMMA_ID=132309
 indeterminisme+N:indeterminism M2 ; ! LEMMA_ID=40830
 indeterminist+N:indeterminist M1 ; ! LEMMA_ID=40831
-indian%+N:indian% summer S0 ;
+indian% summer+N:indian% summer S0 ;
 indianar+N:indianar M1 ; ! LEMMA_ID=40833
 indianarforteljing+N:indianarforteljing F3 ; ! LEMMA_ID=40834
 indianarhovding+N:indianarhovding M1 ; ! LEMMA_ID=40836
@@ -33993,7 +33993,7 @@ insentiv+N:insentiv N1 ; ! LEMMA_ID=123927
 insentivordning+N:insentivordning F3 ; ! LEMMA_ID=138162
 inserat+N:inserat N1 ; ! LEMMA_ID=41848
 insest+N:insest M1 ; ! LEMMA_ID=123928
-inside%+N:inside% information S0 ;
+inside% information+N:inside% information S0 ;
 insider+N:insider M1 ; ! LEMMA_ID=123851
 insignium+N:insigni N3 ; ! LEMMA_ID=41850
 insinuant+N:insinuant M1 ; ! LEMMA_ID=41851
@@ -34264,7 +34264,7 @@ irettesetting+N:irettesetting F3 ; ! LEMMA_ID=42183
 iridium+N:iridium N1 ; ! LEMMA_ID=42184
 iris+N:iris M1 ; ! LEMMA_ID=42185
 irisblendar+N:irisblendar M1 ; ! LEMMA_ID=42186
-irish%+N:irish% coffee M0 ;
+irish% coffee+N:irish% coffee M0 ;
 irisk+N:irisk M1 ; ! LEMMA_ID=42189
 irlendar+N:irlendar M1 ; ! LEMMA_ID=42175
 irlending+N:irlending M1 ; ! LEMMA_ID=42176
@@ -43683,7 +43683,7 @@ laboratorieutstyr+N:laboratorieutstyr N1 ; ! LEMMA_ID=53618
 laboratorieøving+N:laboratorieøving F3 ; ! LEMMA_ID=53619
 laboratorium+N:laboratori N3 ; ! LEMMA_ID=53620
 labrador+N:labrador M1 ; ! LEMMA_ID=53622
-labrador%+N:labrador% retriever M1 ;
+labrador% retriever+N:labrador% retriever M1 ;
 labradoritt+N:labradoritt M1 ; ! LEMMA_ID=53623
 labyrint+N:labyrint M1 ; ! LEMMA_ID=53624
 lad+N:lad N1 ; ! LEMMA_ID=53625
@@ -45270,7 +45270,7 @@ linfaks+N:linfaks N1 ; ! LEMMA_ID=130072
 linfamilie+N:linfamili M2 ; ! LEMMA_ID=55650
 linfeksing+N:linfeksing M1 ; ! LEMMA_ID=55651
 linfrø+N:linfrø N1 ; ! LEMMA_ID=55652
-lingua%+N:lingua% franca N0 ;
+lingua% franca+N:lingua% franca N0 ;
 lingvist+N:lingvist M1 ; ! LEMMA_ID=55655
 lingvistikk+N:lingvistikk M1 ; ! LEMMA_ID=55656
 liniment+N:liniment N1 ; ! LEMMA_ID=55658
@@ -47570,7 +47570,7 @@ manesje+N:manesj M2 ; ! LEMMA_ID=58964
 manet+N:manet F1 ; ! LEMMA_ID=58965
 manga+N:manga 705 ; ! LEMMA_ID=136187
 mangan+N:mangan N1 ; ! LEMMA_ID=58966
-mange%+N:mange% slag N1 ;
+mange% slag+N:mange% slag N1 ;
 mangekamp+N:mangekamp M1 ; ! LEMMA_ID=58987
 mangekant+N:mangekant M1 ; ! LEMMA_ID=58989
 mangel+N:mang M1t ; ! LEMMA_ID=58993
@@ -48585,7 +48585,7 @@ menarke+N:menark M2 ; ! LEMMA_ID=60268
 menasjeri+N:menasjeri N1 ; ! LEMMA_ID=60269
 mende+N:mend 89A ; ! LEMMA_ID=138071
 mendelevium+N:mendelevium N1e ; ! LEMMA_ID=115149
-mene%+N:mene% tekel N1e ;
+mene% tekel+N:mene% tekel N1e ;
 mengd+N:mengd F1 ; ! LEMMA_ID=60274
 mengde+N:mengd F2 ; ! LEMMA_ID=126570
 mengdeeining+N:mengdeeining F3 ; ! LEMMA_ID=60275
@@ -49383,7 +49383,7 @@ mitose+N:mitos M2 ; ! LEMMA_ID=61372
 mitra+N:mitra M3 ; ! LEMMA_ID=61373
 mitraljøse+N:mitraljøs F2 ; ! LEMMA_ID=61374
 mittel+N:mittel M1e ; ! LEMMA_ID=61375
-mixed%+N:mixed% double M2 ;
+mixed% double+N:mixed% double M2 ;
 mixmaster+N:mixmaster M1 ;
 mjau+N:mjau N1 ; ! LEMMA_ID=61377
 mjauing+N:mjauing F3 ; ! LEMMA_ID=61380
@@ -49552,7 +49552,7 @@ modulasjon+N:modulasjon M1 ; ! LEMMA_ID=61608
 modulator+N:modulator M1 ; ! LEMMA_ID=61609
 modulering+N:modulering F3 ; ! LEMMA_ID=61611
 modus+N:mod M0 ; ! LEMMA_ID=61612
-modus%+N:modus% vivendi M0 ;
+modus% vivendi+N:modus% vivendi M0 ;
 modøl+N:modøl M1 ; ! LEMMA_ID=132393
 modøling+N:modøling M1 ; ! LEMMA_ID=132394
 moe+N:mo M2 ; ! LEMMA_ID=61614
@@ -51193,7 +51193,7 @@ naturalyting+N:naturalyting F3 ; ! LEMMA_ID=63841
 naturbarn+N:naturb N1N1o ; ! LEMMA_ID=63842
 naturbetong+N:naturbetong M1 ; ! LEMMA_ID=63843
 naturbruk+N:naturbruk M1 ; ! LEMMA_ID=138672
-nature%+N:nature% morte N0 ;
+nature% morte+N:nature% morte N0 ;
 naturelskar+N:naturelskar M1 ; ! LEMMA_ID=63845
 natureng+N:natureng F1 ; ! LEMMA_ID=63847
 naturfag+N:naturfag N1 ; ! LEMMA_ID=63848
@@ -51452,7 +51452,7 @@ neglepleie+N:negleplei F2 ; ! LEMMA_ID=128523
 neglisje+N:neglisje M1 ; ! LEMMA_ID=127894
 neglisjé+N:neglisj M1 ; ! LEMMA_ID=64282
 negresse+N:negress F2 ; ! LEMMA_ID=64285
-negro%+N:negro% spiritual M0 ;
+negro% spiritual+N:negro% spiritual M0 ;
 nei+N:nei N1 ; ! LEMMA_ID=64288
 neifolk+N:neifolk N1 ; ! LEMMA_ID=64293
 neiing+N:neiing F3 ; ! LEMMA_ID=139256
@@ -52046,7 +52046,7 @@ nota+N:nota M3 ; ! LEMMA_ID=65016
 notabene+N:notaben N2 ; ! LEMMA_ID=65018
 notabilitet+N:notabilitet M1 ; ! LEMMA_ID=65019
 notar+N:notar M1 ; ! LEMMA_ID=65020
-notarius%+N:notarius% publicus M0 ;
+notarius% publicus+N:notarius% publicus M0 ;
 notasjon+N:notasjon M1 ; ! LEMMA_ID=65023
 notat+N:notat N1 ; ! LEMMA_ID=65024
 notatblokk+N:notatblokk F1M1 ; ! LEMMA_ID=65025
@@ -52854,7 +52854,7 @@ okulering+N:okulering F3 ; ! LEMMA_ID=66288
 OL+N:OL 805 ; ! LEMMA_ID=66289
 ol+N:ol F1 ; ! LEMMA_ID=66291
 Ola+N:Ola M1 ; ! LEMMA_ID=66293
-Ola%+N:Ola% nordmann S0 ;
+Ola% nordmann+N:Ola% nordmann S0 ;
 olabil+N:olabil M1 ; ! LEMMA_ID=66294
 olabukse+N:olabuks F2 ; ! LEMMA_ID=66295
 olagut+N:olagut M1 ; ! LEMMA_ID=66296
@@ -52868,8 +52868,8 @@ olbogerom+N:olbogerom N1me ; ! LEMMA_ID=66306
 olbogeskjel+N:olbogeskjel F1N1 ; ! LEMMA_ID=66307
 olbogesnigel+N:olbogesnig M1t ; ! LEMMA_ID=133317
 olbogestøyt+N:olbogestøyt M1 ; ! LEMMA_ID=66308
-old%+N:old% boys M0 ;
-old%+N:old% boys-klasse F2M2 ;
+old% boys+N:old% boys M0 ;
+old% boys-klasse+N:old% boys-klasse F2M2 ;
 oldebarn+N:oldeb N1N1o ; ! LEMMA_ID=66312
 oldefar+N:oldef M0 ; ! LEMMA_ID=66313
 oldeforelder+N:oldeforeld 724 ; ! LEMMA_ID=66314
@@ -55216,7 +55216,7 @@ peanòtsmør+N:peanòtsmør N1 ;
 peanøtt+N:peanøtt F1 ; ! LEMMA_ID=69385
 peanøttolje+N:peanøttolj F2 ; ! LEMMA_ID=138504
 peanøttsmør+N:peanøttsmør N1 ; ! LEMMA_ID=69386
-peau%+N:peau% de% pêche M2 ;
+peau% de% pêche+N:peau% de% pêche M2 ;
 pebling+N:pebling M1 ; ! LEMMA_ID=69389
 pedagog+N:pedagog M1 ; ! LEMMA_ID=69390
 pedagogikk+N:pedagogikk M1 ; ! LEMMA_ID=69391
@@ -55473,7 +55473,7 @@ permutasjon+N:permutasjon M1 ; ! LEMMA_ID=69687
 peroksid+N:peroksid N1 ; ! LEMMA_ID=69690
 perpendikkel+N:perpendik M1dt ; ! LEMMA_ID=69691
 perpendikulær+N:perpendikulær M1 ; ! LEMMA_ID=69692
-perpetuum%+N:perpetuum% mobile M2N2 ;
+perpetuum% mobile+N:perpetuum% mobile M2N2 ;
 perrong+N:perrong M1 ; ! LEMMA_ID=69696
 pers+N:pers M1 ; ! LEMMA_ID=69697
 persar+N:persar M1 ; ! LEMMA_ID=69701
@@ -56584,7 +56584,7 @@ pottøl+N:pottøl N1 ; ! LEMMA_ID=71121
 PR+N:PR 704 ; ! LEMMA_ID=71126
 pr+N:pr 704 ; ! LEMMA_ID=117455
 PR-jippo+N:PR-jippo N1 ; ! LEMMA_ID=138601
-prae%+N:prae% ceteris M1 ;
+prae% ceteris+N:prae% ceteris M1 ;
 pragmatikar+N:pragmatikar M1 ; ! LEMMA_ID=71132
 pragmatikk+N:pragmatikk M1 ; ! LEMMA_ID=71133
 pragmatisme+N:pragmatism M2 ; ! LEMMA_ID=71135
@@ -56905,7 +56905,7 @@ primtal+N:primtal N1 ; ! LEMMA_ID=71528
 primtaltvilling+N:primtaltvilling M1 ; ! LEMMA_ID=124096
 primula+N:primula M3 ; ! LEMMA_ID=71529
 primus+N:primus M1 ; ! LEMMA_ID=71530
-primus%+N:primus% motor M1 ;
+primus% motor+N:primus% motor M1 ;
 primærfarge+N:primærfarg F2M2 ; ! LEMMA_ID=71534
 primærhelseteneste+N:primærhelsetenest F2 ; ! LEMMA_ID=134378
 primærkjelde+N:primærkjeld F2 ; ! LEMMA_ID=71535
@@ -59646,7 +59646,7 @@ robotkirurgi+N:robotkirurgi M1 ; ! LEMMA_ID=130484
 robåt+N:robåt M1 ; ! LEMMA_ID=75395
 rock+N:rock M1 ; ! LEMMA_ID=75396
 rock+N:rock M1e ; ! LEMMA_ID=75396
-rock%+N:rock% and% roll M1 ;
+rock% and% roll+N:rock% and% roll M1 ;
 rockeartist+N:rockeartist M1 ; ! LEMMA_ID=75400
 rockekonsert+N:rockekonsert M1 ; ! LEMMA_ID=75401
 rockeplate+N:rockeplat F2 ; ! LEMMA_ID=75402
@@ -61679,8 +61679,8 @@ schwabar+N:schwabar M1 ; ! LEMMA_ID=78137
 schwung+N:schwung M1 ; ! LEMMA_ID=78139
 schæfer+N:schæfer M1 ; ! LEMMA_ID=78140
 schæferhund+N:schæferhund M1 ; ! LEMMA_ID=78141
-science%+N:science% fiction-roman M1 ;
-science%+N:science% fiction M1e ;
+science% fiction-roman+N:science% fiction-roman M1 ;
+science% fiction+N:science% fiction M1e ;
 sciencefictionroman+N:sciencefictionroman M1 ; ! LEMMA_ID=124141
 scientolog+N:scientolog M1 ; ! LEMMA_ID=78145
 scientologi+N:scientologi M1 ; ! LEMMA_ID=78146
@@ -62646,7 +62646,7 @@ sevstorr+N:sevstorr M1 ;
 sevveik+N:sevveik M4 ;
 sevveike+N:sevveike M2 ;
 sex+N:sex M1e ; ! LEMMA_ID=79380
-sex%+N:sex% appeal M1e ;
+sex% appeal+N:sex% appeal M1e ;
 sexbombe+N:sexbomb F2 ; ! LEMMA_ID=79382
 sexdebut+N:sexdebut M1 ; ! LEMMA_ID=79383
 sexfilm+N:sexfilm M1 ; ! LEMMA_ID=79385
@@ -62695,14 +62695,14 @@ shop+N:shop M1 ; ! LEMMA_ID=79425
 shopping+N:shopping F3 ; ! LEMMA_ID=79427
 shoppingsenter+N:shoppingsenter N1N1s ; ! LEMMA_ID=79428
 shoppingveske+N:shoppingvesk F2 ; ! LEMMA_ID=79429
-short%+N:short% story-forfattar M1 ;
-short%+N:short% story M1 ;
+short% story-forfattar+N:short% story-forfattar M1 ;
+short% story+N:short% story M1 ;
 shortpassing+N:shortpassing F3 ; ! LEMMA_ID=79430
 shorts+N:shorts M0M1 ; ! LEMMA_ID=79431
 shovel+N:shov M1t ; ! LEMMA_ID=79434
 shoveldosar+N:shoveldosar M1 ; ! LEMMA_ID=79435
 show+N:show N1 ; ! LEMMA_ID=79436
-show%+N:show% business M1 ;
+show% business+N:show% business M1 ;
 shunt+N:shunt M1 ; ! LEMMA_ID=79439
 shuntmaskin+N:shuntmaskin F1M1 ; ! LEMMA_ID=79441
 shuntmotor+N:shuntmotor M1 ; ! LEMMA_ID=79442
@@ -66613,8 +66613,8 @@ sledeføre+N:sledefør N2 ; ! LEMMA_ID=85420
 sledehund+N:sledehund M1 ; ! LEMMA_ID=137803
 sledemei+N:sledemei M1 ; ! LEMMA_ID=85421
 sledevogn+N:sledevogn F1 ; ! LEMMA_ID=85422
-sleeping%+N:sleeping% partner M1 ;
-sleeping%+N:sleeping% partner-opplegg N1 ;
+sleeping% partner+N:sleeping% partner M1 ;
+sleeping% partner-opplegg+N:sleeping% partner-opplegg N1 ;
 slegd+N:slegd F1 ; ! LEMMA_ID=85425
 slegel+N:sleg M1t ; ! LEMMA_ID=85426
 slegge+N:slegg F2 ; ! LEMMA_ID=85428
@@ -66852,7 +66852,7 @@ slovakisk+N:slovakisk 89A ; ! LEMMA_ID=123756
 sloven+N:sloven M1 ;
 slovenar+N:slovenar M1 ; ! LEMMA_ID=85787
 slovensk+N:slovensk 89A ; ! LEMMA_ID=123757
-slow%+N:slow% motion M1e ;
+slow% motion+N:slow% motion M1e ;
 slowfox+N:slowfox M1 ; ! LEMMA_ID=85789
 slubb+N:slubb M1 ; ! LEMMA_ID=85792
 slubbe+N:slubb F2 ; ! LEMMA_ID=85793
@@ -67890,7 +67890,7 @@ sol+N:sol M1 ; ! LEMMA_ID=87362
 sol+N:sol N1 ; ! LEMMA_ID=87362
 solabu+N:solabu M1 ; ! LEMMA_ID=132529
 solar+N:solar M1 ; ! LEMMA_ID=87367
-solar%+N:solar% plexus M1e ;
+solar% plexus+N:solar% plexus M1e ;
 solarium+N:solari N3 ; ! LEMMA_ID=87369
 solarolje+N:solarolj F2M2 ; ! LEMMA_ID=87370
 solauga+N:solaug N0 ; ! LEMMA_ID=87372
@@ -69478,7 +69478,7 @@ statue+N:statu M2 ; ! LEMMA_ID=89415
 statuett+N:statuett M1 ; ! LEMMA_ID=89417
 statur+N:statur M1 ; ! LEMMA_ID=89418
 status+N:status M1 ; ! LEMMA_ID=89419
-status%+N:status% quo S0 ;
+status% quo+N:status% quo S0 ;
 statusjag+N:statusjag N1 ; ! LEMMA_ID=89420
 statussymbol+N:statussymbol N1 ; ! LEMMA_ID=89422
 statutt+N:statutt M1N1 ; ! LEMMA_ID=89423
@@ -70327,7 +70327,7 @@ straffskyld+N:straffskyld F1 ; ! LEMMA_ID=90601
 straffutmåling+N:straffutmåling F3 ; ! LEMMA_ID=90583
 straffutmæling+N:straffutmæling F3 ;
 straight+N:straight M1 ; ! LEMMA_ID=90610
-straight%+N:straight% flush M1 ;
+straight% flush+N:straight% flush M1 ;
 strake+N:strak M2 ; ! LEMMA_ID=90614
 straks+N:straks M1 ; ! LEMMA_ID=90617
 straksbetaling+N:straksbetaling F3 ; ! LEMMA_ID=128950
@@ -70767,7 +70767,7 @@ studiespesialisering+N:studiespesialisering F3 ; ! LEMMA_ID=126472
 studietid+N:studietid F1e ; ! LEMMA_ID=91261
 studine+N:studin F2 ; ! LEMMA_ID=91262
 studio+N:studio N1 ; ! LEMMA_ID=91263
-studiosus%+N:studiosus% perpetuus M1e ;
+studiosus% perpetuus+N:studiosus% perpetuus M1e ;
 studiovert+N:studiovert M1 ; ! LEMMA_ID=125145
 studium+N:studi N3 ; ! LEMMA_ID=91265
 stue+N:stu F2 ; ! LEMMA_ID=90508
@@ -71359,7 +71359,7 @@ sup+N:sup M1 ; ! LEMMA_ID=92212
 supan+N:supan N1 ; ! LEMMA_ID=92213
 supar+N:supar M1 ; ! LEMMA_ID=92214
 supe+N:supe M1 ; ! LEMMA_ID=127928
-super%+N:super% G S0 ;
+super% G+N:super% G S0 ;
 super-G+N:super-G 704 ; ! LEMMA_ID=124472
 superbensin+N:superbensin M1e ; ! LEMMA_ID=92221
 superegoist+N:superegoist M1 ; ! LEMMA_ID=92223
@@ -79280,7 +79280,7 @@ uniformslue+N:uniformslu F2 ; ! LEMMA_ID=104475
 uniformsluve+N:uniformsluv F2 ; ! LEMMA_ID=104476
 unikum+N:unikum N1 ; ! LEMMA_ID=104479
 union+N:union M1 ; ! LEMMA_ID=104481
-Union%+N:Union% Jack S0 ;
+Union% Jack+N:Union% Jack S0 ;
 unionist+N:unionist M1 ; ! LEMMA_ID=104483
 unionsavtale+N:unionsavtal F2M2 ; ! LEMMA_ID=104485
 unionsflagg+N:unionsflagg N1 ; ! LEMMA_ID=104486
@@ -84794,7 +84794,7 @@ wienerwurst+N:wienerwurst M1 ; ! LEMMA_ID=112999
 wifi+N:wifi M1 ; ! LEMMA_ID=127706
 wifi-anlegg+N:wifi-anlegg N1 ; ! LEMMA_ID=127707
 wigwam+N:wigwam M1 ; ! LEMMA_ID=113001
-wild%+N:wild% west-film M1 ;
+wild% west-film+N:wild% west-film M1 ;
 wiltonteppe+N:wiltontepp N2 ; ! LEMMA_ID=113003
 wire+N:wir M2 ; ! LEMMA_ID=107074
 wirespleis+N:wirespleis M1 ; ! LEMMA_ID=107076
@@ -85093,7 +85093,7 @@ zwinglianar+N:zwinglianar M1 ; ! LEMMA_ID=113500
 zygote+N:zygot M2 ; ! LEMMA_ID=113501
 zymologi+N:zymologi M1 ; ! LEMMA_ID=123741
 §+N:§ 000 ; ! LEMMA_ID=122915
-à%+N:à% la% carte-rett M4 ;
+à% la% carte-rett+N:à% la% carte-rett M4 ;
 Å+N:Å 704 ; ! LEMMA_ID=114266
 å+N:å F1 ; ! LEMMA_ID=114265
 åbakke+N:åbakk M2 ; ! LEMMA_ID=114270
