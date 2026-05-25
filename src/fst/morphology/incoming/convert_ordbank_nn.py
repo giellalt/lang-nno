@@ -28,6 +28,7 @@ DEFAULT_FULLFORMS_ZIP = os.path.join(SCRIPT_DIR, "ordbank_nn", "fullformer_2012.
 DEFAULT_PARADIGMS = os.path.join(SCRIPT_DIR, "ordbank_nn", "paradigme_nn.txt")
 DEFAULT_STEMS_DIR = os.path.normpath(os.path.join(SCRIPT_DIR, "..", "stems"))
 DEFAULT_AFFIXES_DIR = os.path.normpath(os.path.join(SCRIPT_DIR, "..", "affixes"))
+DEFAULT_VALENCY_CG3 = os.path.normpath(os.path.join(SCRIPT_DIR, "..", "..", "..", "cg3", "valency.cg3"))
 DEFAULT_TMP_DIR = os.path.join(SCRIPT_DIR, "tmp")
 DEFAULT_MULTIWORD_REPORT = os.path.join(DEFAULT_TMP_DIR, "ordbank_plusmarked_forms_from_conversion.txt")
 
@@ -345,6 +346,117 @@ def parse_ending_code(raw_ending: str) -> str:
     return code
 
 
+def strip_angle_tags(text: str) -> str:
+    return re.sub(r"<[^>]+>", " ", text)
+
+
+def tokenize_morph_desc(text: str) -> List[str]:
+    cleaned = strip_angle_tags(text).strip().lower()
+    return [tok for tok in cleaned.split() if tok]
+
+
+VALENCY_TAG_PREFIXES = (
+    "trans",
+    "intrans",
+    "ditrans",
+    "refl",
+    "predik",
+    "part",
+)
+
+
+def extract_angle_tags(text: str) -> List[str]:
+    return [m.strip() for m in re.findall(r"<([^>]+)>", text) if m.strip()]
+
+
+def is_valency_tag(tag: str) -> bool:
+    low = tag.strip().lower()
+    return low.startswith(VALENCY_TAG_PREFIXES)
+
+
+def sanitize_valency_id(tag: str) -> str:
+    key = re.sub(r"[^0-9a-zA-Z]+", "_", tag.strip().lower()).strip("_")
+    key = re.sub(r"_+", "_", key)
+    if not key:
+        key = "unknown"
+    return key
+
+
+def escape_cg3_lemma(lemma: str) -> str:
+    return lemma.replace('"', r'\"')
+
+
+def format_cg3_list(list_name: str, lemmas: Sequence[str]) -> List[str]:
+    lines: List[str] = []
+    if not lemmas:
+        return [f"LIST {list_name} = ;"]
+
+    width = 6
+    chunks = [lemmas[i : i + width] for i in range(0, len(lemmas), width)]
+    if len(chunks) == 1:
+        body = " ".join(f'"{escape_cg3_lemma(lemma)}"' for lemma in chunks[0])
+        return [f"LIST {list_name} = {body} ;"]
+
+    lines.append(f"LIST {list_name} =")
+    for chunk in chunks:
+        body = " ".join(f'"{escape_cg3_lemma(lemma)}"' for lemma in chunk)
+        lines.append(f"    {body}")
+    lines[-1] = lines[-1] + " ;"
+    return lines
+
+
+def build_valency_lemma_map(grouped_fullforms: Dict[str, List[FullformRow]]) -> Dict[str, List[str]]:
+    by_tag: Dict[str, set[str]] = defaultdict(set)
+    for rows in grouped_fullforms.values():
+        if not rows:
+            continue
+        base = choose_base_row(rows)
+        pos_key = classify_pos(base.tags)
+        if pos_key != "verb":
+            continue
+
+        lemma = base.wordform
+        for row in rows:
+            for angle_tag in extract_angle_tags(row.tags):
+                if is_valency_tag(angle_tag):
+                    by_tag[angle_tag].add(lemma)
+
+    out: Dict[str, List[str]] = {}
+    for tag, lemmas in by_tag.items():
+        out[tag] = sorted(lemmas)
+    return out
+
+
+def write_valency_cg3(path: str, grouped_fullforms: Dict[str, List[FullformRow]]) -> int:
+    valency_map = build_valency_lemma_map(grouped_fullforms)
+    os.makedirs(os.path.dirname(path), exist_ok=True)
+
+    lines: List[str] = [
+        "# Auto-generated from ordbank_nn/fullformer_2012.txt.zip.",
+        "# Converted from Ordbank angle-bracket tags (<...>) to CG3 lemma lists.",
+        "# This file keeps valency/transitivity information outside lexc.",
+        "",
+        "BEFORE-SECTIONS",
+        "",
+        "MAPPING-PREFIX = & ;",
+        "",
+        "SETS",
+        "",
+    ]
+
+    for tag in sorted(valency_map.keys()):
+        list_name = "ORDBANK_VAL_" + sanitize_valency_id(tag).upper()
+        lines.append(f"# <{tag}>")
+        lines.extend(format_cg3_list(list_name, valency_map[tag]))
+        lines.append("")
+
+    with open(path, "w", encoding="utf-8", newline="\n") as fh:
+        for line in lines:
+            fh.write(line + "\n")
+
+    return len(valency_map)
+
+
 def noun_gender_tags(pos_text: str) -> List[str]:
     p = pos_text.lower()
     if "mask" in p:
@@ -362,7 +474,7 @@ def map_noun_tags(pos_text: str, morph_desc: str) -> List[str]:
         tags.append("+Prop")
     tags.extend(noun_gender_tags(pos_text))
 
-    md = morph_desc.strip().lower()
+    md = " ".join(tokenize_morph_desc(morph_desc))
     if md == "eint ub":
         tags.extend(["+Sg", "+Indef"])
     elif md == "eint bu":
@@ -374,7 +486,7 @@ def map_noun_tags(pos_text: str, morph_desc: str) -> List[str]:
     elif "ubøy" in md:
         tags.extend(["+Sg", "+Indef"])
     else:
-        for tok in md.split():
+        for tok in tokenize_morph_desc(morph_desc):
             mapped = normalize_free_token(tok)
             if mapped:
                 tags.append("+" + mapped)
@@ -382,7 +494,7 @@ def map_noun_tags(pos_text: str, morph_desc: str) -> List[str]:
 
 
 def map_adj_tags(morph_desc: str) -> List[str]:
-    md = morph_desc.strip().lower()
+    md = " ".join(tokenize_morph_desc(morph_desc))
     if md == "pos m/f ub eint":
         return ["+Msc+Sg+Indef", "+Fem+Sg+Indef"]
     if md == "pos fl":
@@ -399,7 +511,7 @@ def map_adj_tags(morph_desc: str) -> List[str]:
         return ["+Superl+Def"]
 
     tags: List[str] = []
-    for tok in md.split():
+    for tok in tokenize_morph_desc(morph_desc):
         mapped = normalize_free_token(tok)
         if mapped:
             tags.append("+" + mapped)
@@ -407,7 +519,7 @@ def map_adj_tags(morph_desc: str) -> List[str]:
 
 
 def map_verb_tags(morph_desc: str) -> List[str]:
-    md = morph_desc.strip().lower()
+    md = " ".join(tokenize_morph_desc(morph_desc))
     if md == "inf":
         return ["+Inf"]
     if md == "inf pass":
@@ -418,15 +530,15 @@ def map_verb_tags(morph_desc: str) -> List[str]:
         return ["+Ind+Prt"]
     if md == "perf-part":
         return ["+PrfPtc"]
-    if md.startswith("adj <perf-part>"):
+    if md.startswith("adj perf-part"):
         return ["+PrfPtc"]
-    if md.startswith("adj <pres-part>"):
+    if md.startswith("adj pres-part"):
         return ["+PrsPtc"]
     if md == "imp":
         return ["+Imp"]
 
     tags: List[str] = []
-    for tok in md.replace("<", " ").replace(">", " ").split():
+    for tok in tokenize_morph_desc(morph_desc):
         mapped = normalize_free_token(tok)
         if mapped:
             tags.append("+" + mapped)
@@ -435,7 +547,7 @@ def map_verb_tags(morph_desc: str) -> List[str]:
 
 def map_generic_tags(pos: str, morph_desc: str) -> List[str]:
     tags: List[str] = []
-    for tok in morph_desc.strip().lower().split():
+    for tok in tokenize_morph_desc(morph_desc):
         mapped = normalize_free_token(tok)
         if mapped:
             tags.append("+" + mapped)
@@ -799,6 +911,7 @@ def main() -> int:
     )
     parser.add_argument("--stems-dir", default=DEFAULT_STEMS_DIR, help="Output directory for stem lexc files")
     parser.add_argument("--affixes-dir", default=DEFAULT_AFFIXES_DIR, help="Output directory for affix lexc files")
+    parser.add_argument("--valency-cg3", default=DEFAULT_VALENCY_CG3, help="Output file for generated valency CG3 data")
     parser.add_argument(
         "--multiword-report",
         default=DEFAULT_MULTIWORD_REPORT,
@@ -812,6 +925,7 @@ def main() -> int:
 
     stem_counts = write_stems(grouped_fullforms, args.stems_dir)
     affix_counts = write_affixes(grouped_paradigms, args.affixes_dir)
+    valency_count = write_valency_cg3(args.valency_cg3, grouped_fullforms)
 
     print(f"Generated stems for {len(grouped_fullforms)} lemma IDs")
     for name in sorted(stem_counts):
@@ -823,6 +937,9 @@ def main() -> int:
     print(f"Generated affix lexicons for {len(grouped_paradigms)} paradigm IDs")
     for name in sorted(affix_counts):
         print(f"  affixes/{name}: {affix_counts[name]} entries")
+
+    print(f"Generated valency CG3 lists: {valency_count}")
+    print(f"  cg3/valency.cg3: {args.valency_cg3}")
 
     return 0
 
