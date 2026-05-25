@@ -74,11 +74,11 @@ LEXICON ab-nodot ! default
 
 LEXICON ab-dot ! Default
 ! +ABBR+Attr:%. # ;
-+ABBR:%. # ;
++ABBR:. # ;
 
 LEXICON ab-dot-noun ! This is the lexicon for abbrs that must have a period.
-! +ABBR+N+Attr:%. # ;
-+ABBR+N:%. # ;
+! +ABBR+N+Attr:. # ;
++ABBR+N:. # ;
 ! +ABBR+N:%- R ; !^C^ TRY OUT THIS ONE
 
 ! The idea is that the nominal ones may have case, like e.g. P.E.N.
