@@ -1,8 +1,4 @@
 LEXICON VerbRoot
--ere+V:-er V04 ; ! LEMMA_ID=18623
--escere+V:-escer V04 ; ! LEMMA_ID=18831
--fisere+V:-fiser V04 ; ! LEMMA_ID=21811
--isere+V:-iser V04 ; ! LEMMA_ID=117198
 =+V:= 000 ; ! LEMMA_ID=122919
 abandonere+V:abandoner V04 ; ! LEMMA_ID=15
 abbreviere+V:abbrevier V04 ; ! LEMMA_ID=24
@@ -8893,6 +8889,7 @@ zoome+V:zoom V01 ; ! LEMMA_ID=113487
 øyremerke+V:øyremerk V04 ; ! LEMMA_ID=114193
 øyremerkje+V:øyremerk V04j ; ! LEMMA_ID=114194
 
+verbs_lastpart ;
 irregular-verb ;
 
 
@@ -9379,4 +9376,9 @@ sturtbløde	V08  ;
 dø	V09k  ;
 !få	V09k  ;
 herbu	V09k  ;
- 
+
+LEXICON verbs_lastpart
+-ere+V:-er V04 ; ! LEMMA_ID=18623
+-escere+V:-escer V04 ; ! LEMMA_ID=18831
+-fisere+V:-fiser V04 ; ! LEMMA_ID=21811
+-isere+V:-iser V04 ; ! LEMMA_ID=117198
