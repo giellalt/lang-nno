@@ -34,8 +34,19 @@ GT_LEXC_ROOT=root.lexc
 GT_LEXC_SRCS_L1_L2=\
 			 affixes/adjectives.lexc \
 			 affixes/nouns.lexc      \
+			 affixes/propernouns.lexc \
 			 affixes/symbols.lexc    \
-			 affixes/verbs.lexc
+			 affixes/verbs.lexc      \
+			 stems/abbreviations.lexc \
+			 stems/adjectives.lexc     \
+			 stems/adverbs.lexc        \
+			 stems/closed-classes.lexc \
+			 stems/nouns.lexc          \
+			 stems/numerals.lexc       \
+			 stems/prepositions.lexc   \
+			 stems/pronouns.lexc       \
+			 stems/propernouns.lexc    \
+			 stems/verbs.lexc
 
 #			 stems/abbreviations.lexc  \
 #			 stems/adjectives.lexc     \
@@ -109,21 +120,6 @@ GT_DISTRO_SRCS=
 ### gle/ for an example of how this is used.
 
 GIELLA_LOCAL_TARGETS=
-
-$(GT_LEXC_ROOT): incoming/tags.txt incoming/entries.lexc
-	$(AM_V_GEN)echo "Multichar_Symbols" > $@
-	$(AM_V_GEN)echo                    >> $@
-	$(AM_V_GEN)cat $<                  >> $@
-	$(AM_V_GEN)echo                    >> $@
-	$(AM_V_GEN)echo "+Symbol !!≈ * @CODE@ = symbols in the text, like £, €, ©" >> $@
-	$(AM_V_GEN)echo                    >> $@
-	$(AM_V_GEN)echo "LEXICON Root"     >> $@
-	$(AM_V_GEN)echo " Punctuation ;"   >> $@
-	$(AM_V_GEN)echo " Symbols ;"       >> $@
-	$(AM_V_GEN)echo " Entries ;"       >> $@
-	$(AM_V_GEN)echo                    >> $@
-	$(AM_V_GEN)echo "LEXICON Entries"  >> $@
-	$(AM_V_GEN)cat incoming/entries.lexc >> $@
 
 ### END: Local processing: ###
 
