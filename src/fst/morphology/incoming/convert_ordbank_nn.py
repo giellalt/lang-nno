@@ -119,6 +119,34 @@ POS_TO_TAG = {
 }
 
 
+VERB_PARADIGM_TO_LEGACY_CONT = {
+    # Dominant overlap pairs between Ordbank auto block and legacy V-classes.
+    "001": "V01",
+    "001K1": "V01",
+    "005": "V01",
+    "037": "V04",
+    "037K1": "V04",
+    "042": "V03d",
+    "045": "V04j",
+    "049": "V04dj",
+    "098": "V08k",
+    "106": "V02x",
+    "111": "V02x",
+    "113": "V03",
+    "130": "V02o",
+    "090": "V09k",
+    "090K1": "V09k",
+    "091": "V09k",
+    "091K1": "V09k",
+    "094": "V09",
+    "094K1": "V09",
+    "095": "V09",
+    "095K1": "V09",
+    "393": "V01V04x",
+    "393T": "V01V04x",
+}
+
+
 def read_zip_text(path: str, encoding: str = "iso-8859-1") -> Iterable[str]:
     with zipfile.ZipFile(path) as zf:
         members = [name for name in zf.namelist() if not name.endswith("/")]
@@ -572,6 +600,12 @@ def stem_pos_tag(raw_pos_label: str) -> str:
     return POS_TO_TAG.get(pos_key, "+X")
 
 
+def map_stem_continuation(raw_pos_label: str, paradigm_id: str) -> str:
+    if classify_pos(raw_pos_label) != "verb":
+        return paradigm_id
+    return VERB_PARADIGM_TO_LEGACY_CONT.get(paradigm_id, paradigm_id)
+
+
 def has_err_orth_marker(rows: List[FullformRow]) -> bool:
     for row in rows:
         low = row.status.lower()
@@ -793,7 +827,7 @@ def write_stems(grouped_fullforms: Dict[str, List[FullformRow]], stem_dir: str) 
         generated_by_file[stem_file][lemma_id] = (
             left,
             escape_lexc_lexeme(stem),
-            base.paradigm_id,
+            map_stem_continuation(base.tags, base.paradigm_id),
             err_orth,
         )
 
