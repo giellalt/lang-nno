@@ -817,6 +817,7 @@ LEXICON Root
  AdjectiveRoot ;
  Adverb ;
  Conjunction ;
+ Determiner ;
  Interjection ;
  NounRoot ;
  Numeral ;
