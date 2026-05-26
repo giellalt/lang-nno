@@ -642,13 +642,13 @@ def map_verb_tags(morph_desc: str) -> List[str]:
     if md == "pret":
         return ["+Ind+Prt"]
     if md == "perf-part":
-        return ["+PrfPtc"]
+        return ["+PrfPrc"]
     if md.startswith("adj perf-part"):
-        return ["+PrfPtc"]
+        return ["+PrfPrc"]
     if md.startswith("adj pres-part"):
-        return ["+PrsPtc"]
+        return ["+PrsPrc"]
     if md == "imp":
-        return ["+Imp"]
+        return ["+Imprt"]
 
     tags: List[str] = []
     for tok in tokenize_morph_desc(morph_desc):
