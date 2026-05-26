@@ -269,7 +269,7 @@ LEXICON V09k
 LEXICON INF-PRS-PTC
  +Inf: # ;
  +PrsPrc:%>ande # ;
- +Imp:%> # ;
+ +Imprt:%> # ;
 
 LEXICON a-PRES
  +Ind+Prs:%>ar # ;
@@ -308,7 +308,7 @@ LEXICON 015
  +Adj+Bu+Eint:%>de # ;
  +Adj+Fl:%>de # ;
  +Adj:%>ande # ;
- +Imp:%> # ;
+ +Imprt:%> # ;
 
 LEXICON 019
  +Inf:%>e # ;
@@ -322,7 +322,7 @@ LEXICON 019
  +Adj+Bu+Eint:%>de # ;
  +Adj+Fl:%>de # ;
  +Adj:%>ande # ;
- +Imp:%> # ;
+ +Imprt:%> # ;
 
 LEXICON 023
  +Inf:%>e # ;
@@ -336,7 +336,7 @@ LEXICON 023
  +Adj+Bu+Eint:%>de # ;
  +Adj+Fl:%>de # ;
  +Adj:%>ande # ;
- +Imp:%> # ;
+ +Imprt:%> # ;
 
 LEXICON 027
  +Inf:%>je # ;
@@ -350,7 +350,7 @@ LEXICON 027
  +Adj+Bu+Eint:%>de # ;
  +Adj+Fl:%>de # ;
  +Adj:%>jande # ;
- +Imp:%> # ;
+ +Imprt:%> # ;
 
 LEXICON 030
  +Inf:%>e # ;
@@ -364,7 +364,7 @@ LEXICON 030
  +Adj+Bu+Eint:%>de # ;
  +Adj+Fl:%>de # ;
  +Adj:%>ande # ;
- +Imp:%> # ;
+ +Imprt:%> # ;
 
 LEXICON 031
  +Inf:%>je # ;
@@ -378,7 +378,7 @@ LEXICON 031
  +Adj+Bu+Eint:%>de # ;
  +Adj+Fl:%>de # ;
  +Adj:%>jande # ;
- +Imp:%> # ;
+ +Imprt:%> # ;
 
 LEXICON 037B
  +Inf:%>e # ;
@@ -392,7 +392,7 @@ LEXICON 037B
  +Adj+Bu+Eint:%>te # ;
  +Adj+Fl:%>te # ;
  +Adj:%>ande # ;
- +Imp:%> # ;
+ +Imprt:%> # ;
 
 LEXICON 041
  +Inf:%>e # ;
@@ -406,7 +406,7 @@ LEXICON 041
  +Adj+Bu+Eint:%>te # ;
  +Adj+Fl:%>te # ;
  +Adj:%>ande # ;
- +Imp:%> # ;
+ +Imprt:%> # ;
 
 LEXICON 042K2
  +Inf:%>e # ;
@@ -420,7 +420,7 @@ LEXICON 042K2
  +Adj+Bu+Eint:%>te # ;
  +Adj+Fl:%>te # ;
  +Adj:%>ande # ;
- +Imp:%> # ;
+ +Imprt:%> # ;
 
 LEXICON 070
  +Inf:%>ligge # ;
@@ -434,7 +434,7 @@ LEXICON 070
  +Adj+Bu+Eint:%>legne # ;
  +Adj+Fl:%>legne # ;
  +Adj:%>liggande # ;
- +Imp:%>ligg # ;
+ +Imprt:%>ligg # ;
 
 LEXICON 079
  +Inf:%>e # ;
@@ -448,7 +448,7 @@ LEXICON 079
  +Adj+Bu+Eint:%>te # ;
  +Adj+Fl:%>te # ;
  +Adj:%>ande # ;
- +Imp:%> # ;
+ +Imprt:%> # ;
 
 LEXICON 087
  +Inf:%>e # ;
@@ -462,7 +462,7 @@ LEXICON 087
  +Adj+Bu+Eint:%>e # ;
  +Adj+Fl:%>e # ;
  +Adj:%>ande # ;
- +Imp:%> # ;
+ +Imprt:%> # ;
 
 LEXICON 089
  +Inf:%> # ;
@@ -482,7 +482,7 @@ LEXICON 108
  +Adj+Bu+Eint:%>de # ;
  +Adj+Fl:%>de # ;
  +Adj:%>jande # ;
- +Imp:%> # ;
+ +Imprt:%> # ;
 
 LEXICON 114
  +Inf:%>øje # ;
@@ -496,7 +496,7 @@ LEXICON 114
  +Adj+Bu+Eint:%>ude # ;
  +Adj+Fl:%>ude # ;
  +Adj:%>øjande # ;
- +Imp:%>ø # ;
+ +Imprt:%>ø # ;
 
 LEXICON 118
  +Inf:%>eje # ;
@@ -510,7 +510,7 @@ LEXICON 118
  +Adj+Bu+Eint:%>ade # ;
  +Adj+Fl:%>ade # ;
  +Adj:%>ejande # ;
- +Imp:%>e # ;
+ +Imprt:%>e # ;
 
 LEXICON 122
  +Inf:%>je # ;
@@ -534,7 +534,7 @@ LEXICON 124
  +Adj+Bu+Eint:%>agde # ;
  +Adj+Fl:%>agde # ;
  +Adj:%>eiande # ;
- +Imp:%>ei # ;
+ +Imprt:%>ei # ;
 
 LEXICON 125
  +Inf:%>eie # ;
@@ -548,7 +548,7 @@ LEXICON 125
  +Adj+Bu+Eint:%>agde # ;
  +Adj+Fl:%>agde # ;
  +Adj:%>eiande # ;
- +Imp:%>ei # ;
+ +Imprt:%>ei # ;
 
 LEXICON 132
  +Inf:%>e # ;
@@ -562,7 +562,7 @@ LEXICON 132
  +Adj+Bu+Eint:%>gde # ;
  +Adj+Fl:%>gde # ;
  +Adj:%>ande # ;
- +Imp:%> # ;
+ +Imprt:%> # ;
 
 LEXICON 134
  +Inf:%>ye # ;
@@ -576,7 +576,7 @@ LEXICON 134
  +Adj+Bu+Eint:%>gde # ;
  +Adj+Fl:%>gde # ;
  +Adj:%>yande # ;
- +Imp:%>y # ;
+ +Imprt:%>y # ;
 
 LEXICON 135
  +Inf:%>ye # ;
@@ -590,7 +590,7 @@ LEXICON 135
  +Adj+Bu+Eint:%>gde # ;
  +Adj+Fl:%>gde # ;
  +Adj:%>yande # ;
- +Imp:%>y # ;
+ +Imprt:%>y # ;
 
 LEXICON 136
  +Inf:%>ue # ;
@@ -623,7 +623,7 @@ LEXICON 142
  +Adj+Bu+Eint:%>visste # ;
  +Adj+Fl:%>visste # ;
  +Adj:%>vetande # ;
- +Imp:%>vet # ;
+ +Imprt:%>vet # ;
 
 LEXICON 144
  +Inf:%>vite # ;
@@ -637,7 +637,7 @@ LEXICON 144
  +Adj+Bu+Eint:%>visste # ;
  +Adj+Fl:%>visste # ;
  +Adj:%>vitande # ;
- +Imp:%>vit # ;
+ +Imprt:%>vit # ;
 
 LEXICON 146
  +Inf:%>eige # ;
@@ -651,7 +651,7 @@ LEXICON 146
  +Adj+Bu+Eint:%>åtte # ;
  +Adj+Fl:%>åtte # ;
  +Adj:%>eigande # ;
- +Imp:%>eig # ;
+ +Imprt:%>eig # ;
 
 LEXICON 152
  +Inf:%>ha # ;
@@ -664,7 +664,7 @@ LEXICON 152
  +Adj+Bu+Eint:%>hatte # ;
  +Adj+Fl:%>hatte # ;
  +Adj:%>havande # ;
- +Imp:%>ha # ;
+ +Imprt:%>ha # ;
 
 LEXICON 154
  +Inf:%>bli # ;
@@ -676,7 +676,7 @@ LEXICON 154
  +Adj+Bu+Eint:%>blitt # ;
  +Adj+Fl:%>blitt # ;
  +Adj:%>blivande # ;
- +Imp:%>bli # ;
+ +Imprt:%>bli # ;
 
 LEXICON 159
  +Inf:%>ide # ;
@@ -690,7 +690,7 @@ LEXICON 159
  +Adj+Bu+Eint:%>idne # ;
  +Adj+Fl:%>idne # ;
  +Adj:%>idande # ;
- +Imp:%>id # ;
+ +Imprt:%>id # ;
 
 LEXICON 160
  +Inf:%>ide # ;
@@ -704,7 +704,7 @@ LEXICON 160
  +Adj+Bu+Eint:%>idde # ;
  +Adj+Fl:%>idde # ;
  +Adj:%>idande # ;
- +Imp:%>id # ;
+ +Imprt:%>id # ;
 
 LEXICON 161
  +Inf:%>ide # ;
@@ -718,7 +718,7 @@ LEXICON 161
  +Adj+Bu+Eint:%>idde # ;
  +Adj+Fl:%>idde # ;
  +Adj:%>idande # ;
- +Imp:%>id # ;
+ +Imprt:%>id # ;
 
 LEXICON 164
  +Inf:%>ie # ;
@@ -732,7 +732,7 @@ LEXICON 164
  +Adj+Bu+Eint:%>ine # ;
  +Adj+Fl:%>ine # ;
  +Adj:%>iande # ;
- +Imp:%>i # ;
+ +Imprt:%>i # ;
 
 LEXICON 165
  +Inf:%>i # ;
@@ -745,7 +745,7 @@ LEXICON 165
  +Adj+Bu+Eint:%>idde # ;
  +Adj+Fl:%>idde # ;
  +Adj:%>idande # ;
- +Imp:%>i # ;
+ +Imprt:%>i # ;
 
 LEXICON 168
  +Inf:%>i # ;
@@ -758,7 +758,7 @@ LEXICON 168
  +Adj+Bu+Eint:%>idne # ;
  +Adj+Fl:%>idne # ;
  +Adj:%>idande # ;
- +Imp:%>i # ;
+ +Imprt:%>i # ;
 
 LEXICON 170
  +Inf:%>ide # ;
@@ -772,7 +772,7 @@ LEXICON 170
  +Adj+Bu+Eint:%>idne # ;
  +Adj+Fl:%>idne # ;
  +Adj:%>idande # ;
- +Imp:%>id # ;
+ +Imprt:%>id # ;
 
 LEXICON 178
  +Inf:%>ye # ;
@@ -787,7 +787,7 @@ LEXICON 178
  +Adj+Bu+Eint:%>une # ;
  +Adj+Fl:%>une # ;
  +Adj:%>yande # ;
- +Imp:%>y # ;
+ +Imprt:%>y # ;
 
 LEXICON 187
  +Inf:%>ue # ;
@@ -811,9 +811,9 @@ LEXICON 188
  +Adj+Bu+Eint:%>undne # ;
  +Adj+Fl:%>undne # ;
  +Adj:%>indande # ;
- +Imp:%>itt # ;
- +Imp:%> # ;
- +Imp:%> # ;
+ +Imprt:%>itt # ;
+ +Imprt:%> # ;
+ +Imprt:%> # ;
 
 LEXICON 189
  +Inf:%>inde # ;
@@ -827,7 +827,7 @@ LEXICON 189
  +Adj+Bu+Eint:%>undne # ;
  +Adj+Fl:%>undne # ;
  +Adj:%>indande # ;
- +Imp:%>ind # ;
+ +Imprt:%>ind # ;
 
 LEXICON 198
  +Inf:%>ye # ;
@@ -841,7 +841,7 @@ LEXICON 198
  +Adj+Bu+Eint:%>one # ;
  +Adj+Fl:%>one # ;
  +Adj:%>yande # ;
- +Imp:%>y # ;
+ +Imprt:%>y # ;
 
 LEXICON 213
  +Inf:%>y # ;
@@ -854,7 +854,7 @@ LEXICON 213
  +Adj+Bu+Eint:%>ogne # ;
  +Adj+Fl:%>ogne # ;
  +Adj:%>ygande # ;
- +Imp:%>y # ;
+ +Imprt:%>y # ;
 
 LEXICON 213G
  +Inf:%>y # ;
@@ -867,7 +867,7 @@ LEXICON 213G
  +Adj+Bu+Eint:%>ogne # ;
  +Adj+Fl:%>ogne # ;
  +Adj:%>ygande # ;
- +Imp:%>yg # ;
+ +Imprt:%>yg # ;
 
 LEXICON 219
  +Inf:%>ee # ;
@@ -881,7 +881,7 @@ LEXICON 219
  +Adj+Bu+Eint:%>one # ;
  +Adj+Fl:%>one # ;
  +Adj:%>eande # ;
- +Imp:%>e # ;
+ +Imprt:%>e # ;
 
 LEXICON 223
  +Inf:%>jee # ;
@@ -895,7 +895,7 @@ LEXICON 223
  +Adj+Bu+Eint:%>one # ;
  +Adj+Fl:%>one # ;
  +Adj:%>jeande # ;
- +Imp:%>je # ;
+ +Imprt:%>je # ;
 
 LEXICON 225
  +Inf:%>ie # ;
@@ -909,7 +909,7 @@ LEXICON 225
  +Adj+Bu+Eint:%>une # ;
  +Adj+Fl:%>une # ;
  +Adj:%>iande # ;
- +Imp:%>i # ;
+ +Imprt:%>i # ;
 
 LEXICON 227
  +Inf:%>ie # ;
@@ -923,7 +923,7 @@ LEXICON 227
  +Adj+Bu+Eint:%>ue # ;
  +Adj+Fl:%>ue # ;
  +Adj:%>iande # ;
- +Imp:%>i # ;
+ +Imprt:%>i # ;
 
 LEXICON 229
  +Inf:%>ee # ;
@@ -937,7 +937,7 @@ LEXICON 229
  +Adj+Bu+Eint:%>ue # ;
  +Adj+Fl:%>ue # ;
  +Adj:%>eande # ;
- +Imp:%>e # ;
+ +Imprt:%>e # ;
 
 LEXICON 236
  +Inf:%>jee # ;
@@ -951,7 +951,7 @@ LEXICON 236
  +Adj+Bu+Eint:%>one # ;
  +Adj+Fl:%>one # ;
  +Adj:%>jeande # ;
- +Imp:%>je # ;
+ +Imprt:%>je # ;
 
 LEXICON 238
  +Inf:%>ee # ;
@@ -965,7 +965,7 @@ LEXICON 238
  +Adj+Bu+Eint:%>one # ;
  +Adj+Fl:%>one # ;
  +Adj:%>eande # ;
- +Imp:%>e # ;
+ +Imprt:%>e # ;
 
 LEXICON 244
  +Inf:%>øe # ;
@@ -979,7 +979,7 @@ LEXICON 244
  +Adj+Bu+Eint:%>one # ;
  +Adj+Fl:%>one # ;
  +Adj:%>øande # ;
- +Imp:%>ø # ;
+ +Imprt:%>ø # ;
 
 LEXICON 246
  +Inf:%>joe # ;
@@ -993,7 +993,7 @@ LEXICON 246
  +Adj+Bu+Eint:%>one # ;
  +Adj+Fl:%>one # ;
  +Adj:%>joande # ;
- +Imp:%>jo # ;
+ +Imprt:%>jo # ;
 
 LEXICON 250V
  +Inf:%>ee # ;
@@ -1006,7 +1006,7 @@ LEXICON 250V
  +Adj+Bu+Eint:%>one # ;
  +Adj+Fl:%>one # ;
  +Adj:%>eande # ;
- +Imp:%>e # ;
+ +Imprt:%>e # ;
 
 LEXICON 252
  +Inf:%>ie # ;
@@ -1020,7 +1020,7 @@ LEXICON 252
  +Adj+Bu+Eint:%>une # ;
  +Adj+Fl:%>une # ;
  +Adj:%>iande # ;
- +Imp:%>i # ;
+ +Imprt:%>i # ;
 
 LEXICON 256
  +Inf:%>yje # ;
@@ -1034,7 +1034,7 @@ LEXICON 256
  +Adj+Bu+Eint:%>une # ;
  +Adj+Fl:%>une # ;
  +Adj:%>yjande # ;
- +Imp:%>y # ;
+ +Imprt:%>y # ;
 
 LEXICON 260
  +Inf:%>ae # ;
@@ -1048,7 +1048,7 @@ LEXICON 260
  +Adj+Bu+Eint:%>ane # ;
  +Adj+Fl:%>ane # ;
  +Adj:%>aande # ;
- +Imp:%>a # ;
+ +Imprt:%>a # ;
 
 LEXICON 262
  +Inf:%>ae # ;
@@ -1062,9 +1062,9 @@ LEXICON 262
  +Adj+Bu+Eint:%>ane # ;
  +Adj+Fl:%>ane # ;
  +Adj:%>aande # ;
- +Imp:%>at # ;
- +Imp:%> # ;
- +Imp:%> # ;
+ +Imprt:%>at # ;
+ +Imprt:%> # ;
+ +Imprt:%> # ;
 
 LEXICON 264
  +Inf:%>ee # ;
@@ -1078,7 +1078,7 @@ LEXICON 264
  +Adj+Bu+Eint:%>one # ;
  +Adj+Fl:%>one # ;
  +Adj:%>eande # ;
- +Imp:%>e # ;
+ +Imprt:%>e # ;
 
 LEXICON 266
  +Inf:%>ee # ;
@@ -1092,7 +1092,7 @@ LEXICON 266
  +Adj+Bu+Eint:%>one # ;
  +Adj+Fl:%>one # ;
  +Adj:%>eande # ;
- +Imp:%>e # ;
+ +Imprt:%>e # ;
 
 LEXICON 268J
  +Inf:%>itte # ;
@@ -1106,7 +1106,7 @@ LEXICON 268J
  +Adj+Bu+Eint:%>etne # ;
  +Adj+Fl:%>etne # ;
  +Adj:%>ittande # ;
- +Imp:%>itt # ;
+ +Imprt:%>itt # ;
 
 LEXICON 270
  +Inf:%>jee # ;
@@ -1120,7 +1120,7 @@ LEXICON 270
  +Adj+Bu+Eint:%>one # ;
  +Adj+Fl:%>one # ;
  +Adj:%>jeande # ;
- +Imp:%>je # ;
+ +Imprt:%>je # ;
 
 LEXICON 274
  +Inf:%>ate # ;
@@ -1134,7 +1134,7 @@ LEXICON 274
  +Adj+Bu+Eint:%>atne # ;
  +Adj+Fl:%>atne # ;
  +Adj:%>atande # ;
- +Imp:%>at # ;
+ +Imprt:%>at # ;
 
 LEXICON 277
  +Inf:%>ee # ;
@@ -1148,7 +1148,7 @@ LEXICON 277
  +Adj+Bu+Eint:%>one # ;
  +Adj+Fl:%>one # ;
  +Adj:%>eande # ;
- +Imp:%>e # ;
+ +Imprt:%>e # ;
 
 LEXICON 279
  +Inf:%>oe # ;
@@ -1162,7 +1162,7 @@ LEXICON 279
  +Adj+Bu+Eint:%>one # ;
  +Adj+Fl:%>one # ;
  +Adj:%>oande # ;
- +Imp:%>o # ;
+ +Imprt:%>o # ;
 
 LEXICON 281
  +Inf:%>komme # ;
@@ -1176,7 +1176,7 @@ LEXICON 281
  +Adj+Bu+Eint:%>komne # ;
  +Adj+Fl:%>komne # ;
  +Adj:%>kommande # ;
- +Imp:%>kom # ;
+ +Imprt:%>kom # ;
 
 LEXICON 283
  +Inf:%>kome # ;
@@ -1190,7 +1190,7 @@ LEXICON 283
  +Adj+Bu+Eint:%>komne # ;
  +Adj+Fl:%>komne # ;
  +Adj:%>komande # ;
- +Imp:%>kom # ;
+ +Imprt:%>kom # ;
 
 LEXICON 285
  +Inf:%>ee # ;
@@ -1204,7 +1204,7 @@ LEXICON 285
  +Adj+Bu+Eint:%>ene # ;
  +Adj+Fl:%>ene # ;
  +Adj:%>eande # ;
- +Imp:%>e # ;
+ +Imprt:%>e # ;
 
 LEXICON 287
  +Inf:%>itje # ;
@@ -1218,7 +1218,7 @@ LEXICON 287
  +Adj+Bu+Eint:%>etne # ;
  +Adj+Fl:%>etne # ;
  +Adj:%>itjande # ;
- +Imp:%>it # ;
+ +Imprt:%>it # ;
 
 LEXICON 289
  +Inf:%>henge # ;
@@ -1232,7 +1232,7 @@ LEXICON 289
  +Adj+Bu+Eint:%>hangne # ;
  +Adj+Fl:%>hangne # ;
  +Adj:%>hengande # ;
- +Imp:%>heng # ;
+ +Imprt:%>heng # ;
 
 LEXICON 296
  +Inf:%>gi # ;
@@ -1245,7 +1245,7 @@ LEXICON 296
  +Adj+Bu+Eint:%>gitte # ;
  +Adj+Fl:%>gitte # ;
  +Adj:%>givande # ;
- +Imp:%>gi # ;
+ +Imprt:%>gi # ;
 
 LEXICON 299
  +Inf:%>gje # ;
@@ -1258,7 +1258,7 @@ LEXICON 299
  +Adj+Bu+Eint:%>gjevne # ;
  +Adj+Fl:%>gjevne # ;
  +Adj:%>gjevande # ;
- +Imp:%>gje # ;
+ +Imprt:%>gje # ;
 
 LEXICON 301
  +Inf:%>gjeve # ;
@@ -1272,7 +1272,7 @@ LEXICON 301
  +Adj+Bu+Eint:%>gjevne # ;
  +Adj+Fl:%>gjevne # ;
  +Adj:%>gjevande # ;
- +Imp:%>gjev # ;
+ +Imprt:%>gjev # ;
 
 LEXICON 303
  +Inf:%>liggje # ;
@@ -1286,7 +1286,7 @@ LEXICON 303
  +Adj+Bu+Eint:%>legne # ;
  +Adj+Fl:%>legne # ;
  +Adj:%>liggjande # ;
- +Imp:%>ligg # ;
+ +Imprt:%>ligg # ;
 
 LEXICON 305
  +Inf:%>ee # ;
@@ -1300,7 +1300,7 @@ LEXICON 305
  +Adj+Bu+Eint:%>ene # ;
  +Adj+Fl:%>ene # ;
  +Adj:%>eande # ;
- +Imp:%>e # ;
+ +Imprt:%>e # ;
 
 LEXICON 306NY
  +Inf:%>sjå # ;
@@ -1313,7 +1313,7 @@ LEXICON 306NY
  +Adj+Bu+Eint:%>sette # ;
  +Adj+Fl:%>sette # ;
  +Adj:%>sjåande # ;
- +Imp:%>sjå # ;
+ +Imprt:%>sjå # ;
 
 LEXICON 309
  +Inf:%>vere # ;
@@ -1326,7 +1326,7 @@ LEXICON 309
  +Adj+Bu+Eint:%>vorne # ;
  +Adj+Fl:%>vorne # ;
  +Adj:%>verande # ;
- +Imp:%>ver # ;
+ +Imprt:%>ver # ;
 
 LEXICON 311
  +Inf:%>ee # ;
@@ -1340,7 +1340,7 @@ LEXICON 311
  +Adj+Bu+Eint:%>ene # ;
  +Adj+Fl:%>ene # ;
  +Adj:%>eande # ;
- +Imp:%>e # ;
+ +Imprt:%>e # ;
 
 LEXICON 313
  +Inf:%>be # ;
@@ -1353,7 +1353,7 @@ LEXICON 313
  +Adj+Bu+Eint:%>bedne # ;
  +Adj+Fl:%>bedne # ;
  +Adj:%>bedande # ;
- +Imp:%>be # ;
+ +Imprt:%>be # ;
 
 LEXICON 314
  +Inf:%>be # ;
@@ -1366,7 +1366,7 @@ LEXICON 314
  +Adj+Bu+Eint:%>bedde # ;
  +Adj+Fl:%>bedde # ;
  +Adj:%>bedande # ;
- +Imp:%>be # ;
+ +Imprt:%>be # ;
 
 LEXICON 315
  +Inf:%>be # ;
@@ -1379,7 +1379,7 @@ LEXICON 315
  +Adj+Bu+Eint:%>bedde # ;
  +Adj+Fl:%>bedde # ;
  +Adj:%>bedande # ;
- +Imp:%>be # ;
+ +Imprt:%>be # ;
 
 LEXICON 317
  +Inf:%>bede # ;
@@ -1393,7 +1393,7 @@ LEXICON 317
  +Adj+Bu+Eint:%>bedde # ;
  +Adj+Fl:%>bedde # ;
  +Adj:%>bedande # ;
- +Imp:%>bed # ;
+ +Imprt:%>bed # ;
 
 LEXICON 319
  +Inf:%>ae # ;
@@ -1407,7 +1407,7 @@ LEXICON 319
  +Adj+Bu+Eint:%>ane # ;
  +Adj+Fl:%>ane # ;
  +Adj:%>aande # ;
- +Imp:%>a # ;
+ +Imprt:%>a # ;
 
 LEXICON 321
  +Inf:%>ae # ;
@@ -1421,7 +1421,7 @@ LEXICON 321
  +Adj+Bu+Eint:%>ane # ;
  +Adj+Fl:%>ane # ;
  +Adj:%>aande # ;
- +Imp:%>a # ;
+ +Imprt:%>a # ;
 
 LEXICON 325
  +Inf:%>ta # ;
@@ -1434,7 +1434,7 @@ LEXICON 325
  +Adj+Bu+Eint:%>tekne # ;
  +Adj+Fl:%>tekne # ;
  +Adj:%>takande # ;
- +Imp:%>ta # ;
+ +Imprt:%>ta # ;
 
 LEXICON 326
  +Inf:%>take # ;
@@ -1449,7 +1449,7 @@ LEXICON 326
  +Adj+Bu+Eint:%>tekne # ;
  +Adj+Fl:%>tekne # ;
  +Adj:%>takande # ;
- +Imp:%>tak # ;
+ +Imprt:%>tak # ;
 
 LEXICON 327
  +Inf:%>take # ;
@@ -1463,7 +1463,7 @@ LEXICON 327
  +Adj+Bu+Eint:%>tekne # ;
  +Adj+Fl:%>tekne # ;
  +Adj:%>takande # ;
- +Imp:%>tak # ;
+ +Imprt:%>tak # ;
 
 LEXICON 328X
  +Inf:%>ta # ;
@@ -1477,7 +1477,7 @@ LEXICON 328X
  +Adj+Bu+Eint:%>tatte # ;
  +Adj+Fl:%>tatte # ;
  +Adj:%>takande # ;
- +Imp:%>ta # ;
+ +Imprt:%>ta # ;
 
 LEXICON 330
  +Inf:%>å # ;
@@ -1490,7 +1490,7 @@ LEXICON 330
  +Adj+Bu+Eint:%>åtte # ;
  +Adj+Fl:%>åtte # ;
  +Adj:%>åande # ;
- +Imp:%>å # ;
+ +Imprt:%>å # ;
 
 LEXICON 333
  +Inf:%>å # ;
@@ -1503,7 +1503,7 @@ LEXICON 333
  +Adj+Bu+Eint:%>åtte # ;
  +Adj+Fl:%>åtte # ;
  +Adj:%>åande # ;
- +Imp:%>å # ;
+ +Imprt:%>å # ;
 
 LEXICON 335
  +Inf:%>å # ;
@@ -1516,7 +1516,7 @@ LEXICON 335
  +Adj+Bu+Eint:%>åtte # ;
  +Adj+Fl:%>åtte # ;
  +Adj:%>åande # ;
- +Imp:%>å # ;
+ +Imprt:%>å # ;
 
 LEXICON 341
  +Inf:%>dra # ;
@@ -1529,7 +1529,7 @@ LEXICON 341
  +Adj+Bu+Eint:%>dregne # ;
  +Adj+Fl:%>dregne # ;
  +Adj:%>dragande # ;
- +Imp:%>dra # ;
+ +Imprt:%>dra # ;
 
 LEXICON 343
  +Inf:%>age # ;
@@ -1543,7 +1543,7 @@ LEXICON 343
  +Adj+Bu+Eint:%>egne # ;
  +Adj+Fl:%>egne # ;
  +Adj:%>agande # ;
- +Imp:%>ag # ;
+ +Imprt:%>ag # ;
 
 LEXICON 345
  +Inf:%>eje # ;
@@ -1557,7 +1557,7 @@ LEXICON 345
  +Adj+Bu+Eint:%>one # ;
  +Adj+Fl:%>one # ;
  +Adj:%>ejande # ;
- +Imp:%>e # ;
+ +Imprt:%>e # ;
 
 LEXICON 347
  +Inf:%>gale # ;
@@ -1571,7 +1571,7 @@ LEXICON 347
  +Adj+Bu+Eint:%>galne # ;
  +Adj+Fl:%>galne # ;
  +Adj:%>galande # ;
- +Imp:%>gal # ;
+ +Imprt:%>gal # ;
 
 LEXICON 349
  +Inf:%>eje # ;
@@ -1585,7 +1585,7 @@ LEXICON 349
  +Adj+Bu+Eint:%>ane # ;
  +Adj+Fl:%>ane # ;
  +Adj:%>ejande # ;
- +Imp:%>e # ;
+ +Imprt:%>e # ;
 
 LEXICON 358
  +Inf:%>åe # ;
@@ -1599,7 +1599,7 @@ LEXICON 358
  +Adj+Bu+Eint:%>åne # ;
  +Adj+Fl:%>åne # ;
  +Adj:%>åande # ;
- +Imp:%>å # ;
+ +Imprt:%>å # ;
 
 LEXICON 359
  +Inf:%>le # ;
@@ -1612,7 +1612,7 @@ LEXICON 359
  +Adj+Bu+Eint:%>ledde # ;
  +Adj+Fl:%>ledde # ;
  +Adj:%>leande # ;
- +Imp:%>le # ;
+ +Imprt:%>le # ;
 
 LEXICON 360
  +Inf:%>le # ;
@@ -1625,7 +1625,7 @@ LEXICON 360
  +Adj+Bu+Eint:%>ledde # ;
  +Adj+Fl:%>ledde # ;
  +Adj:%>leande # ;
- +Imp:%>le # ;
+ +Imprt:%>le # ;
 
 LEXICON 362
  +Inf:%>yje # ;
@@ -1639,7 +1639,7 @@ LEXICON 362
  +Adj+Bu+Eint:%>one # ;
  +Adj+Fl:%>one # ;
  +Adj:%>yjande # ;
- +Imp:%>y # ;
+ +Imprt:%>y # ;
 
 LEXICON 366
  +Inf:%>åe # ;
@@ -1653,7 +1653,7 @@ LEXICON 366
  +Adj+Bu+Eint:%>åne # ;
  +Adj+Fl:%>åne # ;
  +Adj:%>åande # ;
- +Imp:%>å # ;
+ +Imprt:%>å # ;
 
 LEXICON 368
  +Inf:%>jue # ;
@@ -1667,7 +1667,7 @@ LEXICON 368
  +Adj+Bu+Eint:%>one # ;
  +Adj+Fl:%>one # ;
  +Adj:%>juande # ;
- +Imp:%>ju # ;
+ +Imprt:%>ju # ;
 
 LEXICON 372
  +Inf:%>ee # ;
@@ -1681,7 +1681,7 @@ LEXICON 372
  +Adj+Bu+Eint:%>ane # ;
  +Adj+Fl:%>ane # ;
  +Adj:%>eande # ;
- +Imp:%>e # ;
+ +Imprt:%>e # ;
 
 LEXICON 373
  +Inf:%>dra # ;
@@ -1694,7 +1694,7 @@ LEXICON 373
  +Adj+Bu+Eint:%>dratte # ;
  +Adj+Fl:%>dratte # ;
  +Adj:%>dragande # ;
- +Imp:%>dra # ;
+ +Imprt:%>dra # ;
 
 LEXICON 374
  +Inf:%>dra # ;
@@ -1707,7 +1707,7 @@ LEXICON 374
  +Adj+Bu+Eint:%>dradde # ;
  +Adj+Fl:%>dradde # ;
  +Adj:%>dragande # ;
- +Imp:%>dra # ;
+ +Imprt:%>dra # ;
 
 LEXICON 376
  +Inf:%>å # ;
@@ -1720,7 +1720,7 @@ LEXICON 376
  +Adj+Bu+Eint:%>egne # ;
  +Adj+Fl:%>egne # ;
  +Adj:%>åande # ;
- +Imp:%>å # ;
+ +Imprt:%>å # ;
 
 LEXICON 377
  +Inf:%>å # ;
@@ -1733,7 +1733,7 @@ LEXICON 377
  +Adj+Bu+Eint:%>åtte # ;
  +Adj+Fl:%>åtte # ;
  +Adj:%>åande # ;
- +Imp:%>å # ;
+ +Imprt:%>å # ;
 
 LEXICON 378
  +Inf:%>å # ;
@@ -1746,7 +1746,7 @@ LEXICON 378
  +Adj+Bu+Eint:%>ådde # ;
  +Adj+Fl:%>ådde # ;
  +Adj:%>åande # ;
- +Imp:%>å # ;
+ +Imprt:%>å # ;
 
 LEXICON 395
  +Inf:%>ye # ;
@@ -1760,7 +1760,7 @@ LEXICON 395
  +Adj+Bu+Eint:%>one # ;
  +Adj+Fl:%>one # ;
  +Adj:%>yande # ;
- +Imp:%>y # ;
+ +Imprt:%>y # ;
 
 LEXICON 399
  +Inf:%>ae # ;
@@ -1775,7 +1775,7 @@ LEXICON 399
  +Adj+Bu+Eint:%>ane # ;
  +Adj+Fl:%>ane # ;
  +Adj:%>aande # ;
- +Imp:%>a # ;
+ +Imprt:%>a # ;
 
 LEXICON 400
  +Inf:%>ae # ;
@@ -1789,7 +1789,7 @@ LEXICON 400
  +Adj+Bu+Eint:%>ane # ;
  +Adj+Fl:%>ane # ;
  +Adj:%>aande # ;
- +Imp:%>a # ;
+ +Imprt:%>a # ;
 
 LEXICON 405
  +Inf:%>yje # ;
@@ -1803,7 +1803,7 @@ LEXICON 405
  +Adj+Bu+Eint:%>ude # ;
  +Adj+Fl:%>ude # ;
  +Adj:%>yjande # ;
- +Imp:%>y # ;
+ +Imprt:%>y # ;
 
 LEXICON 407
  +Inf:%>eje # ;
@@ -1817,7 +1817,7 @@ LEXICON 407
  +Adj+Bu+Eint:%>one # ;
  +Adj+Fl:%>one # ;
  +Adj:%>ejande # ;
- +Imp:%>e # ;
+ +Imprt:%>e # ;
 
 LEXICON 408
  +Inf:%>yje # ;
@@ -1831,7 +1831,7 @@ LEXICON 408
  +Adj+Bu+Eint:%>ude # ;
  +Adj+Fl:%>ude # ;
  +Adj:%>yjande # ;
- +Imp:%>y # ;
+ +Imprt:%>y # ;
 
 LEXICON 418
  +Inf:%>ue # ;
@@ -1845,7 +1845,7 @@ LEXICON 418
  +Adj+Bu+Eint:%>one # ;
  +Adj+Fl:%>one # ;
  +Adj:%>uande # ;
- +Imp:%>u # ;
+ +Imprt:%>u # ;
 
 LEXICON 41G
  +Inf:%>gjevast # ;
@@ -1864,7 +1864,7 @@ LEXICON 427A
  +Adj+Bu+Eint:%>ungne # ;
  +Adj+Fl:%>ungne # ;
  +Adj:%>ingande # ;
- +Imp:%>ikk # ;
+ +Imprt:%>ikk # ;
 
 LEXICON 429
  +Inf:%>ast # ;

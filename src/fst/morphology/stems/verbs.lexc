@@ -8901,24 +8901,24 @@ vere+V+Ind+Prt:var # ;
 vere+V+PrfPrc:vore # ;
 vere+V+PrfPrc:vori # ;
 vere+V+PrsPrc:verande # ;
-vere+V+Imp:ver # ;
+vere+V+Imprt:ver # ;
 
 ha+V+Inf:ha # ;
-ha+V+Imp:ha # ;
+ha+V+Imprt:ha # ;
 ha+V+Ind+Prs:har # ;
 ha+V+Ind+Prt:hadde # ;
 ha+V+PrfPrc:hatt # ;
 ha+V+PrsPrc:havande # ;
 
 dra+V+Inf:dra # ;
-dra+V+Imp:dra # ;
+dra+V+Imprt:dra # ;
 dra+V+Ind+Prs:drar # ;
 dra+V+Ind+Prt:drog # ;
 dra+V+PrfPrc:drege # ;
 dra+V+PrsPrc:dragande # ;
 
 la+V+Inf:la # ;
-la+V+Imp:la # ;
+la+V+Imprt:la # ;
 la+V+Ind+Prs:lar # ;
 la+V+Ind+Prt:lot # ;
 la+V+PrfPrc:latt # ;
@@ -8950,21 +8950,21 @@ kunne+V+Ind+Prt:kunne # ;
 kunne+V+PrfPrc:kunna # ;
 
 få+V+Inf:få # ;
-få+V+Imp:få # ;
+få+V+Imprt:få # ;
 få+V+Ind+Prs:får # ;
 få+V+Ind+Prt:fekk # ;
 få+V+PrfPrc:fått # ;
 få+V+PrsPrc:fåande # ;
 
 gi+V+Inf:gi # ;
-gi+V+Imp:gi # ;
+gi+V+Imprt:gi # ;
 gi+V+Ind+Prs:gir # ;
 gi+V+Ind+Prt:ga # ;
 gi+V+Ind+Prt:gav # ;
 gi+V+PrfPrc:gitt # ;
 
 gje+V+Inf:gje # ;
-gje+V+Imp:gje # ;
+gje+V+Imprt:gje # ;
 gje+V+Ind+Prs:gjev # ;
 gje+V+Ind+Prt:ga # ;
 gje+V+Ind+Prt:gav # ;
@@ -8972,7 +8972,7 @@ gje+V+PrfPrc:gjeve # ;
 gje+V+PrsPrc:gjevande # ;
 
 vite+V+Inf:vite # ;
-vite+V+Imp:vit # ;
+vite+V+Imprt:vit # ;
 vite+V+Ind+Prs:veit # ;
 vite+V+Ind+Prt:visste # ;
 vite+V+PrfPrc:visst # ;
@@ -8989,22 +8989,22 @@ LIGGE ;
 
 LEXICON LIGGE
 ligge+V+Inf:ligge # ;
-ligge+V+Imp:ligg # ;
+ligge+V+Imprt:ligg # ;
 ligge+V+Ind+Prs:ligg # ;
 ligge+V+Ind+Prt:låg # ;
 ligge+V+PrfPrc:lege # ;
 ligge+V+PrsPrc:liggjande # ;
-ligge+V+Imp:ligg # ;
+ligge+V+Imprt:ligg # ;
 
 LEXICON GJØRE
 gjøre+V+Inf:gjøre # ;
-gjøre+V+Imp:gjør # ;
+gjøre+V+Imprt:gjør # ;
 gjøre+V+Ind+Prs:gjør # ;
 gjøre+V+Ind+Prt:gjorde # ;
 gjøre+V+PrfPrc:gjort # ;
 gjøre+V+PrsPrc:gjørande # ;
 gjere+V+Inf:gjere # ;
-gjere+V+Imp:gjer # ;
+gjere+V+Imprt:gjer # ;
 gjere+V+Ind+Prs:gjer # ;
 gjere+V+Ind+Prt:gjorde # ;
 gjere+V+PrfPrc:gjort # ;
@@ -9012,14 +9012,14 @@ gjere+V+PrsPrc:gjerande # ;
 
 LEXICON BLI
 bli+V+Inf:bli # ;
-bli+V+Imp:bli # ;
+bli+V+Imprt:bli # ;
 bli+V+Ind+Prs:blir # ;
 bli+V+Ind+Prt:blei # ;
 bli+V+PrfPrc:blitt # ;
 bli+V+PrsPrc:blivande # ;
 
 verte+V+Inf:verte # ;
-verte+V+Imp:vert # ;
+verte+V+Imprt:vert # ;
 verte+V+Ind+Prs:vert # ;
 verte+V+Ind+Prt:vart # ;
 verte+V+PrfPrc:vorte # ;
@@ -9027,7 +9027,7 @@ verte+V+PrsPrc:vertande # ;
 
 LEXICON TA
 ta+V+Inf:ta # ;
-ta+V+Imp:ta # ;
+ta+V+Imprt:ta # ;
 ta+V+Ind+Prs:tar # ;
 ta+V+Ind+Prt:tok # ;
 ta+V+PrfPrc:tatt # ;
@@ -9037,7 +9037,7 @@ ta+V+PrsPrc:takande # ;
 
 LEXICON SJÅ
 se+V+Inf:sjå # ;
-se+V+Imp:sjå # ;
+se+V+Imprt:sjå # ;
 se+V+Ind+Prs:ser # ;
 se+V+Ind+Prt:såg # ;
 se+V+PrfPrc:sett # ;
@@ -9045,7 +9045,7 @@ se+V+PrsPrc:sjåande # ;
 
 LEXICON SEIE
 seie+V+Inf:seie # ;
-seie+V+Imp:sei # ;
+seie+V+Imprt:sei # ;
 seie+V+Ind+Prs:seier # ;
 seie+V+Ind+Prt:sa # ;
 seie+V+PrfPrc:sett # ;
@@ -9053,7 +9053,7 @@ seie+V+PrsPrc:seiande # ;
 
 LEXICON GÅ
 gå+V+Inf:gå # ;
-gå+V+Imp:gå # ;
+gå+V+Imprt:gå # ;
 gå+V+Ind+Prs:går # ;
 gå+V+Ind+Prt:gikk # ;
 gå+V+Ind+Prt:gjekk # ;
@@ -9062,7 +9062,7 @@ gå+V+PrsPrc:gåande # ;
 
 LEXICON BE
 be+V+Inf:be # ;
-be+V+Imp:be # ;
+be+V+Imprt:be # ;
 be+V+Ind+Prs:ber # ;
 be+V+Ind+Prt:ba # ;
 be+V+PrfPrc:bede # ;
@@ -9071,7 +9071,7 @@ be+V+PrsPrc:beande # ;
 
 LEXICON GI
 gi+V+Inf:gi # ;
-gi+V+Imp:gi # ;
+gi+V+Imprt:gi # ;
 gi+V+Ind+Prs:gir # ;
 gi+V+Ind+Prt:ga # ; 
 gi+V+Ind+Prt:gav # ;
