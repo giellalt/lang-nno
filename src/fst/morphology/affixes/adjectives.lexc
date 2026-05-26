@@ -441,3 +441,89 @@ LEXICON 66A
  +Comp:%>mindre # ;
  +Superl+Indef:%>minst # ;
  +Superl+Def:%>minste # ;
+
+! === Manglande paradigme lagt til frå Ordbank fullformer ===
+
+LEXICON 534
+ +Msc+Sg+Indef:%>mal # ; ! pos m/f ub eint LINE=1
+ +Fem+Sg+Indef:%>mal # ; ! pos m/f ub eint LINE=1
+ +Pl+Indef:%>le # ; ! pos fl LINE=2
+ +Sg+Def:%>le # ; ! pos bu eint LINE=3
+ +Neu+Sg+Indef:%>malt # ; ! pos nøyt ub eint LINE=4
+
+LEXICON 536
+ +Msc+Sg+Indef:%> # ; ! pos m/f ub eint LINE=1
+ +Fem+Sg+Indef:%> # ; ! pos m/f ub eint LINE=1
+ +Pl+Indef:%>e # ; ! pos fl LINE=2
+ +Sg+Def:%>e # ; ! pos bu eint LINE=3
+ +Neu+Sg+Indef:%>tt # ; ! pos nøyt ub eint LINE=4
+
+LEXICON 537
+ +Msc+Sg+Indef:%> # ; ! pos m/f ub eint LINE=1
+ +Fem+Sg+Indef:%> # ; ! pos m/f ub eint LINE=1
+ +Pl+Indef:%> # ; ! pos fl LINE=2
+ +Sg+Def:%> # ; ! pos bu eint LINE=3
+ +Neu+Sg+Indef:%>tt # ; ! pos nøyt ub eint LINE=4
+
+LEXICON 554
+ +Msc+Sg+Indef:%> # ; ! pos m/f ub eint LINE=1
+ +Fem+Sg+Indef:%> # ; ! pos m/f ub eint LINE=1
+ +Pl+Indef:%>te # ; ! pos fl LINE=2
+ +Sg+Def:%>te # ; ! pos bu eint LINE=3
+ +Neu+Sg+Indef:%> # ; ! pos nøyt ub eint LINE=4
+ +Comp:%>tare # ; ! komp LINE=5
+ +Superl+Indef:%>tast # ; ! sup ub LINE=6
+ +Superl+Def:%>taste # ; ! sup bu LINE=7
+
+LEXICON 572H
+ +Msc+Sg+Indef:%>en # ; ! pos m/f ub eint LINE=1
+ +Fem+Sg+Indef:%>en # ; ! pos m/f ub eint LINE=1
+ +Pl+Indef:%>ne # ; ! pos fl LINE=2
+ +Sg+Def:%>ne # ; ! pos bu eint LINE=3
+ +Neu+Sg+Indef:%>ent # ; ! pos nøyt ub eint LINE=4
+
+LEXICON 579
+ +Msc+Sg+Indef:%>en # ; ! pos m/f ub eint LINE=1
+ +Fem+Sg+Indef:%>en # ; ! pos m/f ub eint LINE=1
+ +Pl+Indef:%>ne # ; ! pos fl LINE=2
+ +Sg+Def:%>ne # ; ! pos bu eint LINE=3
+ +Neu+Sg+Indef:%>e # ; ! pos nøyt ub eint LINE=4
+
+LEXICON 525
+ +Msc+Sg+Indef:%> # ; ! pos mask ub eint LINE=1
+
+LEXICON 620
+ +Msc+Sg+Indef:%>n # ; ! pos m/f ub eint LINE=1
+ +Fem+Sg+Indef:%>n # ; ! pos m/f ub eint LINE=1
+ +Neu+Sg+Indef:%> # ; ! pos nøyt ub eint LINE=4
+
+LEXICON 663
+ +Pos+Mask+Ub+Eint:%>liten # ; ! pos mask ub eint LINE=1
+ +Pos+Fem+Ub+Eint:%>lita # ; ! pos fem ub eint LINE=2
+ +Neu+Sg+Indef:%>lite # ; ! pos nøyt ub eint LINE=3
+ +Sg+Def:%>litle # ; ! pos bu eint LINE=4
+ +Pl+Indef:%>små # ; ! pos fl LINE=5
+
+LEXICON 664
+ +Pos+Mask+Ub+Eint:%>liten # ; ! pos mask ub eint LINE=1
+ +Pos+Fem+Ub+Eint:%>lita # ; ! pos fem ub eint LINE=2
+ +Neu+Sg+Indef:%>lite # ; ! pos nøyt ub eint LINE=3
+ +Sg+Def:%>litle # ; ! pos bu eint LINE=4
+ +Pl+Indef:%>småe # ; ! pos fl LINE=5
+
+LEXICON 667
+ +Pos+Mask+Ub+Eint:%>liten # ; ! pos mask ub eint LINE=1
+ +Pos+Fem+Ub+Eint:%>lita # ; ! pos fem ub eint LINE=2
+ +Neu+Sg+Indef:%>lite # ; ! pos nøyt ub eint LINE=3
+ +Sg+Def:%>vesle # ; ! pos bu eint LINE=4
+ +Pl+Indef:%>vesle # ; ! pos fl LINE=5
+
+LEXICON 66EG
+ +Msc+Sg+Indef:%> # ; ! pos m/f ub eint LINE=1
+ +Fem+Sg+Indef:%> # ; ! pos m/f ub eint LINE=1
+ +Pl+Indef:%>e # ; ! pos fl LINE=2
+ +Sg+Def:%>e # ; ! pos bu eint LINE=3
+ +Neu+Sg+Indef:%>tt # ; ! pos nøyt ub eint LINE=4
+ +Comp:%>ærre # ; ! komp LINE=5
+ +Superl+Indef:%>æst # ; ! sup ub LINE=6
+ +Superl+Def:%>æste # ; ! sup bu LINE=7

@@ -574,12 +574,6 @@ LEXICON 727
  +Msc+Pl+Indef:%>ar # ;
  +Msc+Pl+Def:%>ane # ;
 
-LEXICON 728
- +Msc+Sg+Indef:%>u # ;
- +Msc+Sg+Def:%>uen # ;
- +Msc+Pl+Indef:%>ar # ;
- +Msc+Pl+Def:%>ane # ;
-
 LEXICON 730
  +Msc+Sg+Indef:%> # ;
  +Msc+Sg+Def:%>en # ;
@@ -591,30 +585,6 @@ LEXICON 734
  +Msc+Sg+Def:%>en # ;
  +Msc+Pl+Indef:%>er # ;
  +Msc+Pl+Def:%>ene # ;
-
-LEXICON 735
- +Msc+Sg+Indef:%> # ;
- +Msc+Sg+Def:%>en # ;
- +Msc+Pl+Indef:%> # ;
- +Msc+Pl+Def:%> # ;
-
-LEXICON 736
- +Msc+Sg+Indef:%>e # ;
- +Msc+Sg+Def:%>en # ;
- +Msc+Pl+Indef:%>es # ;
- +Msc+Pl+Def:%>esane # ;
-
-LEXICON 737
- +Msc+Sg+Indef:%> # ;
- +Msc+Sg+Def:%>en # ;
- +Msc+Pl+Indef:%>s # ;
- +Msc+Pl+Def:%>ene # ;
-
-LEXICON 738
- +Msc+Sg+Indef:%> # ;
- +Msc+Sg+Def:%>en # ;
- +Msc+Pl+Indef:%>s # ;
- +Msc+Pl+Def:%>s # ;
 
 LEXICON 740
  +Msc+Sg+Indef:%> # ;
@@ -640,12 +610,6 @@ LEXICON 746
  +Msc+Pl+Indef:%>ar # ;
  +Msc+Pl+Def:%>ane # ;
 
-LEXICON 747
- +Msc+Sg+Indef:%>er # ;
- +Msc+Sg+Def:%>eren # ;
- +Msc+Pl+Indef:%>er # ;
- +Msc+Pl+Def:%>ene # ;
-
 LEXICON 749
  +Msc+Sg+Indef:%> # ;
  +Msc+Sg+Def:%>en # ;
@@ -669,24 +633,6 @@ LEXICON 756
  +Msc+Sg+Def:%>usen # ;
  +Msc+Pl+Indef:%>i # ;
  +Msc+Pl+Def:%>iane # ;
-
-LEXICON 757
- +Msc+Sg+Indef:%>mum # ;
- +Msc+Sg+Def:%>mumen # ;
- +Msc+Pl+Indef:%>mar # ;
- +Msc+Pl+Def:%>mane # ;
-
-LEXICON 758
- +Msc+Sg+Indef:%>is # ;
- +Msc+Sg+Def:%>en # ;
- +Msc+Pl+Indef:%>ar # ;
- +Msc+Pl+Def:%>ane # ;
-
-LEXICON 759
- +Msc+Sg+Indef:%>ks # ;
- +Msc+Sg+Def:%>ksen # ;
- +Msc+Pl+Indef:%>gar # ;
- +Msc+Pl+Def:%>gane # ;
 
 LEXICON 760
  +Msc+Sg+Indef:%>bonde # ;
@@ -718,51 +664,9 @@ LEXICON 766
  +Msc+Pl+Indef:%>eer # ;
  +Msc+Pl+Def:%>eene # ;
 
-LEXICON 767
- +Msc+Sg+Indef:%>ås # ;
- +Msc+Sg+Def:%>åsen # ;
- +Msc+Pl+Indef:%>æser # ;
- +Msc+Pl+Def:%>æsene # ;
-
-LEXICON 768
- +Msc+Sg+Indef:%>fader # ;
- +Msc+Sg+Def:%>faderen # ;
- +Msc+Pl+Indef:%>fedrar # ;
- +Msc+Pl+Def:%>fedrane # ;
-
-LEXICON 772
- +Msc+Sg+Indef:%>is # ;
- +Msc+Sg+Def:%>isen # ;
- +Msc+Pl+Indef:%>idar # ;
- +Msc+Pl+Def:%>idane # ;
-
-LEXICON 773
- +Msc+Sg+Indef:%>is # ;
- +Msc+Sg+Def:%>isen # ;
- +Msc+Pl+Indef:%>iar # ;
- +Msc+Pl+Def:%>iane # ;
-
-LEXICON 776
- +Msc+Sg+Indef:%>å # ;
- +Msc+Sg+Def:%>åen # ;
- +Msc+Pl+Indef:%>æer # ;
- +Msc+Pl+Def:%>æene # ;
-
-LEXICON 779
- +Msc+Sg+Indef:%>monsieur # ;
- +Msc+Sg+Def:%>monsieuren # ;
- +Msc+Pl+Indef:%>messieurs # ;
- +Msc+Pl+Def:%>messieurs # ;
-
 LEXICON 780
  +Msc+Pl+Indef:%>ar # ;
  +Msc+Pl+Def:%>ane # ;
-
-LEXICON 781
- +Msc+Sg+Indef:%> # ;
- +Msc+Sg+Def:%>en # ;
- +Msc+Pl+Indef:%> # ;
- +Msc+Pl+Def:%>ene # ;
 
 LEXICON 782
  +Msc+Sg+Indef:%>broder # ;
@@ -792,55 +696,8 @@ LEXICON 785A
  +Msc+Pl+Indef:%>s # ;
  +Msc+Pl+Def:%>ene # ;
 
-LEXICON 786
- +Msc+Sg+Indef:%> # ;
- +Msc+Sg+Def:%>en # ;
- +Msc+Pl+Indef:%>es # ;
- +Msc+Pl+Def:%>es # ;
-
-LEXICON 787
- +Msc+Sg+Indef:%>royalty # ;
- +Msc+Sg+Def:%>royaltyen # ;
- +Msc+Pl+Indef:%>royalties # ;
- +Msc+Pl+Def:%>royaltyane # ;
-
-LEXICON 788
- +Msc+Sg+Indef:%>gentleman # ;
- +Msc+Pl+Indef:%>gentlemen # ;
-
-LEXICON 789
- +Msc+Sg+Indef:%>um # ;
- +Msc+Sg+Def:%>umen # ;
- +Msc+Pl+Indef:%>a # ;
- +Msc+Pl+Def:%>a # ;
-
-LEXICON 791
- +Msc+Sg+Indef:%>ter # ;
- +Msc+Sg+Def:%>teren # ;
- +Msc+Pl+Indef:%>tres # ;
- +Msc+Pl+Def:%>terane # ;
-
-LEXICON 792
- +Msc+Sg+Indef:%> # ;
- +Msc+Sg+Def:%>en # ;
- +Msc+Pl+Indef:%>y # ;
- +Msc+Pl+Def:%>ane # ;
-
-LEXICON 794
- +Msc+Sg+Indef:%>penny # ;
- +Msc+Sg+Def:%>pennyen # ;
- +Msc+Pl+Indef:%>pence # ;
- +Msc+Pl+Def:%>pencane # ;
-
-LEXICON 795
- +Msc+Pl+Indef:%>er # ;
- +Msc+Pl+Def:%>ene # ;
-
 LEXICON 797
  +Msc+Sg+Def:%> # ;
-
-LEXICON 798
- +Msc+Pl+Def:%> # ;
 
 LEXICON 799
  +Msc+Sg+Indef:%>us # ;
@@ -862,12 +719,6 @@ LEXICON 805
  +Neu+Sg+Def:%>-et # ;
  +Neu+Pl+Indef:%> # ;
  +Neu+Pl+Def:%>-a # ;
-
-LEXICON 809
- +Neu+Sg+Indef:%> # ;
- +Neu+Sg+Def:%>et # ;
- +Neu+Pl+Indef:%>er # ;
- +Neu+Pl+Def:%>ene # ;
 
 LEXICON 810
  +Neu+Sg+Indef:%> # ;
@@ -911,28 +762,9 @@ LEXICON 843
  +Neu+Pl+Indef:%>a # ;
  +Neu+Pl+Def:%>a # ;
 
-LEXICON 844
- +Neu+Sg+Indef:%>um # ;
- +Neu+Sg+Def:%>umet # ;
- +Neu+Pl+Indef:%>a # ;
- +Neu+Pl+Def:%>aa # ;
-
-LEXICON 857
- +Neu+Pl+Indef:%>a # ;
- +Neu+Pl+Def:%>aa # ;
-
 LEXICON 880
  +Neu+Pl+Indef:%> # ;
  +Neu+Pl+Def:%>a # ;
-
-LEXICON 898
- +Neu+Pl+Indef:%> # ;
-
-LEXICON 899
- +Neu+Sg+Indef:%> # ;
- +Neu+Sg+Def:%>et # ;
- +Neu+Pl+Indef:%>s # ;
- +Neu+Pl+Def:%>sa # ;
 
 LEXICON 89A
  +Neu:%> # ;
@@ -985,24 +817,6 @@ LEXICON 922
  +Fem+Pl+Indef:%>ar # ;
  +Fem+Pl+Def:%>ane # ;
 
-LEXICON 924
- +Fem+Sg+Indef:%>e # ;
- +Fem+Sg+Def:%>a # ;
- +Fem+Pl+Indef:%>er # ;
- +Fem+Pl+Def:%>ene # ;
-
-LEXICON 926
- +Fem+Sg+Indef:%>e # ;
- +Fem+Sg+Def:%>a # ;
- +Fem+Pl+Indef:%>ar # ;
- +Fem+Pl+Def:%>ane # ;
-
-LEXICON 930
- +Fem+Sg+Indef:%> # ;
- +Fem+Sg+Def:%>a # ;
- +Fem+Pl+Indef:%>er # ;
- +Fem+Pl+Def:%>ene # ;
-
 LEXICON 940
  +Fem+Sg+Indef:%> # ;
  +Fem+Sg+Def:%>a # ;
@@ -1014,24 +828,6 @@ LEXICON 953
  +Fem+Sg+Def:%>mori # ;
  +Fem+Pl+Indef:%>mødrer # ;
  +Fem+Pl+Def:%>mødrene # ;
-
-LEXICON 959
- +Fem+Sg+Indef:%>ò # ;
- +Fem+Sg+Def:%>òa # ;
- +Fem+Pl+Indef:%>aer # ;
- +Fem+Pl+Def:%>aene # ;
-
-LEXICON 960
- +Fem+Sg+Indef:%>o # ;
- +Fem+Sg+Def:%>oa # ;
- +Fem+Pl+Indef:%>aer # ;
- +Fem+Pl+Def:%>aene # ;
-
-LEXICON 961
- +Fem+Sg+Indef:%>o # ;
- +Fem+Sg+Def:%>oa # ;
- +Fem+Pl+Indef:%>ør # ;
- +Fem+Pl+Def:%>ørne # ;
 
 LEXICON 962
  +Fem+Sg+Indef:%>a # ;
@@ -1069,12 +865,6 @@ LEXICON 969
  +Fem+Pl+Indef:%>øer # ;
  +Fem+Pl+Def:%>øene # ;
 
-LEXICON 970
- +Fem+Sg+Indef:%>å # ;
- +Fem+Sg+Def:%>åa # ;
- +Fem+Pl+Indef:%>ær # ;
- +Fem+Pl+Def:%>ærne # ;
-
 LEXICON 971
  +Fem+Sg+Indef:%>å # ;
  +Fem+Sg+Def:%>åa # ;
@@ -1087,46 +877,19 @@ LEXICON 972
  +Fem+Pl+Indef:%>kyr # ;
  +Fem+Pl+Def:%>kyrne # ;
 
-LEXICON 974
- +Fem+Sg+Indef:%>o # ;
- +Fem+Sg+Def:%>oa # ;
- +Fem+Pl+Indef:%>eer # ;
- +Fem+Pl+Def:%>eene # ;
-
-LEXICON 977
- +Fem+Sg+Indef:%>å # ;
- +Fem+Sg+Def:%>åa # ;
- +Fem+Pl+Indef:%>æer # ;
- +Fem+Pl+Def:%>æene # ;
-
-LEXICON 978
- +Fem+Sg+Indef:%>o # ;
- +Fem+Sg+Def:%>oa # ;
- +Fem+Pl+Indef:%>aer # ;
- +Fem+Pl+Def:%>aene # ;
-
-LEXICON 979
- +Fem+Sg+Indef:%>a # ;
- +Fem+Sg+Def:%>aa # ;
- +Fem+Pl+Indef:%>jeer # ;
- +Fem+Pl+Def:%>jeene # ;
-
-LEXICON 980
- +Fem+Pl+Indef:%>er # ;
- +Fem+Pl+Def:%>ene # ;
-
-LEXICON 981
- +Fem+Pl+Indef:%> # ;
-
-LEXICON 982
- +Fem+Sg+Def:%> # ;
-
 LEXICON 989
  +Fem:%> # ;
 
-LEXICON 991
- +Pl+Indef:%>er # ;
- +Pl+Def:%>ene # ;
+LEXICON K
+ # ;
 
-LEXICON 992
- +Pl+Indef:%> # ;
+LEXICON 000
+ # ;
+
+LEXICON 715
+ +Msc+Sg+Indef:%> # ; ! subst mask appell eint ub LINE=1
+ +Msc+Sg+Def:%>-en # ; ! subst mask appell eint bu LINE=2
+
+LEXICON 716
+ +Msc+Sg+Indef:%> # ; ! subst mask appell eint ub LINE=1
+ +Msc+Sg+Def:%>en # ; ! subst mask appell eint bu LINE=2

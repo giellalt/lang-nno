@@ -1,28 +1,2 @@
 
 ! Ordbank mapping in stems: 79B -> PROP
-LEXICON 79B
- +Prop+Msc:%> # ;
-
-! Ordbank mapping in stems: 89B -> PROP
-LEXICON 89B
- +Prop+Neu:%> # ;
-
-! Ordbank mapping in stems: 994 -> PROP
-LEXICON 994
- +Prop:%> # ;
-
-! Ordbank mapping in stems: 997 -> PROP
-LEXICON 997
- +Prop:%> # ;
-
-! Ordbank mapping in stems: 998 -> PROP
-LEXICON 998
- +Prop:%> # ;
-
-! Ordbank mapping in stems: 99A -> PROP
-LEXICON 99A
- +Prop+Fem:%> # ;
-
-! Ordbank mapping in stems: 99B -> PROP
-LEXICON 99B
- +Prop+Fem:%> # ;

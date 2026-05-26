@@ -58,9 +58,6 @@ LEXICON VsV09k
 LEXICON V00V01
  # ;
 
-LEXICON V00V01V04
- # ;
-
 LEXICON V00V04
  # ;
 
@@ -313,15 +310,6 @@ LEXICON 015
  +Adj:%>ande # ;
  +Imp:%> # ;
 
-LEXICON 015X
- +Inf:%>e # ;
- +Inf:%>a # ;
- +Ind+Prs:%> # ;
- +Inf+Pass:%>ast # ;
- +Ind+Prt:%>de # ;
- +PrfPtc:%>t # ;
- +Imp:%> # ;
-
 LEXICON 019
  +Inf:%>e # ;
  +Inf:%>a # ;
@@ -364,20 +352,6 @@ LEXICON 027
  +Adj:%>jande # ;
  +Imp:%> # ;
 
-LEXICON 028
- +Inf:%>je # ;
- +Inf:%>ja # ;
- +Ind+Prs:%>jer # ;
- +Inf+Pass:%>jast # ;
- +Ind+Prt:%>de # ;
- +PrfPtc:%>d # ;
- +Adj+Nøyt+Ub+Eint:%>d # ;
- +Adj+MF+Ub+Eint:%>d # ;
- +Adj+Bu+Eint:%>de # ;
- +Adj+Fl:%>de # ;
- +Adj:%>jande # ;
- +Imp:%> # ;
-
 LEXICON 030
  +Inf:%>e # ;
  +Inf:%>a # ;
@@ -400,20 +374,6 @@ LEXICON 031
  +Ind+Prt:%>de # ;
  +PrfPtc:%>t # ;
  +Adj+Nøyt+Ub+Eint:%>t # ;
- +Adj+MF+Ub+Eint:%>d # ;
- +Adj+Bu+Eint:%>de # ;
- +Adj+Fl:%>de # ;
- +Adj:%>jande # ;
- +Imp:%> # ;
-
-LEXICON 032
- +Inf:%>je # ;
- +Inf:%>ja # ;
- +Ind+Prs:%>jer # ;
- +Inf+Pass:%>jast # ;
- +Ind+Prt:%>de # ;
- +PrfPtc:%>d # ;
- +Adj+Nøyt+Ub+Eint:%>d # ;
  +Adj+MF+Ub+Eint:%>d # ;
  +Adj+Bu+Eint:%>de # ;
  +Adj+Fl:%>de # ;
@@ -448,20 +408,6 @@ LEXICON 041
  +Adj:%>ande # ;
  +Imp:%> # ;
 
-LEXICON 041T
- +Inf:%>e # ;
- +Inf:%>a # ;
- +Ind+Prs:%>ar # ;
- +Inf+Pass:%>ast # ;
- +Ind+Prt:%>te # ;
- +PrfPtc:%>t # ;
- +Adj+Nøyt+Ub+Eint:%>t # ;
- +Adj+MF+Ub+Eint:%>t # ;
- +Adj+Bu+Eint:%>te # ;
- +Adj+Fl:%>te # ;
- +Adj:%>ande # ;
- +Imp:%> # ;
-
 LEXICON 042K2
  +Inf:%>e # ;
  +Inf:%>a # ;
@@ -475,66 +421,6 @@ LEXICON 042K2
  +Adj+Fl:%>te # ;
  +Adj:%>ande # ;
  +Imp:%> # ;
-
-LEXICON 043
- +Inf:%>ee # ;
- +Inf:%>ea # ;
- +Ind+Prs:%>eer # ;
- +Inf+Pass:%>east # ;
- +Ind+Prt:%>ate # ;
- +PrfPtc:%>at # ;
- +Adj+Nøyt+Ub+Eint:%>at # ;
- +Adj+MF+Ub+Eint:%>at # ;
- +Adj+Bu+Eint:%>ate # ;
- +Adj+Fl:%>ate # ;
- +Adj:%>eande # ;
- +Imp:%>e # ;
-
-LEXICON 046
- +Inf:%>yje # ;
- +Inf:%>yja # ;
- +Ind+Prs:%>y # ;
- +Inf+Pass:%>yjast # ;
- +Ind+Prt:%>ute # ;
- +PrfPtc:%>ut # ;
- +Adj+Nøyt+Ub+Eint:%>ut # ;
- +Adj+MF+Ub+Eint:%>ut # ;
- +Adj+Bu+Eint:%>ute # ;
- +Adj+Fl:%>ute # ;
- +Adj:%>yjande # ;
- +Imp:%>y # ;
-
-LEXICON 052
- +Inf:%>je # ;
- +Inf:%>ja # ;
- +Ind+Prs:%>jar # ;
- +Inf+Pass:%>jast # ;
- +Ind+Prt:%>ja # ;
- +PrfPtc:%>ja # ;
- +Adj+Nøyt+Ub+Eint:%>ja # ;
- +Adj+MF+Ub+Eint:%>ja # ;
- +Adj+Bu+Eint:%>ja # ;
- +Adj+Fl:%>ja # ;
- +Adj:%>jande # ;
- +Imp:%> # ;
- +Imp:%>je # ;
- +Imp:%>ja # ;
-
-LEXICON 053
- +Inf:%>je # ;
- +Inf:%>ja # ;
- +Ind+Prs:%>jar # ;
- +Inf+Pass:%>jast # ;
- +Ind+Prt:%>ja # ;
- +PrfPtc:%>ja # ;
- +Adj+Nøyt+Ub+Eint:%>ja # ;
- +Adj+MF+Ub+Eint:%>ja # ;
- +Adj+Bu+Eint:%>ja # ;
- +Adj+Fl:%>ja # ;
- +Adj:%>jande # ;
- +Imp:%> # ;
- +Imp:%>je # ;
- +Imp:%>ja # ;
 
 LEXICON 070
  +Inf:%>ligge # ;
@@ -564,18 +450,6 @@ LEXICON 079
  +Adj:%>ande # ;
  +Imp:%> # ;
 
-LEXICON 085
- +Inf:%>y # ;
- +Ind+Prs:%>yr # ;
- +Inf+Pass:%>yast # ;
- +Ind+Prt:%>aud # ;
- +PrfPtc:%>ode # ;
- +Adj+Nøyt+Ub+Eint:%>ode # ;
- +Adj+MF+Ub+Eint:%>oden # ;
- +Adj+Bu+Eint:%>odne # ;
- +Adj+Fl:%>odne # ;
- +Adj:%>yande # ;
-
 LEXICON 087
  +Inf:%>e # ;
  +Inf:%>a # ;
@@ -595,28 +469,6 @@ LEXICON 089
  +Ind+Prs:%>r # ;
  +Ind+Prt:%> # ;
  +PrfPtc:%> # ;
-
-LEXICON 099
- +Inf:%> # ;
- +Ind+Prs:%>r # ;
- +Inf+Pass:%>dast # ;
- +Ind+Prt:%>dde # ;
- +PrfPtc:%>dt # ;
- +Adj+Nøyt+Ub+Eint:%>dt # ;
- +Adj+MF+Ub+Eint:%>dd # ;
- +Adj+Bu+Eint:%>dde # ;
- +Adj+Fl:%>dde # ;
- +Adj:%>dande # ;
- +Imp:%> # ;
-
-LEXICON 104
- +Inf:%>burde # ;
- +Inf:%>burda # ;
- +Ind+Prs:%>bør # ;
- +Inf+Pass:%>burdast # ;
- +Ind+Prt:%>burde # ;
- +PrfPtc:%>burt # ;
- +Adj+Nøyt+Ub+Eint:%>burt # ;
 
 LEXICON 108
  +Inf:%>je # ;
@@ -659,29 +511,6 @@ LEXICON 118
  +Adj+Fl:%>ade # ;
  +Adj:%>ejande # ;
  +Imp:%>e # ;
-
-LEXICON 119
- +Inf:%>eje # ;
- +Inf:%>eja # ;
- +Ind+Prs:%>e # ;
- +Inf+Pass:%>ejast # ;
- +Ind+Prt:%>ae # ;
- +PrfPtc:%>a # ;
- +Adj+Nøyt+Ub+Eint:%>a # ;
- +Adj+MF+Ub+Eint:%>a # ;
- +Adj+Bu+Eint:%>ae # ;
- +Adj+Fl:%>ae # ;
- +Adj:%>ejande # ;
- +Imp:%>e # ;
-
-LEXICON 120
- +Inf:%>tore # ;
- +Inf:%>tora # ;
- +Ind+Prs:%>torer # ;
- +Inf+Pass:%>torast # ;
- +Ind+Prt:%>torde # ;
- +PrfPtc:%>tort # ;
- +Adj+Nøyt+Ub+Eint:%>tort # ;
 
 LEXICON 122
  +Inf:%>je # ;
@@ -729,20 +558,6 @@ LEXICON 132
  +Ind+Prt:%>gde # ;
  +PrfPtc:%>gd # ;
  +Adj+Nøyt+Ub+Eint:%>gd # ;
- +Adj+MF+Ub+Eint:%>gd # ;
- +Adj+Bu+Eint:%>gde # ;
- +Adj+Fl:%>gde # ;
- +Adj:%>ande # ;
- +Imp:%> # ;
-
-LEXICON 133
- +Inf:%>e # ;
- +Inf:%>a # ;
- +Ind+Prs:%>er # ;
- +Inf+Pass:%>ast # ;
- +Ind+Prt:%>gde # ;
- +PrfPtc:%>gt # ;
- +Adj+Nøyt+Ub+Eint:%>gt # ;
  +Adj+MF+Ub+Eint:%>gd # ;
  +Adj+Bu+Eint:%>gde # ;
  +Adj+Fl:%>gde # ;
@@ -837,20 +652,6 @@ LEXICON 146
  +Adj+Fl:%>åtte # ;
  +Adj:%>eigande # ;
  +Imp:%>eig # ;
-
-LEXICON 148
- +Inf:%>eite # ;
- +Inf:%>eita # ;
- +Ind+Prs:%>eiter # ;
- +Inf+Pass:%>eitast # ;
- +Ind+Prt:%>et # ;
- +PrfPtc:%>eitt # ;
- +Adj+Nøyt+Ub+Eint:%>eitt # ;
- +Adj+MF+Ub+Eint:%>eitt # ;
- +Adj+Bu+Eint:%>eitte # ;
- +Adj+Fl:%>eitte # ;
- +Adj:%>eitande # ;
- +Imp:%>eit # ;
 
 LEXICON 152
  +Inf:%>ha # ;
@@ -1042,101 +843,6 @@ LEXICON 198
  +Adj:%>yande # ;
  +Imp:%>y # ;
 
-LEXICON 200
- +Inf:%>y # ;
- +Ind+Prs:%>yr # ;
- +Inf+Pass:%>ydast # ;
- +Ind+Prt:%>aud # ;
- +PrfPtc:%>ode # ;
- +Adj+Nøyt+Ub+Eint:%>ode # ;
- +Adj+MF+Ub+Eint:%>oden # ;
- +Adj+Bu+Eint:%>odne # ;
- +Adj+Fl:%>odne # ;
- +Adj:%>ydande # ;
- +Imp:%>y # ;
-
-LEXICON 201
- +Inf:%>y # ;
- +Ind+Prs:%>yr # ;
- +Inf+Pass:%>ydast # ;
- +Ind+Prt:%>ydde # ;
- +PrfPtc:%>ydd # ;
- +Adj+Nøyt+Ub+Eint:%>ydd # ;
- +Adj+MF+Ub+Eint:%>ydd # ;
- +Adj+Bu+Eint:%>ydde # ;
- +Adj+Fl:%>ydde # ;
- +Adj:%>ydande # ;
- +Imp:%>y # ;
-
-LEXICON 202
- +Inf:%>y # ;
- +Ind+Prs:%>yr # ;
- +Inf+Pass:%>ydast # ;
- +Ind+Prt:%>ydde # ;
- +PrfPtc:%>ydt # ;
- +Adj+Nøyt+Ub+Eint:%>ydt # ;
- +Adj+MF+Ub+Eint:%>ydd # ;
- +Adj+Bu+Eint:%>ydde # ;
- +Adj+Fl:%>ydde # ;
- +Adj:%>ydande # ;
- +Imp:%>y # ;
-
-LEXICON 206
- +Inf:%>yde # ;
- +Inf:%>yda # ;
- +Ind+Prs:%>yder # ;
- +Inf+Pass:%>ydast # ;
- +Ind+Prt:%>ydde # ;
- +PrfPtc:%>ydd # ;
- +Adj+Nøyt+Ub+Eint:%>ydd # ;
- +Adj+MF+Ub+Eint:%>ydd # ;
- +Adj+Bu+Eint:%>ydde # ;
- +Adj+Fl:%>ydde # ;
- +Adj:%>ydande # ;
- +Imp:%>yd # ;
-
-LEXICON 207
- +Inf:%>yde # ;
- +Inf:%>yda # ;
- +Ind+Prs:%>yder # ;
- +Inf+Pass:%>ydast # ;
- +Ind+Prt:%>ydde # ;
- +PrfPtc:%>ydt # ;
- +Adj+Nøyt+Ub+Eint:%>ydt # ;
- +Adj+MF+Ub+Eint:%>ydd # ;
- +Adj+Bu+Eint:%>ydde # ;
- +Adj+Fl:%>ydde # ;
- +Adj:%>ydande # ;
- +Imp:%>yd # ;
-
-LEXICON 209
- +Inf:%>oe # ;
- +Inf:%>oa # ;
- +Ind+Prs:%>ø # ;
- +Inf+Pass:%>oast # ;
- +Ind+Prt:%>o # ;
- +PrfPtc:%>oe # ;
- +Adj+Nøyt+Ub+Eint:%>oe # ;
- +Adj+MF+Ub+Eint:%>oen # ;
- +Adj+Bu+Eint:%>one # ;
- +Adj+Fl:%>one # ;
- +Adj:%>oande # ;
- +Imp:%>o # ;
-
-LEXICON 210
- +Inf:%>e # ;
- +Inf:%>a # ;
- +Ind+Prs:%>er # ;
- +Inf+Pass:%>ast # ;
- +Ind+Prt:%>de # ;
- +PrfPtc:%>d # ;
- +Adj+Nøyt+Ub+Eint:%>d # ;
- +Adj+MF+Ub+Eint:%>d # ;
- +Adj+Bu+Eint:%>de # ;
- +Adj+Fl:%>de # ;
- +Adj:%>ande # ;
- +Imp:%> # ;
-
 LEXICON 213
  +Inf:%>y # ;
  +Ind+Prs:%>yr # ;
@@ -1162,34 +868,6 @@ LEXICON 213G
  +Adj+Fl:%>ogne # ;
  +Adj:%>ygande # ;
  +Imp:%>yg # ;
-
-LEXICON 215
- +Inf:%>ye # ;
- +Inf:%>ya # ;
- +Ind+Prs:%>yer # ;
- +Inf+Pass:%>yast # ;
- +Ind+Prt:%>ye # ;
- +PrfPtc:%>y # ;
- +Adj+Nøyt+Ub+Eint:%>y # ;
- +Adj+MF+Ub+Eint:%>y # ;
- +Adj+Bu+Eint:%>ye # ;
- +Adj+Fl:%>ye # ;
- +Adj:%>yande # ;
- +Imp:%>y # ;
-
-LEXICON 216
- +Inf:%>ye # ;
- +Inf:%>ya # ;
- +Ind+Prs:%>yer # ;
- +Inf+Pass:%>yast # ;
- +Ind+Prt:%>ye # ;
- +PrfPtc:%>yt # ;
- +Adj+Nøyt+Ub+Eint:%>yt # ;
- +Adj+MF+Ub+Eint:%>y # ;
- +Adj+Bu+Eint:%>ye # ;
- +Adj+Fl:%>ye # ;
- +Adj:%>yande # ;
- +Imp:%>y # ;
 
 LEXICON 219
  +Inf:%>ee # ;
@@ -1261,34 +939,6 @@ LEXICON 229
  +Adj:%>eande # ;
  +Imp:%>e # ;
 
-LEXICON 231
- +Inf:%>ee # ;
- +Inf:%>ea # ;
- +Ind+Prs:%>e # ;
- +Inf+Pass:%>east # ;
- +Ind+Prt:%>o # ;
- +PrfPtc:%>ue # ;
- +Adj+Nøyt+Ub+Eint:%>ue # ;
- +Adj+MF+Ub+Eint:%>uen # ;
- +Adj+Bu+Eint:%>une # ;
- +Adj+Fl:%>une # ;
- +Adj:%>eande # ;
- +Imp:%>e # ;
-
-LEXICON 234
- +Inf:%>gjelde # ;
- +Inf:%>gjelda # ;
- +Ind+Prs:%>gjeld # ;
- +Inf+Pass:%>gjeldast # ;
- +Ind+Prt:%>gjaldt # ;
- +PrfPtc:%>gjeldt # ;
- +Adj+Nøyt+Ub+Eint:%>gjeldt # ;
- +Adj+MF+Ub+Eint:%>gjeldt # ;
- +Adj+Bu+Eint:%>gjeldte # ;
- +Adj+Fl:%>gjeldte # ;
- +Adj:%>gjeldande # ;
- +Imp:%>gjeld # ;
-
 LEXICON 236
  +Inf:%>jee # ;
  +Inf:%>jea # ;
@@ -1316,20 +966,6 @@ LEXICON 238
  +Adj+Fl:%>one # ;
  +Adj:%>eande # ;
  +Imp:%>e # ;
-
-LEXICON 242
- +Inf:%>ie # ;
- +Inf:%>ia # ;
- +Ind+Prs:%>i # ;
- +Inf+Pass:%>iast # ;
- +Ind+Prt:%>a # ;
- +PrfPtc:%>ie # ;
- +Adj+Nøyt+Ub+Eint:%>ie # ;
- +Adj+MF+Ub+Eint:%>ien # ;
- +Adj+Bu+Eint:%>ine # ;
- +Adj+Fl:%>ine # ;
- +Adj:%>iande # ;
- +Imp:%>i # ;
 
 LEXICON 244
  +Inf:%>øe # ;
@@ -1485,19 +1121,6 @@ LEXICON 270
  +Adj+Fl:%>one # ;
  +Adj:%>jeande # ;
  +Imp:%>je # ;
-
-LEXICON 272
- +Inf:%>a # ;
- +Ind+Prs:%>èt # ;
- +Inf+Pass:%>atast # ;
- +Ind+Prt:%>ét # ;
- +PrfPtc:%>ate # ;
- +Adj+Nøyt+Ub+Eint:%>ate # ;
- +Adj+MF+Ub+Eint:%>aten # ;
- +Adj+Bu+Eint:%>atne # ;
- +Adj+Fl:%>atne # ;
- +Adj:%>atande # ;
- +Imp:%>a # ;
 
 LEXICON 274
  +Inf:%>ate # ;
@@ -2018,20 +1641,6 @@ LEXICON 362
  +Adj:%>yjande # ;
  +Imp:%>y # ;
 
-LEXICON 364
- +Inf:%>ae # ;
- +Inf:%>aa # ;
- +Ind+Prs:%>je # ;
- +Inf+Pass:%>aast # ;
- +Ind+Prt:%>o # ;
- +PrfPtc:%>jee # ;
- +Adj+Nøyt+Ub+Eint:%>jee # ;
- +Adj+MF+Ub+Eint:%>jeen # ;
- +Adj+Bu+Eint:%>jene # ;
- +Adj+Fl:%>jene # ;
- +Adj:%>aande # ;
- +Imp:%>a # ;
-
 LEXICON 366
  +Inf:%>åe # ;
  +Inf:%>åa # ;
@@ -2182,47 +1791,6 @@ LEXICON 400
  +Adj:%>aande # ;
  +Imp:%>a # ;
 
-LEXICON 401ny
- +Inf:%>e # ;
- +Inf:%>a # ;
- +Ind+Prs:%>er # ;
- +Inf+Pass:%>ast # ;
- +Ind+Prt:%>e # ;
- +PrfPtc:%>t # ;
- +Adj+Nøyt+Ub+Eint:%>t # ;
- +Adj+Bu+Eint:%>e # ;
- +Adj+Fl:%>e # ;
- +Adj:%>ande # ;
- +Imp:%> # ;
-
-LEXICON 402
- +Inf:%>de # ;
- +Inf:%>da # ;
- +Ind+Prs:%>der # ;
- +Inf+Pass:%>dast # ;
- +Ind+Prt:%>de # ;
- +PrfPtc:%>t # ;
- +Adj+Nøyt+Ub+Eint:%>t # ;
- +Adj+MF+Ub+Eint:%>d # ;
- +Adj+Bu+Eint:%>de # ;
- +Adj+Fl:%>de # ;
- +Adj:%>dande # ;
- +Imp:%>d # ;
-
-LEXICON 404
- +Inf:%>jee # ;
- +Inf:%>jea # ;
- +Ind+Prs:%>je # ;
- +Inf+Pass:%>jeast # ;
- +Ind+Prt:%>a # ;
- +PrfPtc:%>jee # ;
- +Adj+Nøyt+Ub+Eint:%>jee # ;
- +Adj+MF+Ub+Eint:%>jeen # ;
- +Adj+Bu+Eint:%>jene # ;
- +Adj+Fl:%>jene # ;
- +Adj:%>jeande # ;
- +Imp:%>je # ;
-
 LEXICON 405
  +Inf:%>yje # ;
  +Inf:%>yja # ;
@@ -2265,19 +1833,6 @@ LEXICON 408
  +Adj:%>yjande # ;
  +Imp:%>y # ;
 
-LEXICON 413
- +Inf:%>ye # ;
- +Inf:%>ya # ;
- +Ind+Prs:%>y # ;
- +Inf+Pass:%>yast # ;
- +Ind+Prt:%>au # ;
- +PrfPtc:%>oe # ;
- +Adj+Nøyt+Ub+Eint:%>oe # ;
- +Adj+MF+Ub+Eint:%>oen # ;
- +Adj+Bu+Eint:%>one # ;
- +Adj+Fl:%>one # ;
- +Adj:%>yande # ;
-
 LEXICON 418
  +Inf:%>ue # ;
  +Inf:%>ua # ;
@@ -2291,20 +1846,6 @@ LEXICON 418
  +Adj+Fl:%>one # ;
  +Adj:%>uande # ;
  +Imp:%>u # ;
-
-LEXICON 419
- +Inf:%>eje # ;
- +Inf:%>eja # ;
- +Ind+Prs:%>e # ;
- +Inf+Pass:%>ejast # ;
- +Ind+Prt:%>ade # ;
- +PrfPtc:%>at # ;
- +Adj+Nøyt+Ub+Eint:%>at # ;
- +Adj+MF+Ub+Eint:%>ad # ;
- +Adj+Bu+Eint:%>ade # ;
- +Adj+Fl:%>ade # ;
- +Adj:%>ejande # ;
- +Imp:%>ej # ;
 
 LEXICON 41G
  +Inf:%>gjevast # ;
@@ -2551,3 +2092,20 @@ LEXICON 44ZZ
  +Ind+Prs:%>gjengst # ;
  +Ind+Prt:%>gjekst # ;
  +PrfPtc:%>gjengest # ;
+
+! === Manglande paradigme lagt til frå Ordbank fullformer ===
+
+LEXICON 274A
+ +inf:ate # ; ! inf LINE=1
+ +inf:ata # ; ! inf LINE=2
+ +pres:et # ; ! pres LINE=3
+ +inf+pass:atast # ; ! inf pass LINE=4
+ +pret:et # ; ! pret LINE=5
+ +perf-part:ate # ; ! perf-part LINE=6
+ +adj+%<perf-part%>+nøyt+ub+eint:ate # ; ! adj perf-part nøyt LINE=7
+ +adj+%<perf-part%>+m/f+ub+eint:aten # ; ! adj perf-part m/f LINE=8
+ +adj+%<perf-part%>+bu+eint:atne # ; ! adj perf-part bu LINE=10
+ +adj+%<perf-part%>+fl:atne # ; ! adj perf-part fl LINE=11
+ +adj+%<pres-part%>:atande # ; ! adj pres-part LINE=12
+ +imp:at # ; ! imp LINE=13
+
