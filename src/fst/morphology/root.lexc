@@ -47,6 +47,7 @@ A Á B C Č D Đ E F G H I Ï J K L M N Ŋ O P Q R S Š T Ŧ U V W X Y Z Ž !!�
 
  +N       !!≈ * **@CODE@** - Noun
  +A       !!≈ * **@CODE@** - Adjective
+ +Adj     !!≈ * **@CODE@** - Adjective (used in verb participle forms)
  +Adv     !!≈ * **@CODE@** - Adverb
  +V       !!≈ * **@CODE@** - Verb
  +Pron    !!≈ * **@CODE@** - Pronoun
@@ -76,14 +77,51 @@ A Á B C Č D Đ E F G H I Ï J K L M N Ŋ O P Q R S Š T Ŧ U V W X Y Z Ž !!�
 
 !! # Tags for Inflection
 
-!! ## Tags for Number Inflection
+!! ## Tags for Case and Number Inflection
  +Sg   !!≈ * **@CODE@** - Singular
  +Pl   !!≈ * **@CODE@** - Plural
 
+ +Nom     !!≈ * **@CODE@** - Nominative
+ +Gen     !!≈ * **@CODE@** - Genitive
+ +Acc     !!≈ * **@CODE@** - Accusative
+ +Ill     !!≈ * **@CODE@** - Illative
+ +Ine     !!≈ * **@CODE@** - Inessive
+ +Ela     !!≈ * **@CODE@** - Elative
+ +Com     !!≈ * **@CODE@** - Comitative
+
+!! ## Gender and definiteness tags
++Msc       !!≈ * **@CODE@** Masculine
++Fem       !!≈ * **@CODE@** Feminine
++Neu       !!≈ * **@CODE@** Neuter
++MF        !!≈ * **@CODE@** Masculine/Feminine
++Def       !!≈ * **@CODE@** Definite
++Pos       !!≈ * **@CODE@** Positive degree
+
+!! ## Norwegian-style tags (Ordbank/nno conventions)
++Mask      !!≈ * **@CODE@** Masculine (nno)
++Nøyt      !!≈ * **@CODE@** Neuter (nno)
++Ub        !!≈ * **@CODE@** Ubestemt/Indefinite (nno)
++Bu        !!≈ * **@CODE@** Bestemt/Definite (nno)
++Eint      !!≈ * **@CODE@** Eintal/Singular (nno)
++Fl        !!≈ * **@CODE@** Fleirtal/Plural (nno)
+
 !! ## Adjectival tags
++Comp      !!≈ * **@CODE@** Comparative
++Superl    !!≈ * **@CODE@** Superlative
 +Attr      !!≈ * **@CODE@**   Attributive
 +Card      !!≈ * **@CODE@**   Cardinal Number Not in use
 +Ord       !!≈ * **@CODE@**   Ordinal Number
+
+!! ## Other tags
++ABBR      !!≈ * **@CODE@** Abbreviation
++Det       !!≈ * **@CODE@** Determiner
++Poss      !!≈ * **@CODE@** Possessive
++PUNCT     !!≈ * **@CODE@** Punctuation
++LEFT      !!≈ * **@CODE@** Left punctuation
++MIDDLE    !!≈ * **@CODE@** Middle punctuation
++RIGHT     !!≈ * **@CODE@** Right punctuation
++IM        !!≈ * **@CODE@** Infinitivsmerke (infinitive marker)
++M         !!≈ * **@CODE@** (noun paradigm tag)
 
 !! ## Moods
 +Ind      !!≈ * **@CODE@** Indicative
