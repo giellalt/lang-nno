@@ -43,6 +43,67 @@ A Á B C Č D Đ E F G H I Ï J K L M N Ŋ O P Q R S Š T Ŧ U V W X Y Z Ž !!�
 ­           !!= @CODE@
 
 
+!! ## Tags for POS
+
+ +N       !!≈ * **@CODE@** - Noun
+ +A       !!≈ * **@CODE@** - Adjective
+ +Adv     !!≈ * **@CODE@** - Adverb
+ +V       !!≈ * **@CODE@** - Verb
+ +Pron    !!≈ * **@CODE@** - Pronoun
+ +CS      !!≈ * **@CODE@** - Subjunction
+ +CC      !!≈ * **@CODE@** - Conjunction
+ +Adp     !!≈ * **@CODE@** - Adposition, ie Post- and Prepostion, NOT IN USE
+ +Po      !!≈ * **@CODE@** - Postpostion
+ +Pr      !!≈ * **@CODE@** - Preposition
+ +Interj  !!≈ * **@CODE@** - Interjection
+ +Pcle    !!≈ * **@CODE@** - Particle
+ +Num     !!≈ * **@CODE@** - Numeral
+
+!! ## Tags for sub-POS
+ +Prop      !!≈ * **@CODE@** - Propernoun
+ +Pers      !!≈ * **@CODE@** - Personal Pronoun
+ +Dem       !!≈ * **@CODE@** - Demonstrative Pronoun
+ +Interr    !!≈ * **@CODE@** - Interrogative Pronoun
+ +Refl      !!≈ * **@CODE@** - Reflexive Pronoun
+ +Recipr    !!≈ * **@CODE@** - Reciprocal Pronoun
+ +Rel       !!≈ * **@CODE@** - Relative Pronoun
+ +Indef     !!≈ * **@CODE@** - Indefinitive Pronoun
+ +Coll      !!≈ * **@CODE@** - Collective numerals, subtag for +N
+ +Arab      !!≈ * **@CODE@** - Arabic numeral, subtag for +Num
+ +Rom       !!≈ * **@CODE@** - Roman numeral, subtag for +Num
+ +Pass      !!≈ * **@CODE@** - hallat/haddat not in use
+ +Known     !!≈ * **@CODE@** - man (different from maid): mii+Pron+Rel+Sg+Acc+Known
+
+!! # Tags for Inflection
+
+!! ## Tags for Number Inflection
+ +Sg   !!≈ * **@CODE@** - Singular
+ +Pl   !!≈ * **@CODE@** - Plural
+
+!! ## Adjectival tags
++Attr      !!≈ * **@CODE@**   Attributive
++Card      !!≈ * **@CODE@**   Cardinal Number Not in use
++Ord       !!≈ * **@CODE@**   Ordinal Number
+
+!! ## Moods
++Ind      !!≈ * **@CODE@** Indicative
++Imprt    !!≈ * **@CODE@** Imperative
+
+!! ## Tenses
++Prs      !!≈ * **@CODE@** Present Tense
++Prt      !!≈ * **@CODE@** Past Tense, Preterite
+
+!! ## Infinite verb forms
+
++Inf      !!≈ * **@CODE@** Infinitive
++PrsPrc   !!≈ * **@CODE@** Present Participe
++PrfPrc   !!≈ * **@CODE@** Perfect Participe
++Sup      !!≈ * **@CODE@** Supine
+
+!! ## Error (non-standard language) tags
+
+ +Err/Orth         !!≈ * **@CODE@** substandard, not in normative fst
+
 
 +1
 +2
