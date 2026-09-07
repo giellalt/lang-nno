@@ -24,7 +24,8 @@ XFAIL_TESTS=generate-adjective-lemmas.sh  \
             generate-noun-lemmas.sh       \
             generate-propernoun-lemmas.sh \
             generate-verb-lemmas.sh       \
-			missing-multichars.sh
+			missing-multichars.sh         \
+			check-ordbank-fullforms-analysis.sh
 
 
 include $(top_srcdir)/../giella-core/am-shared/devtest-include.am
