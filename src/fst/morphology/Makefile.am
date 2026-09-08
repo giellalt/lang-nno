@@ -84,6 +84,8 @@ else
 generated_files/mul-$(GLANG)-%.lexc:
 	$(AM_V_at)$(MKDIR_P) generated_files
 	echo "! Missing shared common data" > $@
+	echo "LEXICON mul-$(GLANG)-$*-error" >> $@
+	echo "0 # ;" >> $@
 endif
 # add other lexical shared data handling here
 
