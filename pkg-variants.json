@@ -1,0 +1,12 @@
+{
+  "dialects": null,
+  "areas": null,
+  "orthographies": null,
+  "writing_systems": [
+    {
+      "code": "Runr",
+      "has_speller": true,
+      "has_grammar_checker": false
+    }
+  ]
+}
